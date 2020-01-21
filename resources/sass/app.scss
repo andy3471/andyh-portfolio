@@ -1,0 +1,135 @@
+@import "node_modules/bulma/sass/utilities/initial-variables";
+
+/* Variable Overrides */
+
+$red: #f20544;
+$purple: #2a438c;
+$blue: #012840;
+$yellow: #f29f05;
+$orange: #f27405;
+$primary: $orange;
+@import "node_modules/bulma/bulma";
+@import url("https://fonts.googleapis.com/css?family=Permanent+Marker|Roboto&display=swap");
+
+/* Site */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $purple;
+    font-family: "Roboto", sans-serif;
+    color: white;
+    /* background: url("img/bg.jpg") no-repeat center fixed; */
+    background-color: $blue;
+    background-size: cover;
+}
+
+.hero {
+    flex-direction: row;
+}
+
+
+/* Reusable */
+
+button {
+    background-color: $yellow;
+    color: white;
+}
+
+.section-header {
+    font-family: "Permanent Marker", cursive;
+    text-transform: uppercase;
+    background-image: linear-gradient($yellow, $orange);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 1rem;
+    h1 {
+        font-size: 5rem;
+        text-align: center;
+        line-height: 0.7;
+    }
+    h2 {
+        font-size: 3rem;
+        text-align: center;
+    }
+}
+
+
+/* Nav */
+
+.nav-page {
+    background-color: $purple;
+    text-align: center;
+    width: 100%;
+    z-index: 100;
+    position: absolute;
+    display: none;
+}
+
+.nav-list {
+    top: 50vh;
+    transform: translate(-50%, -50%);
+}
+
+.nav-item a {
+    font-family: "Permanent Marker", cursive;
+    color: $red;
+    text-decoration: none;
+    padding: 1rem;
+}
+
+.nav-item a:hover {
+    font-family: "Permanent Marker", cursive;
+    color: $yellow;
+}
+
+
+/* Header */
+
+.header {
+    text-align: center;
+    z-index: 1;
+}
+
+.header.container {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.header-text {
+    position: absolute;
+    top: 50vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.logo {
+    background-image: linear-gradient($red, $orange);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 0.7;
+    user-select: none;
+    font-family: "Permanent Marker", cursive;
+    text-align: center;
+    z-index: 1;
+    padding: 1rem;
+    h1 {
+        font-size: 12rem;
+    }
+    h2 {
+        font-size: 8rem;
+    }
+}
+
+.header h3 {
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 300;
+    padding-top: 2rem;
+}
