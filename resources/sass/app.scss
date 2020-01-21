@@ -1,7 +1,5 @@
 @import "node_modules/bulma/sass/utilities/initial-variables";
-
-/* Variable Overrides */
-
+// Bulma Variable Overrides
 $red: #f20544;
 $purple: #2a438c;
 $blue: #012840;
@@ -10,9 +8,7 @@ $orange: #f27405;
 $primary: $orange;
 @import "node_modules/bulma/bulma";
 @import url("https://fonts.googleapis.com/css?family=Permanent+Marker|Roboto&display=swap");
-
-/* Site */
-
+// Site
 * {
     margin: 0;
     padding: 0;
@@ -32,9 +28,7 @@ body {
     flex-direction: row;
 }
 
-
-/* Reusable */
-
+// Reusable
 button {
     background-color: $yellow;
     color: white;
@@ -59,9 +53,7 @@ button {
     }
 }
 
-
-/* Nav */
-
+// Nav
 .nav-page {
     background-color: $purple;
     text-align: center;
@@ -88,9 +80,7 @@ button {
     color: $yellow;
 }
 
-
-/* Header */
-
+// Header
 .header {
     text-align: center;
     z-index: 1;
@@ -132,4 +122,20 @@ button {
     text-align: center;
     font-weight: 300;
     padding-top: 2rem;
+}
+
+// Components
+.component-header {
+    font-size: 2rem;
+    font-family: "Permanent Marker", cursive;
+    color: $red;
+    text-align: center;
+}
+
+// Other Projects
+.projects-header {
+    font-size: 2rem;
+    font-family: "Permanent Marker", cursive;
+    color: $red;
+    text-align: center;
 }

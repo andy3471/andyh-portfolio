@@ -1,7 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Permanent+Marker|Roboto&display=swap);@charset "UTF-8";
 
-/* Variable Overrides */
-
 /*! bulma.io v0.8.0 | MIT License | github.com/jgthms/bulma */
 
 @-webkit-keyframes spinAround {
@@ -12437,8 +12435,6 @@ label.panel-block:hover {
   padding: 3rem 1.5rem 6rem;
 }
 
-/* Site */
-
 * {
   margin: 0;
   padding: 0;
@@ -12459,8 +12455,6 @@ body {
   -webkit-box-direction: normal;
           flex-direction: row;
 }
-
-/* Reusable */
 
 button {
   background-color: #f29f05;
@@ -12489,8 +12483,6 @@ button {
   text-align: center;
 }
 
-/* Nav */
-
 .nav-page {
   background-color: #2a438c;
   text-align: center;
@@ -12517,8 +12509,6 @@ button {
   font-family: "Permanent Marker", cursive;
   color: #f29f05;
 }
-
-/* Header */
 
 .header {
   text-align: center;
@@ -12568,5 +12558,19 @@ button {
   text-align: center;
   font-weight: 300;
   padding-top: 2rem;
+}
+
+.component-header {
+  font-size: 2rem;
+  font-family: "Permanent Marker", cursive;
+  color: #f20544;
+  text-align: center;
+}
+
+.projects-header {
+  font-size: 2rem;
+  font-family: "Permanent Marker", cursive;
+  color: #f20544;
+  text-align: center;
 }
 
