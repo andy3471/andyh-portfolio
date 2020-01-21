@@ -49,16 +49,34 @@
                     </div>
                     <div class="column is-three-quarters">
                         <p>
-                            Hi, I'm Andrew Hargrave. I'm a self taught Web Developer that works with PHP, JS, HTML, SQL (MySQL and MS SQL), Redis, CSS and SCSS. I have a very good knowledge of the Laravel MVC framework, and have used it for multiple personal projects.
+                            Hi, I'm Andrew Hargrave. I'm a self taught Web Developer that works with PHP, JS, HTML, SQL (MySQL and MS SQL), Redis, CSS and SCSS. I have a very good knowledge of the Laravel MVC framework, and have used it for multiple personal projects. I use Vue JS for as a frontend JavaScript framework primarily, and have released mutliple components that can be used freely in any Vue web app. I also have knowledge of Bootstrap and Bulma as UI frameworks.
 
                             I am currently employed as an Application Delivery Specialist at Advanced, the UK's third largest software company. I work in the Health Care business unit with CareNotes, an ASP.NET Web Application, with a large number of SOA services. CareNotes is used widely by the NHS for Mental Health and Community Trusts. I provide third line support for CareNotes, as well as deploy and upgrade it. CareNotes is hosted on Windows Servers with IIS.
 
-                            I also have a strong knowledge of Linux and Apache, and host multiple web applications on Linux Servers. I host Web Applications and Video Game Servers privately, which is running on Virtualised Servers using Proxmox, as well as in Docker Containers.
+                            I also have a strong knowledge of Linux and Apache, and host multiple web applications on Linux Servers. I host Web Applications and Video Game Servers privately, which is running on Virtualised Servers using Proxmox Hypervisor, as well as in Docker Containers.
 
-                            I have released multiple Vue Components that are available to be used in any application
+                            Outside of Web Development and Deployment, I like to work on music in my free time, using Analog Synthesisers. I'm also a huge fan of Board Games and Virtual Reality.
 
-                            Outside of Web Development and Deployment, I like to work on music in my free time, using Analog Synthesisers.`
+                            Please check out my live demos on the site, and use the Contact Me form if you would like to work together!
                         </p>
+                        <div class="level">
+                            <div class="level-item">
+                                <div class="buttons has-addons">
+                                    <a href="https://github.com/andy3471/keyshare" class="button">
+                                        <span class="icon">
+                                                <i class="fab fa-github"></i>
+                                            </span>
+                                        <span>Github</span>
+                                    </a>
+                                    <a href="https://www.linkedin.com/in/andrew-hargrave-b36128144/" class="button">
+                                        <span class="icon">
+                                                <i class="fab fa-linkedin"></i>
+                                            </span>
+                                        <span>Linked In</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -113,7 +131,7 @@
                     </div>
                     <img src="./img/keyshare.jpg" alt="">
                     <p>LunchRota is a ground up rewrite of an Application that was created for our service desk by <a href="">Curtis Reet</a>. The application is to be used by teams, in order to keep track of daily work roles, as well as claim available lunch slots. The original application was built on PHP5, and required further development, so I decided to rewrite this in Laravel to allow me to continue development of the application</p>
-                    <p>The roles can be assigned to users either via a UI built with VueJS, or uploaded via CSV.
+                    <p>The roles can be assigned to users either via a UI built with VueJS, or uploaded via CSV.</p>
                     <p>The site can be configured to either use a set number of available lunch slots, or be autocalculated using the number of user roles that are marked as 'available'. This is used, for example, if certain roles need to be on the phones, and you require a certain number of people who are on phones to be available at any time</p>
                     <p>LunchRota contains a full admin panel for editing Users, LunchSlots, Roles and User Roles. These use a Vue JS interface, to allow you to bulk edit.</p>
                 </div>
@@ -140,7 +158,10 @@
                                         <span>Github</span>
                                     </a>
                                     <a href="https://github.com/andy3471/andyh-timepicker" class="button">
-                                        Documentation
+                                        <span class="icon">
+                                                <i class="fab fa-file-text"></i>
+                                            </span>
+                                        <span>Documentation</span>
                                     </a>
                                 </div>
                             </div>
@@ -164,7 +185,10 @@
                                         <span>Github</span>
                                     </a>
                                     <a href="https://github.com/andy3471/andyh-timepicker" class="button">
-                                        Documentation
+                                        <span class="icon">
+                                                <i class="fab fa-file-text"></i>
+                                            </span>
+                                        <span>Documentation</span>
                                     </a>
                                 </div>
                             </div>
@@ -186,7 +210,10 @@
                                         <span>Github</span>
                                     </a>
                                     <a href="https://github.com/andy3471/andyh-timepicker" class="button">
-                                        Documentation
+                                        <span class="icon">
+                                                <i class="fab fa-file"></i>
+                                            </span>
+                                        <span>Documentation</span>
                                     </a>
                                 </div>
                             </div>
