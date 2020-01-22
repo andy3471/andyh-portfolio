@@ -8,13 +8,7 @@ $orange: #f27405;
 $primary: $orange;
 @import "node_modules/bulma/bulma";
 @import url("https://fonts.googleapis.com/css?family=Permanent+Marker|Roboto&display=swap");
-// Site
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
+@import "node_modules/bulma-extensions/bulma-timeline/src/sass";
 body {
     background-color: $purple;
     font-family: "Roboto", sans-serif;
@@ -26,6 +20,18 @@ body {
 
 .hero {
     flex-direction: row;
+}
+
+.timeline {
+    height: 100%;
+}
+
+.container {
+    padding: 0.5rem;
+}
+
+.level {
+    margin-bottom: 0px !important;
 }
 
 // Reusable
@@ -66,6 +72,7 @@ button {
 .nav-list {
     top: 50vh;
     transform: translate(-50%, -50%);
+    z-index: 150;
 }
 
 .nav-item a {
@@ -132,10 +139,31 @@ button {
     text-align: center;
 }
 
+.component-body {
+    text-align: center;
+    padding-bottom: 2.5rem;
+    p {
+        padding: 1.5rem;
+    }
+}
+
 // Other Projects
 .projects-header {
     font-size: 2rem;
     font-family: "Permanent Marker", cursive;
     color: $red;
     text-align: center;
+}
+
+//Work Experience
+.timeline-content {
+    .heading {
+        font-family: "Permanent Marker", cursive;
+        color: $red;
+    }
+    ul {
+        list-style: square;
+        font-size: 0.8rem;
+        list-style-position: inside;
+    }
 }

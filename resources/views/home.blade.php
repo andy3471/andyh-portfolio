@@ -30,7 +30,7 @@
                         <h1>Andy</h1>
                         <h2>Hargrave</h2>
                     </div>
-                    <h3>Some kind of tagline</h3>
+                    <h3>Web Developer & Deployment Specialist</h3>
                 </div>
             </div>
         </section>
@@ -62,7 +62,7 @@
                         <div class="level">
                             <div class="level-item">
                                 <div class="buttons has-addons">
-                                    <a href="https://github.com/andy3471/keyshare" class="button">
+                                    <a href="https://github.com/andy3471/" class="button">
                                         <span class="icon">
                                                 <i class="fab fa-github"></i>
                                             </span>
@@ -102,7 +102,7 @@
                             </div>
                         </div>
                     </div>
-                    <img src="./img/keyshare.jpg" alt="">
+                    <img class="image" src="{{ asset('img/keyshare.jpg') }}" alt="">
                     <p>KeyShare is a Web Application for sharing excess steam keys for a gaming group. The site has paginated autoloading when browsing games, to make it easy to scroll through, as well as an autocomplete search component for finding games. The site uses a Redis cache for storing a 'karma' for users, as well as caching routes for faster loading</p>
                     <p>KeyShare allows for options to enable sign ins through Steam using oAuth. The site contains an admin panel for user management, and the option to require admin approval to sign into the site.</p>
                     <p>The application was originally written in raw PHP and JavaScript, however was refactored to use the Laravel framework and VueJS as of 1.0.5. This has allowed faster development for new features, such as DLC that can be added for Games. This has been solely written by me, however is open for contributions on GitHub.
@@ -129,7 +129,7 @@
                             </div>
                         </div>
                     </div>
-                    <img src="./img/keyshare.jpg" alt="">
+                    <img class="image" src="{{ asset('img/rota.jpg') }}" alt="">
                     <p>LunchRota is a ground up rewrite of an Application that was created for our service desk by <a href="">Curtis Reet</a>. The application is to be used by teams, in order to keep track of daily work roles, as well as claim available lunch slots. The original application was built on PHP5, and required further development, so I decided to rewrite this in Laravel to allow me to continue development of the application</p>
                     <p>The roles can be assigned to users either via a UI built with VueJS, or uploaded via CSV.</p>
                     <p>The site can be configured to either use a set number of available lunch slots, or be autocalculated using the number of user roles that are marked as 'available'. This is used, for example, if certain roles need to be on the phones, and you require a certain number of people who are on phones to be available at any time</p>
@@ -167,8 +167,10 @@
                             </div>
                         </div>
                         <p>A simple date picker component for VueJS. This allows you to use v-model on a date input to select a date.</p>
-                        <div class="container">
-                            <date-picker></date-picker>
+                        <div class="level">
+                            <div class="level-item">
+                                <date-picker></date-picker>
+                            </div>
                         </div>
                     </div>
                     <div class="component-header">
@@ -194,7 +196,11 @@
                             </div>
                         </div>
                         <p>A time picker component for VueJS. This allows you to use v-model on a time input. This can be customised to use different minute intervals.</p>
-                        <time-picker></time-picker>
+                        <div class="level">
+                            <div class="level-item">
+                                <time-picker></time-picker>
+                            </div>
+                        </div>
                     </div>
                     <div class="component-header">
                         <h1> Auto Complete </h1>
@@ -221,7 +227,7 @@
                         <p>An autocomplete component made with Vue JS and Axios. This will make a get request to an endpoint as you type, and presents a dropdown with similar results </p>
                         <div class="level">
                             <div class="level-item">
-                                <auto-complete :classes="input"></auto-complete>
+                                <auto-complete :autocomplete-url="/fruit/"></auto-complete>
                             </div>
                         </div>
                     </div>
@@ -233,6 +239,68 @@
                 <div class="section-header">
                     <h1>Work</h1>
                     <h2>Experience</h2>
+                </div>
+                <div class="section-content">
+                    <div class="timeline is-centered">
+                        <header class="timeline-header">
+                            <span class="tag is-medium is-primary">2013</span>
+                        </header>
+                        <div class="timeline-item is-primary">
+                            <div class="timeline-marker is-warning is-image is-32x32">
+                                <img src="{{ asset('img/adv.png') }}">
+                            </div>
+                            <div class="timeline-content">
+                                <p class="heading">September 2013</p>
+                                <p>Xpress Games - Business Administration Apprentice</p>
+                                <ul>
+                                    <li>Maintaining database of stock held within the store</li>
+                                    <li>Learning all operational areas of the business</li>
+                                    <li>Studying towards all apprenticeship modules including communication in business environment</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="timeline-item is-primary">
+                            <div class="timeline-marker is-warning is-image is-32x32">
+                                <img src="{{ asset('img/adv.png') }}">
+                            </div>
+                            <div class="timeline-content">
+                                <p class="heading">April 2016</p>
+                                <p>Advanced - First Line Support Technician</p>
+                                <li>Deal with customer queries via phone and email</li>
+                            </div>
+                        </div>
+                        <div class="timeline-item is-warning">
+                            <div class="timeline-marker is-warning is-image is-32x32">
+                                <img src="{{ asset('img/adv.png') }}">
+                            </div>
+                            <div class="timeline-content">
+                                <p class="heading">September 2016</p>
+                                <p>Advanced - Second Line Community Technician </p>
+                                <li></li>
+                            </div>
+                        </div>
+                        <div class="timeline-item is-warning">
+                            <div class="timeline-marker is-warning is-image is-32x32">
+                                <img src="{{ asset('img/adv.png') }}">
+                            </div>
+                            <div class="timeline-content">
+                            <p class="heading">June 2017</p>
+                            <p>Advanced - Title Service Desk Analyst  </p>
+                            </div>
+                        </div>
+                        <div class="timeline-item is-warning">
+                            <div class="timeline-marker is-warning is-image is-32x32">
+                                <img src="{{ asset('img/adv.png') }}">
+                            </div>
+                            <div class="timeline-content">
+                            <p class="heading">November 2017</p>
+                            <p>Advanced - Application Delivery Specialist</p>
+                            </div>
+                        </div>
+                        <header class="timeline-header">
+                            <span class="tag is-medium is-primary">Today</span>
+                        </header>
+                        </div>
                 </div>
             </div>
         </section>
@@ -249,8 +317,20 @@
                         <div class="projects-body">
                             <div class="columns">
                                 <div class="column">
-                                    <img src="{{ asset('img/albumart.jpg') }}">
+                                    <img src="{{ asset('img/proxmox.png') }}">
                                 </div>
+                                <div class="column is-three-quarters">
+                                    <div class="projects-header">
+                                        <h1>Hosting</h1>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem nihil fuga velit? Illo rerum cum accusantium sequi fugiat recusandae vitae tempore, sunt fugit, dolores nemo saepe voluptate libero quibusdam deserunt?</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="projects-item">
+                        <div class="projects-body">
+                            <div class="columns">
                                 <div class="column is-three-quarters">
                                     <div class="projects-header">
                                         <h1>Music Production</h1>
@@ -267,34 +347,25 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div class="column">
+                                    <img src="{{ asset('img/albumart.jpg') }}">
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="projects-item">
-                        <div class="projects-header">
-                            <h1>Charity Events</h1>
-                        </div>
                         <div class="projects-body">
-                            <img src="./img/charity.jpg" alt="">
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt ullam repellat totam officia sapiente odit, distinctio voluptatum beatae? Quaerat unde, veniam voluptatum aspernatur quae nemo omnis tempora. Voluptate, cum sint!</p>
-                        </div>
-                    </div>
-                    <div class="projects-item">
-                        <div class="projects-header">
-                            <h1>Hosting</h1>
-                        </div>
-                        <div class="projects-body">
-                            <img src="./img/hosting.jpg" alt="">
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt ullam repellat totam officia sapiente odit, distinctio voluptatum beatae? Quaerat unde, veniam voluptatum aspernatur quae nemo omnis tempora. Voluptate, cum sint!</p>
-                        </div>
-                    </div>
-                    <div class="projects-item">
-                        <div class="projects-header">
-                            <h1>Photo Editing</h1>
-                        </div>
-                        <div class="projects-body">
-                            <img src="./img/hosting.jpg" alt="">
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt ullam repellat totam officia sapiente odit, distinctio voluptatum beatae? Quaerat unde, veniam voluptatum aspernatur quae nemo omnis tempora. Voluptate, cum sint!</p>
+                            <div class="columns">
+                                <div class="column">
+                                    <img src="{{ asset('img/justgiving.jpg') }}">
+                                </div>
+                                <div class="column is-three-quarters">
+                                    <div class="projects-header">
+                                        <h1>Chairity Events</h1>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem nihil fuga velit? Illo rerum cum accusantium sequi fugiat recusandae vitae tempore, sunt fugit, dolores nemo saepe voluptate libero quibusdam deserunt?</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -307,6 +378,7 @@
                     <h2>Me</h2>
                 </div>
                 <div class="section-content">
+                    <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi soluta magni nihil impedit incidunt, similique ratione ipsum iure molestias iste nam non veniam consectetur? Cupiditate, perspiciatis. Sapiente expedita reiciendis voluptatum.</p>
                     <form action="">
                         <div class="field">
                             <label class="label has-text-white" for="name">Name:</label class="label">
