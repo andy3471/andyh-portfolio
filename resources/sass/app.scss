@@ -18,6 +18,14 @@ body {
     background-size: cover;
 }
 
+a {
+    color: #f29f05
+}
+
+a:hover {
+    color: #f27405
+}
+
 .hero {
     flex-direction: row;
 }
