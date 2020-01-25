@@ -316,7 +316,7 @@
                     <div class="projects-item">
                         <div class="projects-body">
                             <div class="columns">
-                                <div class="column">
+                                <div class="column" class="is-hidden-mobile">
                                     <img src="{{ asset('img/proxmox.png') }}">
                                 </div>
                                 <div class="column is-three-quarters">
@@ -347,7 +347,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="column">
+                                <div class="is-hidden-mobile" class="column">
                                     <img src="{{ asset('img/albumart.jpg') }}">
                                 </div>
                             </div>
@@ -356,7 +356,7 @@
                     <div class="projects-item">
                         <div class="projects-body">
                             <div class="columns">
-                                <div class="column">
+                                <div class="column" class="is-hidden-mobile">
                                     <img src="{{ asset('img/justgiving.jpg') }}">
                                 </div>
                                 <div class="column is-three-quarters">
