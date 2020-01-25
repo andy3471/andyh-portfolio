@@ -98,7 +98,7 @@
                                         </span>
                                     <span>Github</span>
                                 </a>
-                                <a href="https://keydemo.andyh.app" class="button">Live Demo</a>
+                                <a href="https://keyshare.andyh.app" class="button">Live Demo</a>
                             </div>
                         </div>
                     </div>
@@ -125,7 +125,7 @@
                                         </span>
                                     <span>Github</span>
                                 </a>
-                                <a href="https://rotademo.andyh.app" class="button">Live Demo</a>
+                                <a href="https://lunchrota.andyh.app" class="button">Live Demo</a>
                             </div>
                         </div>
                     </div>
