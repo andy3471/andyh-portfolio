@@ -34,6 +34,10 @@ body {
     margin-bottom: 0px !important;
 }
 
+.buttons {
+    margin-bottom: .5rem;
+}
+
 // Reusable
 button {
     background-color: $yellow;
@@ -143,7 +147,7 @@ button {
     text-align: center;
     padding-bottom: 2.5rem;
     p {
-        padding: 1.5rem;
+        padding-bottom: .5rem;
     }
 }
 
