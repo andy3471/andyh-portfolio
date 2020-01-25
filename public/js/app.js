@@ -2733,6 +2733,7 @@ module.exports = function isAbsoluteURL(url) {
 
 
 var utils = __webpack_require__(/*! ./../utils */ "./node_modules/axios/lib/utils.js");
+var isValidXss = __webpack_require__(/*! ./isValidXss */ "./node_modules/axios/lib/helpers/isValidXss.js");
 
 module.exports = (
   utils.isStandardBrowserEnv() ?
@@ -2752,6 +2753,10 @@ module.exports = (
     */
       function resolveURL(url) {
         var href = url;
+
+        if (isValidXss(url)) {
+          throw new Error('URL contains XSS injection attempt');
+        }
 
         if (msie) {
         // IE needs attribute set twice to normalize properties
@@ -2798,6 +2803,25 @@ module.exports = (
       };
     })()
 );
+
+
+/***/ }),
+
+/***/ "./node_modules/axios/lib/helpers/isValidXss.js":
+/*!******************************************************!*\
+  !*** ./node_modules/axios/lib/helpers/isValidXss.js ***!
+  \******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+module.exports = function isValidXss(requestURL) {
+  var xssRegex = /(\b)(on\w+)=|javascript|(<\s*)(\/*)script/gi;
+  return xssRegex.test(requestURL);
+};
+
 
 
 /***/ }),
@@ -33214,7 +33238,7 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-// removed by extract-text-webpack-plugin
+throw new Error("Module build failed (from ./node_modules/css-loader/index.js):\nModuleBuildError: Module build failed (from ./node_modules/sass-loader/dist/cjs.js):\nSassError: Can't find stylesheet to import.\n   ╷\n11 │ @import \"node_modules/bulma-extensions/bulma-timeline/src/sass\";\r\n   │         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n   ╵\n  C:\\git\\andyh-portfolio\\resources\\sass\\app.scss 11:9  root stylesheet\n    at C:\\git\\andyh-portfolio\\node_modules\\webpack\\lib\\NormalModule.js:316:20\n    at C:\\git\\andyh-portfolio\\node_modules\\loader-runner\\lib\\LoaderRunner.js:367:11\n    at C:\\git\\andyh-portfolio\\node_modules\\loader-runner\\lib\\LoaderRunner.js:233:18\n    at context.callback (C:\\git\\andyh-portfolio\\node_modules\\loader-runner\\lib\\LoaderRunner.js:111:13)\n    at C:\\git\\andyh-portfolio\\node_modules\\sass-loader\\dist\\index.js:73:7\n    at Function.call$2 (C:\\git\\andyh-portfolio\\node_modules\\sass\\sass.dart.js:56230:16)\n    at _render_closure1.call$2 (C:\\git\\andyh-portfolio\\node_modules\\sass\\sass.dart.js:34691:12)\n    at _RootZone.runBinary$3$3 (C:\\git\\andyh-portfolio\\node_modules\\sass\\sass.dart.js:20227:18)\n    at _RootZone.runBinary$3 (C:\\git\\andyh-portfolio\\node_modules\\sass\\sass.dart.js:20231:19)\n    at _FutureListener.handleError$1 (C:\\git\\andyh-portfolio\\node_modules\\sass\\sass.dart.js:18696:19)\n    at _Future__propagateToListeners_handleError.call$0 (C:\\git\\andyh-portfolio\\node_modules\\sass\\sass.dart.js:18984:40)\n    at Object._Future__propagateToListeners (C:\\git\\andyh-portfolio\\node_modules\\sass\\sass.dart.js:3500:88)\n    at _Future._completeError$2 (C:\\git\\andyh-portfolio\\node_modules\\sass\\sass.dart.js:18820:9)\n    at _AsyncAwaitCompleter.completeError$2 (C:\\git\\andyh-portfolio\\node_modules\\sass\\sass.dart.js:18219:12)\n    at Object._asyncRethrow (C:\\git\\andyh-portfolio\\node_modules\\sass\\sass.dart.js:3256:17)\n    at C:\\git\\andyh-portfolio\\node_modules\\sass\\sass.dart.js:10615:20\n    at _wrapJsFunctionForAsync_closure.$protected (C:\\git\\andyh-portfolio\\node_modules\\sass\\sass.dart.js:3279:15)\n    at _wrapJsFunctionForAsync_closure.call$2 (C:\\git\\andyh-portfolio\\node_modules\\sass\\sass.dart.js:18240:12)\n    at _awaitOnObject_closure0.call$2 (C:\\git\\andyh-portfolio\\node_modules\\sass\\sass.dart.js:18232:25)\n    at _RootZone.runBinary$3$3 (C:\\git\\andyh-portfolio\\node_modules\\sass\\sass.dart.js:20227:18)\n    at _RootZone.runBinary$3 (C:\\git\\andyh-portfolio\\node_modules\\sass\\sass.dart.js:20231:19)\n    at _FutureListener.handleError$1 (C:\\git\\andyh-portfolio\\node_modules\\sass\\sass.dart.js:18696:19)\n    at _Future__propagateToListeners_handleError.call$0 (C:\\git\\andyh-portfolio\\node_modules\\sass\\sass.dart.js:18984:40)\n    at Object._Future__propagateToListeners (C:\\git\\andyh-portfolio\\node_modules\\sass\\sass.dart.js:3500:88)\n    at _Future._completeError$2 (C:\\git\\andyh-portfolio\\node_modules\\sass\\sass.dart.js:18820:9)\n    at _AsyncAwaitCompleter.completeError$2 (C:\\git\\andyh-portfolio\\node_modules\\sass\\sass.dart.js:18219:12)\n    at Object._asyncRethrow (C:\\git\\andyh-portfolio\\node_modules\\sass\\sass.dart.js:3256:17)\n    at C:\\git\\andyh-portfolio\\node_modules\\sass\\sass.dart.js:12510:20\n    at _wrapJsFunctionForAsync_closure.$protected (C:\\git\\andyh-portfolio\\node_modules\\sass\\sass.dart.js:3279:15)\n    at _wrapJsFunctionForAsync_closure.call$2 (C:\\git\\andyh-portfolio\\node_modules\\sass\\sass.dart.js:18240:12)\n    at _awaitOnObject_closure0.call$2 (C:\\git\\andyh-portfolio\\node_modules\\sass\\sass.dart.js:18232:25)\n    at _RootZone.runBinary$3$3 (C:\\git\\andyh-portfolio\\node_modules\\sass\\sass.dart.js:20227:18)\n    at _RootZone.runBinary$3 (C:\\git\\andyh-portfolio\\node_modules\\sass\\sass.dart.js:20231:19)\n    at _FutureListener.handleError$1 (C:\\git\\andyh-portfolio\\node_modules\\sass\\sass.dart.js:18696:19)\n    at _Future__propagateToListeners_handleError.call$0 (C:\\git\\andyh-portfolio\\node_modules\\sass\\sass.dart.js:18984:40)\n    at Object._Future__propagateToListeners (C:\\git\\andyh-portfolio\\node_modules\\sass\\sass.dart.js:3500:88)");
 
 /***/ }),
 
