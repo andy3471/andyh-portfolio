@@ -12,7 +12,8 @@ $primary: $orange;
 body {
     background-color: $purple;
     font-family: "Roboto", sans-serif;
-    background: url("../img/bg.jpg") no-repeat center fixed;
+    color: white;
+    background: url("img/bg.jpg") no-repeat center fixed;
     background-color: $blue;
     background-size: cover;
 }
