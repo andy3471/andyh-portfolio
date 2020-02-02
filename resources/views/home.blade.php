@@ -153,14 +153,14 @@
                                 <div class="buttons has-addons">
                                     <a href="https://github.com/andy3471/andyh-datepicker" class="button">
                                         <span class="icon">
-                                                <i class="fab fa-github"></i>
-                                            </span>
+                                            <i class="fab fa-github"></i>
+                                        </span>
                                         <span>Github</span>
                                     </a>
                                     <a href="https://github.com/andy3471/andyh-timepicker" class="button">
                                         <span class="icon">
-                                                <i class="fab fa-file-text"></i>
-                                            </span>
+                                            <i class="fas fa-file"></i>
+                                        </span>
                                         <span>Documentation</span>
                                     </a>
                                 </div>
@@ -187,9 +187,9 @@
                                         <span>Github</span>
                                     </a>
                                     <a href="https://github.com/andy3471/andyh-timepicker" class="button">
-                                        <span class="icon">
-                                                <i class="fab fa-file-text"></i>
-                                            </span>
+                                    <span class="icon">
+                                            <i class="fas fa-file"></i>
+                                        </span>
                                         <span>Documentation</span>
                                     </a>
                                 </div>
@@ -216,9 +216,9 @@
                                         <span>Github</span>
                                     </a>
                                     <a href="https://github.com/andy3471/andyh-timepicker" class="button">
-                                        <span class="icon">
-                                                <i class="fab fa-file"></i>
-                                            </span>
+                                    <span class="icon">
+                                            <i class="fas fa-file"></i>
+                                        </span>
                                         <span>Documentation</span>
                                     </a>
                                 </div>
