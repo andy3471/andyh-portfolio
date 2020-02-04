@@ -48,17 +48,11 @@
                         </figure>
                     </div>
                     <div class="column is-three-quarters">
-                        <p>
-                            Hi, I'm Andrew Hargrave. I'm a self taught Web Developer that works with PHP, JS, HTML, SQL (MySQL and MS SQL), Redis, CSS and SCSS. I have a very good knowledge of the Laravel MVC framework, and have used it for multiple personal projects. I use Vue JS for as a frontend JavaScript framework primarily, and have released mutliple components that can be used freely in any Vue web app. I also have knowledge of Bootstrap and Bulma as UI frameworks.
-
-                            I am currently employed as an Application Delivery Specialist at Advanced, the UK's third largest software company. I work in the Health Care business unit with CareNotes, an ASP.NET Web Application, with a large number of SOA services. CareNotes is used widely by the NHS for Mental Health and Community Trusts. I provide third line support for CareNotes, as well as deploy and upgrade it. CareNotes is hosted on Windows Servers with IIS.
-
-                            I also have a strong knowledge of Linux and Apache, and host multiple web applications on Linux Servers. I host Web Applications and Video Game Servers privately, which is running on Virtualised Servers using Proxmox Hypervisor, as well as in Docker Containers.
-
-                            Outside of Web Development and Deployment, I like to work on music in my free time, using Analog Synthesisers. I'm also a huge fan of Board Games and Virtual Reality.
-
-                            Please check out my live demos on the site, and use the Contact Me form if you would like to work together!
-                        </p>
+                        <p>Hi, I'm Andrew Hargrave. I'm a self taught Web Developer that works with PHP, JS, HTML, SQL (MySQL and MS SQL), Redis, CSS and SCSS. I have a very good knowledge of the Laravel MVC framework, and have used it for multiple personal projects. I use Vue JS for as a frontend JavaScript framework primarily, and have released mutliple components that can be used freely in any Vue web app. I also have knowledge of Bootstrap and Bulma as UI frameworks.</p>
+                        <p>I am currently employed as an Application Delivery Specialist at Advanced, the UK's third largest software company. I work in the Health Care business unit with CareNotes, an ASP.NET Web Application, with a large number of SOA services. CareNotes is used widely by the NHS for Mental Health and Community Trusts. I provide third line support for CareNotes, as well as deploy and upgrade it. CareNotes is hosted on Windows Servers with IIS.</p>
+                        <p>I also have a strong knowledge of Linux and Apache, and host multiple web applications on Linux Servers. I host Web Applications and Video Game Servers privately, which is running on Virtualised Servers using Proxmox Hypervisor, as well as in Docker Containers.</p>
+                        <p>Outside of Web Development and Deployment, I like to work on music in my free time, using Analog Synthesisers. I'm also a huge fan of Board Games and Virtual Reality.</p>
+                        <p>Please check out my live demos on the site, and use the Contact Me form if you would like to work together!</p>
                         <div class="level">
                             <div class="level-item">
                                 <div class="buttons has-addons">
@@ -266,7 +260,11 @@
                             <div class="timeline-content">
                                 <p class="heading">April 2016</p>
                                 <p>Advanced - First Line Support Technician</p>
-                                <li>Deal with customer queries via phone and email</li>
+                                <ul>
+                                    <li>Answer customer queries via phone and email</li>
+                                    <li>Support Adastra, Crosscare and Carenotes</li>
+                                    <li></li>
+                                </ul>
                             </div>
                         </div>
                         <div class="timeline-item is-warning">
@@ -276,7 +274,11 @@
                             <div class="timeline-content">
                                 <p class="heading">September 2016</p>
                                 <p>Advanced - Second Line Community Technician </p>
-                                <li></li>
+                                <ul>
+                                    <li>Answer customer queries via phone and email</li>
+                                    <li>Support Adastra, Crosscare and Carenotes</li>
+                                    <li></li>
+                                </ul>
                             </div>
                         </div>
                         <div class="timeline-item is-warning">
@@ -284,8 +286,13 @@
                                 <img src="{{ asset('img/adv.png') }}">
                             </div>
                             <div class="timeline-content">
-                            <p class="heading">June 2017</p>
-                            <p>Advanced - Title Service Desk Analyst  </p>
+                                <p class="heading">June 2017</p>
+                                <p>Advanced - Title Service Desk Analyst  </p>
+                                <ul>
+                                    <li>Deal with customer escalations</li>
+                                    <li></li>
+                                    <li></li>
+                                </ul>
                             </div>
                         </div>
                         <div class="timeline-item is-warning">
@@ -293,8 +300,13 @@
                                 <img src="{{ asset('img/adv.png') }}">
                             </div>
                             <div class="timeline-content">
-                            <p class="heading">November 2017</p>
-                            <p>Advanced - Application Delivery Specialist</p>
+                                <p class="heading">November 2017</p>
+                                <p>Advanced - Application Delivery Specialist</p>
+                                <ul>
+                                    <li>Provide third line support for Carenotes (ASP NET Application)</li>
+                                    <li>Deploy and Upgrade Carenotes</li>
+                                    <li></li>
+                                </ul>
                             </div>
                         </div>
                         <header class="timeline-header">
@@ -315,39 +327,39 @@
                 <div class="section-body">
                     <div class="projects-item">
                         <div class="projects-body">
-                            <div class="columns">
-                                <div class="column" class="is-hidden-mobile">
+                            <div class="columns is-vcentered">
+                                <div class="column is-hidden-mobile">
                                     <img src="{{ asset('img/proxmox.png') }}">
                                 </div>
                                 <div class="column is-three-quarters">
-                                    <div class="projects-header">
+                                    <div class="project">
                                         <h1>Hosting</h1>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem nihil fuga velit? Illo rerum cum accusantium sequi fugiat recusandae vitae tempore, sunt fugit, dolores nemo saepe voluptate libero quibusdam deserunt?</p>
                                     </div>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem nihil fuga velit? Illo rerum cum accusantium sequi fugiat recusandae vitae tempore, sunt fugit, dolores nemo saepe voluptate libero quibusdam deserunt?</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="projects-item">
                         <div class="projects-body">
-                            <div class="columns">
+                            <div class="columns is-vcentered">
                                 <div class="column is-three-quarters">
-                                    <div class="projects-header">
+                                    <div class="project">
                                         <h1>Music Production</h1>
-                                    </div>
-                                    <p>I like to produce music using Analog Synthesisers, mixed with more modern techniques. I have created an album that uses Analog Synths controlled via midi, along with Ableton Live and a Launchpad</p>
-                                    <div class="level">
-                                        <div class="level-item">
-                                            <a href="https://morethandata.bandcamp.com/releases" class="button">
-                                                <span class="icon">
-                                                <i class="fab fa-bandcamp"></i>
-                                            </span>
-                                                <span>Bandcamp</span>
-                                            </a>
+                                        <p>I produce music using Analog Synthesisers, mixed with more modern techniques. I have created and released an album that uses Analog Synths controlled via midi, along with Ableton Live and a Launchpad</p>
+                                        <div class="level">
+                                            <div class="level-item">
+                                                <a href="https://morethandata.bandcamp.com/releases" class="button">
+                                                    <span class="icon">
+                                                    <i class="fab fa-bandcamp"></i>
+                                                </span>
+                                                    <span>Bandcamp</span>
+                                                </a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="is-hidden-mobile" class="column">
+                                <div class="column is-hidden-mobile">
                                     <img src="{{ asset('img/albumart.jpg') }}">
                                 </div>
                             </div>
@@ -355,15 +367,15 @@
                     </div>
                     <div class="projects-item">
                         <div class="projects-body">
-                            <div class="columns">
-                                <div class="column" class="is-hidden-mobile">
+                            <div class="columns is-vcentered">
+                                <div class="column is-hidden-mobile">
                                     <img src="{{ asset('img/justgiving.jpg') }}">
                                 </div>
                                 <div class="column is-three-quarters">
-                                    <div class="projects-header">
+                                    <div class="project">
                                         <h1>Chairity Events</h1>
+                                        <p>I have hosted multiple charity events for various charities. </p>
                                     </div>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem nihil fuga velit? Illo rerum cum accusantium sequi fugiat recusandae vitae tempore, sunt fugit, dolores nemo saepe voluptate libero quibusdam deserunt?</p>
                                 </div>
                             </div>
                         </div>
