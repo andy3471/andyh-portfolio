@@ -142,10 +142,10 @@ button {
     z-index: 1;
     padding: 1rem;
     h1 {
-        font-size: 12rem;
+        font-size: calc(8rem + 8vw);
     }
     h2 {
-        font-size: 8rem;
+        font-size: calc(4rem + 4vw);
     }
 }
 

@@ -13278,11 +13278,11 @@ button {
 }
 
 .logo h1 {
-  font-size: 12rem;
+  font-size: calc(8rem + 8vw);
 }
 
 .logo h2 {
-  font-size: 8rem;
+  font-size: calc(4rem + 4vw);
 }
 
 .header h3 {
