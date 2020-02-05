@@ -13304,10 +13304,6 @@ button {
   padding-bottom: 2.5rem;
 }
 
-.component-body p {
-  padding-bottom: 0.5rem;
-}
-
 .project {
   text-align: center;
 }
@@ -13328,5 +13324,9 @@ button {
   list-style: square;
   font-size: 0.8rem;
   list-style-position: inside;
+}
+
+.timeline-content p {
+  text-align: left;
 }
 

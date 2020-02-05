@@ -10,18 +10,7 @@
     </head>
  <body>
     <div id="app">
-        <section class="nav-page hero is-fullheight">
-            <div class="nav-list columns is-desktop">
-                <div class="column nav-item"><a href="#">About Me</a></div>
-                <div class="column nav-item"><a href="#">KeyShare</a></div>
-                <div class="column nav-item"><a href="#">Rota</a></div>
-                <div class="column nav-item"><a href="#">Components</a></div>
-                <div class="column nav-item"><a href="#">Work Experience</a></div>
-                <div class="column nav-item"><a href="#">Other Projects</a></div>
-                <div class="column nav-item"><a href="#">Contact Me</a></div>
-            </div>
-        </section>
-
+        <navbar></navbar>
 
         <section class="header hero is-fullheight" id="header">
             <div class="container">
@@ -237,25 +226,53 @@
                 <div class="section-content">
                     <div class="timeline is-centered">
                         <header class="timeline-header">
-                            <span class="tag is-medium is-primary">2013</span>
+                            <span class="tag is-medium is-primary">Today</span>
                         </header>
-                        <div class="timeline-item is-primary">
+                        <div class="timeline-item is-warning">
                             <div class="timeline-marker is-warning is-image is-32x32">
-                                <img src="{{ asset('img/adv.png') }}">
+                                <img src="{{ asset('img/advanced.jpg') }}">
                             </div>
                             <div class="timeline-content">
-                                <p class="heading">September 2013</p>
-                                <p>Xpress Games - Business Administration Apprentice</p>
+                                <p class="heading">November 2017</p>
+                                <p>Advanced - Application Delivery Specialist</p>
                                 <ul>
-                                    <li>Maintaining database of stock held within the store</li>
-                                    <li>Learning all operational areas of the business</li>
-                                    <li>Studying towards all apprenticeship modules including communication in business environment</li>
+                                    <li>Provide third line support for Carenotes (ASP NET Application)</li>
+                                    <li>Deploy and Upgrade the Carenotes Application (Windows and Linux Servers)</li>
+                                    <li>Perform overnight monthly maintenance on our hosted infrastructure</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="timeline-item is-warning">
+                            <div class="timeline-marker is-warning is-image is-32x32">
+                                <img src="{{ asset('img/advanced.jpg') }}">
+                            </div>
+                            <div class="timeline-content">
+                                <p class="heading">June 2017</p>
+                                <p>Advanced - Title Service Desk Analyst  </p>
+                                <ul>
+                                    <li>Deal with customer escalations</li>
+                                    <li>Attend internal and external conference calls, such as Go To Market calls</li>
+                                    <li>Provide training to the first and second line teams</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="timeline-item is-warning">
+                            <div class="timeline-marker is-warning is-image is-32x32">
+                                <img src="{{ asset('img/advanced.jpg') }}">
+                            </div>
+                            <div class="timeline-content">
+                                <p class="heading">September 2016</p>
+                                <p>Advanced - Second Line Community Technician </p>
+                                <ul>
+                                    <li>Answer customer queries via phone and email</li>
+                                    <li>Work with the development team to triage issues</li>
+                                    <li>Write and test SQL scripts to resolve issues</li>
                                 </ul>
                             </div>
                         </div>
                         <div class="timeline-item is-primary">
                             <div class="timeline-marker is-warning is-image is-32x32">
-                                <img src="{{ asset('img/adv.png') }}">
+                                <img src="{{ asset('img/advanced.jpg') }}">
                             </div>
                             <div class="timeline-content">
                                 <p class="heading">April 2016</p>
@@ -263,54 +280,26 @@
                                 <ul>
                                     <li>Answer customer queries via phone and email</li>
                                     <li>Support Adastra, Crosscare and Carenotes</li>
-                                    <li></li>
+                                    <li>Create and manage Active Directory accounts</li>
                                 </ul>
                             </div>
                         </div>
-                        <div class="timeline-item is-warning">
+                        <div class="timeline-item is-primary">
                             <div class="timeline-marker is-warning is-image is-32x32">
-                                <img src="{{ asset('img/adv.png') }}">
+                                <img src="{{ asset('img/xpg.jpg') }}">
                             </div>
                             <div class="timeline-content">
-                                <p class="heading">September 2016</p>
-                                <p>Advanced - Second Line Community Technician </p>
+                                <p class="heading">September 2013</p>
+                                <p>Xpress Games - Business Administration Apprentice</p>
                                 <ul>
-                                    <li>Answer customer queries via phone and email</li>
-                                    <li>Support Adastra, Crosscare and Carenotes</li>
-                                    <li></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="timeline-item is-warning">
-                            <div class="timeline-marker is-warning is-image is-32x32">
-                                <img src="{{ asset('img/adv.png') }}">
-                            </div>
-                            <div class="timeline-content">
-                                <p class="heading">June 2017</p>
-                                <p>Advanced - Title Service Desk Analyst  </p>
-                                <ul>
-                                    <li>Deal with customer escalations</li>
-                                    <li></li>
-                                    <li></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="timeline-item is-warning">
-                            <div class="timeline-marker is-warning is-image is-32x32">
-                                <img src="{{ asset('img/adv.png') }}">
-                            </div>
-                            <div class="timeline-content">
-                                <p class="heading">November 2017</p>
-                                <p>Advanced - Application Delivery Specialist</p>
-                                <ul>
-                                    <li>Provide third line support for Carenotes (ASP NET Application)</li>
-                                    <li>Deploy and Upgrade Carenotes</li>
-                                    <li></li>
+                                    <li>Maintain database of stock held within the store</li>
+                                    <li>Learn all operational areas of the business</li>
+                                    <li>Study towards all apprenticeship modules including communication in business environment</li>
                                 </ul>
                             </div>
                         </div>
                         <header class="timeline-header">
-                            <span class="tag is-medium is-primary">Today</span>
+                            <span class="tag is-medium is-primary">2013</span>
                         </header>
                         </div>
                 </div>

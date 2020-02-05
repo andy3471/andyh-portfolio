@@ -167,9 +167,6 @@ button {
 .component-body {
     text-align: center;
     padding-bottom: 2.5rem;
-    p {
-        padding-bottom: .5rem;
-    }
 }
 
 // Other Projects
@@ -196,5 +193,8 @@ button {
         list-style: square;
         font-size: 0.8rem;
         list-style-position: inside;
+    }
+    p {
+        text-align: left;
     }
 }
