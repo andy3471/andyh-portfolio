@@ -1,27 +1,26 @@
 <template>
     <div>
-        <section class="nav-page hero is-fullheight" v-if="isOpen">
+        <div
+            class="hamburger"
+            @click="isOpen = !isOpen"
+            v-bind:class="{ active: isOpen }"
+        >
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+        <section
+            class="nav-page hero is-fullheight"
+            v-bind:class="{ active: isOpen }"
+        >
             <div class="nav-list columns is-desktop">
-                <div class="column nav-item">
-                    <a href="#">About Me</a>
-                </div>
-                <div class="column nav-item">
-                    <a href="#">KeyShare</a>
-                </div>
-                <div class="column nav-item">
-                    <a href="#">LunchRota</a>
-                </div>
-                <div class="column nav-item">
-                    <a href="#">Components</a>
-                </div>
-                <div class="column nav-item">
-                    <a href="#">Work Experience</a>
-                </div>
-                <div class="column nav-item">
-                    <a href="#">Other Projects</a>
-                </div>
-                <div class="column nav-item">
-                    <a href="#">Contact Me</a>
+                <div
+                    v-for="(link, index) in links"
+                    class="column nav-item"
+                    v-bind:key="index"
+                    @click="openLink()"
+                >
+                    <a :href="link.href">{{ link.title }}</a>
                 </div>
             </div>
         </section>
@@ -31,8 +30,22 @@
 export default {
     data() {
         return {
-            isOpen: false
+            isOpen: false,
+            links: [
+                { href: "#about", title: "About Me" },
+                { href: "#keys", title: "KeyShare" },
+                { href: "#rota", title: "LunchRota" },
+                { href: "#components", title: "Components" },
+                { href: "#work", title: "Work Experience" },
+                { href: "#projects", title: "Other Projects" },
+                { href: "#contact", title: "Contact Me" }
+            ]
         };
+    },
+    methods: {
+        openLink(link) {
+            this.isOpen = false;
+        }
     }
 };
 </script>
