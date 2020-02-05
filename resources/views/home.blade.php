@@ -128,7 +128,7 @@
                 </div>
                 <div class="section-body">
                     <div class="component-header">
-                        <h1> Date Picker </h1>
+                        <h1>Date Picker</h1>
                     </div>
                     <div class="component-body">
                         <div class="level">
@@ -157,7 +157,7 @@
                         </div>
                     </div>
                     <div class="component-header">
-                        <h1> Time Picker </h1>
+                        <h1>Time Picker</h1>
                     </div>
                     <div class="component-body">
                         <div class="level">
@@ -323,7 +323,7 @@
                                 <div class="column is-three-quarters">
                                     <div class="project">
                                         <h1>Hosting</h1>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem nihil fuga velit? Illo rerum cum accusantium sequi fugiat recusandae vitae tempore, sunt fugit, dolores nemo saepe voluptate libero quibusdam deserunt?</p>
+                                        <p>I host various servers, both web and gaming servers privately. These are all hosted on Proxmox Hypervisor, using both LXC containers and KVM Virtual Machines. I also host some servers in Docker.</p>
                                     </div>
                                 </div>
                             </div>
@@ -363,7 +363,7 @@
                                 <div class="column is-three-quarters">
                                     <div class="project">
                                         <h1>Chairity Events</h1>
-                                        <p>I have hosted multiple charity events for various charities. </p>
+                                        <p>I have hosted multiple charity events for various charities. This includes 4 seperate charity gaming Marathons, that have raised a total of over £3600 for various Charities.</p>
                                     </div>
                                 </div>
                             </div>
