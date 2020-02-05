@@ -380,22 +380,39 @@
                 </div>
                 <div class="section-content">
                     <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi soluta magni nihil impedit incidunt, similique ratione ipsum iure molestias iste nam non veniam consectetur? Cupiditate, perspiciatis. Sapiente expedita reiciendis voluptatum.</p>
-                    <form action="">
+                <form method="POST" action="{{ route('sendemail') }}">
+                        @csrf
                         <div class="field">
                             <label class="label has-text-white" for="name">Name:</label class="label">
-                        <input class="input" type="text" name="name" id="name" required>
-                    </div>
-                    <div class="field">
-                        <label class="label has-text-white" for="Email">Email:</label>
-                            <input class="input" type="text" name="email" id="email" required>
+                            <input class="input @error('name') is-invalid @enderror" type="text" name="name" id="name" required>
+                            @error('name')
+                                <span role="alert">
+                                    <strong class="has-text-danger">{{ $message }}</strong>
+                                </span>
+                            @enderror
                         </div>
                         <div class="field">
-                            <label class="label has-text-white" for="Email">Message:</label>
-                            <textarea class="textarea" name="message" id="message" required></textarea>
+                            <label class="label has-text-white" for="Email">Email:</label>
+                            <input class="input @error('email') is-invalid @enderror" type="text" name="email" id="email" required>
+                            @error('email')
+                                <span role="alert">
+                                    <strong class="has-text-danger">{{ $message }}</strong>
+                                </span>
+                            @enderror
                         </div>
-                        <div class="field is-grouped">
-                            <div class="control">
-                                <button class="input" class="button is-primary">Submit</button>
+                            <div class="field">
+                                <label class="label has-text-white" for="Email">Message:</label>
+                                <textarea class="textarea @error('message') is-invalid @enderror" name="message" id="message" required></textarea>
+                                @error('message')
+                                    <span role="alert">
+                                        <strong class="has-text-danger">{{ $message }}</strong>
+                                    </span>
+                                @enderror
+                            </div>
+                            <div class="field is-grouped">
+                                <div class="control">
+                                    <button class="input" class="button is-primary">Submit</button>
+                                </div>
                             </div>
                         </div>
                     </form>
