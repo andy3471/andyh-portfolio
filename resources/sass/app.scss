@@ -13,9 +13,21 @@ body {
     background-color: $purple;
     font-family: "Roboto", sans-serif;
     color: white;
-    /* background: url("img/bg.jpg") no-repeat center fixed; */
+    background: url("img/bg.jpg") no-repeat center fixed;
     background-color: $blue;
     background-size: cover;
+}
+
+a {
+    color: #f29f05
+}
+
+a:hover {
+    color: #f27405
+}
+
+a:visited {
+    color: #f27405
 }
 
 .hero {
@@ -32,6 +44,10 @@ body {
 
 .level {
     margin-bottom: 0px !important;
+}
+
+.buttons {
+    margin-bottom: .5rem;
 }
 
 // Reusable
@@ -143,7 +159,7 @@ button {
     text-align: center;
     padding-bottom: 2.5rem;
     p {
-        padding: 1.5rem;
+        padding-bottom: .5rem;
     }
 }
 
