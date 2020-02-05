@@ -3,8 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Mail;
+use Illuminate\Support\Facades\Mail;
 use App\Fruit;
+use App\Mail\ContactMe;
 
 class PageController extends Controller
 {
@@ -23,6 +24,10 @@ class PageController extends Controller
             'message' => 'required',
         ]);
 
-        return $request;
+        $contact = $request;
+
+        Mail::send(new ContactMe($contact));
+
+        return redirect()->back()->with('message', 'Email Sent');
     }
 }

@@ -7,11 +7,12 @@
         <script src="{{ asset('js/app.js') }}" defer></script>
         <link href="{{ asset('css/app.css') }}" rel="stylesheet">
         <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+
+
     </head>
  <body>
     <div id="app">
         <navbar></navbar>
-
         <section class="header hero is-fullheight" id="header">
             <div class="container">
                 <div class="header-text">
@@ -381,6 +382,12 @@
                 <div class="section-content">
                     <p>If you would like to work with me, then be sure to contact me on <a href="mailto:me@andyh.app">me@andyh.app</a>, <a href="https://www.linkedin.com/in/andrew-hargrave-b36128144/">LinkedIn</a>, or with thhe form below</p>
                 <form method="POST" action="{{ route('sendemail') }}">
+                        @if(session()->has('message'))
+                            <span role="alert">
+                                <strong class="has-text-success">{{ session()->get('message') }}</strong>
+                            </span>
+                        @endif
+
                         @csrf
                         <div class="field">
                             <label class="label has-text-white" for="name">Name:</label class="label">
