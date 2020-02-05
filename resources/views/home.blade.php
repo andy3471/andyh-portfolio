@@ -66,7 +66,7 @@
             </div>
         </section>
 
-        <section class="hero is-fullheight keyshare" id="keyshare">
+        <section class="hero is-fullheight keyshare" id="keys">
             <div class="container">
                 <div class="section-header">
                     <h1>Key</h1>
@@ -93,7 +93,7 @@
                 </div>
         </section>
 
-        <section class="hero is-fullheight keyshare" id="keyshare">
+        <section class="hero is-fullheight keyshare" id="rota">
             <div class="container">
                 <div class="section-header">
                     <h1>Lunch</h1>
@@ -308,7 +308,7 @@
         </section>
 
 
-        <section class="hero is-fullheight projects">
+        <section class="hero is-fullheight projects" id="projects">
             <div class="container">
                 <div class="section-header">
                     <h1>Other</h1>

@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 use App\Fruit;
 use App\Mail\ContactMe;
+use Illuminate\Support\Facades\Validator;
 
 class PageController extends Controller
 {
@@ -23,16 +24,22 @@ class PageController extends Controller
 
     public function sendEmail(Request $request)
     {
-        $request->validate([
+        $validator = Validator::make($request->all(), [
             'name' => 'required',
             'email' => 'email|required',
             'message' => 'required',
         ]);
 
+        if ($validator->fails()) {
+            return redirect('/#contact')
+                ->withErrors($validator)
+                ->withInput();
+        }
+
         $contact = $request;
 
         Mail::send(new ContactMe($contact));
 
-        return redirect()->back()->with('message', 'Email Sent');
+        return redirect('/#contact')->with('message', 'Email Sent');
     }
 }
