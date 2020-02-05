@@ -41,5 +41,6 @@ class PageController extends Controller
         Mail::send(new ContactMe($contact));
 
         return redirect('/#contact')->with('message', 'Email Sent');
+
     }
 }
