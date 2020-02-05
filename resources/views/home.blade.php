@@ -379,7 +379,7 @@
                     <h2>Me</h2>
                 </div>
                 <div class="section-content">
-                    <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi soluta magni nihil impedit incidunt, similique ratione ipsum iure molestias iste nam non veniam consectetur? Cupiditate, perspiciatis. Sapiente expedita reiciendis voluptatum.</p>
+                    <p>If you would like to work with me, then be sure to contact me on <a href="mailto:me@andyh.app">me@andyh.app</a>, <a href="https://www.linkedin.com/in/andrew-hargrave-b36128144/">LinkedIn</a>, or with the form below</p>
                 <form method="POST" action="{{ route('sendemail') }}">
                         @csrf
                         <div class="field">
