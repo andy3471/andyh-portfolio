@@ -10,19 +10,7 @@
     </head>
  <body>
     <div id="app">
-        <section class="nav-page hero is-fullheight">
-            <div class="nav-list columns is-desktop">
-                <div class="column nav-item"><a href="#">About Me</a></div>
-                <div class="column nav-item"><a href="#">KeyShare</a></div>
-                <div class="column nav-item"><a href="#">Rota</a></div>
-                <div class="column nav-item"><a href="#">Components</a></div>
-                <div class="column nav-item"><a href="#">Work Experience</a></div>
-                <div class="column nav-item"><a href="#">Other Projects</a></div>
-                <div class="column nav-item"><a href="#">Contact Me</a></div>
-            </div>
-        </section>
-
-
+        <navbar></navbar>
         <section class="header hero is-fullheight" id="header">
             <div class="container">
                 <div class="header-text">
@@ -98,7 +86,7 @@
                                         </span>
                                     <span>Github</span>
                                 </a>
-                                <a href="https://keydemo.andyh.app" class="button">Live Demo</a>
+                                <a href="https://keyshare.andyh.app" class="button">Live Demo</a>
                             </div>
                         </div>
                     </div>
@@ -125,7 +113,7 @@
                                         </span>
                                     <span>Github</span>
                                 </a>
-                                <a href="https://rotademo.andyh.app" class="button">Live Demo</a>
+                                <a href="https://lunchrota.andyh.app" class="button">Live Demo</a>
                             </div>
                         </div>
                     </div>
