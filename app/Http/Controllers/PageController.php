@@ -9,6 +9,11 @@ use App\Mail\ContactMe;
 
 class PageController extends Controller
 {
+    public function home()
+    {
+        return view('home');
+    }
+
     public function fruitSearch($search)
     {
         $fruit = Fruit::where('name', 'like', '%' . $search . '%')->limit(5)->get();
