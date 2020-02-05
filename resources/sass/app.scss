@@ -19,15 +19,15 @@ body {
 }
 
 a {
-    color: #f29f05
+    color: #f29f05;
 }
 
 a:hover {
-    color: #f27405
+    color: #f27405;
 }
 
 a:visited {
-    color: #f27405
+    color: #f27405;
 }
 
 .hero {
@@ -43,20 +43,39 @@ a:visited {
 }
 
 .level {
-    margin-bottom: .5rem !important;
+    margin-bottom: 0.5rem !important;
 }
 
 .buttons {
-    margin-bottom: .5rem;
+    margin-bottom: 0.5rem;
 }
 
 .image {
-    margin-bottom: .5rem;
+    margin-bottom: 0.5rem;
 }
 
 p {
     margin-bottom: 1rem;
     text-align: center;
+}
+
+.timeline-content {
+    .heading {
+        font-family: "Permanent Marker", cursive;
+        color: $red;
+    }
+    ul {
+        list-style: square;
+        font-size: 0.8rem;
+        list-style-position: inside;
+    }
+    p {
+        text-align: left;
+    }
+}
+
+.autocomplete-results {
+    color: #495057;
 }
 
 // Reusable
@@ -184,17 +203,3 @@ button {
 }
 
 //Work Experience
-.timeline-content {
-    .heading {
-        font-family: "Permanent Marker", cursive;
-        color: $red;
-    }
-    ul {
-        list-style: square;
-        font-size: 0.8rem;
-        list-style-position: inside;
-    }
-    p {
-        text-align: left;
-    }
-}

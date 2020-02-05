@@ -13187,6 +13187,25 @@ p {
   text-align: center;
 }
 
+.timeline-content .heading {
+  font-family: "Permanent Marker", cursive;
+  color: #f20544;
+}
+
+.timeline-content ul {
+  list-style: square;
+  font-size: 0.8rem;
+  list-style-position: inside;
+}
+
+.timeline-content p {
+  text-align: left;
+}
+
+.autocomplete-results {
+  color: #495057;
+}
+
 button {
   background-color: #f29f05;
   color: white;
@@ -13313,20 +13332,5 @@ button {
   font-family: "Permanent Marker", cursive;
   color: #f20544;
   text-align: center;
-}
-
-.timeline-content .heading {
-  font-family: "Permanent Marker", cursive;
-  color: #f20544;
-}
-
-.timeline-content ul {
-  list-style: square;
-  font-size: 0.8rem;
-  list-style-position: inside;
-}
-
-.timeline-content p {
-  text-align: left;
 }
 

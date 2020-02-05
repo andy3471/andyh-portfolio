@@ -4,18 +4,15 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Mail;
+use App\Fruit;
 
 class PageController extends Controller
 {
     public function fruitSearch($search)
     {
-        $fruit = collect([
-            'Apple',
-            'Banana'
-        ]);
+        $fruit = Fruit::where('name', 'like', '%' . $search . '%')->limit(5)->get();
 
-
-        return $fruit->where($search);
+        return $fruit;
     }
 
     public function sendEmail(Request $request)

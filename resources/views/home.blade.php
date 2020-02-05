@@ -207,10 +207,10 @@
                                 </div>
                             </div>
                         </div>
-                        <p>An autocomplete component made with Vue JS and Axios. This will make a get request to an endpoint as you type, and presents a dropdown with similar results </p>
+                        <p>An autocomplete component made with Vue JS and Axios. This will make a get request to an endpoint as you type, and presents a dropdown with similar results. This supports using the arrow keys and enter to select, or clicking. </p>
                         <div class="level">
                             <div class="level-item">
-                                <auto-complete :autocomplete-url="/fruit/"></auto-complete>
+                                <auto-complete placeholder="Type a fruit" autocomplete-url="/autocomplete/fruit/"></auto-complete>
                             </div>
                         </div>
                     </div>
@@ -379,7 +379,7 @@
                     <h2>Me</h2>
                 </div>
                 <div class="section-content">
-                    <p>If you would like to work with me, then be sure to contact me on <a href="mailto:me@andyh.app">me@andyh.app</a>, <a href="https://www.linkedin.com/in/andrew-hargrave-b36128144/">LinkedIn</a>, or with the form below</p>
+                    <p>If you would like to work with me, then be sure to contact me on <a href="mailto:me@andyh.app">me@andyh.app</a>, <a href="https://www.linkedin.com/in/andrew-hargrave-b36128144/">LinkedIn</a>, or with thhe form below</p>
                 <form method="POST" action="{{ route('sendemail') }}">
                         @csrf
                         <div class="field">
