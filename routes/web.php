@@ -15,4 +15,5 @@ Route::get('/', function () {
     return view('home');
 });
 
-Route::get('/fruit/{search}', 'PageController@fruitSearch');
+Route::get('/autocomplete/fruit/{search}', 'PageController@fruitSearch');
+Route::post('/sendemail', 'PageController@sendEmail')->name('sendemail');

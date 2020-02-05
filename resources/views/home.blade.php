@@ -7,6 +7,8 @@
         <script src="{{ asset('js/app.js') }}" defer></script>
         <link href="{{ asset('css/app.css') }}" rel="stylesheet">
         <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+
+
     </head>
  <body>
     <div id="app">
@@ -36,17 +38,11 @@
                         </figure>
                     </div>
                     <div class="column is-three-quarters">
-                        <p>
-                            Hi, I'm Andrew Hargrave. I'm a self taught Web Developer that works with PHP, JS, HTML, SQL (MySQL and MS SQL), Redis, CSS and SCSS. I have a very good knowledge of the Laravel MVC framework, and have used it for multiple personal projects. I use Vue JS for as a frontend JavaScript framework primarily, and have released mutliple components that can be used freely in any Vue web app. I also have knowledge of Bootstrap and Bulma as UI frameworks.
-
-                            I am currently employed as an Application Delivery Specialist at Advanced, the UK's third largest software company. I work in the Health Care business unit with CareNotes, an ASP.NET Web Application, with a large number of SOA services. CareNotes is used widely by the NHS for Mental Health and Community Trusts. I provide third line support for CareNotes, as well as deploy and upgrade it. CareNotes is hosted on Windows Servers with IIS.
-
-                            I also have a strong knowledge of Linux and Apache, and host multiple web applications on Linux Servers. I host Web Applications and Video Game Servers privately, which is running on Virtualised Servers using Proxmox Hypervisor, as well as in Docker Containers.
-
-                            Outside of Web Development and Deployment, I like to work on music in my free time, using Analog Synthesisers. I'm also a huge fan of Board Games and Virtual Reality.
-
-                            Please check out my live demos on the site, and use the Contact Me form if you would like to work together!
-                        </p>
+                        <p>Hi, I'm Andrew Hargrave. I'm a self taught Web Developer that works with PHP, JS, HTML, SQL (MySQL and MS SQL), Redis, CSS and SCSS. I have a very good knowledge of the Laravel MVC framework, and have used it for multiple personal projects. I use Vue JS for as a frontend JavaScript framework primarily, and have released mutliple components that can be used freely in any Vue web app. I also have knowledge of Bootstrap and Bulma as UI frameworks.</p>
+                        <p>I am currently employed as an Application Delivery Specialist at Advanced, the UK's third largest software company. I work in the Health Care business unit with CareNotes, an ASP.NET Web Application, with a large number of SOA services. CareNotes is used widely by the NHS for Mental Health and Community Trusts. I provide third line support for CareNotes, as well as deploy and upgrade it. CareNotes is hosted on Windows Servers with IIS.</p>
+                        <p>I also have a strong knowledge of Linux and Apache, and host multiple web applications on Linux Servers. I host Web Applications and Video Game Servers privately, which is running on Virtualised Servers using Proxmox Hypervisor, as well as in Docker Containers.</p>
+                        <p>Outside of Web Development and Deployment, I like to work on music in my free time, using Analog Synthesisers. I'm also a huge fan of Board Games and Virtual Reality.</p>
+                        <p>Please check out my live demos on the site, and use the Contact Me form if you would like to work together!</p>
                         <div class="level">
                             <div class="level-item">
                                 <div class="buttons has-addons">
@@ -133,7 +129,7 @@
                 </div>
                 <div class="section-body">
                     <div class="component-header">
-                        <h1> Date Picker </h1>
+                        <h1>Date Picker</h1>
                     </div>
                     <div class="component-body">
                         <div class="level">
@@ -141,14 +137,14 @@
                                 <div class="buttons has-addons">
                                     <a href="https://github.com/andy3471/andyh-datepicker" class="button">
                                         <span class="icon">
-                                                <i class="fab fa-github"></i>
-                                            </span>
+                                            <i class="fab fa-github"></i>
+                                        </span>
                                         <span>Github</span>
                                     </a>
                                     <a href="https://github.com/andy3471/andyh-timepicker" class="button">
                                         <span class="icon">
-                                                <i class="fab fa-file-text"></i>
-                                            </span>
+                                            <i class="fas fa-file"></i>
+                                        </span>
                                         <span>Documentation</span>
                                     </a>
                                 </div>
@@ -162,7 +158,7 @@
                         </div>
                     </div>
                     <div class="component-header">
-                        <h1> Time Picker </h1>
+                        <h1>Time Picker</h1>
                     </div>
                     <div class="component-body">
                         <div class="level">
@@ -175,9 +171,9 @@
                                         <span>Github</span>
                                     </a>
                                     <a href="https://github.com/andy3471/andyh-timepicker" class="button">
-                                        <span class="icon">
-                                                <i class="fab fa-file-text"></i>
-                                            </span>
+                                    <span class="icon">
+                                            <i class="fas fa-file"></i>
+                                        </span>
                                         <span>Documentation</span>
                                     </a>
                                 </div>
@@ -204,18 +200,18 @@
                                         <span>Github</span>
                                     </a>
                                     <a href="https://github.com/andy3471/andyh-timepicker" class="button">
-                                        <span class="icon">
-                                                <i class="fab fa-file"></i>
-                                            </span>
+                                    <span class="icon">
+                                            <i class="fas fa-file"></i>
+                                        </span>
                                         <span>Documentation</span>
                                     </a>
                                 </div>
                             </div>
                         </div>
-                        <p>An autocomplete component made with Vue JS and Axios. This will make a get request to an endpoint as you type, and presents a dropdown with similar results </p>
+                        <p>An autocomplete component made with Vue JS and Axios. This will make a get request to an endpoint as you type, and presents a dropdown with similar results. This supports using the arrow keys and enter to select, or clicking. </p>
                         <div class="level">
                             <div class="level-item">
-                                <auto-complete :autocomplete-url="/fruit/"></auto-complete>
+                                <auto-complete placeholder="Type a fruit" autocomplete-url="/autocomplete/fruit/"></auto-complete>
                             </div>
                         </div>
                     </div>
@@ -231,62 +227,80 @@
                 <div class="section-content">
                     <div class="timeline is-centered">
                         <header class="timeline-header">
-                            <span class="tag is-medium is-primary">2013</span>
+                            <span class="tag is-medium is-primary">Today</span>
                         </header>
-                        <div class="timeline-item is-primary">
+                        <div class="timeline-item is-warning">
                             <div class="timeline-marker is-warning is-image is-32x32">
-                                <img src="{{ asset('img/adv.png') }}">
+                                <img src="{{ asset('img/advanced.jpg') }}">
                             </div>
                             <div class="timeline-content">
-                                <p class="heading">September 2013</p>
-                                <p>Xpress Games - Business Administration Apprentice</p>
+                                <p class="heading">November 2017</p>
+                                <p>Advanced - Application Delivery Specialist</p>
                                 <ul>
-                                    <li>Maintaining database of stock held within the store</li>
-                                    <li>Learning all operational areas of the business</li>
-                                    <li>Studying towards all apprenticeship modules including communication in business environment</li>
+                                    <li>Provide third line support for Carenotes (ASP NET Application)</li>
+                                    <li>Deploy and Upgrade the Carenotes Application (Windows and Linux Servers)</li>
+                                    <li>Perform overnight monthly maintenance on our hosted infrastructure</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="timeline-item is-warning">
+                            <div class="timeline-marker is-warning is-image is-32x32">
+                                <img src="{{ asset('img/advanced.jpg') }}">
+                            </div>
+                            <div class="timeline-content">
+                                <p class="heading">June 2017</p>
+                                <p>Advanced - Title Service Desk Analyst  </p>
+                                <ul>
+                                    <li>Deal with customer escalations</li>
+                                    <li>Attend internal and external conference calls, such as Go To Market calls</li>
+                                    <li>Provide training to the first and second line teams</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="timeline-item is-warning">
+                            <div class="timeline-marker is-warning is-image is-32x32">
+                                <img src="{{ asset('img/advanced.jpg') }}">
+                            </div>
+                            <div class="timeline-content">
+                                <p class="heading">September 2016</p>
+                                <p>Advanced - Second Line Community Technician </p>
+                                <ul>
+                                    <li>Answer customer queries via phone and email</li>
+                                    <li>Work with the development team to triage issues</li>
+                                    <li>Write and test SQL scripts to resolve issues</li>
                                 </ul>
                             </div>
                         </div>
                         <div class="timeline-item is-primary">
                             <div class="timeline-marker is-warning is-image is-32x32">
-                                <img src="{{ asset('img/adv.png') }}">
+                                <img src="{{ asset('img/advanced.jpg') }}">
                             </div>
                             <div class="timeline-content">
                                 <p class="heading">April 2016</p>
                                 <p>Advanced - First Line Support Technician</p>
-                                <li>Deal with customer queries via phone and email</li>
+                                <ul>
+                                    <li>Answer customer queries via phone and email</li>
+                                    <li>Support Adastra, Crosscare and Carenotes</li>
+                                    <li>Create and manage Active Directory accounts</li>
+                                </ul>
                             </div>
                         </div>
-                        <div class="timeline-item is-warning">
+                        <div class="timeline-item is-primary">
                             <div class="timeline-marker is-warning is-image is-32x32">
-                                <img src="{{ asset('img/adv.png') }}">
+                                <img src="{{ asset('img/xpg.jpg') }}">
                             </div>
                             <div class="timeline-content">
-                                <p class="heading">September 2016</p>
-                                <p>Advanced - Second Line Community Technician </p>
-                                <li></li>
-                            </div>
-                        </div>
-                        <div class="timeline-item is-warning">
-                            <div class="timeline-marker is-warning is-image is-32x32">
-                                <img src="{{ asset('img/adv.png') }}">
-                            </div>
-                            <div class="timeline-content">
-                            <p class="heading">June 2017</p>
-                            <p>Advanced - Title Service Desk Analyst  </p>
-                            </div>
-                        </div>
-                        <div class="timeline-item is-warning">
-                            <div class="timeline-marker is-warning is-image is-32x32">
-                                <img src="{{ asset('img/adv.png') }}">
-                            </div>
-                            <div class="timeline-content">
-                            <p class="heading">November 2017</p>
-                            <p>Advanced - Application Delivery Specialist</p>
+                                <p class="heading">September 2013</p>
+                                <p>Xpress Games - Business Administration Apprentice</p>
+                                <ul>
+                                    <li>Maintain database of stock held within the store</li>
+                                    <li>Learn all operational areas of the business</li>
+                                    <li>Study towards all apprenticeship modules including communication in business environment</li>
+                                </ul>
                             </div>
                         </div>
                         <header class="timeline-header">
-                            <span class="tag is-medium is-primary">Today</span>
+                            <span class="tag is-medium is-primary">2013</span>
                         </header>
                         </div>
                 </div>
@@ -303,39 +317,39 @@
                 <div class="section-body">
                     <div class="projects-item">
                         <div class="projects-body">
-                            <div class="columns">
-                                <div class="column" class="is-hidden-mobile">
+                            <div class="columns is-vcentered">
+                                <div class="column is-hidden-mobile">
                                     <img src="{{ asset('img/proxmox.png') }}">
                                 </div>
                                 <div class="column is-three-quarters">
-                                    <div class="projects-header">
+                                    <div class="project">
                                         <h1>Hosting</h1>
+                                        <p>I host various servers, both web and gaming servers privately. These are all hosted on Proxmox Hypervisor, using both LXC containers and KVM Virtual Machines. I also host some servers in Docker.</p>
                                     </div>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem nihil fuga velit? Illo rerum cum accusantium sequi fugiat recusandae vitae tempore, sunt fugit, dolores nemo saepe voluptate libero quibusdam deserunt?</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="projects-item">
                         <div class="projects-body">
-                            <div class="columns">
+                            <div class="columns is-vcentered">
                                 <div class="column is-three-quarters">
-                                    <div class="projects-header">
+                                    <div class="project">
                                         <h1>Music Production</h1>
-                                    </div>
-                                    <p>I like to produce music using Analog Synthesisers, mixed with more modern techniques. I have created an album that uses Analog Synths controlled via midi, along with Ableton Live and a Launchpad</p>
-                                    <div class="level">
-                                        <div class="level-item">
-                                            <a href="https://morethandata.bandcamp.com/releases" class="button">
-                                                <span class="icon">
-                                                <i class="fab fa-bandcamp"></i>
-                                            </span>
-                                                <span>Bandcamp</span>
-                                            </a>
+                                        <p>I produce music using Analog Synthesisers, mixed with more modern techniques. I have created and released an album that uses Analog Synths controlled via midi, along with Ableton Live and a Launchpad</p>
+                                        <div class="level">
+                                            <div class="level-item">
+                                                <a href="https://morethandata.bandcamp.com/releases" class="button">
+                                                    <span class="icon">
+                                                    <i class="fab fa-bandcamp"></i>
+                                                </span>
+                                                    <span>Bandcamp</span>
+                                                </a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="is-hidden-mobile" class="column">
+                                <div class="column is-hidden-mobile">
                                     <img src="{{ asset('img/albumart.jpg') }}">
                                 </div>
                             </div>
@@ -343,15 +357,15 @@
                     </div>
                     <div class="projects-item">
                         <div class="projects-body">
-                            <div class="columns">
-                                <div class="column" class="is-hidden-mobile">
+                            <div class="columns is-vcentered">
+                                <div class="column is-hidden-mobile">
                                     <img src="{{ asset('img/justgiving.jpg') }}">
                                 </div>
                                 <div class="column is-three-quarters">
-                                    <div class="projects-header">
+                                    <div class="project">
                                         <h1>Chairity Events</h1>
+                                        <p>I have hosted multiple charity events for various charities. This includes 4 seperate charity gaming Marathons, that have raised a total of over £3600 for various Charities.</p>
                                     </div>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem nihil fuga velit? Illo rerum cum accusantium sequi fugiat recusandae vitae tempore, sunt fugit, dolores nemo saepe voluptate libero quibusdam deserunt?</p>
                                 </div>
                             </div>
                         </div>
@@ -366,23 +380,46 @@
                     <h2>Me</h2>
                 </div>
                 <div class="section-content">
-                    <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi soluta magni nihil impedit incidunt, similique ratione ipsum iure molestias iste nam non veniam consectetur? Cupiditate, perspiciatis. Sapiente expedita reiciendis voluptatum.</p>
-                    <form action="">
+                    <p>If you would like to work with me, then be sure to contact me on <a href="mailto:me@andyh.app">me@andyh.app</a>, <a href="https://www.linkedin.com/in/andrew-hargrave-b36128144/">LinkedIn</a>, or with thhe form below</p>
+                <form method="POST" action="{{ route('sendemail') }}">
+                        @if(session()->has('message'))
+                            <span role="alert">
+                                <strong class="has-text-success">{{ session()->get('message') }}</strong>
+                            </span>
+                        @endif
+
+                        @csrf
                         <div class="field">
                             <label class="label has-text-white" for="name">Name:</label class="label">
-                        <input class="input" type="text" name="name" id="name" required>
-                    </div>
-                    <div class="field">
-                        <label class="label has-text-white" for="Email">Email:</label>
-                            <input class="input" type="text" name="email" id="email" required>
+                            <input class="input @error('name') is-invalid @enderror" type="text" name="name" id="name" required>
+                            @error('name')
+                                <span role="alert">
+                                    <strong class="has-text-danger">{{ $message }}</strong>
+                                </span>
+                            @enderror
                         </div>
                         <div class="field">
-                            <label class="label has-text-white" for="Email">Message:</label>
-                            <textarea class="textarea" name="message" id="message" required></textarea>
+                            <label class="label has-text-white" for="Email">Email:</label>
+                            <input class="input @error('email') is-invalid @enderror" type="text" name="email" id="email" required>
+                            @error('email')
+                                <span role="alert">
+                                    <strong class="has-text-danger">{{ $message }}</strong>
+                                </span>
+                            @enderror
                         </div>
-                        <div class="field is-grouped">
-                            <div class="control">
-                                <button class="input" class="button is-primary">Submit</button>
+                            <div class="field">
+                                <label class="label has-text-white" for="Email">Message:</label>
+                                <textarea class="textarea @error('message') is-invalid @enderror" name="message" id="message" required></textarea>
+                                @error('message')
+                                    <span role="alert">
+                                        <strong class="has-text-danger">{{ $message }}</strong>
+                                    </span>
+                                @enderror
+                            </div>
+                            <div class="field is-grouped">
+                                <div class="control">
+                                    <button class="input" class="button is-primary">Submit</button>
+                                </div>
                             </div>
                         </div>
                     </form>

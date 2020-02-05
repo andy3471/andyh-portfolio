@@ -19,15 +19,15 @@ body {
 }
 
 a {
-    color: #f29f05
+    color: #f29f05;
 }
 
 a:hover {
-    color: #f27405
+    color: #f27405;
 }
 
 a:visited {
-    color: #f27405
+    color: #f27405;
 }
 
 .hero {
@@ -43,11 +43,39 @@ a:visited {
 }
 
 .level {
-    margin-bottom: 0px !important;
+    margin-bottom: 0.5rem !important;
 }
 
 .buttons {
-    margin-bottom: .5rem;
+    margin-bottom: 0.5rem;
+}
+
+.image {
+    margin-bottom: 0.5rem;
+}
+
+p {
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.timeline-content {
+    .heading {
+        font-family: "Permanent Marker", cursive;
+        color: $red;
+    }
+    ul {
+        list-style: square;
+        font-size: 0.8rem;
+        list-style-position: inside;
+    }
+    p {
+        text-align: left;
+    }
+}
+
+.autocomplete-results {
+    color: #495057;
 }
 
 // Reusable
@@ -81,14 +109,14 @@ button {
     text-align: center;
     width: 100%;
     z-index: 100;
-    position: absolute;
-    display: none;
+    position: fixed;
+    align-items: center;
 }
 
 .nav-list {
-    top: 50vh;
-    transform: translate(-50%, -50%);
     z-index: 150;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .nav-item a {
@@ -133,10 +161,10 @@ button {
     z-index: 1;
     padding: 1rem;
     h1 {
-        font-size: 12rem;
+        font-size: calc(8rem + 8vw);
     }
     h2 {
-        font-size: 8rem;
+        font-size: calc(4rem + 4vw);
     }
 }
 
@@ -158,28 +186,20 @@ button {
 .component-body {
     text-align: center;
     padding-bottom: 2.5rem;
-    p {
-        padding-bottom: .5rem;
-    }
 }
 
 // Other Projects
-.projects-header {
-    font-size: 2rem;
-    font-family: "Permanent Marker", cursive;
-    color: $red;
+.project {
+    // position: relative;
+    //  top: 50%;
+    //  transform: translate(0, -50%);
     text-align: center;
+    h1 {
+        font-size: 2rem;
+        font-family: "Permanent Marker", cursive;
+        color: $red;
+        text-align: center;
+    }
 }
 
 //Work Experience
-.timeline-content {
-    .heading {
-        font-family: "Permanent Marker", cursive;
-        color: $red;
-    }
-    ul {
-        list-style: square;
-        font-size: 0.8rem;
-        list-style-position: inside;
-    }
-}
