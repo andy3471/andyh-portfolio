@@ -3324,7 +3324,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -20934,14 +20933,13 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c(
-    "section",
-    {
-      staticClass: "nav-page hero is-fullheight",
-      class: { hidden: !_vm.isOpen }
-    },
-    [_vm._m(0)]
-  )
+  return _c("div", [
+    _vm.isOpen
+      ? _c("section", { staticClass: "nav-page hero is-fullheight" }, [
+          _vm._m(0)
+        ])
+      : _vm._e()
+  ])
 }
 var staticRenderFns = [
   function() {
@@ -20958,7 +20956,7 @@ var staticRenderFns = [
       ]),
       _vm._v(" "),
       _c("div", { staticClass: "column nav-item" }, [
-        _c("a", { attrs: { href: "#" } }, [_vm._v("Rota")])
+        _c("a", { attrs: { href: "#" } }, [_vm._v("LunchRota")])
       ]),
       _vm._v(" "),
       _c("div", { staticClass: "column nav-item" }, [

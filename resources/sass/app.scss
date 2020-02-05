@@ -90,14 +90,14 @@ button {
     text-align: center;
     width: 100%;
     z-index: 100;
-    position: absolute;
-    display: none;
+    position: fixed;
+    align-items: center;
 }
 
 .nav-list {
-    top: 50vh;
-    transform: translate(-50%, -50%);
     z-index: 150;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .nav-item a {
@@ -142,10 +142,10 @@ button {
     z-index: 1;
     padding: 1rem;
     h1 {
-        font-size: 12rem;
+        font-size: calc(8rem + 8vw);
     }
     h2 {
-        font-size: 8rem;
+        font-size: calc(4rem + 4vw);
     }
 }
 
