@@ -13178,6 +13178,15 @@ a:visited {
   margin-bottom: 0.5rem;
 }
 
+.image {
+  margin-bottom: 0.5rem;
+}
+
+p {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
 button {
   background-color: #f29f05;
   color: white;
@@ -13295,11 +13304,11 @@ button {
   padding-bottom: 2.5rem;
 }
 
-.component-body p {
-  padding-bottom: 0.5rem;
+.project {
+  text-align: center;
 }
 
-.projects-header {
+.project h1 {
   font-size: 2rem;
   font-family: "Permanent Marker", cursive;
   color: #f20544;
@@ -13315,5 +13324,9 @@ button {
   list-style: square;
   font-size: 0.8rem;
   list-style-position: inside;
+}
+
+.timeline-content p {
+  text-align: left;
 }
 
