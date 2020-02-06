@@ -249,7 +249,7 @@
                             </div>
                             <div class="timeline-content">
                                 <p class="heading">June 2017</p>
-                                <p>Advanced - Title Service Desk Analyst  </p>
+                                <p>Advanced - Service Desk Analyst  </p>
                                 <ul>
                                     <li>Deal with customer escalations</li>
                                     <li>Attend internal and external conference calls, such as Go To Market calls</li>
