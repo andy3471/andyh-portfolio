@@ -88,7 +88,7 @@
                     </div>
                     <img class="image" src="{{ asset('img/keyshare.jpg') }}" alt="">
                     <p>KeyShare is a Web Application for sharing excess steam keys for a gaming group. The site has paginated autoloading when browsing games, to make it easy to scroll through, as well as an autocomplete search component for finding games. The site uses a Redis cache for storing a 'karma' for users, as well as caching routes for faster loading</p>
-                    <p>KeyShare allows for options to enable sign ins through Steam using oAuth. The site contains an admin panel for user management, and the option to require admin approval to sign into the site.</p>
+                    <p>KeyShare allows for options to enable sign ins through Steam using OpenID. The site contains an admin panel for user management, and the option to require admin approval to register.</p>
                     <p>The application was originally written in raw PHP and JavaScript, however was refactored to use the Laravel framework and VueJS as of 1.0.5. This has allowed faster development for new features, such as DLC that can be added for Games. This has been solely written by me, however is open for contributions on GitHub.
                 </div>
         </section>
@@ -114,9 +114,9 @@
                         </div>
                     </div>
                     <img class="image" src="{{ asset('img/rota.jpg') }}" alt="">
-                    <p>LunchRota is a ground up rewrite of an Application that was created for our service desk by <a href="https://curtisreet.co.uk">Curtis Reet</a>. The application is to be used by teams, in order to keep track of daily work roles, as well as claim available lunch slots. The original application was built on PHP5, and required further development, so I decided to rewrite this in Laravel to allow me to continue development of the application</p>
+                    <p>LunchRota is a ground up rewrite of an Application that was created for our service desk by <a href="https://curtisreet.co.uk">Curtis Reet</a>. The application is to be used by teams, in order to keep track of daily work roles, as well as claim available lunch slots. The original application was built on PHP5, and required further development, so I decided to rewrite this in Laravel to allow me to continue working on the application</p>
                     <p>The roles can be assigned to users either via a UI built with VueJS, or uploaded via CSV.</p>
-                    <p>The site can be configured to either use a set number of available lunch slots, or be autocalculated using the number of user roles that are marked as 'available'. This is used, for example, if certain roles need to be on the phones, and you require a certain number of people who are on phones to be available at any time</p>
+                    <p>The site can be configured to either use a set number of available lunch slots, or be calculated using the number of user roles that are marked as 'available'. This is used, for example, if certain roles need to be on the phones, and you require a certain number of people who are on phones to be available at any time</p>
                     <p>LunchRota contains a full admin panel for editing Users, LunchSlots, Roles and User Roles. These use a Vue JS interface, to allow you to bulk edit.</p>
                 </div>
         </section>
@@ -239,7 +239,9 @@
                                 <ul>
                                     <li>Provide third line support for Carenotes (ASP NET Application)</li>
                                     <li>Deploy and Upgrade the Carenotes Application (Windows and Linux Servers)</li>
-                                    <li>Perform overnight monthly maintenance on our hosted infrastructure</li>
+                                    <li>Install and use monitoring tools such as New Relic and App Dynamics</li>
+                                    <li>Install external modules such as the Patient Dashboard (Node JS Application on Red Hat Servers)</li>
+                                    <li>Write complex SQL scripts to resolve data issues</li>
                                 </ul>
                             </div>
                         </div>
@@ -280,7 +282,6 @@
                                 <p>Advanced - First Line Support Technician</p>
                                 <ul>
                                     <li>Answer customer queries via phone and email</li>
-                                    <li>Support Adastra, Crosscare and Carenotes</li>
                                     <li>Create and manage Active Directory accounts</li>
                                 </ul>
                             </div>
@@ -294,7 +295,6 @@
                                 <p>Xpress Games - Business Administration Apprentice</p>
                                 <ul>
                                     <li>Maintain database of stock held within the store</li>
-                                    <li>Learn all operational areas of the business</li>
                                     <li>Study towards all apprenticeship modules including communication in business environment</li>
                                 </ul>
                             </div>
