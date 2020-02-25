@@ -3,12 +3,12 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Andrew Hargrave">
+        <meta name="description" content="I'm a self taught Web Developer that works with PHP, JS, HTML, SQL, Redis, CSS and SCSS. I have a very good knowledge of the Laravel MVC framework. I also have knowledge of Bootstrap and Bulma as UI frameworks">
         <title>AndyH Portfolio</title>
         <script src="{{ asset('js/app.js') }}" defer></script>
         <link href="{{ asset('css/app.css') }}" rel="stylesheet">
         <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
-
-
     </head>
  <body>
     <div id="app">
@@ -38,10 +38,10 @@
                         </figure>
                     </div>
                     <div class="column is-three-quarters">
-                        <p>Hi, I'm Andrew Hargrave. I'm a self taught Web Developer that works with PHP, JS, HTML, SQL (MySQL and MS SQL), Redis, CSS and SCSS. I have a very good knowledge of the Laravel MVC framework, and have used it for multiple personal projects. I use Vue JS for as a frontend JavaScript framework primarily, and have released mutliple components that can be used freely in any Vue web app. I also have knowledge of Bootstrap and Bulma as UI frameworks.</p>
-                        <p>I am currently employed as an Application Delivery Specialist at Advanced, the UK's third largest software company. I work in the Health Care business unit with CareNotes, an ASP.NET Web Application, with a large number of SOA services. CareNotes is used widely by the NHS for Mental Health and Community Trusts. I provide third line support for CareNotes, as well as deploy and upgrade it. CareNotes is hosted on Windows Servers with IIS.</p>
-                        <p>I also have a strong knowledge of Linux and Apache, and host multiple web applications on Linux Servers. I host Web Applications and Video Game Servers privately, which is running on Virtualised Servers using Proxmox Hypervisor, as well as in Docker Containers.</p>
-                        <p>Outside of Web Development and Deployment, I like to work on music in my free time, using Analog Synthesisers. I'm also a huge fan of Board Games and Virtual Reality.</p>
+                        <p>Hi, I'm Andrew Hargrave. I'm a self taught Web Developer that works with PHP, JS, HTML, SQL (MySQL and MS SQL), Redis, CSS and SCSS. I have a very good knowledge of the Laravel MVC framework, and have used it for multiple personal projects. I use VueJS for as a front-end JavaScript framework primarily, and have released multiple components that can be used freely in any Vue web app. I also have knowledge of Bootstrap and Bulma as UI frameworks.</p>
+                        <p>I am currently employed as an Application Delivery Specialist at Advanced, the UK's third largest software company. I work in the Health & Care business unit with CareNotes, an ASP.NET Web Application, with a large number of SOA services. CareNotes is used widely by the NHS for Mental Health and Community Trusts. I provide third line support for CareNotes, as well as deploy and upgrade it. CareNotes is hosted on Windows Servers with IIS.</p>
+                        <p>I also have a strong knowledge of Linux and Apache, and host multiple web applications on Linux Servers. I host web applications and video game servers privately, which is running on virtualised servers using Proxmox Hypervisor, as well as in Docker Containers.</p>
+                        <p>Outside of web development and deployment, I like to work on music in my free time, using Analog Synthesizers. I'm also a huge fan of board games and virtual Reality.</p>
                         <p>Please check out my live demos on the site, and use the Contact Me form if you would like to work together!</p>
                         <div class="level">
                             <div class="level-item">
@@ -87,9 +87,9 @@
                         </div>
                     </div>
                     <img class="image" src="{{ asset('img/keyshare.jpg') }}" alt="">
-                    <p>KeyShare is a Web Application for sharing excess steam keys for a gaming group. The site has paginated autoloading when browsing games, to make it easy to scroll through, as well as an autocomplete search component for finding games. The site uses a Redis cache for storing a 'karma' for users, as well as caching routes for faster loading</p>
-                    <p>KeyShare allows for options to enable sign ins through Steam using OpenID. The site contains an admin panel for user management, and the option to require admin approval to register.</p>
-                    <p>The application was originally written in raw PHP and JavaScript, however was refactored to use the Laravel framework and VueJS as of 1.0.5. This has allowed faster development for new features, such as DLC that can be added for Games. This has been solely written by me, however is open for contributions on GitHub.
+                    <p>KeyShare is a Web Application for sharing excess steam keys for a gaming group. The site has paginated autoloading when browsing games, to make it easy to scroll through, as well as an autocomplete search component for finding games. The site uses a Redis cache for storing a 'karma' for users and caching routes for faster loading</p>
+                    <p>KeyShare allows for options to enable sign-in through Steam using OpenID. The site contains an admin panel for user management, and the option to require admin approval to register.</p>
+                    <p>The application was originally written in raw PHP and JavaScript, however was refactored to use the Laravel framework and VueJS as of 1.0.5. This has allowed faster development for new features, such as DLC that can be added for games. This has been solely written by me, however is open for contributions on GitHub.
                 </div>
         </section>
 
@@ -114,10 +114,10 @@
                         </div>
                     </div>
                     <img class="image" src="{{ asset('img/rota.jpg') }}" alt="">
-                    <p>LunchRota is a ground up rewrite of an Application that was created for our service desk by <a href="https://curtisreet.co.uk">Curtis Reet</a>. The application is to be used by teams, in order to keep track of daily work roles, as well as claim available lunch slots. The original application was built on PHP5, and required further development, so I decided to rewrite this in Laravel to allow me to continue working on the application</p>
+                    <p>LunchRota is a ground up rewrite of an application that was created for our service desk by <a href="https://curtisreet.co.uk">Curtis Reet</a>. The application is to be used by teams, in order to keep track of daily work roles, as well as claim available lunch slots. The original application was built on PHP5, and required further development, so I decided to rewrite this in Laravel to allow me to continue working on the application</p>
                     <p>The roles can be assigned to users either via a UI built with VueJS, or uploaded via CSV.</p>
-                    <p>The site can be configured to either use a set number of available lunch slots, or be calculated using the number of user roles that are marked as 'available'. This is used, for example, if certain roles need to be on the phones, and you require a certain number of people who are on phones to be available at any time</p>
-                    <p>LunchRota contains a full admin panel for editing Users, LunchSlots, Roles and User Roles. These use a Vue JS interface, to allow you to bulk edit.</p>
+                    <p>The site can be configured to either use a set number of available lunch slots, or be calculated using the number of user roles that are marked as 'available'. This is used, for example, if certain roles need to be on the phones, and you require a certain number of people who are on phones to be available at any time.</p>
+                    <p>LunchRota contains a full admin panel for editing users, lunch slots, roles and user roles. These use a Vue JS interface, to allow you to bulk edit.</p>
                 </div>
         </section>
 
@@ -237,8 +237,8 @@
                                 <p class="heading">November 2017</p>
                                 <p>Advanced - Application Delivery Specialist</p>
                                 <ul>
-                                    <li>Provide third line support for Carenotes (ASP NET Application)</li>
-                                    <li>Deploy and Upgrade the Carenotes Application (Windows and Linux Servers)</li>
+                                    <li>Provide third line support for CareNotes (ASP NET Application)</li>
+                                    <li>Deploy and upgrade the Carenotes Application (Windows and Linux Servers)</li>
                                     <li>Install and use monitoring tools such as New Relic and App Dynamics</li>
                                     <li>Install external modules such as the Patient Dashboard (Node JS Application on Red Hat Servers)</li>
                                     <li>Write complex SQL scripts to resolve data issues</li>
@@ -336,7 +336,7 @@
                                 <div class="column is-three-quarters">
                                     <div class="project">
                                         <h1>Music Production</h1>
-                                        <p>I produce music using Analog Synthesisers, mixed with more modern techniques. I have created and released an album that uses Analog Synths controlled via midi, along with Ableton Live and a Launchpad</p>
+                                        <p>I produce music using Analog Synthesizers, mixed with more modern techniques. I have created and released an album that uses analog synths controlled via midi, along with Ableton Live and a Launchpad</p>
                                         <div class="level">
                                             <div class="level-item">
                                                 <a href="https://morethandata.bandcamp.com/releases" class="button">
@@ -363,8 +363,8 @@
                                 </div>
                                 <div class="column is-three-quarters">
                                     <div class="project">
-                                        <h1>Chairity Events</h1>
-                                        <p>I have hosted multiple charity events for various charities. This includes 4 seperate charity gaming Marathons, that have raised a total of over £3600 for various Charities.</p>
+                                        <h1>Charity Events</h1>
+                                        <p>I have hosted multiple charity events for various charities. This includes 4 separate charity gaming Marathons, that have raised a total of over £3600 for various Charities.</p>
                                     </div>
                                 </div>
                             </div>
@@ -380,7 +380,7 @@
                     <h2>Me</h2>
                 </div>
                 <div class="section-content">
-                    <p>If you would like to work with me, then be sure to contact me on <a href="mailto:me@andyh.app">me@andyh.app</a>, <a href="https://www.linkedin.com/in/andrew-hargrave-b36128144/">LinkedIn</a>, or with the form below</p>
+                    <p>If you would like to work with me, then be sure to contact me on <a href="mailto:me@andyh.app">me@andyh.app</a>, <a href="https://www.linkedin.com/in/andrew-hargrave-b36128144/">LinkedIn</a>, or with the form below.</p>
                 <form method="POST" action="{{ route('sendemail') }}">
                         @if(session()->has('message'))
                             <span role="alert">
