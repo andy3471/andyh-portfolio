@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="author" content="Andrew Hargrave">
         <meta name="description" content="I'm a self taught Web Developer that works with PHP, JS, HTML, SQL, Redis, CSS and SCSS. I have a very good knowledge of the Laravel MVC framework. I also have knowledge of Bootstrap and Bulma as UI frameworks">
-        <title>AndyH Portfolio</title>
+        <title>AndyH Web Development Portfolio</title>
         <script src="{{ asset('js/app.js') }}" defer></script>
         <link href="{{ asset('css/app.css') }}" rel="stylesheet">
         <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
@@ -34,7 +34,7 @@
                 <div class="columns section-body">
                     <div class="column">
                         <figure class="image">
-                            <img class="image" src="{{ asset('img/profile.jpg') }}" alt="" width="300px">
+                            <img class="image" src="{{ asset('img/profile.jpg') }}" alt="profile-picture" width="300px">
                         </figure>
                     </div>
                     <div class="column is-three-quarters">
@@ -46,13 +46,13 @@
                         <div class="level">
                             <div class="level-item">
                                 <div class="buttons has-addons">
-                                    <a href="https://github.com/andy3471/" class="button">
+                                    <a href="https://github.com/andy3471/" title="GitHub" class="button">
                                         <span class="icon">
                                                 <i class="fab fa-github"></i>
                                             </span>
                                         <span>Github</span>
                                     </a>
-                                    <a href="https://www.linkedin.com/in/andrew-hargrave-b36128144/" class="button">
+                                    <a href="https://www.linkedin.com/in/andrew-hargrave-b36128144/" title="LinkedIn" class="button">
                                         <span class="icon">
                                                 <i class="fab fa-linkedin"></i>
                                             </span>
@@ -76,17 +76,17 @@
                     <div class="level">
                         <div class="level-item">
                             <div class="buttons has-addons">
-                                <a href="https://github.com/andy3471/keyshare" class="button">
+                                <a href="https://github.com/andy3471/keyshare" title="KeyshareCode" class="button">
                                     <span class="icon">
                                             <i class="fab fa-github"></i>
                                         </span>
                                     <span>Github</span>
                                 </a>
-                                <a href="https://keyshare.andyh.app" class="button">Live Demo</a>
+                                <a href="https://keyshare.andyh.app" title="KeyshareDemo" class="button">Live Demo</a>
                             </div>
                         </div>
                     </div>
-                    <img class="image" src="{{ asset('img/keyshare.jpg') }}" alt="">
+                    <img class="image" src="{{ asset('img/keyshare.jpg') }}" alt="keyshare">
                     <p>KeyShare is a Web Application for sharing excess steam keys for a gaming group. The site has paginated autoloading when browsing games, to make it easy to scroll through, as well as an autocomplete search component for finding games. The site uses a Redis cache for storing a 'karma' for users and caching routes for faster loading</p>
                     <p>KeyShare allows for options to enable sign-in through Steam using OpenID. The site contains an admin panel for user management, and the option to require admin approval to register.</p>
                     <p>The application was originally written in raw PHP and JavaScript, however was refactored to use the Laravel framework and VueJS as of 1.0.5. This has allowed faster development for new features, such as DLC that can be added for games. This has been solely written by me, however is open for contributions on GitHub.
@@ -103,18 +103,18 @@
                     <div class="level">
                         <div class="level-item">
                             <div class="buttons has-addons">
-                                <a href="https://github.com/andy3471/lunchrota" class="button">
+                                <a href="https://github.com/andy3471/lunchrota" title="LunchRotaCode" class="button">
                                     <span class="icon">
                                             <i class="fab fa-github"></i>
                                         </span>
                                     <span>Github</span>
                                 </a>
-                                <a href="https://lunchrota.andyh.app" class="button">Live Demo</a>
+                                <a href="https://lunchrota.andyh.app" title="LunchRotaDemo" class="button">Live Demo</a>
                             </div>
                         </div>
                     </div>
-                    <img class="image" src="{{ asset('img/rota.jpg') }}" alt="">
-                    <p>LunchRota is a ground up rewrite of an application that was created for our service desk by <a href="https://curtisreet.co.uk">Curtis Reet</a>. The application is to be used by teams, in order to keep track of daily work roles, as well as claim available lunch slots. The original application was built on PHP5, and required further development, so I decided to rewrite this in Laravel to allow me to continue working on the application</p>
+                    <img class="image" src="{{ asset('img/rota.jpg') }}" alt="rota">
+                    <p>LunchRota is a ground up rewrite of an application that was created for our service desk by <a href="https://curtisreet.co.uk" title="CurtPortfolio">Curtis Reet</a>. The application is to be used by teams, in order to keep track of daily work roles, as well as claim available lunch slots. The original application was built on PHP5, and required further development, so I decided to rewrite this in Laravel to allow me to continue working on the application</p>
                     <p>The roles can be assigned to users either via a UI built with VueJS, or uploaded via CSV.</p>
                     <p>The site can be configured to either use a set number of available lunch slots, or be calculated using the number of user roles that are marked as 'available'. This is used, for example, if certain roles need to be on the phones, and you require a certain number of people who are on phones to be available at any time.</p>
                     <p>LunchRota contains a full admin panel for editing users, lunch slots, roles and user roles. These use a Vue JS interface, to allow you to bulk edit.</p>
@@ -135,13 +135,13 @@
                         <div class="level">
                             <div class="level-item">
                                 <div class="buttons has-addons">
-                                    <a href="https://github.com/andy3471/andyh-datepicker" class="button">
+                                    <a href="https://github.com/andy3471/andyh-datepicker" title="DatePickerCode" class="button">
                                         <span class="icon">
                                             <i class="fab fa-github"></i>
                                         </span>
                                         <span>Github</span>
                                     </a>
-                                    <a href="https://github.com/andy3471/andyh-timepicker" class="button">
+                                    <a href="https://github.com/andy3471/andyh-datepicker" title="DatePickerDocs" class="button">
                                         <span class="icon">
                                             <i class="fas fa-file"></i>
                                         </span>
@@ -164,13 +164,13 @@
                         <div class="level">
                             <div class="level-item">
                                 <div class="buttons has-addons">
-                                    <a href="https://github.com/andy3471/andyh-timepicker" class="button">
+                                    <a href="https://github.com/andy3471/andyh-timepicker" title="TimePickerCode" class="button">
                                         <span class="icon">
                                                 <i class="fab fa-github"></i>
                                             </span>
                                         <span>Github</span>
                                     </a>
-                                    <a href="https://github.com/andy3471/andyh-timepicker" class="button">
+                                    <a href="https://github.com/andy3471/andyh-timepicker" title="TimePickerDocs" class="button">
                                     <span class="icon">
                                             <i class="fas fa-file"></i>
                                         </span>
@@ -193,13 +193,13 @@
                         <div class="level">
                             <div class="level-item">
                                 <div class="buttons has-addons">
-                                    <a href="https://github.com/andy3471/andyh-autocomplete" class="button">
+                                    <a href="https://github.com/andy3471/andyh-autocomplete" title="AutoCompleteCode" class="button">
                                         <span class="icon">
                                             <i class="fab fa-github"></i>
                                         </span>
                                         <span>Github</span>
                                     </a>
-                                    <a href="https://github.com/andy3471/andyh-timepicker" class="button">
+                                    <a href="https://github.com/andy3471/andyh-timepicker" title="AutoCompleteDocs" class="button">
                                     <span class="icon">
                                             <i class="fas fa-file"></i>
                                         </span>
@@ -231,7 +231,7 @@
                         </header>
                         <div class="timeline-item is-warning">
                             <div class="timeline-marker is-warning is-image is-32x32">
-                                <img src="{{ asset('img/advanced.jpg') }}">
+                                <img src="{{ asset('img/advanced.jpg') }}" alt="advanced">
                             </div>
                             <div class="timeline-content">
                                 <p class="heading">November 2017</p>
@@ -247,7 +247,7 @@
                         </div>
                         <div class="timeline-item is-warning">
                             <div class="timeline-marker is-warning is-image is-32x32">
-                                <img src="{{ asset('img/advanced.jpg') }}">
+                                <img src="{{ asset('img/advanced.jpg') }}" alt="advanced">
                             </div>
                             <div class="timeline-content">
                                 <p class="heading">June 2017</p>
@@ -261,7 +261,7 @@
                         </div>
                         <div class="timeline-item is-warning">
                             <div class="timeline-marker is-warning is-image is-32x32">
-                                <img src="{{ asset('img/advanced.jpg') }}">
+                                <img src="{{ asset('img/advanced.jpg') }}" alt="advanced">
                             </div>
                             <div class="timeline-content">
                                 <p class="heading">September 2016</p>
@@ -275,7 +275,7 @@
                         </div>
                         <div class="timeline-item is-primary">
                             <div class="timeline-marker is-warning is-image is-32x32">
-                                <img src="{{ asset('img/advanced.jpg') }}">
+                                <img src="{{ asset('img/advanced.jpg') }}" alt="advanced">
                             </div>
                             <div class="timeline-content">
                                 <p class="heading">April 2016</p>
@@ -288,7 +288,7 @@
                         </div>
                         <div class="timeline-item is-primary">
                             <div class="timeline-marker is-warning is-image is-32x32">
-                                <img src="{{ asset('img/xpg.jpg') }}">
+                                <img src="{{ asset('img/xpg.jpg') }}" alt="xpg">
                             </div>
                             <div class="timeline-content">
                                 <p class="heading">September 2013</p>
@@ -319,7 +319,7 @@
                         <div class="projects-body">
                             <div class="columns is-vcentered">
                                 <div class="column is-hidden-mobile">
-                                    <img src="{{ asset('img/proxmox.png') }}">
+                                    <img src="{{ asset('img/proxmox.png') }}" alt="proxmox">
                                 </div>
                                 <div class="column is-three-quarters">
                                     <div class="project">
@@ -339,7 +339,7 @@
                                         <p>I produce music using Analog Synthesizers, mixed with more modern techniques. I have created and released an album that uses analog synths controlled via midi, along with Ableton Live and a Launchpad</p>
                                         <div class="level">
                                             <div class="level-item">
-                                                <a href="https://morethandata.bandcamp.com/releases" class="button">
+                                                <a href="https://morethandata.bandcamp.com/releases" title="Album" class="button">
                                                     <span class="icon">
                                                     <i class="fab fa-bandcamp"></i>
                                                 </span>
@@ -350,7 +350,7 @@
                                     </div>
                                 </div>
                                 <div class="column is-hidden-mobile">
-                                    <img src="{{ asset('img/albumart.jpg') }}">
+                                    <img src="{{ asset('img/albumart.jpg') }}" alt="MoreThanData">
                                 </div>
                             </div>
                         </div>
@@ -359,7 +359,7 @@
                         <div class="projects-body">
                             <div class="columns is-vcentered">
                                 <div class="column is-hidden-mobile">
-                                    <img src="{{ asset('img/justgiving.jpg') }}">
+                                    <img src="{{ asset('img/justgiving.jpg') }}" alt="JustGiving">
                                 </div>
                                 <div class="column is-three-quarters">
                                     <div class="project">
@@ -380,7 +380,7 @@
                     <h2>Me</h2>
                 </div>
                 <div class="section-content">
-                    <p>If you would like to work with me, then be sure to contact me on <a href="mailto:me@andyh.app">me@andyh.app</a>, <a href="https://www.linkedin.com/in/andrew-hargrave-b36128144/">LinkedIn</a>, or with the form below.</p>
+                    <p>If you would like to work with me, then be sure to contact me on <a href="mailto:me@andyh.app">me@andyh.app</a>, <a href="https://www.linkedin.com/in/andrew-hargrave-b36128144/" title="LinkedIn">LinkedIn</a>, or with the form below.</p>
                 <form method="POST" action="{{ route('sendemail') }}">
                         @if(session()->has('message'))
                             <span role="alert">
