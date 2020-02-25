@@ -39,8 +39,8 @@
                     </div>
                     <div class="column is-three-quarters">
                         <p>Hi, I'm Andrew Hargrave. I'm a self taught Web Developer that works with PHP, JS, HTML, SQL (MySQL and MS SQL), Redis, CSS and SCSS. I have a very good knowledge of the Laravel MVC framework, and have used it for multiple personal projects. I use VueJS for as a front-end JavaScript framework primarily, and have released multiple components that can be used freely in any Vue web app. I also have knowledge of Bootstrap and Bulma as UI frameworks.</p>
-                        <p>I am currently employed as an Application Delivery Specialist at Advanced, the UK's third largest software company. I work in the Health & Care business unit with CareNotes, an ASP.NET Web Application, with a large number of SOA services. CareNotes is used widely by the NHS for Mental Health and Community Trusts. I provide third line support for CareNotes, as well as deploy and upgrade it. CareNotes is hosted on Windows Servers with IIS.</p>
-                        <p>I also have a strong knowledge of Linux and Apache, and host multiple web applications on Linux Servers. I host web applications and video game servers privately, which is running on virtualised servers using Proxmox Hypervisor, as well as in Docker Containers.</p>
+                        <p>I am currently employed as an Application Delivery Specialist at Advanced, the UK's third largest software company. I work in the Health & Care business unit with Carenotes, an ASP.NET Web Application, with a large number of SOA services. Carenotes is used widely by the NHS for mental health and community Trusts. I provide third line support for Carenotes, as well as deploy and upgrade it. Carenotes is hosted on Windows Servers with IIS.</p>
+                        <p>I also have a strong knowledge of Linux and Apache, and host multiple web applications on Linux Servers. I host web applications and video game servers privately, which is running on virtualised servers using Proxmox hypervisor, as well as in Docker Containers.</p>
                         <p>Outside of web development and deployment, I like to work on music in my free time, using Analog Synthesizers. I'm also a huge fan of board games and virtual Reality.</p>
                         <p>Please check out my live demos on the site, and use the Contact Me form if you would like to work together!</p>
                         <div class="level">
@@ -237,7 +237,7 @@
                                 <p class="heading">November 2017</p>
                                 <p>Advanced - Application Delivery Specialist</p>
                                 <ul>
-                                    <li>Provide third line support for CareNotes (ASP NET Application)</li>
+                                    <li>Provide third line support for Carenotes (ASP NET Application)</li>
                                     <li>Deploy and upgrade the Carenotes Application (Windows and Linux Servers)</li>
                                     <li>Install and use monitoring tools such as New Relic and App Dynamics</li>
                                     <li>Install external modules such as the Patient Dashboard (Node JS Application on Red Hat Servers)</li>
