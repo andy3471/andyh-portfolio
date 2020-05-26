@@ -218,6 +218,144 @@
                 </div>
         </section>
 
+        <section class="hero is-fullheight projects" id="projects">
+            <div class="container">
+                <div class="section-header">
+                    <h1>Other</h1>
+                    <h2>Projects</h2>
+                </div>
+                <div class="section-body">
+                    <div class="projects-item">
+                        <div class="projects-body">
+                            <div class="columns is-vcentered">
+                                <div class="column is-three-quarters">
+                                    <div class="project">
+                                        <h1>Tabletop Simulator - Gloomhaven Scripting</h1>
+                                        <p>I have been working to make board games playable in Tabletop Simulator, so that people can continue playing during the Covid-19 outbreak. I created a fork of the Gloomhaven Fantasy set-up mod, and scripted all of the Forgotten Circles expansion and solo scenarios in lua with <a href="https://curtisreet.co.uk" title="CurtPortfolio">Curtis Reet</a>. My mod has now been merged into the original mod, where I have been credited, which is the most popular tabletop simulator mod with over 100,000 active users</p>
+                                        <div class="level">
+                                            <div class="level-item">
+                                                <div class="buttons has-addons">
+                                                    <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=1301493206&searchtext=gloomhaven" title="Gloomhaven" class="button">
+                                                        <span class="icon">
+                                                            <i class="fab fa-steam"></i>
+                                                        </span>
+                                                        <span>Steam Workshop</span>
+                                                    </a>
+                                                    <a href="https://github.com/andy3471/Gloomhaven-ForgottenCricles-TTS" title="TimePickerCode" class="button">
+                                                        <span class="icon">
+                                                                <i class="fab fa-github"></i>
+                                                            </span>
+                                                        <span>Github</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="column is-hidden-mobile">
+                                    <img src="{{ asset('img/gloomhaven.jpg') }}" alt="Gloomhaven">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="projects-item">
+                        <div class="projects-body">
+                            <div class="columns is-vcentered">
+                                <div class="column is-hidden-mobile">
+                                    <img src="{{ asset('img/portalstories.jpg') }}" alt="proxmox">
+                                </div>
+                                <div class="column is-three-quarters">
+                                    <div class="project">
+                                        <h1>Portal Stories: Mel</h1>
+                                        <p>I was the original leader on the Portal 2 mod Portal Stores: Mel. The mod went on to win a Video Game Award for "Best Fan Creation" in 2015, and has been given a full steam release, with overwhelmingly positive reviews. I am in the credits of the mod for my past contributions.</p>
+                                        <div class="level">
+                                            <div class="level-item">
+                                                <a href="https://store.steampowered.com/app/317400/Portal_Stories_Mel/" title="Portal Stories: Mel" class="button">
+                                                    <span class="icon">
+                                                    <i class="fab fa-steam"></i>
+                                                </span>
+                                                    <span>Steam</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="projects-item">
+                        <div class="projects-body">
+                            <div class="columns is-vcentered">
+                                <div class="column is-three-quarters">
+                                    <div class="project">
+                                        <h1>Minecraft VR Nightclub - Scripted Beat Detection</h1>
+                                        <p>I host a Minecraft server for VR users. The server is a nightclub for VR users, and features a custom scripted beat detection system. The beat detection uses a C application, which acts as the API, using the GBD Framework. In the game, I have used the Computercraft Mod, to make a lua application which gets the beat information from the API, which keeps the lights in sync with the music. The club was created as a meeting place for people during Covid-19.</p>
+                                    </div>
+                                </div>
+                                <div class="column is-hidden-mobile">
+                                    <img src="{{ asset('img/club.jpg') }}" alt="club">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="projects-item">
+                        <div class="projects-body">
+                            <div class="columns is-vcentered">
+                                <div class="column is-hidden-mobile">
+                                    <img src="{{ asset('img/albumart.jpg') }}" alt="MoreThanData">
+                                </div>
+                                <div class="column is-three-quarters">
+                                    <div class="project">
+                                        <h1>Music Production</h1>
+                                        <p>I produce music using Analog Synthesizers, mixed with more modern techniques. I have created and released an album that uses analog synths controlled via midi, along with Ableton Live and a Launchpad</p>
+                                        <div class="level">
+                                            <div class="level-item">
+                                                <a href="https://morethandata.bandcamp.com/releases" title="Album" class="button">
+                                                    <span class="icon">
+                                                    <i class="fab fa-bandcamp"></i>
+                                                </span>
+                                                    <span>Bandcamp</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="projects-item">
+                        <div class="projects-body">
+                            <div class="columns is-vcentered">
+                                <div class="column is-three-quarters">
+                                    <div class="project">
+                                        <h1>Hosting</h1>
+                                        <p>I host various servers, both web and gaming servers privately. These are all hosted on Proxmox Hypervisor, using both LXC containers and KVM Virtual Machines. I also host some servers in Docker.</p>
+                                    </div>
+                                </div>
+                                <div class="column is-hidden-mobile">
+                                    <img src="{{ asset('img/proxmox.png') }}" alt="proxmox">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="projects-item">
+                        <div class="projects-body">
+                            <div class="columns is-vcentered">
+                                <div class="column is-hidden-mobile">
+                                    <img src="{{ asset('img/justgiving.jpg') }}" alt="JustGiving">
+                                </div>
+                                <div class="column is-three-quarters">
+                                    <div class="project">
+                                        <h1>Charity Events</h1>
+                                        <p>I have hosted multiple charity events for various charities. This includes 4 separate charity gaming Marathons, that have raised a total of over £3600 for various Charities.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
         <section class="hero is-fullheight work" id="work">
             <div class="container">
                 <div class="section-header">
@@ -305,72 +443,6 @@
                         </div>
                 </div>
             </div>
-        </section>
-
-
-        <section class="hero is-fullheight projects" id="projects">
-            <div class="container">
-                <div class="section-header">
-                    <h1>Other</h1>
-                    <h2>Projects</h2>
-                </div>
-                <div class="section-body">
-                    <div class="projects-item">
-                        <div class="projects-body">
-                            <div class="columns is-vcentered">
-                                <div class="column is-hidden-mobile">
-                                    <img src="{{ asset('img/proxmox.png') }}" alt="proxmox">
-                                </div>
-                                <div class="column is-three-quarters">
-                                    <div class="project">
-                                        <h1>Hosting</h1>
-                                        <p>I host various servers, both web and gaming servers privately. These are all hosted on Proxmox Hypervisor, using both LXC containers and KVM Virtual Machines. I also host some servers in Docker.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="projects-item">
-                        <div class="projects-body">
-                            <div class="columns is-vcentered">
-                                <div class="column is-three-quarters">
-                                    <div class="project">
-                                        <h1>Music Production</h1>
-                                        <p>I produce music using Analog Synthesizers, mixed with more modern techniques. I have created and released an album that uses analog synths controlled via midi, along with Ableton Live and a Launchpad</p>
-                                        <div class="level">
-                                            <div class="level-item">
-                                                <a href="https://morethandata.bandcamp.com/releases" title="Album" class="button">
-                                                    <span class="icon">
-                                                    <i class="fab fa-bandcamp"></i>
-                                                </span>
-                                                    <span>Bandcamp</span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="column is-hidden-mobile">
-                                    <img src="{{ asset('img/albumart.jpg') }}" alt="MoreThanData">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="projects-item">
-                        <div class="projects-body">
-                            <div class="columns is-vcentered">
-                                <div class="column is-hidden-mobile">
-                                    <img src="{{ asset('img/justgiving.jpg') }}" alt="JustGiving">
-                                </div>
-                                <div class="column is-three-quarters">
-                                    <div class="project">
-                                        <h1>Charity Events</h1>
-                                        <p>I have hosted multiple charity events for various charities. This includes 4 separate charity gaming Marathons, that have raised a total of over £3600 for various Charities.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
         </section>
 
         <section class="hero is-fullheight contact" id="contact">
