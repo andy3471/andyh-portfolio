@@ -34,7 +34,7 @@
                 <div class="columns section-body">
                     <div class="column">
                         <figure class="image">
-                            <img class="image" src="{{ asset('img/profile.jpg') }}" alt="profile-picture" width="300px">
+                            <img class="image" src="{{ asset('images/profile.jpg') }}" alt="profile-picture" width="300px">
                         </figure>
                     </div>
                     <div class="column is-three-quarters">
@@ -86,7 +86,7 @@
                             </div>
                         </div>
                     </div>
-                    <img class="image" src="{{ asset('img/keyshare.jpg') }}" alt="keyshare">
+                    <img class="image" src="{{ asset('images/keyshare.jpg') }}" alt="keyshare">
                     <p>KeyShare is a Web Application for sharing excess steam keys for a gaming group. The site has paginated autoloading when browsing games, to make it easy to scroll through, as well as an autocomplete search component for finding games. The site uses a Redis cache for storing a 'karma' for users and caching routes for faster loading</p>
                     <p>KeyShare allows for options to enable sign-in through Steam using OpenID. The site contains an admin panel for user management, and the option to require admin approval to register.</p>
                     <p>The application was originally written in raw PHP and JavaScript, however was refactored to use the Laravel framework and VueJS as of 1.0.5. This has allowed faster development for new features, such as DLC that can be added for games. This has been solely written by me, however is open for contributions on GitHub.
@@ -113,7 +113,7 @@
                             </div>
                         </div>
                     </div>
-                    <img class="image" src="{{ asset('img/rota.jpg') }}" alt="rota">
+                    <img class="image" src="{{ asset('images/rota.jpg') }}" alt="rota">
                     <p>LunchRota is a ground up rewrite of an application that was created for our service desk by <a href="https://curtisreet.co.uk" title="CurtPortfolio">Curtis Reet</a>. The application is to be used by teams, in order to keep track of daily work roles, as well as claim available lunch slots. The original application was built on PHP5, and required further development, so I decided to rewrite this in Laravel to allow me to continue working on the application</p>
                     <p>The roles can be assigned to users either via a UI built with VueJS, or uploaded via CSV.</p>
                     <p>The site can be configured to either use a set number of available lunch slots, or be calculated using the number of user roles that are marked as 'available'. This is used, for example, if certain roles need to be on the phones, and you require a certain number of people who are on phones to be available at any time.</p>
@@ -253,7 +253,7 @@
                                     </div>
                                 </div>
                                 <div class="column is-hidden-mobile">
-                                    <img src="{{ asset('img/gloomhaven.jpg') }}" alt="Gloomhaven">
+                                    <img src="{{ asset('images/gloomhaven.jpg') }}" alt="Gloomhaven">
                                 </div>
                             </div>
                         </div>
@@ -262,7 +262,7 @@
                         <div class="projects-body">
                             <div class="columns is-vcentered">
                                 <div class="column is-hidden-mobile">
-                                    <img src="{{ asset('img/portalstories.jpg') }}" alt="proxmox">
+                                    <img src="{{ asset('images/portalstories.jpg') }}" alt="proxmox">
                                 </div>
                                 <div class="column is-three-quarters">
                                     <div class="project">
@@ -290,10 +290,20 @@
                                     <div class="project">
                                         <h1>Minecraft VR Nightclub - Scripted Beat Detection</h1>
                                         <p>I host a Minecraft server for VR users. The server is a nightclub for VR users, and features a custom scripted beat detection system. The beat detection uses a C application, which acts as the API, using the GBD Framework. In the game, I have used the Computercraft Mod, to make a lua application which gets the beat information from the API, which keeps the lights in sync with the music. The club was created as a meeting place for people during Covid-19.</p>
+                                        <div class="level">
+                                            <div class="level-item">
+                                                <a href="https://youtu.be/hUbeUy6U4nY" title="Club" class="button">
+                                                    <span class="icon">
+                                                    <i class="fab fa-youtube"></i>
+                                                </span>
+                                                    <span>YouTube</span>
+                                                </a>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="column is-hidden-mobile">
-                                    <img src="{{ asset('img/club.jpg') }}" alt="club">
+                                    <img src="{{ asset('images/club.jpg') }}" alt="club">
                                 </div>
                             </div>
                         </div>
@@ -302,7 +312,7 @@
                         <div class="projects-body">
                             <div class="columns is-vcentered">
                                 <div class="column is-hidden-mobile">
-                                    <img src="{{ asset('img/albumart.jpg') }}" alt="MoreThanData">
+                                    <img src="{{ asset('images/albumart.jpg') }}" alt="MoreThanData">
                                 </div>
                                 <div class="column is-three-quarters">
                                     <div class="project">
@@ -333,7 +343,7 @@
                                     </div>
                                 </div>
                                 <div class="column is-hidden-mobile">
-                                    <img src="{{ asset('img/proxmox.png') }}" alt="proxmox">
+                                    <img src="{{ asset('images/proxmox.png') }}" alt="proxmox">
                                 </div>
                             </div>
                         </div>
@@ -342,7 +352,7 @@
                         <div class="projects-body">
                             <div class="columns is-vcentered">
                                 <div class="column is-hidden-mobile">
-                                    <img src="{{ asset('img/justgiving.jpg') }}" alt="JustGiving">
+                                    <img src="{{ asset('images/justgiving.jpg') }}" alt="JustGiving">
                                 </div>
                                 <div class="column is-three-quarters">
                                     <div class="project">
@@ -369,7 +379,7 @@
                         </header>
                         <div class="timeline-item is-warning">
                             <div class="timeline-marker is-warning is-image is-32x32">
-                                <img src="{{ asset('img/advanced.jpg') }}" alt="advanced">
+                                <img src="{{ asset('images/advanced.jpg') }}" alt="advanced">
                             </div>
                             <div class="timeline-content">
                                 <p class="heading">November 2017</p>
@@ -385,7 +395,7 @@
                         </div>
                         <div class="timeline-item is-warning">
                             <div class="timeline-marker is-warning is-image is-32x32">
-                                <img src="{{ asset('img/advanced.jpg') }}" alt="advanced">
+                                <img src="{{ asset('images/advanced.jpg') }}" alt="advanced">
                             </div>
                             <div class="timeline-content">
                                 <p class="heading">June 2017</p>
@@ -399,7 +409,7 @@
                         </div>
                         <div class="timeline-item is-warning">
                             <div class="timeline-marker is-warning is-image is-32x32">
-                                <img src="{{ asset('img/advanced.jpg') }}" alt="advanced">
+                                <img src="{{ asset('images/advanced.jpg') }}" alt="advanced">
                             </div>
                             <div class="timeline-content">
                                 <p class="heading">September 2016</p>
@@ -413,7 +423,7 @@
                         </div>
                         <div class="timeline-item is-primary">
                             <div class="timeline-marker is-warning is-image is-32x32">
-                                <img src="{{ asset('img/advanced.jpg') }}" alt="advanced">
+                                <img src="{{ asset('images/advanced.jpg') }}" alt="advanced">
                             </div>
                             <div class="timeline-content">
                                 <p class="heading">April 2016</p>
@@ -426,7 +436,7 @@
                         </div>
                         <div class="timeline-item is-primary">
                             <div class="timeline-marker is-warning is-image is-32x32">
-                                <img src="{{ asset('img/xpg.jpg') }}" alt="xpg">
+                                <img src="{{ asset('images/xpg.jpg') }}" alt="xpg">
                             </div>
                             <div class="timeline-content">
                                 <p class="heading">September 2013</p>
