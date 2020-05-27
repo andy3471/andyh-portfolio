@@ -310,11 +310,11 @@
                                         <p>I produce music using Analog Synthesizers, mixed with more modern techniques. I have created and released an album that uses analog synths controlled via midi, along with Ableton Live and a Launchpad</p>
                                         <div class="level">
                                             <div class="level-item">
-                                                <a href="https://morethandata.bandcamp.com/releases" title="Album" class="button">
+                                                <a href="https://open.spotify.com/artist/3BsM8NcTrGD2bZeh94E3Z4?si=QaYxYG9-QbO7Ohq1EjIZTw" title="Album" class="button">
                                                     <span class="icon">
-                                                    <i class="fab fa-bandcamp"></i>
+                                                    <i class="fab fa-spotify"></i>
                                                 </span>
-                                                    <span>Bandcamp</span>
+                                                    <span>Spotify</span>
                                                 </a>
                                             </div>
                                         </div>
