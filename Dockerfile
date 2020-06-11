@@ -1,8 +1,7 @@
 FROM composer:1.9.3 as build
 WORKDIR /app
 COPY . /app
-COPY .env.example /app/.env
-RUN composer install
+RUN composer install --optimize-autoloader --no-dev
 
 FROM php:7.3-apache
 EXPOSE 80
@@ -15,8 +14,11 @@ RUN chown -R www-data:www-data /app \
     && docker-php-ext-install pdo pdo_mysql \
     && mv "$PHP_INI_DIR/php.ini-production" "$PHP_INI_DIR/php.ini" \
     && a2enmod rewrite \
-    && chmod u+x /usr/local/bin/start.sh
-
-RUN pecl install redis && docker-php-ext-enable redis
+    && chmod u+x /usr/local/bin/start.sh \
+    && pecl install redis \
+    && docker-php-ext-enable redis \
+    && cp /app/.env.example /app/.env \
+    && touch /app/database/database.sqlite \
+    && php artisan migrate --force
 
 CMD ["/usr/local/bin/start.sh"]
