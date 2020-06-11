@@ -199,7 +199,7 @@
                                         </span>
                                         <span>Github</span>
                                     </a>
-                                    <a href="https://github.com/andy3471/andyh-timepicker" title="AutoCompleteDocs" class="button">
+                                    <a href="https://github.com/andy3471/andyh-autocomplete" title="AutoCompleteDocs" class="button">
                                     <span class="icon">
                                             <i class="fas fa-file"></i>
                                         </span>
@@ -211,7 +211,7 @@
                         <p>An autocomplete component made with Vue JS and Axios. This will make a get request to an endpoint as you type, and presents a dropdown with similar results. This supports using the arrow keys and enter to select, or clicking. </p>
                         <div class="level">
                             <div class="level-item">
-                                <auto-complete placeholder="Type a fruit" autocomplete-url="/autocomplete/fruit/"></auto-complete>
+                                <auto-complete placeholder="Type a fruit" url="/autocomplete/fruit/"></auto-complete>
                             </div>
                         </div>
                     </div>
