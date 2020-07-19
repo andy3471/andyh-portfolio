@@ -19,6 +19,7 @@ RUN chown -R www-data:www-data /app \
     && docker-php-ext-enable redis \
     && cp /app/.env.example /app/.env \
     && touch /app/database/database.sqlite \
-    && php artisan migrate --force
+    && php artisan migrate --force \
+    && php artisan storage:link
 
 CMD ["/usr/local/bin/start.sh"]
