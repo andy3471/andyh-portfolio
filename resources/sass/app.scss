@@ -10,6 +10,8 @@ $navbar-breakpoint: $desktop;
 @import "node_modules/bulma/bulma";
 @import url("https://fonts.googleapis.com/css?family=Permanent+Marker|Roboto&display=swap");
 @import "node_modules/bulma-extensions/bulma-timeline/src/sass";
+@import "node_modules/aos/src/sass/aos.scss";
+
 html {
     scroll-behavior: smooth;
 }

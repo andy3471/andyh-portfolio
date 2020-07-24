@@ -9,22 +9,23 @@
         <script src="{{ asset('js/app.js') }}" defer></script>
         <link href="{{ asset('css/app.css') }}" rel="stylesheet">
         <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+
     </head>
  <body>
     <div id="app">
         <navbar></navbar>
         <section class="header hero is-fullheight" id="header">
             <div class="container">
-                <div class="header-text">
-                    <div class="logo">
+                <div class="header-text" >
+                    <div class="logo" data-aos="fade-down">
                         <h1>Andy</h1>
                         <h2>Hargrave</h2>
                     </div>
-                    <h3>Web Developer & Deployment Specialist</h3>
+                    <h3 data-aos="fade-up">Web Developer & Deployment Specialist</h3>
                     <br>
-                    <div class="level">
+                    <div class="level" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
                         <div class="level-item">
-                            <a href="#about" title="About" class="button is-info is-outlined">
+                            <a href="#about" title="About" class="button is-info is-outlined" >
                                 <span class="icon">
                                         <i class="fas fa-user"></i>
                                     </span>
@@ -47,17 +48,17 @@
 
         <section class="hero is-fullheight about" id="about">
             <div class="container">
-                <div class="section-header">
+                <div class="section-header" data-aos="fade-right">
                     <h1>About</h1>
                     <h2>Me</h2>
                 </div>
                 <div class="columns section-body">
                     <div class="column">
-                        <figure class="image">
+                        <figure class="image" data-aos="fade-right">
                             <img class="image" src="{{ asset('images/profile.jpg') }}" alt="profile-picture" width="300px">
                         </figure>
                     </div>
-                    <div class="column is-three-quarters">
+                    <div class="column is-three-quarters"  data-aos="fade-left">
                     <button class="button is-link is-outlined">Find Out More</button>
                         <p>Hi, I'm Andrew Hargrave. I'm a self taught Web Developer that works with PHP, JS, HTML, SQL (MySQL and MS SQL), Redis, CSS and SCSS. I have a very good knowledge of the Laravel MVC framework, and have used it for multiple personal projects. I use VueJS for as a front-end JavaScript framework primarily, and have released multiple components that can be used freely in any Vue web app. I also have knowledge of Bootstrap and Bulma as UI frameworks.</p>
                         <p>I am currently employed as an Application Delivery Specialist at Advanced, the UK's third largest software company. I work in the Health & Care business unit with Carenotes, an ASP.NET Web Application, with a large number of SOA services. Carenotes is used widely by the NHS for mental health and community Trusts. I provide third line support for Carenotes, as well as deploy and upgrade it. Carenotes is hosted on Windows Servers with IIS.</p>
@@ -89,12 +90,12 @@
 
         <section class="hero is-fullheight keyshare" id="keys">
             <div class="container">
-                <div class="section-header">
+                <div class="section-header" data-aos="fade-left">
                     <h1>Key</h1>
                     <h2>Share</h2>
                 </div>
                 <div class="section-body">
-                    <div class="level">
+                    <div class="level" data-aos="fade-right">
                         <div class="level-item">
                             <div class="buttons has-addons">
                                 <a href="https://github.com/andy3471/keyshare" title="KeyshareCode" class="button is-info is-outlined">
@@ -112,21 +113,23 @@
                             </div>
                         </div>
                     </div>
-                    <img class="image" src="{{ asset('images/keyshare.jpg') }}" alt="keyshare">
-                    <p>KeyShare is a Web Application for sharing excess steam keys for a gaming group. The site has paginated autoloading when browsing games, to make it easy to scroll through, as well as an autocomplete search component for finding games. The site uses a Redis cache for storing a 'karma' for users and caching routes for faster loading</p>
-                    <p>KeyShare allows for options to enable sign-in through Steam using OpenID. The site contains an admin panel for user management, and the option to require admin approval to register.</p>
-                    <p>The application was originally written in raw PHP and JavaScript, however was refactored to use the Laravel framework and VueJS as of 1.0.5. This has allowed faster development for new features, such as DLC that can be added for games. This has been solely written by me, however is open for contributions on GitHub.
+                    <img class="image" src="{{ asset('images/keyshare.jpg') }}" alt="keyshare" data-aos="fade-left" data-aos-anchor-placement="center-bottom">
+                    <div data-aos="fade-right">
+                        <p>KeyShare is a Web Application for sharing excess steam keys for a gaming group. The site has paginated autoloading when browsing games, to make it easy to scroll through, as well as an autocomplete search component for finding games. The site uses a Redis cache for storing a 'karma' for users and caching routes for faster loading</p>
+                        <p>KeyShare allows for options to enable sign-in through Steam using OpenID. The site contains an admin panel for user management, and the option to require admin approval to register.</p>
+                        <p>The application was originally written in raw PHP and JavaScript, however was refactored to use the Laravel framework and VueJS as of 1.0.5. This has allowed faster development for new features, such as DLC that can be added for games. This has been solely written by me, however is open for contributions on GitHub.</p>
+                    </div>
                 </div>
         </section>
 
-        <section class="hero is-fullheight keyshare" id="rota">
+        <section class="hero is-fullheight keyshare" id="rota" >
             <div class="container">
-                <div class="section-header">
+                <div class="section-header" data-aos="fade-left">
                     <h1>Lunch</h1>
                     <h2>Rota</h2>
                 </div>
                 <div class="section-body">
-                    <div class="level">
+                    <div class="level" data-aos="fade-right">
                         <div class="level-item">
                             <div class="buttons has-addons">
                                 <a href="https://github.com/andy3471/lunchrota" title="LunchRotaCode" class="button is-info is-outlined">
@@ -144,25 +147,27 @@
                             </div>
                         </div>
                     </div>
-                    <img class="image" src="{{ asset('images/rota.jpg') }}" alt="rota">
-                    <p>LunchRota is a ground up rewrite of an application that was created for our service desk by <a href="https://curtisreet.co.uk" title="CurtPortfolio">Curtis Reet</a>. The application is to be used by teams, in order to keep track of daily work roles, as well as claim available lunch slots. The original application was built on PHP5, and required further development, so I decided to rewrite this in Laravel to allow me to continue working on the application</p>
-                    <p>The roles can be assigned to users either via a UI built with VueJS, or uploaded via CSV.</p>
-                    <p>The site can be configured to either use a set number of available lunch slots, or be calculated using the number of user roles that are marked as 'available'. This is used, for example, if certain roles need to be on the phones, and you require a certain number of people who are on phones to be available at any time.</p>
-                    <p>LunchRota contains a full admin panel for editing users, lunch slots, roles and user roles. These use a Vue JS interface, to allow you to bulk edit.</p>
+                    <img class="image" src="{{ asset('images/rota.jpg') }}" alt="rota" data-aos="fade-left" data-aos-anchor-placement="center-bottom">
+                    <div data-aos="fade-right">
+                        <p>LunchRota is a ground up rewrite of an application that was created for our service desk by <a href="https://curtisreet.co.uk" title="CurtPortfolio">Curtis Reet</a>. The application is to be used by teams, in order to keep track of daily work roles, as well as claim available lunch slots. The original application was built on PHP5, and required further development, so I decided to rewrite this in Laravel to allow me to continue working on the application</p>
+                        <p>The roles can be assigned to users either via a UI built with VueJS, or uploaded via CSV.</p>
+                        <p>The site can be configured to either use a set number of available lunch slots, or be calculated using the number of user roles that are marked as 'available'. This is used, for example, if certain roles need to be on the phones, and you require a certain number of people who are on phones to be available at any time.</p>
+                        <p>LunchRota contains a full admin panel for editing users, lunch slots, roles and user roles. These use a Vue JS interface, to allow you to bulk edit.</p>
+                    </div>
                 </div>
         </section>
 
-        <section class="hero is-fullheight keyshare" id="components">
+        <section class="hero is-fullheight" id="components" data-aos="fade-left">
             <div class="container">
-                <div class="section-header">
+                <div class="section-header" >
                     <h1>Vue</h1>
                     <h2>Components</h2>
                 </div>
                 <div class="section-body">
-                    <div class="component-header">
+                    <div class="component-header" data-aos="flip-left">
                         <h1>Date Picker</h1>
                     </div>
-                    <div class="component-body">
+                    <div class="component-body" data-aos="flip-right" data-aos-anchor-placement="center-bottom" >
                         <div class="level">
                             <div class="level-item">
                                 <div class="buttons has-addons">
@@ -188,10 +193,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="component-header">
+                    <div class="component-header" data-aos="flip-left">
                         <h1>Time Picker</h1>
                     </div>
-                    <div class="component-body">
+                    <div class="component-body" data-aos="flip-right">
                         <div class="level">
                             <div class="level-item">
                                 <div class="buttons has-addons">
@@ -217,10 +222,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="component-header">
+                    <div class="component-header" data-aos="flip-left">
                         <h1> Auto Complete </h1>
                     </div>
-                    <div class="component-body">
+                    <div class="component-body" data-aos="flip-right">
                         <div class="level">
                             <div class="level-item">
                                 <div class="buttons has-addons">
@@ -249,14 +254,14 @@
                 </div>
         </section>
 
-        <section class="hero is-fullheight projects" id="projects">
+        <section class="hero is-fullheight projects" id="projects"  data-aos="fade-right">
             <div class="container">
                 <div class="section-header">
                     <h1>Other</h1>
                     <h2>Projects</h2>
                 </div>
                 <div class="section-body">
-                    <div class="projects-item">
+                    <div class="projects-item" data-aos="zoom-in-right">
                         <div class="projects-body">
                             <div class="columns is-vcentered">
                                 <div class="column is-three-quarters">
@@ -289,7 +294,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="projects-item">
+                    <div class="projects-item" data-aos="zoom-in-left">
                         <div class="projects-body">
                             <div class="columns is-vcentered">
                                 <div class="column is-hidden-mobile">
@@ -314,7 +319,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="projects-item">
+                    <div class="projects-item" data-aos="zoom-in-right">
                         <div class="projects-body">
                             <div class="columns is-vcentered">
                                 <div class="column is-three-quarters">
@@ -339,7 +344,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="projects-item">
+                    <div class="projects-item" data-aos="zoom-in-left">
                         <div class="projects-body">
                             <div class="columns is-vcentered">
                                 <div class="column is-hidden-mobile">
@@ -364,7 +369,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="projects-item">
+                    <div class="projects-item" data-aos="zoom-in-right">
                         <div class="projects-body">
                             <div class="columns is-vcentered">
                                 <div class="column is-three-quarters">
@@ -379,7 +384,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="projects-item">
+                    <div class="projects-item" data-aos="zoom-in-left">
                         <div class="projects-body">
                             <div class="columns is-vcentered">
                                 <div class="column is-hidden-mobile">
@@ -397,7 +402,7 @@
                 </div>
         </section>
 
-        <section class="hero is-fullheight work" id="work">
+        <section class="hero is-fullheight work" id="work"  data-aos="fade-left">
             <div class="container">
                 <div class="section-header">
                     <h1>Work</h1>
@@ -408,11 +413,11 @@
                         <header class="timeline-header">
                             <span class="tag is-medium is-primary">Today</span>
                         </header>
-                        <div class="timeline-item is-warning">
+                        <div class="timeline-item is-warning" >
                             <div class="timeline-marker is-warning is-image is-32x32">
                                 <img src="{{ asset('images/advanced.jpg') }}" alt="advanced">
                             </div>
-                            <div class="timeline-content">
+                            <div class="timeline-content" data-aos="zoom-in-left">
                                 <p class="heading">November 2017</p>
                                 <p>Advanced - Application Delivery Specialist</p>
                                 <ul>
@@ -428,7 +433,7 @@
                             <div class="timeline-marker is-warning is-image is-32x32">
                                 <img src="{{ asset('images/advanced.jpg') }}" alt="advanced">
                             </div>
-                            <div class="timeline-content">
+                            <div class="timeline-content" data-aos="zoom-in-right">
                                 <p class="heading">June 2017</p>
                                 <p>Advanced - Service Desk Analyst  </p>
                                 <ul>
@@ -439,10 +444,10 @@
                             </div>
                         </div>
                         <div class="timeline-item is-warning">
-                            <div class="timeline-marker is-warning is-image is-32x32">
+                            <div class="timeline-marker is-warning is-image is-32x32" >
                                 <img src="{{ asset('images/advanced.jpg') }}" alt="advanced">
                             </div>
-                            <div class="timeline-content">
+                            <div class="timeline-content" data-aos="zoom-in-left">
                                 <p class="heading">September 2016</p>
                                 <p>Advanced - Second Line Community Technician </p>
                                 <ul>
@@ -456,7 +461,7 @@
                             <div class="timeline-marker is-warning is-image is-32x32">
                                 <img src="{{ asset('images/advanced.jpg') }}" alt="advanced">
                             </div>
-                            <div class="timeline-content">
+                            <div class="timeline-content" data-aos="zoom-in-right">
                                 <p class="heading">April 2016</p>
                                 <p>Advanced - First Line Support Technician</p>
                                 <ul>
@@ -469,7 +474,7 @@
                             <div class="timeline-marker is-warning is-image is-32x32">
                                 <img src="{{ asset('images/xpg.jpg') }}" alt="xpg">
                             </div>
-                            <div class="timeline-content">
+                            <div class="timeline-content" data-aos="zoom-in-left">
                                 <p class="heading">September 2013</p>
                                 <p>Xpress Games - Business Administration Apprentice</p>
                                 <ul>
@@ -486,14 +491,14 @@
             </div>
         </section>
 
-        <section class="hero is-fullheight contact" id="contact">
+        <section class="hero is-fullheight contact" id="contact"  >
             <div class="container">
-                <div class="section-header">
+                <div class="section-header" data-aos="fade-right">
                     <h1>Contact</h1>
                     <h2>Me</h2>
                 </div>
                 <div class="section-content">
-                    <p>If you would like to work with me, then be sure to contact me on <a href="mailto:me@andyh.app">me@andyh.app</a>, <a href="https://www.linkedin.com/in/andrew-hargrave-b36128144/" title="LinkedIn">LinkedIn</a>, or with the form below.</p>
+                    <p data-aos="fade-left">If you would like to work with me, then be sure to contact me on <a href="mailto:me@andyh.app">me@andyh.app</a>, <a href="https://www.linkedin.com/in/andrew-hargrave-b36128144/" title="LinkedIn">LinkedIn</a>, or with the form below.</p>
                 <form method="POST" action="{{ route('sendemail') }}">
                         @if(session()->has('message'))
                             <span role="alert">
@@ -502,7 +507,7 @@
                         @endif
 
                         @csrf
-                        <div class="field">
+                        <div class="field" data-aos="fade-right">
                             <label class="label has-text-white" for="name">Name:</label class="label">
                             <input class="input @error('name') is-invalid @enderror" type="text" name="name" id="name" required>
                             @error('name')
@@ -511,7 +516,7 @@
                                 </span>
                             @enderror
                         </div>
-                        <div class="field">
+                        <div class="field" data-aos="fade-left">
                             <label class="label has-text-white" for="Email">Email:</label>
                             <input class="input @error('email') is-invalid @enderror" type="text" name="email" id="email" required>
                             @error('email')
@@ -520,17 +525,16 @@
                                 </span>
                             @enderror
                         </div>
-                            <div class="field">
-                                <label class="label has-text-white" for="Email">Message:</label>
-                                <textarea class="textarea @error('message') is-invalid @enderror" name="message" id="message" required></textarea>
-                                @error('message')
-                                    <span role="alert">
-                                        <strong class="has-text-danger">{{ $message }}</strong>
-                                    </span>
-                                @enderror
-                            </div>
-                            <button class="button is-primary is-outlined" style="float: right;">Submit</button>
+                        <div class="field" data-aos="fade-right">
+                            <label class="label has-text-white" for="Email">Message:</label>
+                            <textarea class="textarea @error('message') is-invalid @enderror" name="message" id="message" required></textarea>
+                            @error('message')
+                                <span role="alert">
+                                    <strong class="has-text-danger">{{ $message }}</strong>
+                                </span>
+                            @enderror
                         </div>
+                        <button class="button is-primary is-outlined" style="float: right;" data-aos="fade-left">Submit</button>
                     </form>
                 </div>
             </div>
