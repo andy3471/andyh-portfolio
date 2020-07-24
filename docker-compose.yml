@@ -9,8 +9,9 @@ services:
     environment:
      APP_KEY: base64:Hsn2BwXdpKHhEiTSDkkuWP1OwbfcZZFQlLoWbjY4lk8=
      REDIS_HOST: portfolio-redis
-     ASSET_URL: https://andyh.app
+     ASSET_URL: http://localhost:3471
      CACHE_DRIVER: redis
+     APP_ENV: local
     volumes:
       - .:/app
     depends_on:
