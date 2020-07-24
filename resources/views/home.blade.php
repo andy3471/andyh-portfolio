@@ -197,26 +197,28 @@
                     <div class="component-header" data-aos="flip-left">
                         <h1>Time Picker</h1>
                     </div>
-                    <div class="component-body" data-aos="flip-right">
-                        <div class="level">
-                            <div class="level-item">
-                                <div class="buttons has-addons">
-                                    <a href="https://github.com/andy3471/andyh-timepicker" title="TimePickerDocs" class="button is-info is-outlined">
-                                    <span class="icon">
-                                            <i class="fas fa-file"></i>
-                                        </span>
-                                        <span>Documentation</span>
-                                    </a>
-                                    <a href="https://github.com/andy3471/andyh-timepicker" title="TimePickerCode" class="button is-primary is-outlined">
+                    <div class="component-body">
+                        <div data-aos="flip-right">
+                            <div class="level">
+                                <div class="level-item">
+                                    <div class="buttons has-addons">
+                                        <a href="https://github.com/andy3471/andyh-timepicker" title="TimePickerDocs" class="button is-info is-outlined">
                                         <span class="icon">
-                                                <i class="fab fa-github"></i>
+                                                <i class="fas fa-file"></i>
                                             </span>
-                                        <span>Github</span>
-                                    </a>
+                                            <span>Documentation</span>
+                                        </a>
+                                        <a href="https://github.com/andy3471/andyh-timepicker" title="TimePickerCode" class="button is-primary is-outlined">
+                                            <span class="icon">
+                                                    <i class="fab fa-github"></i>
+                                                </span>
+                                            <span>Github</span>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
+                            <p>A time picker component for VueJS. This allows you to use v-model on a time input. This can be customised to use different minute intervals.</p>
                         </div>
-                        <p>A time picker component for VueJS. This allows you to use v-model on a time input. This can be customised to use different minute intervals.</p>
                         <div class="level">
                             <div class="level-item">
                                 <time-picker></time-picker>
@@ -226,26 +228,28 @@
                     <div class="component-header" data-aos="flip-left">
                         <h1> Auto Complete </h1>
                     </div>
-                    <div class="component-body" data-aos="flip-right">
-                        <div class="level">
-                            <div class="level-item">
-                                <div class="buttons has-addons">
-                                    <a href="https://github.com/andy3471/andyh-autocomplete" title="AutoCompleteDocs" class="button is-info is-outlined">
-                                    <span class="icon">
-                                            <i class="fas fa-file"></i>
-                                        </span>
-                                        <span>Documentation</span>
-                                    </a>
-                                    <a href="https://github.com/andy3471/andyh-autocomplete" title="AutoCompleteCode" class="button is-primary is-outlined">
+                    <div class="component-body">
+                        <div data-aos="flip-right">
+                            <div class="level">
+                                <div class="level-item">
+                                    <div class="buttons has-addons">
+                                        <a href="https://github.com/andy3471/andyh-autocomplete" title="AutoCompleteDocs" class="button is-info is-outlined">
                                         <span class="icon">
-                                            <i class="fab fa-github"></i>
-                                        </span>
-                                        <span>Github</span>
-                                    </a>
+                                                <i class="fas fa-file"></i>
+                                            </span>
+                                            <span>Documentation</span>
+                                        </a>
+                                        <a href="https://github.com/andy3471/andyh-autocomplete" title="AutoCompleteCode" class="button is-primary is-outlined">
+                                            <span class="icon">
+                                                <i class="fab fa-github"></i>
+                                            </span>
+                                            <span>Github</span>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
+                            <p>An autocomplete component made with Vue JS and Axios. This will make a get request to an endpoint as you type, and presents a dropdown with similar results. This supports using the arrow keys and enter to select, or clicking. </p>
                         </div>
-                        <p>An autocomplete component made with Vue JS and Axios. This will make a get request to an endpoint as you type, and presents a dropdown with similar results. This supports using the arrow keys and enter to select, or clicking. </p>
                         <div class="level">
                             <div class="level-item">
                                 <auto-complete placeholder="Type a fruit" url="/autocomplete/fruit/"></auto-complete>
