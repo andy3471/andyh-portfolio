@@ -119,6 +119,12 @@ p {
 }
 
 // Nav
+.browser-notifcation {
+    position: fixed;
+    z-index: 1000;
+    margin-top: 10px;
+}
+
 .hamburger {
     position: fixed;
     z-index: 999;

@@ -14,6 +14,7 @@
  <body>
     <div id="app">
         <navbar></navbar>
+        <browser-check></browser-check>
         <section class="header hero is-fullheight" id="header">
             <div class="container">
                 <div class="header-text" >

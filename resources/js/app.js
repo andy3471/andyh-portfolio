@@ -6,6 +6,7 @@ require("./bootstrap");
 window.Vue = require("vue");
 
 Vue.component("navbar", require("./components/Navbar.vue").default);
+Vue.component("browser-check", require("./components/BrowserCheck.vue").default);
 
 import AndyHTimePicker from "andyh-timepicker";
 import AndyHDatePicker from "andyh-datepicker";
