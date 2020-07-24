@@ -33,7 +33,7 @@
                         </div>
 
                         <div class="level-item">
-                        <a href="#projects" title="Projects" class="button is-primary is-outlined">
+                        <a href="#keys" title="Projects" class="button is-primary is-outlined">
                                 <span class="icon">
                                         <i class="fas fa-code"></i>
                                     </span>
