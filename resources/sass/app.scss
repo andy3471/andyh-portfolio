@@ -25,6 +25,14 @@ body {
     background-size: cover;
 }
 
+html,body
+{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
 a {
     color: #f29f05;
 }
