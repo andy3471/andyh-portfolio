@@ -529,11 +529,7 @@
                                     </span>
                                 @enderror
                             </div>
-                            <div class="field is-grouped">
-                                <div class="control">
-                                    <button class="input" class="button is-primary is-outlined mr-0">Submit</button>
-                                </div>
-                            </div>
+                            <button class="button is-primary is-outlined" style="float: right;">Submit</button>
                         </div>
                     </form>
                 </div>
