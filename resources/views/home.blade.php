@@ -67,17 +67,17 @@
                         <div class="level">
                             <div class="level-item">
                                 <div class="buttons has-addons">
-                                    <a href="https://github.com/andy3471/" title="GitHub" class="button">
-                                        <span class="icon">
-                                                <i class="fab fa-github"></i>
-                                            </span>
-                                        <span>Github</span>
-                                    </a>
-                                    <a href="https://www.linkedin.com/in/andrew-hargrave-b36128144/" title="LinkedIn" class="button">
+                                    <a href="https://www.linkedin.com/in/andrew-hargrave-b36128144/" title="LinkedIn" class="button is-info is-outlined">
                                         <span class="icon">
                                                 <i class="fab fa-linkedin"></i>
                                             </span>
                                         <span>Linked In</span>
+                                    </a>
+                                    <a href="https://github.com/andy3471/" title="GitHub" class="button is-primary is-outlined">
+                                        <span class="icon">
+                                                <i class="fab fa-github"></i>
+                                            </span>
+                                        <span>Github</span>
                                     </a>
                                 </div>
                             </div>
@@ -97,13 +97,18 @@
                     <div class="level">
                         <div class="level-item">
                             <div class="buttons has-addons">
-                                <a href="https://github.com/andy3471/keyshare" title="KeyshareCode" class="button">
+                                <a href="https://github.com/andy3471/keyshare" title="KeyshareCode" class="button is-info is-outlined">
                                     <span class="icon">
                                             <i class="fab fa-github"></i>
                                         </span>
                                     <span>Github</span>
                                 </a>
-                                <a href="https://keyshare.andyh.app" title="KeyshareDemo" class="button">Live Demo</a>
+                                <a href="https://keyshare.andyh.app" title="KeyshareDemo" class="button is-primary is-outlined">
+                                <span class="icon">
+                                        <i class="fa fa-link"></i>
+                                    </span>
+                                    <span>Live Demo</span>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -124,13 +129,18 @@
                     <div class="level">
                         <div class="level-item">
                             <div class="buttons has-addons">
-                                <a href="https://github.com/andy3471/lunchrota" title="LunchRotaCode" class="button">
+                                <a href="https://github.com/andy3471/lunchrota" title="LunchRotaCode" class="button is-info is-outlined">
                                     <span class="icon">
                                             <i class="fab fa-github"></i>
                                         </span>
                                     <span>Github</span>
                                 </a>
-                                <a href="https://lunchrota.andyh.app" title="LunchRotaDemo" class="button">Live Demo</a>
+                                <a href="https://keyshare.andyh.app" title="KeyshareDemo" class="button is-primary is-outlined">
+                                <span class="icon">
+                                        <i class="fa fa-link"></i>
+                                    </span>
+                                    <span>Live Demo</span>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -156,17 +166,17 @@
                         <div class="level">
                             <div class="level-item">
                                 <div class="buttons has-addons">
-                                    <a href="https://github.com/andy3471/andyh-datepicker" title="DatePickerCode" class="button">
-                                        <span class="icon">
-                                            <i class="fab fa-github"></i>
-                                        </span>
-                                        <span>Github</span>
-                                    </a>
-                                    <a href="https://github.com/andy3471/andyh-datepicker" title="DatePickerDocs" class="button">
+                                    <a href="https://github.com/andy3471/andyh-datepicker" title="DatePickerDocs" class="button is-info is-outlined">
                                         <span class="icon">
                                             <i class="fas fa-file"></i>
                                         </span>
                                         <span>Documentation</span>
+                                    </a>
+                                    <a href="https://github.com/andy3471/andyh-datepicker" title="DatePickerCode" class="button is-primary is-outlined">
+                                        <span class="icon">
+                                            <i class="fab fa-github"></i>
+                                        </span>
+                                        <span>Github</span>
                                     </a>
                                 </div>
                             </div>
@@ -185,17 +195,17 @@
                         <div class="level">
                             <div class="level-item">
                                 <div class="buttons has-addons">
-                                    <a href="https://github.com/andy3471/andyh-timepicker" title="TimePickerCode" class="button">
-                                        <span class="icon">
-                                                <i class="fab fa-github"></i>
-                                            </span>
-                                        <span>Github</span>
-                                    </a>
-                                    <a href="https://github.com/andy3471/andyh-timepicker" title="TimePickerDocs" class="button">
+                                    <a href="https://github.com/andy3471/andyh-timepicker" title="TimePickerDocs" class="button is-info is-outlined">
                                     <span class="icon">
                                             <i class="fas fa-file"></i>
                                         </span>
                                         <span>Documentation</span>
+                                    </a>
+                                    <a href="https://github.com/andy3471/andyh-timepicker" title="TimePickerCode" class="button is-primary is-outlined">
+                                        <span class="icon">
+                                                <i class="fab fa-github"></i>
+                                            </span>
+                                        <span>Github</span>
                                     </a>
                                 </div>
                             </div>
@@ -214,17 +224,17 @@
                         <div class="level">
                             <div class="level-item">
                                 <div class="buttons has-addons">
-                                    <a href="https://github.com/andy3471/andyh-autocomplete" title="AutoCompleteCode" class="button">
-                                        <span class="icon">
-                                            <i class="fab fa-github"></i>
-                                        </span>
-                                        <span>Github</span>
-                                    </a>
-                                    <a href="https://github.com/andy3471/andyh-autocomplete" title="AutoCompleteDocs" class="button">
+                                    <a href="https://github.com/andy3471/andyh-autocomplete" title="AutoCompleteDocs" class="button is-info is-outlined">
                                     <span class="icon">
                                             <i class="fas fa-file"></i>
                                         </span>
                                         <span>Documentation</span>
+                                    </a>
+                                    <a href="https://github.com/andy3471/andyh-autocomplete" title="AutoCompleteCode" class="button is-primary is-outlined">
+                                        <span class="icon">
+                                            <i class="fab fa-github"></i>
+                                        </span>
+                                        <span>Github</span>
                                     </a>
                                 </div>
                             </div>
@@ -256,17 +266,17 @@
                                         <div class="level">
                                             <div class="level-item">
                                                 <div class="buttons has-addons">
-                                                    <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=1301493206&searchtext=gloomhaven" title="Gloomhaven" class="button">
-                                                        <span class="icon">
-                                                            <i class="fab fa-steam"></i>
-                                                        </span>
-                                                        <span>Steam Workshop</span>
-                                                    </a>
-                                                    <a href="https://github.com/andy3471/Gloomhaven-ForgottenCricles-TTS" title="TimePickerCode" class="button">
+                                                    <a href="https://github.com/andy3471/Gloomhaven-ForgottenCricles-TTS" title="TimePickerCode" class="button is-info is-outlined">
                                                         <span class="icon">
                                                                 <i class="fab fa-github"></i>
                                                             </span>
                                                         <span>Github</span>
+                                                    </a>
+                                                    <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=1301493206&searchtext=gloomhaven" title="Gloomhaven" class="button is-primary is-outlined">
+                                                        <span class="icon">
+                                                            <i class="fab fa-steam"></i>
+                                                        </span>
+                                                        <span>Steam Workshop</span>
                                                     </a>
                                                 </div>
                                             </div>
@@ -291,7 +301,7 @@
                                         <p>I was the original leader on the Portal 2 mod Portal Stores: Mel. The mod went on to win a Video Game Award for "Best Fan Creation" in 2015, and has been given a full steam release, with overwhelmingly positive reviews. I am in the credits of the mod for my past contributions.</p>
                                         <div class="level">
                                             <div class="level-item">
-                                                <a href="https://store.steampowered.com/app/317400/Portal_Stories_Mel/" title="Portal Stories: Mel" class="button">
+                                                <a href="https://store.steampowered.com/app/317400/Portal_Stories_Mel/" title="Portal Stories: Mel" class="button is-primary is-outlined">
                                                     <span class="icon">
                                                     <i class="fab fa-steam"></i>
                                                 </span>
@@ -313,7 +323,7 @@
                                         <p>I host a Minecraft server for VR users. The server is a nightclub for VR users, and features a custom scripted beat detection system. The beat detection uses a C application, which acts as the API, using the GBD Framework. In the game, I have used the Computercraft Mod, to make a lua application which gets the beat information from the API, which keeps the lights in sync with the music. The club was created as a meeting place for people during Covid-19.</p>
                                         <div class="level">
                                             <div class="level-item">
-                                                <a href="https://youtu.be/hUbeUy6U4nY" title="Club" class="button">
+                                                <a href="https://youtu.be/hUbeUy6U4nY" title="Club" class="button is-primary is-outlined">
                                                     <span class="icon">
                                                     <i class="fab fa-youtube"></i>
                                                 </span>
@@ -341,7 +351,7 @@
                                         <p>I produce music using Analog Synthesizers, mixed with more modern techniques. I have created and released an album that uses analog synths controlled via midi, along with Ableton Live and a Launchpad</p>
                                         <div class="level">
                                             <div class="level-item">
-                                                <a href="https://open.spotify.com/artist/3BsM8NcTrGD2bZeh94E3Z4?si=QaYxYG9-QbO7Ohq1EjIZTw" title="Album" class="button">
+                                                <a href="https://open.spotify.com/artist/3BsM8NcTrGD2bZeh94E3Z4?si=QaYxYG9-QbO7Ohq1EjIZTw" title="Album" class="button is-primary is-outlined">
                                                     <span class="icon">
                                                     <i class="fab fa-spotify"></i>
                                                 </span>
@@ -521,7 +531,7 @@
                             </div>
                             <div class="field is-grouped">
                                 <div class="control">
-                                    <button class="input" class="button is-primary">Submit</button>
+                                    <button class="input" class="button is-primary is-outlined mr-0">Submit</button>
                                 </div>
                             </div>
                         </div>
