@@ -22,9 +22,9 @@
                         <h1>Andy</h1>
                         <h2>Hargrave</h2>
                     </div>
-                    <h3 data-aos="fade-up">Web Developer & Deployment Specialist</h3>
+                    <h3>Web Developer & Deployment Specialist</h3>
                     <br>
-                    <div class="level" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+                    <div class="level">
                         <div class="level-item">
                             <a href="#about" title="About" class="button is-info is-outlined" >
                                 <span class="icon">
@@ -259,6 +259,78 @@
                 </div>
         </section>
 
+        <section class="hero is-fullheight projects" id="hosting"  data-aos="fade-right">
+            <div class="container">
+                <div class="section-header">
+                    <h1>Hosting</h1>
+                    <h2>+ Virtualisation</h2>
+                </div>
+                <div class="section-body">
+                    <div class="projects-item" data-aos="zoom-in-right">
+                        <div class="projects-body">
+                            <div class="columns is-vcentered">
+                                <div class="column is-hidden-mobile">
+                                    <img src="{{ asset('images/servers.png') }}" alt="servers">
+                                </div>
+                                <div class="column  is-four-fifths ">
+                                    <div class="project">
+                                        <h1>Hosting Platform</h1>
+                                        <p>I run hosting privately, for both video game servers and web applications. These are mostly running Proxmox hypervisor with Ubuntu Server guests. The majority of the platform is running in docker containers, currently using Docker Swarm, for high availability. </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="projects-item" data-aos="zoom-in-right">
+                        <div class="projects-body">
+                            <div class="columns is-vcentered">
+                                <div class="column  is-four-fifths ">
+                                    <div class="project">
+                                        <h1>Proxmox</h1>
+                                        <p>I am currently using Proxmox Hypervisor (KVM and LXC based) for VMs and Containers. This has the feature to be able to easily migrate VMs to other hosts, to avoid downtime of vital servers such as the File Server.</p>
+                                    </div>
+                                </div>
+                                <div class="column is-hidden-mobile">
+                                    <img src="{{ asset('images/proxmox.png') }}" alt="proxmox">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="projects-item" data-aos="zoom-in-right">
+                        <div class="projects-body">
+                            <div class="columns is-vcentered">
+                                <div class="column is-hidden-mobile">
+                                    <img src="{{ asset('images/docker.png') }}" alt="docker">
+                                </div>
+                                <div class="column  is-four-fifths ">
+                                    <div class="project">
+                                        <h1>Docker</h1>
+                                        <p>I have containerised most of the applications and game servers, including containers for all the applications I have created. I am currently running them in Docker Swarm mode, accross various hosts (Windows + Linux). This site is hosted on Docker Swarm, refresh (F5) the page, and the container name should change.</p>
+                                        <p> Current Docker Container Name: @php echo gethostname() @endphp </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="projects-item" data-aos="zoom-in-right">
+                        <div class="projects-body">
+                            <div class="columns is-vcentered">
+                                <div class="column  is-four-fifths ">
+                                    <div class="project">
+                                        <h1>Traefik</h1>
+                                        <p>I am using Traefik as an edge router for directing traffic from the domains to the correct web application. Traefik integrates with docker and docker swarm nicely, and uses LetsEncrypt to automatically generate SSL certificates on the fly.</p>
+                                    </div>
+                                </div>
+                                <div class="column is-hidden-mobile">
+                                    <img src="{{ asset('images/traefik.png') }}" alt="traefik">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <section class="hero is-fullheight projects" id="projects"  data-aos="fade-right">
             <div class="container">
                 <div class="section-header">
@@ -266,6 +338,25 @@
                     <h2>Projects</h2>
                 </div>
                 <div class="section-body">
+                    <div class="projects-item" data-aos="zoom-in-right">
+                        <div class="projects-body">
+                            <div class="columns is-vcentered">
+                                <div class="column is-hidden-mobile">
+                                    <img src="{{ asset('images/wards.jpg') }}" alt="wards">
+                                </div>
+                                <div class="column is-three-quarters">
+                                    <div class="project">
+                                        <h1>Advanced Hackathon 2020 - Wards MyWorkplace App</h1>
+                                        <p>I took part in the 2020 Advanced Hackathon, in which the task was to create an external applet which integrates with one of our existing applications. 
+                                        I worked as developer on our team, alongside some of the developers for CareNotes. We created an applet that integrates with CareNotes, a patient management system,
+                                        to show patients on a ward, and record incidents, clinical notes, BMI and Bodymap forms against the patient. This would then use the existing CareNotes API to send
+                                        this to CareNotes. The project was designed and built in 24 hours, in Advanced's MosaicJS framework. I created the modals, forms and bodymapping functionality. The
+                                        project is being looked into further as something we can develop into a full product. </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div class="projects-item" data-aos="zoom-in-right">
                         <div class="projects-body">
                             <div class="columns is-vcentered">
@@ -303,7 +394,7 @@
                         <div class="projects-body">
                             <div class="columns is-vcentered">
                                 <div class="column is-hidden-mobile">
-                                    <img src="{{ asset('images/portalstories.jpg') }}" alt="proxmox">
+                                    <img src="{{ asset('images/portalstories.jpg') }}" alt="portal">
                                 </div>
                                 <div class="column is-three-quarters">
                                     <div class="project">
@@ -374,32 +465,17 @@
                             </div>
                         </div>
                     </div>
-                    <div class="projects-item" data-aos="zoom-in-right">
-                        <div class="projects-body">
-                            <div class="columns is-vcentered">
-                                <div class="column is-three-quarters">
-                                    <div class="project">
-                                        <h1>Hosting</h1>
-                                        <p>I host various servers, both web and gaming servers privately. These are all hosted on Proxmox Hypervisor, using both LXC containers and KVM Virtual Machines. I also host some servers in Docker.</p>
-                                    </div>
-                                </div>
-                                <div class="column is-hidden-mobile">
-                                    <img src="{{ asset('images/proxmox.png') }}" alt="proxmox">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                     <div class="projects-item" data-aos="zoom-in-left">
                         <div class="projects-body">
                             <div class="columns is-vcentered">
-                                <div class="column is-hidden-mobile">
-                                    <img src="{{ asset('images/justgiving.jpg') }}" alt="JustGiving">
-                                </div>
                                 <div class="column is-three-quarters">
                                     <div class="project">
                                         <h1>Charity Events</h1>
                                         <p>I have hosted multiple charity events for various charities. This includes 4 separate charity gaming Marathons, that have raised a total of over £3600 for various Charities.</p>
                                     </div>
+                                </div>
+                                <div class="column is-hidden-mobile">
+                                    <img src="{{ asset('images/justgiving.jpg') }}" alt="JustGiving">
                                 </div>
                             </div>
                         </div>
