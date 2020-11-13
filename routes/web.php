@@ -14,3 +14,5 @@
 Route::get('/', 'PageController@home');
 Route::get('/autocomplete/fruit/{search}', 'PageController@fruitSearch');
 Route::post('/sendemail', 'PageController@sendEmail')->name('sendemail');
+
+Route::get('/lunchrota/alert/4.0.0', 'LunchRotaVersionController@checkAlert')->name('checkalert');

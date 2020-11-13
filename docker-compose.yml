@@ -1,7 +1,7 @@
 version: '3'
 services:
   portfolio-web:
-    build: .
+    image: andy3471/andyh-portfolio
     restart: unless-stopped
     container_name: portfolio-web
     ports:
