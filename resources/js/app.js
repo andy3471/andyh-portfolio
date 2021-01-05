@@ -1,22 +1,14 @@
-import AOS from 'aos';
-AOS.init()
-
 require("./bootstrap");
 
+import "fullpage.js/vendors/scrolloverflow";
+import VueFullPage from "vue-fullpage.js";
+
+
 window.Vue = require("vue");
+Vue.use(VueFullPage);
 
-Vue.component("navbar", require("./components/Navbar.vue").default);
-Vue.component("browser-check", require("./components/BrowserCheck.vue").default);
-
-import AndyHTimePicker from "andyh-timepicker";
-import AndyHDatePicker from "andyh-datepicker";
-import AndyHAutocomplete from "andyh-autocomplete";
+Vue.component("home", require("./views/Home.vue").default);
 
 const app = new Vue({
-    el: "#app",
-    components: {
-        "time-picker": AndyHTimePicker,
-        "date-picker": AndyHDatePicker,
-        "auto-complete": AndyHAutocomplete
-    }
+    el: "#app"
 });
