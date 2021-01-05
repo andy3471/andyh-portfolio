@@ -14,7 +14,7 @@
         "andyh-datepicker": "^1.0.5",
         "andyh-timepicker": "^1.0.4",
         "aos": "^2.3.4",
-        "axios": "^0.19.2",
+        "axios": "^0.21.1",
         "bulma": "^0.9.0",
         "bulma-extensions": "^6.2.7",
         "cross-env": "^5.1",
