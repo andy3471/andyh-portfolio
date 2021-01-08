@@ -20,10 +20,10 @@
     <div class="level">
       <div class="level-item">
         <div class="tags">
-          <span class="tag">Laravel</span>
-          <span class="tag">Vue</span>
-          <span class="tag">Docker</span>
-          <span class="tag">Bootstrap</span>
+          <span class="tag is-dark">Laravel</span>
+          <span class="tag is-dark">Vue</span>
+          <span class="tag is-dark">Docker</span>
+          <span class="tag is-dark">Bootstrap</span>
         </div>
       </div>
     </div>
@@ -78,3 +78,4 @@ p {
   background-repeat: no-repeat;
   background-size: cover;
 }
+</style>

@@ -3551,12 +3551,22 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: {
     date: String,
     jobTitle: String,
     img: String,
-    imgAlt: String
+    imgAlt: String,
+    tags: [],
+    responsibilities: []
   }
 });
 
@@ -4601,106 +4611,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -4708,6 +4618,49 @@ __webpack_require__.r(__webpack_exports__);
   components: {
     Section: _components_Section_vue__WEBPACK_IMPORTED_MODULE_0__["default"],
     TimelineItem: _components_TimelineItem_vue__WEBPACK_IMPORTED_MODULE_1__["default"]
+  },
+  data: function data() {
+    return {
+      jobs: [{
+        date: "December 2020",
+        title: "Neilson - Application Support Analyst",
+        img: "/images/neilson.png",
+        alt: "Neilson",
+        tags: ['SQL', 'Windows AD'],
+        responsibilities: ['Create bespoke reports using SQL for stakeholders and managing SSRS reports.', 'Troubleshoot both the applications client UI and backend database related issues.']
+      }, {
+        date: "November 2017",
+        title: "Advanced - Application Delivery Specialist",
+        img: "/images/advanced.jpg",
+        alt: "advanced",
+        tags: ['SQL', 'IIS', 'NodeJS'],
+        responsibilities: ['Provide third line support for Carenotes (ASP NET Application)', 'Deploy and upgrade the Carenotes Application (Windows and Linux Servers)', 'Install and use monitoring tools such as New Relic and App Dynamics', 'Install external modules such as the Patient Dashboard (Node JS Application on Red Hat Servers)', 'Write complex SQL scripts to resolve data issues']
+      }, {
+        date: "June 2017",
+        title: "Advanced - Service Desk Analyst",
+        img: "/images/advanced.jpg",
+        alt: "advanced",
+        responsibilities: ['Deal with customer escalations', 'Attend internal and external conference calls, such as Go To Market calls', 'Provide training to the first and second line teams']
+      }, {
+        date: "September 2016",
+        title: "Advanced - Second Line Community Technician",
+        img: "/images/advanced.jpg",
+        alt: "advanced",
+        responsibilities: ['Answer customer queries via phone and email', 'Work with the development team to triage issues', 'Write and test SQL scripts to resolve issues']
+      }, {
+        date: "April 2016",
+        title: "Advanced - First Line Support Technician",
+        img: "/images/advanced.jpg",
+        alt: "advanced",
+        responsibilities: ['Answer customer queries via phone and email', 'Create and manage Active Directory accounts']
+      }, {
+        date: "September 2013",
+        title: "Xpress Games - Business Administration Apprentice",
+        img: "/images/xpg.jpg",
+        alt: "xpg",
+        responsibilities: ['Maintain database of stock held within the store', 'Study towards all apprenticeship modules including communication in business environment']
+      }]
+    };
   }
 });
 
@@ -4802,7 +4755,7 @@ __webpack_require__.r(__webpack_exports__);
         //Design
         controlArrows: true,
         //verticalCentered: true,
-        sectionsColor: ["none", "none", "none", "none", "#049DBF", "#D82B2B", "#33A65B", "#049DBF", "#D82B2B", "none"],
+        sectionsColor: ["none", "none", "none", "none", "#2A438C", "#7AADCC", "#33A65B", "#049DBF", "#D82B2B", "none"],
         paddingTop: ".5em",
         paddingBottom: ".5em"
       }
@@ -4882,6 +4835,25 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 // module
 exports.push([module.i, "\n.section[data-v-ac0d212e] {\n  background-image: url('/images/keyshare-bg.png');\n  background-color: #272727;\n  background-repeat: no-repeat;\n  background-size: cover;\n}\n", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/pages/Lunchrota.vue?vue&type=style&index=0&id=9021e34a&scoped=true&lang=css&":
+/*!**********************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader??ref--7-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--7-2!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/pages/Lunchrota.vue?vue&type=style&index=0&id=9021e34a&scoped=true&lang=css& ***!
+  \**********************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "\np[data-v-9021e34a] {\r\n  color:#212529;\n}\n.section[data-v-9021e34a] {\r\n  background-image: url('/images/lunchrota-bg.png');\r\n  background-color: #F2F2F2;\r\n  background-repeat: no-repeat;\r\n  background-size: cover;\n}\r\n", ""]);
 
 // exports
 
@@ -25271,6 +25243,36 @@ if(false) {}
 
 /***/ }),
 
+/***/ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/pages/Lunchrota.vue?vue&type=style&index=0&id=9021e34a&scoped=true&lang=css&":
+/*!**************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/style-loader!./node_modules/css-loader??ref--7-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--7-2!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/pages/Lunchrota.vue?vue&type=style&index=0&id=9021e34a&scoped=true&lang=css& ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../../node_modules/css-loader??ref--7-1!../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../node_modules/postcss-loader/src??ref--7-2!../../../node_modules/vue-loader/lib??vue-loader-options!./Lunchrota.vue?vue&type=style&index=0&id=9021e34a&scoped=true&lang=css& */ "./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/pages/Lunchrota.vue?vue&type=style&index=0&id=9021e34a&scoped=true&lang=css&");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {}
+
+/***/ }),
+
 /***/ "./node_modules/style-loader/lib/addStyles.js":
 /*!****************************************************!*\
   !*** ./node_modules/style-loader/lib/addStyles.js ***!
@@ -26517,7 +26519,28 @@ var render = function() {
         _vm._v(" "),
         _c("p", [_vm._v(_vm._s(_vm.jobTitle))]),
         _vm._v(" "),
-        _vm._t("default")
+        _c(
+          "ul",
+          _vm._l(_vm.responsibilities, function(responsibility, idx) {
+            return _c("li", { key: idx }, [
+              _vm._v("\n        " + _vm._s(responsibility) + "\n      ")
+            ])
+          }),
+          0
+        ),
+        _vm._v(" "),
+        _vm._t("default"),
+        _vm._v(" "),
+        _c(
+          "div",
+          { staticClass: "tags" },
+          _vm._l(_vm.tags, function(tag, idx) {
+            return _c("span", { key: idx, staticClass: "tag" }, [
+              _vm._v(_vm._s(tag))
+            ])
+          }),
+          0
+        )
       ],
       2
     )
@@ -27205,13 +27228,13 @@ var render = function() {
       _c("div", { staticClass: "level" }, [
         _c("div", { staticClass: "level-item" }, [
           _c("div", { staticClass: "tags" }, [
-            _c("span", { staticClass: "tag" }, [_vm._v("Laravel")]),
+            _c("span", { staticClass: "tag is-dark" }, [_vm._v("Laravel")]),
             _vm._v(" "),
-            _c("span", { staticClass: "tag" }, [_vm._v("Vue")]),
+            _c("span", { staticClass: "tag is-dark" }, [_vm._v("Vue")]),
             _vm._v(" "),
-            _c("span", { staticClass: "tag" }, [_vm._v("Docker")]),
+            _c("span", { staticClass: "tag is-dark" }, [_vm._v("Docker")]),
             _vm._v(" "),
-            _c("span", { staticClass: "tag" }, [_vm._v("Bootstrap")])
+            _c("span", { staticClass: "tag is-dark" }, [_vm._v("Bootstrap")])
           ])
         ])
       ]),
@@ -28029,194 +28052,19 @@ var render = function() {
               ])
             ]),
             _vm._v(" "),
-            _c(
-              "TimelineItem",
-              {
+            _vm._l(_vm.jobs, function(job, idx) {
+              return _c("TimelineItem", {
+                key: idx,
                 attrs: {
-                  date: "December 2020",
-                  "job-title": "Neilson - Application Support Analyst",
-                  img: "/images/neilson.png",
-                  "img-alt": "Neilson"
+                  date: job.date,
+                  "job-title": job.title,
+                  img: job.img,
+                  "img-alt": job.alt,
+                  responsibilities: job.responsibilities,
+                  tags: job.tags
                 }
-              },
-              [
-                _c("ul", [
-                  _c("li", [
-                    _vm._v(
-                      "\n            Create bespoke reports using SQL for stakeholders and managing\n            SSRS reports.\n          "
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("li", [
-                    _vm._v(
-                      "\n            Troubleshoot both the applications client UI and backend database\n            related issues\n          "
-                    )
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "tags" }, [
-                  _c("span", { staticClass: "tag" }, [_vm._v("SQL")]),
-                  _vm._v(" "),
-                  _c("span", { staticClass: "tag" }, [_vm._v("Windows AD")])
-                ])
-              ]
-            ),
-            _vm._v(" "),
-            _c(
-              "TimelineItem",
-              {
-                attrs: {
-                  date: "November 2017",
-                  "job-title": "Advanced - Application Delivery Specialist",
-                  img: "/images/advanced.jpg",
-                  "img-alt": "advanced"
-                }
-              },
-              [
-                _c("ul", [
-                  _c("li", [
-                    _vm._v(
-                      "\n            Provide third line support for Carenotes (ASP NET Application)\n          "
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("li", [
-                    _vm._v(
-                      "\n            Deploy and upgrade the Carenotes Application (Windows and Linux\n            Servers)\n          "
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("li", [
-                    _vm._v(
-                      "\n            Install and use monitoring tools such as New Relic and App\n            Dynamics\n          "
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("li", [
-                    _vm._v(
-                      "\n            Install external modules such as the Patient Dashboard (Node JS\n            Application on Red Hat Servers)\n          "
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("li", [
-                    _vm._v("Write complex SQL scripts to resolve data issues")
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "tags" }, [
-                  _c("span", { staticClass: "tag" }, [_vm._v("SQL")]),
-                  _vm._v(" "),
-                  _c("span", { staticClass: "tag" }, [_vm._v("IIS")]),
-                  _vm._v(" "),
-                  _c("span", { staticClass: "tag" }, [_vm._v("NodeJS")])
-                ])
-              ]
-            ),
-            _vm._v(" "),
-            _c(
-              "TimelineItem",
-              {
-                attrs: {
-                  date: "June 2017",
-                  "job-title": "Advanced - Service Desk Analyst",
-                  img: "/images/advanced.jpg",
-                  "img-alt": "advanced"
-                }
-              },
-              [
-                _c("ul", [
-                  _c("li", [_vm._v("Deal with customer escalations")]),
-                  _vm._v(" "),
-                  _c("li", [
-                    _vm._v(
-                      "\n            Attend internal and external conference calls, such as Go To\n            Market calls\n          "
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("li", [
-                    _vm._v(
-                      "Provide training to the first and second line teams"
-                    )
-                  ])
-                ])
-              ]
-            ),
-            _vm._v(" "),
-            _c(
-              "TimelineItem",
-              {
-                attrs: {
-                  date: "September 2016",
-                  "job-title": "Advanced - Second Line Community Technician",
-                  img: "/images/advanced.jpg",
-                  "img-alt": "advanced"
-                }
-              },
-              [
-                _c("ul", [
-                  _c("li", [
-                    _vm._v("Answer customer queries via phone and email")
-                  ]),
-                  _vm._v(" "),
-                  _c("li", [
-                    _vm._v("Work with the development team to triage issues")
-                  ]),
-                  _vm._v(" "),
-                  _c("li", [
-                    _vm._v("Write and test SQL scripts to resolve issues")
-                  ])
-                ])
-              ]
-            ),
-            _vm._v(" "),
-            _c(
-              "TimelineItem",
-              {
-                attrs: {
-                  date: "April 2016",
-                  "job-title": "Advanced - First Line Support Technician",
-                  img: "/images/advanced.jpg",
-                  "img-alt": "advanced"
-                }
-              },
-              [
-                _c("ul", [
-                  _c("li", [
-                    _vm._v("Answer customer queries via phone and email")
-                  ]),
-                  _vm._v(" "),
-                  _c("li", [
-                    _vm._v("Create and manage Active Directory accounts")
-                  ])
-                ])
-              ]
-            ),
-            _vm._v(" "),
-            _c(
-              "TimelineItem",
-              {
-                attrs: {
-                  date: "September 2013",
-                  "job-title":
-                    "Xpress Games - Business Administration Apprentice",
-                  img: "/images/xpg.jpg",
-                  "img-alt": "xpg"
-                }
-              },
-              [
-                _c("ul", [
-                  _c("li", [
-                    _vm._v("Maintain database of stock held within the store")
-                  ]),
-                  _vm._v(" "),
-                  _c("li", [
-                    _vm._v(
-                      "\n            Study towards all apprenticeship modules including communication\n            in business environment\n          "
-                    )
-                  ])
-                ])
-              ]
-            ),
+              })
+            }),
             _vm._v(" "),
             _c("header", { staticClass: "timeline-header" }, [
               _c("span", { staticClass: "tag is-medium is-primary" }, [
@@ -28224,7 +28072,7 @@ var render = function() {
               ])
             ])
           ],
-          1
+          2
         )
       ])
     ]
@@ -41327,7 +41175,9 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Lunchrota_vue_vue_type_template_id_9021e34a_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Lunchrota.vue?vue&type=template&id=9021e34a&scoped=true& */ "./resources/js/pages/Lunchrota.vue?vue&type=template&id=9021e34a&scoped=true&");
 /* harmony import */ var _Lunchrota_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Lunchrota.vue?vue&type=script&lang=js& */ "./resources/js/pages/Lunchrota.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+/* empty/unused harmony star reexport *//* harmony import */ var _Lunchrota_vue_vue_type_style_index_0_id_9021e34a_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Lunchrota.vue?vue&type=style&index=0&id=9021e34a&scoped=true&lang=css& */ "./resources/js/pages/Lunchrota.vue?vue&type=style&index=0&id=9021e34a&scoped=true&lang=css&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
 
 
 
@@ -41335,7 +41185,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /* normalize component */
 
-var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__["default"])(
   _Lunchrota_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
   _Lunchrota_vue_vue_type_template_id_9021e34a_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"],
   _Lunchrota_vue_vue_type_template_id_9021e34a_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
@@ -41364,6 +41214,22 @@ component.options.__file = "resources/js/pages/Lunchrota.vue"
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Lunchrota_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib??vue-loader-options!./Lunchrota.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/pages/Lunchrota.vue?vue&type=script&lang=js&");
 /* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Lunchrota_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/pages/Lunchrota.vue?vue&type=style&index=0&id=9021e34a&scoped=true&lang=css&":
+/*!***************************************************************************************************!*\
+  !*** ./resources/js/pages/Lunchrota.vue?vue&type=style&index=0&id=9021e34a&scoped=true&lang=css& ***!
+  \***************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_7_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_2_node_modules_vue_loader_lib_index_js_vue_loader_options_Lunchrota_vue_vue_type_style_index_0_id_9021e34a_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/style-loader!../../../node_modules/css-loader??ref--7-1!../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../node_modules/postcss-loader/src??ref--7-2!../../../node_modules/vue-loader/lib??vue-loader-options!./Lunchrota.vue?vue&type=style&index=0&id=9021e34a&scoped=true&lang=css& */ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/pages/Lunchrota.vue?vue&type=style&index=0&id=9021e34a&scoped=true&lang=css&");
+/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_7_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_2_node_modules_vue_loader_lib_index_js_vue_loader_options_Lunchrota_vue_vue_type_style_index_0_id_9021e34a_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_7_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_2_node_modules_vue_loader_lib_index_js_vue_loader_options_Lunchrota_vue_vue_type_style_index_0_id_9021e34a_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_7_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_2_node_modules_vue_loader_lib_index_js_vue_loader_options_Lunchrota_vue_vue_type_style_index_0_id_9021e34a_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_7_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_2_node_modules_vue_loader_lib_index_js_vue_loader_options_Lunchrota_vue_vue_type_style_index_0_id_9021e34a_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+
 
 /***/ }),
 

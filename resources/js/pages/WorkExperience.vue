@@ -8,116 +8,16 @@
         <header class="timeline-header">
           <span class="tag is-medium is-primary">Today</span>
         </header>
-
         <TimelineItem
-          date="December 2020"
-          job-title="Neilson - Application Support Analyst"
-          img="/images/neilson.png"
-          img-alt="Neilson"
-        >
-          <ul>
-            <li>
-              Create bespoke reports using SQL for stakeholders and managing
-              SSRS reports.
-            </li>
-            <li>
-              Troubleshoot both the applications client UI and backend database
-              related issues
-            </li>
-          </ul>
-          <div class="tags">
-            <span class="tag">SQL</span>
-            <span class="tag">Windows AD</span>
-          </div>
-        </TimelineItem>
-
-        <TimelineItem
-          date="November 2017"
-          job-title="Advanced - Application Delivery Specialist"
-          img="/images/advanced.jpg"
-          img-alt="advanced"
-        >
-          <ul>
-            <li>
-              Provide third line support for Carenotes (ASP NET Application)
-            </li>
-            <li>
-              Deploy and upgrade the Carenotes Application (Windows and Linux
-              Servers)
-            </li>
-            <li>
-              Install and use monitoring tools such as New Relic and App
-              Dynamics
-            </li>
-            <li>
-              Install external modules such as the Patient Dashboard (Node JS
-              Application on Red Hat Servers)
-            </li>
-            <li>Write complex SQL scripts to resolve data issues</li>
-          </ul>
-          <div class="tags">
-            <span class="tag">SQL</span>
-            <span class="tag">IIS</span>
-            <span class="tag">NodeJS</span>
-          </div>
-        </TimelineItem>
-
-        <TimelineItem
-          date="June 2017"
-          job-title="Advanced - Service Desk Analyst"
-          img="/images/advanced.jpg"
-          img-alt="advanced"
-        >
-          <ul>
-            <li>Deal with customer escalations</li>
-            <li>
-              Attend internal and external conference calls, such as Go To
-              Market calls
-            </li>
-            <li>Provide training to the first and second line teams</li>
-          </ul>
-        </TimelineItem>
-
-        <TimelineItem
-          date="September 2016"
-          job-title="Advanced - Second Line Community Technician"
-          img="/images/advanced.jpg"
-          img-alt="advanced"
-        >
-          <ul>
-            <li>Answer customer queries via phone and email</li>
-            <li>Work with the development team to triage issues</li>
-            <li>Write and test SQL scripts to resolve issues</li>
-          </ul>
-        </TimelineItem>
-
-        <TimelineItem
-          date="April 2016"
-          job-title="Advanced - First Line Support Technician"
-          img="/images/advanced.jpg"
-          img-alt="advanced"
-        >
-          <ul>
-            <li>Answer customer queries via phone and email</li>
-            <li>Create and manage Active Directory accounts</li>
-          </ul>
-        </TimelineItem>
-
-        <TimelineItem
-          date="September 2013"
-          job-title="Xpress Games - Business Administration Apprentice"
-          img="/images/xpg.jpg"
-          img-alt="xpg"
-        >
-          <ul>
-            <li>Maintain database of stock held within the store</li>
-            <li>
-              Study towards all apprenticeship modules including communication
-              in business environment
-            </li>
-          </ul>
-        </TimelineItem>
-
+          v-for="(job, idx) in jobs"
+          :key="idx"
+          :date="job.date"
+          :job-title="job.title"
+          :img="job.img"
+          :img-alt="job.alt"
+          :responsibilities="job.responsibilities"
+          :tags="job.tags"
+        />
         <header class="timeline-header">
           <span class="tag is-medium is-primary">2013</span>
         </header>
@@ -134,6 +34,79 @@ export default {
   components: {
     Section,
     TimelineItem
-  }
+  },
+  data() {
+    return {
+      jobs: [
+        {
+          date: "December 2020",
+          title: "Neilson - Application Support Analyst",
+          img: "/images/neilson.png",
+          alt: "Neilson",
+          tags: ['SQL','Windows AD'],
+          responsibilities: [
+            'Create bespoke reports using SQL for stakeholders and managing SSRS reports.',
+            'Troubleshoot both the applications client UI and backend database related issues.',
+          ]
+        },
+        {
+          date: "November 2017",
+          title: "Advanced - Application Delivery Specialist",
+          img: "/images/advanced.jpg",
+          alt: "advanced",
+          tags: ['SQL','IIS', 'NodeJS'],
+          responsibilities: [
+            'Provide third line support for Carenotes (ASP NET Application)',
+            'Deploy and upgrade the Carenotes Application (Windows and Linux Servers)',
+            'Install and use monitoring tools such as New Relic and App Dynamics',
+            'Install external modules such as the Patient Dashboard (Node JS Application on Red Hat Servers)',
+            'Write complex SQL scripts to resolve data issues'
+          ]
+        },
+        {
+          date: "June 2017",
+          title: "Advanced - Service Desk Analyst",
+          img: "/images/advanced.jpg",
+          alt: "advanced",
+          responsibilities: [
+            'Deal with customer escalations',
+            'Attend internal and external conference calls, such as Go To Market calls',
+            'Provide training to the first and second line teams'
+          ]
+        },
+        {
+          date: "September 2016",
+          title: "Advanced - Second Line Community Technician",
+          img: "/images/advanced.jpg",
+          alt: "advanced",
+          responsibilities: [
+            'Answer customer queries via phone and email',
+            'Work with the development team to triage issues',
+            'Write and test SQL scripts to resolve issues'
+          ]
+        },
+        {
+          date: "April 2016",
+          title: "Advanced - First Line Support Technician",
+          img: "/images/advanced.jpg",
+          alt: "advanced",
+          responsibilities: [
+            'Answer customer queries via phone and email',
+            'Create and manage Active Directory accounts'
+          ]
+        },
+        { 
+          date: "September 2013",
+          title: "Xpress Games - Business Administration Apprentice",
+          img: "/images/xpg.jpg",
+          alt: "xpg",
+          responsibilities: [
+            'Maintain database of stock held within the store',
+            'Study towards all apprenticeship modules including communication in business environment'
+          ]
+        }
+      ]
+    };
+  },
 };
 </script>

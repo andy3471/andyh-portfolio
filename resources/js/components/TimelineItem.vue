@@ -11,7 +11,15 @@
         {{ date }}
       </p>
       <p>{{ jobTitle }}</p>
+      <ul>
+        <li v-for="(responsibility, idx) in responsibilities" :key="idx">
+          {{responsibility}}
+        </li>
+      </ul>
       <slot />
+      <div class="tags">
+        <span v-for="(tag, idx) in tags" class="tag" :key="idx">{{tag}}</span>
+      </div>
     </div>
   </div>
 </template>
@@ -21,7 +29,9 @@ export default {
     date: String,
     jobTitle: String,
     img: String,
-    imgAlt: String
+    imgAlt: String,
+    tags: [],
+    responsibilities: []
   }
 };
 </script>
