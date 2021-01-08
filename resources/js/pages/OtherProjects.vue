@@ -1,9 +1,17 @@
 <template>
   <div class="section">
     <div class="slide">
-      <SectionHeader titleUpper="Advanced" titleLower="Hackathon" />
+      <SectionHeader
+        title-upper="Advanced"
+        title-lower="Hackathon"
+      />
       <div class="container">
-        <img src="/images/wards.jpg" class="is-16by9" alt="wards" style="width: 50%; padding-top: none" />
+        <img
+          src="/images/wards.jpg"
+          class="is-16by9"
+          alt="wards"
+          style="width: 50%; padding-top: none"
+        >
         <p>
           I took part in the 2020 Advanced Hackathon, in which the task
           was to create an external applet which integrates with an existing 
@@ -31,13 +39,31 @@
     </div>
 
     <div class="slide">
-      <SectionHeader titleUpper="Portfolio" titleLower="Website" />
+      <SectionHeader
+        title-upper="Portfolio"
+        title-lower="Website"
+      />
       <ButtonGroup>
-        <Button href="https://github.com/andy3471/andyh-portfolio" title="GitHub" icon="fab fa-github" class="button is-info is-outlined" />
-        <Button href="./v1" title="Version 1" icon="fa fa-link" class="button is-primary is-outlined" />
+        <Button
+          href="https://github.com/andy3471/andyh-portfolio"
+          title="GitHub"
+          icon="fab fa-github"
+          class="button is-info is-outlined"
+        />
+        <Button
+          href="./v1"
+          title="Version 1"
+          icon="fa fa-link"
+          class="button is-primary is-outlined"
+        />
       </ButtonGroup>
       <div class="container">
-        <img src="/images/portfolio.jpg" class="is-16by9" alt="wards" style="width: 50%;" />
+        <img
+          src="/images/portfolio.jpg"
+          class="is-16by9"
+          alt="wards"
+          style="width: 50%;"
+        >
         <p>
           My portfolio is build on Laravel, VueJS, Bulma and Fullpage.js
         </p>
@@ -60,12 +86,25 @@
     </div>
 
     <div class="slide">
-      <SectionHeader titleUpper="VC" titleLower="Tees" />
+      <SectionHeader
+        title-upper="VC"
+        title-lower="Tees"
+      />
       <ButtonGroup>
-        <Button href="https://vctees.co.uk" title="VCTees" icon="fa fa-link" class="button is-primary is-outlined" />
+        <Button
+          href="https://vctees.co.uk"
+          title="VCTees"
+          icon="fa fa-link"
+          class="button is-primary is-outlined"
+        />
       </ButtonGroup>
       <div class="container">
-        <img src="/images/vctees.jpg" class="is-16by9" alt="vctees" style="width: 50%;" />
+        <img
+          src="/images/vctees.jpg"
+          class="is-16by9"
+          alt="vctees"
+          style="width: 50%;"
+        >
         <p>
           I run a website where I design and sell clothing based
           on retro music Synthesizers. The site is built using
@@ -75,32 +114,50 @@
       <div class="level">
         <div class="level-item">
           <div class="tags">
-          <span class="tag">Wordpress</span>
-          <span class="tag">WooCommerce</span>
-          <span class="tag">Photoshop</span>
-          <span class="tag">Illustrator</span>
+            <span class="tag">Wordpress</span>
+            <span class="tag">WooCommerce</span>
+            <span class="tag">Photoshop</span>
+            <span class="tag">Illustrator</span>
           </div>
         </div>
       </div>
     </div>
 
     <div class="slide">
-      <SectionHeader titleUpper="Tabletop Sim" titleLower="Gloomhaven" />
+      <SectionHeader
+        title-upper="Tabletop Sim"
+        title-lower="Gloomhaven"
+      />
       <ButtonGroup>
-        <Button href="https://github.com/andy3471/Gloomhaven-ForgottenCricles-TTS" title="Github" icon="fab fa-github" class="button is-info is-outlined" />
-        <Button href="https://steamcommunity.com/sharedfiles/filedetails/?id=1301493206&searchtext=gloomhaven" title="Steam" icon="fab fa-steam" class="button is-primary is-outlined" />
+        <Button
+          href="https://github.com/andy3471/Gloomhaven-ForgottenCricles-TTS"
+          title="Github"
+          icon="fab fa-github"
+          class="button is-info is-outlined"
+        />
+        <Button
+          href="https://steamcommunity.com/sharedfiles/filedetails/?id=1301493206&searchtext=gloomhaven"
+          title="Steam"
+          icon="fab fa-steam"
+          class="button is-primary is-outlined"
+        />
       </ButtonGroup>
       <div class="container">
-        <img src="/images/gloomhaven.jpg" alt="gloomhaven" style="width: 25%; padding-top: none" />
+        <img
+          src="/images/gloomhaven.jpg"
+          alt="gloomhaven"
+          style="width: 25%; padding-top: none"
+        >
         <p>
           I have been working to make board games playable in Tabletop
           Simulator, so that people can continue playing during the
           Covid-19 outbreak. I created a fork of the Gloomhaven Fantasy
           set-up mod, and scripted all of the Forgotten Circles
           expansion and solo scenarios in lua with
-          <a href="https://curtisreet.co.uk" title="CurtPortfolio"
-            >Curtis Reet</a
-          >. My mod has now been merged into the original mod, where I
+          <a
+            href="https://curtisreet.co.uk"
+            title="CurtPortfolio"
+          >Curtis Reet</a>. My mod has now been merged into the original mod, where I
           have been credited, which is the most popular tabletop
           simulator mod with over 100,000 active users
         </p>
@@ -115,12 +172,24 @@
     </div>
 
     <div class="slide">
-      <SectionHeader titleUpper="Portal Stories" titleLower="Mel" />
+      <SectionHeader
+        title-upper="Portal Stories"
+        title-lower="Mel"
+      />
       <ButtonGroup>
-        <Button href="https://store.steampowered.com/app/317400/Portal_Stories_Mel" title="Steam" icon="fab fa-steam" class="button is-primary is-outlined" />
+        <Button
+          href="https://store.steampowered.com/app/317400/Portal_Stories_Mel"
+          title="Steam"
+          icon="fab fa-steam"
+          class="button is-primary is-outlined"
+        />
       </ButtonGroup>
       <div class="container">
-        <img src="/images/portalstories.jpg" alt="portal" style="width: 25%; padding-top: none" />
+        <img
+          src="/images/portalstories.jpg"
+          alt="portal"
+          style="width: 25%; padding-top: none"
+        >
         <p>
           I was the original leader on the Portal 2 mod Portal Stores:
           Mel. The mod went on to win a Video Game Award for "Best Fan
@@ -140,12 +209,24 @@
     </div>
 
     <div class="slide">
-      <SectionHeader titleUpper="Minecraft" titleLower="Beat Detection" />
+      <SectionHeader
+        title-upper="Minecraft"
+        title-lower="Beat Detection"
+      />
       <ButtonGroup>
-        <Button href="https://youtu.be/hUbeUy6U4nY" title="YouTube" icon="fab fa-youtube" class="button is-primary is-outlined" />
+        <Button
+          href="https://youtu.be/hUbeUy6U4nY"
+          title="YouTube"
+          icon="fab fa-youtube"
+          class="button is-primary is-outlined"
+        />
       </ButtonGroup>
       <div class="container">
-        <img src="/images/club.jpg" alt="portal" style="width: 25%; padding-top: none" />
+        <img
+          src="/images/club.jpg"
+          alt="portal"
+          style="width: 25%; padding-top: none"
+        >
         <p>
           I host a Minecraft server for VR users. The server is a
           nightclub for VR users, and features a custom scripted beat

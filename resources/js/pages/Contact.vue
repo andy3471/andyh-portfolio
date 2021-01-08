@@ -1,5 +1,8 @@
 <template>
-  <Section titleUpper="Contact" titleLower="Me">
+  <Section
+    title-upper="Contact"
+    title-lower="Me"
+  >
     <div class="section-content">
       <p>
         If you would like to work with me, then be sure to contact me on
@@ -7,37 +10,74 @@
         <a
           href="https://www.linkedin.com/in/andrew-hargrave-b36128144/"
           title="LinkedIn"
-          >LinkedIn</a
-        >, or with the form below.
+        >LinkedIn</a>, or with the form below.
       </p>
       <form @submit.prevent="submit">
         <div class="field">
-          <label class="label has-text-white" for="name">Name:</label>
-          <input class="input" type="text" name="name" id="name" v-model="fields.name" required />
+          <label
+            class="label has-text-white"
+            for="name"
+          >Name:</label>
+          <input
+            id="name"
+            v-model="fields.name"
+            class="input"
+            type="text"
+            name="name"
+            required
+          >
         </div>
         <div class="field">
-          <label class="label has-text-white" for="Email">Email:</label>
-          <input class="input" type="text" name="email" id="email" v-model="fields.email" required />
+          <label
+            class="label has-text-white"
+            for="Email"
+          >Email:</label>
+          <input
+            id="email"
+            v-model="fields.email"
+            class="input"
+            type="text"
+            name="email"
+            required
+          >
         </div>
         <div class="field">
-          <label class="label has-text-white" for="Email">Message:</label>
+          <label
+            class="label has-text-white"
+            for="Email"
+          >Message:</label>
           <textarea
+            id="message"
+            v-model="fields.message"
             class="textarea"
             name="message"
-            id="message"
             required
-            v-model="fields.message"
-          ></textarea>
+          />
         </div>
-        <button class="button is-primary is-outlined" style="float: right;" type="submit">
+        <button
+          class="button is-primary is-outlined"
+          style="float: right;"
+          type="submit"
+        >
           Submit
         </button>
-        <span role="alert" v-for="(error, idx) in errors" :key="idx">
-          <strong class="has-text-danger" v-for="error in error" :key="error" >
-            {{ error }}
+        <span
+          v-for="(error, idx) in errors"
+          :key="idx"
+          role="alert"
+        >
+          <strong
+            v-for="e in error"
+            :key="e"
+            class="has-text-danger"
+          >
+            {{ e }}
           </strong>
         </span>
-        <span role="success" v-if="message">
+        <span
+          v-if="message"
+          role="success"
+        >
           <strong class="has-text-success">
             {{ message }}
           </strong>
@@ -73,6 +113,7 @@ export default {
           (this.message = 'Message Sent'),
           (this.fields = {}),
           (this.sending = false)
+          (console.log(response))
         }).catch(error => {
           (this.errors = error.response.data.errors),
           (this.sending = false)

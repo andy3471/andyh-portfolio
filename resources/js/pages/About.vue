@@ -1,5 +1,8 @@
 <template>
-  <Section titleUpper="About" titleLower="Me">
+  <Section
+    title-upper="About"
+    title-lower="Me"
+  >
     <div class="columns section-body">
       <div class="column">
         <figure class="image">
@@ -8,7 +11,7 @@
             src="/images/profile.jpg"
             alt="profile-picture"
             width="300px"
-          />
+          >
         </figure>
       </div>
       <div class="column is-three-quarters">
@@ -46,8 +49,18 @@
           games and virtual reality.
         </p>
         <ButtonGroup>
-          <Button href="https://www.linkedin.com/in/andrew-hargrave-b36128144/" title="Linked In" icon="fab fa-linkedin" class="button is-info is-outlined" />
-          <Button href="https://github.com/andy3471/" title="GitHub" icon="fab fa-github" class="button is-primary is-outlined" />
+          <Button
+            href="https://www.linkedin.com/in/andrew-hargrave-b36128144/"
+            title="Linked In"
+            icon="fab fa-linkedin"
+            class="button is-info is-outlined"
+          />
+          <Button
+            href="https://github.com/andy3471/"
+            title="GitHub"
+            icon="fab fa-github"
+            class="button is-primary is-outlined"
+          />
         </ButtonGroup>
       </div>
     </div>

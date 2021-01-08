@@ -1,12 +1,17 @@
 <template>
   <div class="timeline-item is-warning">
     <div class="timeline-marker is-warning is-image is-32x32">
-      <img :src="this.img" :alt="this.imgAlt" />
+      <img
+        :src="img"
+        :alt="imgAlt"
+      >
     </div>
     <div class="timeline-content">
-      <p class="heading">{{ this.date }}</p>
-      <p>{{ this.jobTitle }}</p>
-      <slot></slot>
+      <p class="heading">
+        {{ date }}
+      </p>
+      <p>{{ jobTitle }}</p>
+      <slot />
     </div>
   </div>
 </template>

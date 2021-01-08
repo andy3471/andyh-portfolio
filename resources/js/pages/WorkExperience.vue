@@ -1,5 +1,8 @@
 <template>
-  <Section titleUpper="Work" titleLower="Experience">
+  <Section
+    title-upper="Work"
+    title-lower="Experience"
+  >
     <div class="section-content">
       <div class="timeline is-centered">
         <header class="timeline-header">
@@ -8,9 +11,9 @@
 
         <TimelineItem
           date="December 2020"
-          jobTitle="Neilson - Application Support Analyst"
+          job-title="Neilson - Application Support Analyst"
           img="/images/neilson.png"
-          imgAlt="Neilson"
+          img-alt="Neilson"
         >
           <ul>
             <li>
@@ -30,9 +33,9 @@
 
         <TimelineItem
           date="November 2017"
-          jobTitle="Advanced - Application Delivery Specialist"
+          job-title="Advanced - Application Delivery Specialist"
           img="/images/advanced.jpg"
-          imgAlt="advanced"
+          img-alt="advanced"
         >
           <ul>
             <li>
@@ -61,9 +64,9 @@
 
         <TimelineItem
           date="June 2017"
-          jobTitle="Advanced - Service Desk Analyst"
+          job-title="Advanced - Service Desk Analyst"
           img="/images/advanced.jpg"
-          imgAlt="advanced"
+          img-alt="advanced"
         >
           <ul>
             <li>Deal with customer escalations</li>
@@ -77,9 +80,9 @@
 
         <TimelineItem
           date="September 2016"
-          jobTitle="Advanced - Second Line Community Technician"
+          job-title="Advanced - Second Line Community Technician"
           img="/images/advanced.jpg"
-          imgAlt="advanced"
+          img-alt="advanced"
         >
           <ul>
             <li>Answer customer queries via phone and email</li>
@@ -90,9 +93,9 @@
 
         <TimelineItem
           date="April 2016"
-          jobTitle="Advanced - First Line Support Technician"
+          job-title="Advanced - First Line Support Technician"
           img="/images/advanced.jpg"
-          imgAlt="advanced"
+          img-alt="advanced"
         >
           <ul>
             <li>Answer customer queries via phone and email</li>
@@ -102,9 +105,9 @@
 
         <TimelineItem
           date="September 2013"
-          jobTitle="Xpress Games - Business Administration Apprentice"
+          job-title="Xpress Games - Business Administration Apprentice"
           img="/images/xpg.jpg"
-          imgAlt="xpg"
+          img-alt="xpg"
         >
           <ul>
             <li>Maintain database of stock held within the store</li>

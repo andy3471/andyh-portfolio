@@ -1,8 +1,21 @@
 <template>
-  <Section titleUpper="Key" titleLower="Share">
+  <Section
+    title-upper="Key"
+    title-lower="Share"
+  >
     <ButtonGroup>
-      <Button href="https://github.com/andy3471/keyshare" title="GitHub" icon="fab fa-github" class="button is-info is-outlined" />
-      <Button href="https://keyshare.andyh.app" title="Live Demo" icon="fa fa-link" class="button is-primary is-outlined" />
+      <Button
+        href="https://github.com/andy3471/keyshare"
+        title="GitHub"
+        icon="fab fa-github"
+        class="button is-info is-outlined"
+      />
+      <Button
+        href="https://keyshare.andyh.app"
+        title="Live Demo"
+        icon="fa fa-link"
+        class="button is-primary is-outlined"
+      />
     </ButtonGroup>
     <div class="level">
       <div class="level-item">

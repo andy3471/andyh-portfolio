@@ -1,13 +1,13 @@
 <template>
   <a
-    :href="this.href"
-    :title="this.title"
+    :href="href"
+    :title="title"
     :class="this.class"
   >
     <span class="icon">
-      <i :class="this.icon"></i>
+      <i :class="icon" />
     </span>
-    <span>{{ this.title }}</span>
+    <span>{{ title }}</span>
   </a>
 </template>
 <script>

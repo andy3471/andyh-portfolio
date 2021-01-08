@@ -1,11 +1,17 @@
 <template>
-  <Section titleUpper="Hosting" titleLower="+ Virtualisation">
+  <Section
+    title-upper="Hosting"
+    title-lower="+ Virtualisation"
+  >
     <div class="section-body">
       <div class="projects-item">
         <div class="projects-body">
           <div class="columns is-vcentered">
             <div class="column is-hidden-mobile">
-              <img src="/images/servers.png" alt="servers" />
+              <img
+                src="/images/servers.png"
+                alt="servers"
+              >
             </div>
             <div class="column  is-four-fifths ">
               <div class="project">
@@ -37,7 +43,10 @@
               </div>
             </div>
             <div class="column is-hidden-mobile">
-              <img src="/images/proxmox.png" alt="proxmox" />
+              <img
+                src="/images/proxmox.png"
+                alt="proxmox"
+              >
             </div>
           </div>
         </div>
@@ -46,7 +55,10 @@
         <div class="projects-body">
           <div class="columns is-vcentered">
             <div class="column is-hidden-mobile">
-              <img src="/images/docker.png" alt="docker" />
+              <img
+                src="/images/docker.png"
+                alt="docker"
+              >
             </div>
             <div class="column  is-four-fifths ">
               <div class="project">
@@ -60,7 +72,7 @@
                   should change.
                 </p>
                 <p>
-                  Current Docker Container Name: {{ this.containername }}
+                  Current Docker Container Name: {{ containername }}
                 </p>
               </div>
             </div>
@@ -83,7 +95,10 @@
               </div>
             </div>
             <div class="column is-hidden-mobile">
-              <img src="/images/traefik.png" alt="traefik" />
+              <img
+                src="/images/traefik.png"
+                alt="traefik"
+              >
             </div>
           </div>
         </div>
@@ -96,11 +111,11 @@ import Section from "../components/Section.vue";
 
 export default {
   name: "Hosting",
-  props: {
-    containername: String,
-  },
   components: {
     Section
+  },
+  props: {
+    containername: String,
   }
 };
 </script>

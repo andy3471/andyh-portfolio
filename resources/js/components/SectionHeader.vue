@@ -1,7 +1,7 @@
 <template>
   <h2 class="section-header">
-    <span class="upper">{{ this.titleUpper }}</span>
-    <span class="lower">{{ this.titleLower }}</span>
+    <span class="upper">{{ titleUpper }}</span>
+    <span class="lower">{{ titleLower }}</span>
   </h2>
 </template>
 <script>

@@ -1,8 +1,11 @@
 <template>
   <div class="section">
     <div class="container">
-      <SectionHeader :titleUpper="titleUpper" :titleLower="titleLower"/>
-        <slot></slot>
+      <SectionHeader
+        :title-upper="titleUpper"
+        :title-lower="titleLower"
+      />
+      <slot />
     </div>
   </div>
 </template>
@@ -10,12 +13,12 @@
 import SectionHeader from './SectionHeader.vue'
 
 export default {
+  components: {
+    SectionHeader
+  },
   props: {
     titleUpper: String,
     titleLower: String
-  },
-  components: {
-    SectionHeader
   }
 };
 </script>

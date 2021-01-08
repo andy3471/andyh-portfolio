@@ -3485,14 +3485,17 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
+  components: {
+    SectionHeader: _SectionHeader_vue__WEBPACK_IMPORTED_MODULE_0__["default"]
+  },
   props: {
     titleUpper: String,
     titleLower: String
-  },
-  components: {
-    SectionHeader: _SectionHeader_vue__WEBPACK_IMPORTED_MODULE_0__["default"]
   }
 });
 
@@ -3543,6 +3546,11 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: {
     date: String,
@@ -3564,6 +3572,19 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_Section_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../components/Section.vue */ "./resources/js/components/Section.vue");
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -3687,6 +3708,46 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "Contact",
@@ -3710,7 +3771,7 @@ __webpack_require__.r(__webpack_exports__);
         this.errors = {};
         this.sending = true;
         axios.post('/sendemail', this.fields).then(function (response) {
-          _this.message = 'Message Sent', _this.fields = {}, _this.sending = false;
+          _this.message = 'Message Sent', _this.fields = {}, (_this.sending = false)(console.log(response));
         })["catch"](function (error) {
           _this.errors = error.response.data.errors, _this.sending = false;
         });
@@ -3824,14 +3885,29 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "Hosting",
-  props: {
-    containername: String
-  },
   components: {
     Section: _components_Section_vue__WEBPACK_IMPORTED_MODULE_0__["default"]
+  },
+  props: {
+    containername: String
   }
 });
 
@@ -3847,6 +3923,19 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_Section_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../components/Section.vue */ "./resources/js/components/Section.vue");
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -3907,6 +3996,20 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_Section_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../components/Section.vue */ "./resources/js/components/Section.vue");
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -4020,6 +4123,33 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "OtherProjects",
@@ -4040,6 +4170,87 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_SectionHeader_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../components/SectionHeader.vue */ "./resources/js/components/SectionHeader.vue");
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -4297,6 +4508,45 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
@@ -4324,6 +4574,9 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_Section_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../components/Section.vue */ "./resources/js/components/Section.vue");
 /* harmony import */ var _components_TimelineItem_vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/TimelineItem.vue */ "./resources/js/components/TimelineItem.vue");
+//
+//
+//
 //
 //
 //
@@ -4499,6 +4752,10 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
  // import BrowserCheck from "../components/BrowserCheck";
 
 
@@ -4605,7 +4862,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n#myVideo[data-v-129a26d6]{\n\t\tposition: absolute;\n\t\tright: 0;\n\t\tbottom: 0;\n\t\ttop:0;\n\t\twidth: 100%;\n\t\theight: 100%;\n\t\tbackground-size: 100% 100%;\n \t\tbackground-color: black; /* in case the video doesn't fit the whole page*/\n    background-position: center center;\n    background-size: contain;\n    -o-object-fit: cover;\n       object-fit: cover; /*cover video background */\n    z-index:3;\n}\n\n\n\n\t/* Layer with position absolute in order to have it over the video\n\t* --------------------------------------- */\n#section0 .layer[data-v-129a26d6]{\n\t\tposition: absolute;\n\t\tz-index: 4;\n    width: 100%;\n    height: 100%;\n\t\tleft: 0;\n\t\ttop: 25%;\n\t\ttransform: translate3d(0,0,0);\n}\n\n\t/*solves problem with overflowing video in Mac with Chrome */\n#section0[data-v-129a26d6]{\n\t\toverflow: hidden;\n}\nvideo[data-v-129a26d6]::-webkit-media-controls {\n\t  display:none !important;\n}\n.header-buttons[data-v-129a26d6] {\n    padding-left: 250px;\n    padding-right: 250px;\n}\n\n", ""]);
+exports.push([module.i, "\n#myVideo[data-v-129a26d6]{\n\t\tposition: absolute;\n\t\tright: 0;\n\t\tbottom: 0;\n\t\ttop:0;\n\t\twidth: 100%;\n\t\theight: 100%;\n\t\tbackground-size: 100% 100%;\n    background-color: black; /* in case the video doesn't fit the whole page*/\n    background-position: center center;\n    background-size: contain;\n    -o-object-fit: cover;\n       object-fit: cover; /*cover video background */\n    z-index:3;\n}\n\n\n\n\t/* Layer with position absolute in order to have it over the video\n\t* --------------------------------------- */\n#section0 .layer[data-v-129a26d6]{\n\t\tposition: absolute;\n\t\tz-index: 4;\n    width: 100%;\n    height: 100%;\n\t\tleft: 0;\n\t\ttop: 25%;\n\t\ttransform: translate3d(0,0,0);\n}\n\n\t/*solves problem with overflowing video in Mac with Chrome */\n#section0[data-v-129a26d6]{\n\t\toverflow: hidden;\n}\nvideo[data-v-129a26d6]::-webkit-media-controls {\n    display:none !important;\n}\n.header-buttons[data-v-129a26d6] {\n    padding-left: 250px;\n    padding-right: 250px;\n}\n\n", ""]);
 
 // exports
 
@@ -4625,25 +4882,6 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 // module
 exports.push([module.i, "\n.section[data-v-ac0d212e] {\n  background-image: url('/images/keyshare-bg.png');\n  background-color: #272727;\n  background-repeat: no-repeat;\n  background-size: cover;\n}\n", ""]);
-
-// exports
-
-
-/***/ }),
-
-/***/ "./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/pages/Lunchrota.vue?vue&type=style&index=0&id=9021e34a&scoped=true&lang=css&":
-/*!**********************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader??ref--7-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--7-2!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/pages/Lunchrota.vue?vue&type=style&index=0&id=9021e34a&scoped=true&lang=css& ***!
-  \**********************************************************************************************************************************************************************************************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
-// imports
-
-
-// module
-exports.push([module.i, "\np[data-v-9021e34a] {\r\n  color:#212529;\n}\n.section[data-v-9021e34a] {\r\n  background-image: url('/images/lunchrota-bg.png');\r\n  background-color: #F2F2F2;\r\n  background-repeat: no-repeat;\r\n  background-size: cover;\n}\r\n\r\n", ""]);
 
 // exports
 
@@ -25033,36 +25271,6 @@ if(false) {}
 
 /***/ }),
 
-/***/ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/pages/Lunchrota.vue?vue&type=style&index=0&id=9021e34a&scoped=true&lang=css&":
-/*!**************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/style-loader!./node_modules/css-loader??ref--7-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--7-2!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/pages/Lunchrota.vue?vue&type=style&index=0&id=9021e34a&scoped=true&lang=css& ***!
-  \**************************************************************************************************************************************************************************************************************************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-
-var content = __webpack_require__(/*! !../../../node_modules/css-loader??ref--7-1!../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../node_modules/postcss-loader/src??ref--7-2!../../../node_modules/vue-loader/lib??vue-loader-options!./Lunchrota.vue?vue&type=style&index=0&id=9021e34a&scoped=true&lang=css& */ "./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/pages/Lunchrota.vue?vue&type=style&index=0&id=9021e34a&scoped=true&lang=css&");
-
-if(typeof content === 'string') content = [[module.i, content, '']];
-
-var transform;
-var insertInto;
-
-
-
-var options = {"hmr":true}
-
-options.transform = transform
-options.insertInto = undefined;
-
-var update = __webpack_require__(/*! ../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
-
-if(content.locals) module.exports = content.locals;
-
-if(false) {}
-
-/***/ }),
-
 /***/ "./node_modules/style-loader/lib/addStyles.js":
 /*!****************************************************!*\
   !*** ./node_modules/style-loader/lib/addStyles.js ***!
@@ -26090,11 +26298,11 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "a",
-    { class: this.class, attrs: { href: this.href, title: this.title } },
+    { class: this.class, attrs: { href: _vm.href, title: _vm.title } },
     [
-      _c("span", { staticClass: "icon" }, [_c("i", { class: this.icon })]),
+      _c("span", { staticClass: "icon" }, [_c("i", { class: _vm.icon })]),
       _vm._v(" "),
-      _c("span", [_vm._v(_vm._s(this.title))])
+      _c("span", [_vm._v(_vm._s(_vm.title))])
     ]
   )
 }
@@ -26232,7 +26440,10 @@ var render = function() {
       { staticClass: "container" },
       [
         _c("SectionHeader", {
-          attrs: { titleUpper: _vm.titleUpper, titleLower: _vm.titleLower }
+          attrs: {
+            "title-upper": _vm.titleUpper,
+            "title-lower": _vm.titleLower
+          }
         }),
         _vm._v(" "),
         _vm._t("default")
@@ -26264,9 +26475,9 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("h2", { staticClass: "section-header" }, [
-    _c("span", { staticClass: "upper" }, [_vm._v(_vm._s(this.titleUpper))]),
+    _c("span", { staticClass: "upper" }, [_vm._v(_vm._s(_vm.titleUpper))]),
     _vm._v(" "),
-    _c("span", { staticClass: "lower" }, [_vm._v(_vm._s(this.titleLower))])
+    _c("span", { staticClass: "lower" }, [_vm._v(_vm._s(_vm.titleLower))])
   ])
 }
 var staticRenderFns = []
@@ -26293,16 +26504,18 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c("div", { staticClass: "timeline-item is-warning" }, [
     _c("div", { staticClass: "timeline-marker is-warning is-image is-32x32" }, [
-      _c("img", { attrs: { src: this.img, alt: this.imgAlt } })
+      _c("img", { attrs: { src: _vm.img, alt: _vm.imgAlt } })
     ]),
     _vm._v(" "),
     _c(
       "div",
       { staticClass: "timeline-content" },
       [
-        _c("p", { staticClass: "heading" }, [_vm._v(_vm._s(this.date))]),
+        _c("p", { staticClass: "heading" }, [
+          _vm._v("\n      " + _vm._s(_vm.date) + "\n    ")
+        ]),
         _vm._v(" "),
-        _c("p", [_vm._v(_vm._s(this.jobTitle))]),
+        _c("p", [_vm._v(_vm._s(_vm.jobTitle))]),
         _vm._v(" "),
         _vm._t("default")
       ],
@@ -26332,84 +26545,88 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("Section", { attrs: { titleUpper: "About", titleLower: "Me" } }, [
-    _c("div", { staticClass: "columns section-body" }, [
-      _c("div", { staticClass: "column" }, [
-        _c("figure", { staticClass: "image" }, [
-          _c("img", {
-            staticClass: "image",
-            attrs: {
-              src: "/images/profile.jpg",
-              alt: "profile-picture",
-              width: "300px"
-            }
-          })
-        ])
-      ]),
-      _vm._v(" "),
-      _c(
-        "div",
-        { staticClass: "column is-three-quarters" },
-        [
-          _c("p", [
-            _vm._v(
-              "\n        Hi, I'm Andrew Hargrave. I'm a self taught Web Developer that works\n        with PHP, JS, HTML, SQL (MySQL and MS SQL), Redis, CSS and SCSS. I\n        have a very good knowledge of the Laravel MVC framework, and have used\n        it for multiple personal projects. I use VueJS for as a front-end\n        JavaScript framework primarily, and have released multiple components\n        that can be used freely in any Vue web app. I also have knowledge of\n        Bootstrap and Bulma as UI frameworks.\n      "
+  return _c(
+    "Section",
+    { attrs: { "title-upper": "About", "title-lower": "Me" } },
+    [
+      _c("div", { staticClass: "columns section-body" }, [
+        _c("div", { staticClass: "column" }, [
+          _c("figure", { staticClass: "image" }, [
+            _c("img", {
+              staticClass: "image",
+              attrs: {
+                src: "/images/profile.jpg",
+                alt: "profile-picture",
+                width: "300px"
+              }
+            })
+          ])
+        ]),
+        _vm._v(" "),
+        _c(
+          "div",
+          { staticClass: "column is-three-quarters" },
+          [
+            _c("p", [
+              _vm._v(
+                "\n        Hi, I'm Andrew Hargrave. I'm a self taught Web Developer that works\n        with PHP, JS, HTML, SQL (MySQL and MS SQL), Redis, CSS and SCSS. I\n        have a very good knowledge of the Laravel MVC framework, and have used\n        it for multiple personal projects. I use VueJS for as a front-end\n        JavaScript framework primarily, and have released multiple components\n        that can be used freely in any Vue web app. I also have knowledge of\n        Bootstrap and Bulma as UI frameworks.\n      "
+              )
+            ]),
+            _vm._v(" "),
+            _c("p", [
+              _vm._v(
+                "\n        I am currently employed as an Application Support Anaylst at Neilson\n        Finance Services.\n      "
+              )
+            ]),
+            _vm._v(" "),
+            _c("p", [
+              _vm._v(
+                "\n        Previously, I was employed as an Application Delivery Specialist at\n        Advanced, the UK's third largest software company. I worked in the\n        Health & Care business unit with Carenotes, an ASP.NET Web\n        Application, with a large number of SOA services. Carenotes is used\n        widely by the NHS for mental health and community Trusts. I provided\n        third line support for Carenotes, as well as deployed and upgraded it.\n        Carenotes is hosted on Windows Servers with IIS.\n      "
+              )
+            ]),
+            _vm._v(" "),
+            _c("p", [
+              _vm._v(
+                "\n        I also have a strong knowledge of Linux and Apache, and host multiple\n        web applications on Linux Servers. I host web applications and video\n        game servers privately, which is running on virtualised servers using\n        Proxmox hypervisor, as well as in Docker Containers.\n      "
+              )
+            ]),
+            _vm._v(" "),
+            _c("p", [
+              _vm._v(
+                "\n        Outside of web development and deployment, I like to work on music in\n        my free time, using Analog Synthesizers. I'm also a huge fan of board\n        games and virtual reality.\n      "
+              )
+            ]),
+            _vm._v(" "),
+            _c(
+              "ButtonGroup",
+              [
+                _c("Button", {
+                  staticClass: "button is-info is-outlined",
+                  attrs: {
+                    href:
+                      "https://www.linkedin.com/in/andrew-hargrave-b36128144/",
+                    title: "Linked In",
+                    icon: "fab fa-linkedin"
+                  }
+                }),
+                _vm._v(" "),
+                _c("Button", {
+                  staticClass: "button is-primary is-outlined",
+                  attrs: {
+                    href: "https://github.com/andy3471/",
+                    title: "GitHub",
+                    icon: "fab fa-github"
+                  }
+                })
+              ],
+              1
             )
-          ]),
-          _vm._v(" "),
-          _c("p", [
-            _vm._v(
-              "\n        I am currently employed as an Application Support Anaylst at Neilson\n        Finance Services.\n      "
-            )
-          ]),
-          _vm._v(" "),
-          _c("p", [
-            _vm._v(
-              "\n        Previously, I was employed as an Application Delivery Specialist at\n        Advanced, the UK's third largest software company. I worked in the\n        Health & Care business unit with Carenotes, an ASP.NET Web\n        Application, with a large number of SOA services. Carenotes is used\n        widely by the NHS for mental health and community Trusts. I provided\n        third line support for Carenotes, as well as deployed and upgraded it.\n        Carenotes is hosted on Windows Servers with IIS.\n      "
-            )
-          ]),
-          _vm._v(" "),
-          _c("p", [
-            _vm._v(
-              "\n        I also have a strong knowledge of Linux and Apache, and host multiple\n        web applications on Linux Servers. I host web applications and video\n        game servers privately, which is running on virtualised servers using\n        Proxmox hypervisor, as well as in Docker Containers.\n      "
-            )
-          ]),
-          _vm._v(" "),
-          _c("p", [
-            _vm._v(
-              "\n        Outside of web development and deployment, I like to work on music in\n        my free time, using Analog Synthesizers. I'm also a huge fan of board\n        games and virtual reality.\n      "
-            )
-          ]),
-          _vm._v(" "),
-          _c(
-            "ButtonGroup",
-            [
-              _c("Button", {
-                staticClass: "button is-info is-outlined",
-                attrs: {
-                  href:
-                    "https://www.linkedin.com/in/andrew-hargrave-b36128144/",
-                  title: "Linked In",
-                  icon: "fab fa-linkedin"
-                }
-              }),
-              _vm._v(" "),
-              _c("Button", {
-                staticClass: "button is-primary is-outlined",
-                attrs: {
-                  href: "https://github.com/andy3471/",
-                  title: "GitHub",
-                  icon: "fab fa-github"
-                }
-              })
-            ],
-            1
-          )
-        ],
-        1
-      )
-    ])
-  ])
+          ],
+          1
+        )
+      ])
+    ]
+  )
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -26433,167 +26650,182 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("Section", { attrs: { titleUpper: "Contact", titleLower: "Me" } }, [
-    _c("div", { staticClass: "section-content" }, [
-      _c("p", [
-        _vm._v(
-          "\n      If you would like to work with me, then be sure to contact me on\n      "
-        ),
-        _c("a", { attrs: { href: "mailto:me@andyh.app" } }, [
-          _vm._v("me@andyh.app")
+  return _c(
+    "Section",
+    { attrs: { "title-upper": "Contact", "title-lower": "Me" } },
+    [
+      _c("div", { staticClass: "section-content" }, [
+        _c("p", [
+          _vm._v(
+            "\n      If you would like to work with me, then be sure to contact me on\n      "
+          ),
+          _c("a", { attrs: { href: "mailto:me@andyh.app" } }, [
+            _vm._v("me@andyh.app")
+          ]),
+          _vm._v(",\n      "),
+          _c(
+            "a",
+            {
+              attrs: {
+                href: "https://www.linkedin.com/in/andrew-hargrave-b36128144/",
+                title: "LinkedIn"
+              }
+            },
+            [_vm._v("LinkedIn")]
+          ),
+          _vm._v(", or with the form below.\n    ")
         ]),
-        _vm._v(",\n      "),
+        _vm._v(" "),
         _c(
-          "a",
+          "form",
           {
-            attrs: {
-              href: "https://www.linkedin.com/in/andrew-hargrave-b36128144/",
-              title: "LinkedIn"
+            on: {
+              submit: function($event) {
+                $event.preventDefault()
+                return _vm.submit($event)
+              }
             }
           },
-          [_vm._v("LinkedIn")]
-        ),
-        _vm._v(", or with the form below.\n    ")
-      ]),
-      _vm._v(" "),
-      _c(
-        "form",
-        {
-          on: {
-            submit: function($event) {
-              $event.preventDefault()
-              return _vm.submit($event)
-            }
-          }
-        },
-        [
-          _c("div", { staticClass: "field" }, [
+          [
+            _c("div", { staticClass: "field" }, [
+              _c(
+                "label",
+                { staticClass: "label has-text-white", attrs: { for: "name" } },
+                [_vm._v("Name:")]
+              ),
+              _vm._v(" "),
+              _c("input", {
+                directives: [
+                  {
+                    name: "model",
+                    rawName: "v-model",
+                    value: _vm.fields.name,
+                    expression: "fields.name"
+                  }
+                ],
+                staticClass: "input",
+                attrs: { id: "name", type: "text", name: "name", required: "" },
+                domProps: { value: _vm.fields.name },
+                on: {
+                  input: function($event) {
+                    if ($event.target.composing) {
+                      return
+                    }
+                    _vm.$set(_vm.fields, "name", $event.target.value)
+                  }
+                }
+              })
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "field" }, [
+              _c(
+                "label",
+                {
+                  staticClass: "label has-text-white",
+                  attrs: { for: "Email" }
+                },
+                [_vm._v("Email:")]
+              ),
+              _vm._v(" "),
+              _c("input", {
+                directives: [
+                  {
+                    name: "model",
+                    rawName: "v-model",
+                    value: _vm.fields.email,
+                    expression: "fields.email"
+                  }
+                ],
+                staticClass: "input",
+                attrs: {
+                  id: "email",
+                  type: "text",
+                  name: "email",
+                  required: ""
+                },
+                domProps: { value: _vm.fields.email },
+                on: {
+                  input: function($event) {
+                    if ($event.target.composing) {
+                      return
+                    }
+                    _vm.$set(_vm.fields, "email", $event.target.value)
+                  }
+                }
+              })
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "field" }, [
+              _c(
+                "label",
+                {
+                  staticClass: "label has-text-white",
+                  attrs: { for: "Email" }
+                },
+                [_vm._v("Message:")]
+              ),
+              _vm._v(" "),
+              _c("textarea", {
+                directives: [
+                  {
+                    name: "model",
+                    rawName: "v-model",
+                    value: _vm.fields.message,
+                    expression: "fields.message"
+                  }
+                ],
+                staticClass: "textarea",
+                attrs: { id: "message", name: "message", required: "" },
+                domProps: { value: _vm.fields.message },
+                on: {
+                  input: function($event) {
+                    if ($event.target.composing) {
+                      return
+                    }
+                    _vm.$set(_vm.fields, "message", $event.target.value)
+                  }
+                }
+              })
+            ]),
+            _vm._v(" "),
             _c(
-              "label",
-              { staticClass: "label has-text-white", attrs: { for: "name" } },
-              [_vm._v("Name:")]
+              "button",
+              {
+                staticClass: "button is-primary is-outlined",
+                staticStyle: { float: "right" },
+                attrs: { type: "submit" }
+              },
+              [_vm._v("\n        Submit\n      ")]
             ),
             _vm._v(" "),
-            _c("input", {
-              directives: [
-                {
-                  name: "model",
-                  rawName: "v-model",
-                  value: _vm.fields.name,
-                  expression: "fields.name"
-                }
-              ],
-              staticClass: "input",
-              attrs: { type: "text", name: "name", id: "name", required: "" },
-              domProps: { value: _vm.fields.name },
-              on: {
-                input: function($event) {
-                  if ($event.target.composing) {
-                    return
-                  }
-                  _vm.$set(_vm.fields, "name", $event.target.value)
-                }
-              }
-            })
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "field" }, [
-            _c(
-              "label",
-              { staticClass: "label has-text-white", attrs: { for: "Email" } },
-              [_vm._v("Email:")]
-            ),
+            _vm._l(_vm.errors, function(error, idx) {
+              return _c(
+                "span",
+                { key: idx, attrs: { role: "alert" } },
+                _vm._l(error, function(e) {
+                  return _c(
+                    "strong",
+                    { key: e, staticClass: "has-text-danger" },
+                    [_vm._v("\n          " + _vm._s(e) + "\n        ")]
+                  )
+                }),
+                0
+              )
+            }),
             _vm._v(" "),
-            _c("input", {
-              directives: [
-                {
-                  name: "model",
-                  rawName: "v-model",
-                  value: _vm.fields.email,
-                  expression: "fields.email"
-                }
-              ],
-              staticClass: "input",
-              attrs: { type: "text", name: "email", id: "email", required: "" },
-              domProps: { value: _vm.fields.email },
-              on: {
-                input: function($event) {
-                  if ($event.target.composing) {
-                    return
-                  }
-                  _vm.$set(_vm.fields, "email", $event.target.value)
-                }
-              }
-            })
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "field" }, [
-            _c(
-              "label",
-              { staticClass: "label has-text-white", attrs: { for: "Email" } },
-              [_vm._v("Message:")]
-            ),
-            _vm._v(" "),
-            _c("textarea", {
-              directives: [
-                {
-                  name: "model",
-                  rawName: "v-model",
-                  value: _vm.fields.message,
-                  expression: "fields.message"
-                }
-              ],
-              staticClass: "textarea",
-              attrs: { name: "message", id: "message", required: "" },
-              domProps: { value: _vm.fields.message },
-              on: {
-                input: function($event) {
-                  if ($event.target.composing) {
-                    return
-                  }
-                  _vm.$set(_vm.fields, "message", $event.target.value)
-                }
-              }
-            })
-          ]),
-          _vm._v(" "),
-          _c(
-            "button",
-            {
-              staticClass: "button is-primary is-outlined",
-              staticStyle: { float: "right" },
-              attrs: { type: "submit" }
-            },
-            [_vm._v("\n        Submit\n      ")]
-          ),
-          _vm._v(" "),
-          _vm._l(_vm.errors, function(error, idx) {
-            return _c(
-              "span",
-              { key: idx, attrs: { role: "alert" } },
-              _vm._l(error, function(error) {
-                return _c(
-                  "strong",
-                  { key: error, staticClass: "has-text-danger" },
-                  [_vm._v("\n          " + _vm._s(error) + "\n        ")]
-                )
-              }),
-              0
-            )
-          }),
-          _vm._v(" "),
-          _vm.message
-            ? _c("span", { attrs: { role: "success" } }, [
-                _c("strong", { staticClass: "has-text-success" }, [
-                  _vm._v("\n          " + _vm._s(_vm.message) + "\n        ")
+            _vm.message
+              ? _c("span", { attrs: { role: "success" } }, [
+                  _c("strong", { staticClass: "has-text-success" }, [
+                    _vm._v("\n          " + _vm._s(_vm.message) + "\n        ")
+                  ])
                 ])
-              ])
-            : _vm._e()
-        ],
-        2
-      )
-    ])
-  ])
+              : _vm._e()
+          ],
+          2
+        )
+      ])
+    ]
+  )
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -26719,7 +26951,7 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "Section",
-    { attrs: { titleUpper: "Hosting", titleLower: "+ Virtualisation" } },
+    { attrs: { "title-upper": "Hosting", "title-lower": "+ Virtualisation" } },
     [
       _c("div", { staticClass: "section-body" }, [
         _c("div", { staticClass: "projects-item" }, [
@@ -26792,7 +27024,7 @@ var render = function() {
                   _c("p", [
                     _vm._v(
                       "\n                Current Docker Container Name: " +
-                        _vm._s(this.containername) +
+                        _vm._s(_vm.containername) +
                         "\n              "
                     )
                   ])
@@ -26853,7 +27085,7 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "Section",
-    { attrs: { titleUpper: "Key", titleLower: "Share" } },
+    { attrs: { "title-upper": "Key", "title-lower": "Share" } },
     [
       _c(
         "ButtonGroup",
@@ -26944,7 +27176,7 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "Section",
-    { attrs: { titleUpper: "Lunch", titleLower: "Rota" } },
+    { attrs: { "title-upper": "Lunch", "title-lower": "Rota" } },
     [
       _c(
         "ButtonGroup",
@@ -27049,7 +27281,7 @@ var render = function() {
       { staticClass: "slide" },
       [
         _c("SectionHeader", {
-          attrs: { titleUpper: "Arcade", titleLower: "Cabinet" }
+          attrs: { "title-upper": "Arcade", "title-lower": "Cabinet" }
         }),
         _vm._v(" "),
         _vm._m(0)
@@ -27062,7 +27294,7 @@ var render = function() {
       { staticClass: "slide" },
       [
         _c("SectionHeader", {
-          attrs: { titleUpper: "Music", titleLower: "Production" }
+          attrs: { "title-upper": "Music", "title-lower": "Production" }
         }),
         _vm._v(" "),
         _c(
@@ -27093,7 +27325,7 @@ var render = function() {
       { staticClass: "slide" },
       [
         _c("SectionHeader", {
-          attrs: { titleUpper: "Charity", titleLower: "Events" }
+          attrs: { "title-upper": "Charity", "title-lower": "Events" }
         }),
         _vm._v(" "),
         _vm._m(3)
@@ -27191,7 +27423,7 @@ var render = function() {
       { staticClass: "slide" },
       [
         _c("SectionHeader", {
-          attrs: { titleUpper: "Advanced", titleLower: "Hackathon" }
+          attrs: { "title-upper": "Advanced", "title-lower": "Hackathon" }
         }),
         _vm._v(" "),
         _vm._m(0)
@@ -27204,7 +27436,7 @@ var render = function() {
       { staticClass: "slide" },
       [
         _c("SectionHeader", {
-          attrs: { titleUpper: "Portfolio", titleLower: "Website" }
+          attrs: { "title-upper": "Portfolio", "title-lower": "Website" }
         }),
         _vm._v(" "),
         _c(
@@ -27239,7 +27471,7 @@ var render = function() {
       { staticClass: "slide" },
       [
         _c("SectionHeader", {
-          attrs: { titleUpper: "VC", titleLower: "Tees" }
+          attrs: { "title-upper": "VC", "title-lower": "Tees" }
         }),
         _vm._v(" "),
         _c(
@@ -27269,7 +27501,7 @@ var render = function() {
       { staticClass: "slide" },
       [
         _c("SectionHeader", {
-          attrs: { titleUpper: "Tabletop Sim", titleLower: "Gloomhaven" }
+          attrs: { "title-upper": "Tabletop Sim", "title-lower": "Gloomhaven" }
         }),
         _vm._v(" "),
         _c(
@@ -27310,7 +27542,7 @@ var render = function() {
       { staticClass: "slide" },
       [
         _c("SectionHeader", {
-          attrs: { titleUpper: "Portal Stories", titleLower: "Mel" }
+          attrs: { "title-upper": "Portal Stories", "title-lower": "Mel" }
         }),
         _vm._v(" "),
         _c(
@@ -27341,7 +27573,7 @@ var render = function() {
       { staticClass: "slide" },
       [
         _c("SectionHeader", {
-          attrs: { titleUpper: "Minecraft", titleLower: "Beat Detection" }
+          attrs: { "title-upper": "Minecraft", "title-lower": "Beat Detection" }
         }),
         _vm._v(" "),
         _c(
@@ -27611,7 +27843,7 @@ var render = function() {
       { staticClass: "slide" },
       [
         _c("SectionHeader", {
-          attrs: { titleUpper: "Date", titleLower: "Picker" }
+          attrs: { "title-upper": "Date", "title-lower": "Picker" }
         }),
         _vm._v(" "),
         _c(
@@ -27640,7 +27872,7 @@ var render = function() {
         _vm._v(" "),
         _c("p", [
           _vm._v(
-            "\r\n        A simple date picker component for VueJS. This allows you to use\r\n        v-model on a date input to select a date.\r\n      "
+            "\n      A simple date picker component for VueJS. This allows you to use\n      v-model on a date input to select a date.\n    "
           )
         ]),
         _vm._v(" "),
@@ -27656,7 +27888,7 @@ var render = function() {
       { staticClass: "slide" },
       [
         _c("SectionHeader", {
-          attrs: { titleUpper: "Time", titleLower: "Picker" }
+          attrs: { "title-upper": "Time", "title-lower": "Picker" }
         }),
         _vm._v(" "),
         _c(
@@ -27685,7 +27917,7 @@ var render = function() {
         _vm._v(" "),
         _c("p", [
           _vm._v(
-            "\r\n        A time picker component for VueJS. This allows you to use v-model on\r\n        a time input. This can be customised to use different minute\r\n        intervals.\r\n      "
+            "\n      A time picker component for VueJS. This allows you to use v-model on\n      a time input. This can be customised to use different minute\n      intervals.\n    "
           )
         ]),
         _vm._v(" "),
@@ -27701,7 +27933,7 @@ var render = function() {
       { staticClass: "slide" },
       [
         _c("SectionHeader", {
-          attrs: { titleUpper: "Auto", titleLower: "Complete" }
+          attrs: { "title-upper": "Auto", "title-lower": "Complete" }
         }),
         _vm._v(" "),
         _c(
@@ -27730,13 +27962,13 @@ var render = function() {
         _vm._v(" "),
         _c("p", [
           _vm._v(
-            "\r\n        An autocomplete component made with Vue JS and Axios. This will make\r\n        a get request to an endpoint as you type, and presents a dropdown\r\n        with similar results.\r\n      "
+            "\n      An autocomplete component made with Vue JS and Axios. This will make\n      a get request to an endpoint as you type, and presents a dropdown\n      with similar results.\n    "
           )
         ]),
         _vm._v(" "),
         _c("p", [
           _vm._v(
-            "\r\n        This supports using the arrow keys and enter\r\n        to select, or clicking.\r\n      "
+            "\n      This supports using the arrow keys and enter\n      to select, or clicking.\n    "
           )
         ]),
         _vm._v(" "),
@@ -27784,7 +28016,7 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "Section",
-    { attrs: { titleUpper: "Work", titleLower: "Experience" } },
+    { attrs: { "title-upper": "Work", "title-lower": "Experience" } },
     [
       _c("div", { staticClass: "section-content" }, [
         _c(
@@ -27802,9 +28034,9 @@ var render = function() {
               {
                 attrs: {
                   date: "December 2020",
-                  jobTitle: "Neilson - Application Support Analyst",
+                  "job-title": "Neilson - Application Support Analyst",
                   img: "/images/neilson.png",
-                  imgAlt: "Neilson"
+                  "img-alt": "Neilson"
                 }
               },
               [
@@ -27835,9 +28067,9 @@ var render = function() {
               {
                 attrs: {
                   date: "November 2017",
-                  jobTitle: "Advanced - Application Delivery Specialist",
+                  "job-title": "Advanced - Application Delivery Specialist",
                   img: "/images/advanced.jpg",
-                  imgAlt: "advanced"
+                  "img-alt": "advanced"
                 }
               },
               [
@@ -27886,9 +28118,9 @@ var render = function() {
               {
                 attrs: {
                   date: "June 2017",
-                  jobTitle: "Advanced - Service Desk Analyst",
+                  "job-title": "Advanced - Service Desk Analyst",
                   img: "/images/advanced.jpg",
-                  imgAlt: "advanced"
+                  "img-alt": "advanced"
                 }
               },
               [
@@ -27915,9 +28147,9 @@ var render = function() {
               {
                 attrs: {
                   date: "September 2016",
-                  jobTitle: "Advanced - Second Line Community Technician",
+                  "job-title": "Advanced - Second Line Community Technician",
                   img: "/images/advanced.jpg",
-                  imgAlt: "advanced"
+                  "img-alt": "advanced"
                 }
               },
               [
@@ -27942,9 +28174,9 @@ var render = function() {
               {
                 attrs: {
                   date: "April 2016",
-                  jobTitle: "Advanced - First Line Support Technician",
+                  "job-title": "Advanced - First Line Support Technician",
                   img: "/images/advanced.jpg",
-                  imgAlt: "advanced"
+                  "img-alt": "advanced"
                 }
               },
               [
@@ -27965,9 +28197,10 @@ var render = function() {
               {
                 attrs: {
                   date: "September 2013",
-                  jobTitle: "Xpress Games - Business Administration Apprentice",
+                  "job-title":
+                    "Xpress Games - Business Administration Apprentice",
                   img: "/images/xpg.jpg",
-                  imgAlt: "xpg"
+                  "img-alt": "xpg"
                 }
               },
               [
@@ -28027,7 +28260,7 @@ var render = function() {
       _vm._v(" "),
       _c(
         "full-page",
-        { ref: "fullpage", attrs: { options: _vm.options, id: "fullpage" } },
+        { ref: "fullpage", attrs: { id: "fullpage", options: _vm.options } },
         [
           _c("Header"),
           _vm._v(" "),
@@ -28041,7 +28274,7 @@ var render = function() {
           _vm._v(" "),
           _c("OtherProjects"),
           _vm._v(" "),
-          _c("Hosting", { attrs: { containername: this.containername } }),
+          _c("Hosting", { attrs: { containername: _vm.containername } }),
           _vm._v(" "),
           _c("WorkExperience"),
           _vm._v(" "),
@@ -41094,9 +41327,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Lunchrota_vue_vue_type_template_id_9021e34a_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Lunchrota.vue?vue&type=template&id=9021e34a&scoped=true& */ "./resources/js/pages/Lunchrota.vue?vue&type=template&id=9021e34a&scoped=true&");
 /* harmony import */ var _Lunchrota_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Lunchrota.vue?vue&type=script&lang=js& */ "./resources/js/pages/Lunchrota.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport *//* harmony import */ var _Lunchrota_vue_vue_type_style_index_0_id_9021e34a_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Lunchrota.vue?vue&type=style&index=0&id=9021e34a&scoped=true&lang=css& */ "./resources/js/pages/Lunchrota.vue?vue&type=style&index=0&id=9021e34a&scoped=true&lang=css&");
-/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
-
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
 
@@ -41104,7 +41335,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /* normalize component */
 
-var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__["default"])(
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
   _Lunchrota_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
   _Lunchrota_vue_vue_type_template_id_9021e34a_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"],
   _Lunchrota_vue_vue_type_template_id_9021e34a_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
@@ -41133,22 +41364,6 @@ component.options.__file = "resources/js/pages/Lunchrota.vue"
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Lunchrota_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib??vue-loader-options!./Lunchrota.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/pages/Lunchrota.vue?vue&type=script&lang=js&");
 /* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Lunchrota_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
-
-/***/ }),
-
-/***/ "./resources/js/pages/Lunchrota.vue?vue&type=style&index=0&id=9021e34a&scoped=true&lang=css&":
-/*!***************************************************************************************************!*\
-  !*** ./resources/js/pages/Lunchrota.vue?vue&type=style&index=0&id=9021e34a&scoped=true&lang=css& ***!
-  \***************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_7_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_2_node_modules_vue_loader_lib_index_js_vue_loader_options_Lunchrota_vue_vue_type_style_index_0_id_9021e34a_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/style-loader!../../../node_modules/css-loader??ref--7-1!../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../node_modules/postcss-loader/src??ref--7-2!../../../node_modules/vue-loader/lib??vue-loader-options!./Lunchrota.vue?vue&type=style&index=0&id=9021e34a&scoped=true&lang=css& */ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/pages/Lunchrota.vue?vue&type=style&index=0&id=9021e34a&scoped=true&lang=css&");
-/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_7_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_2_node_modules_vue_loader_lib_index_js_vue_loader_options_Lunchrota_vue_vue_type_style_index_0_id_9021e34a_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_7_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_2_node_modules_vue_loader_lib_index_js_vue_loader_options_Lunchrota_vue_vue_type_style_index_0_id_9021e34a_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__);
-/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_7_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_2_node_modules_vue_loader_lib_index_js_vue_loader_options_Lunchrota_vue_vue_type_style_index_0_id_9021e34a_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_7_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_2_node_modules_vue_loader_lib_index_js_vue_loader_options_Lunchrota_vue_vue_type_style_index_0_id_9021e34a_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
-
 
 /***/ }),
 

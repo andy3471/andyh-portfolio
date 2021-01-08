@@ -1,10 +1,23 @@
 <template>
-<div class="section">
+  <div class="section">
     <div class="slide">
-      <SectionHeader titleUpper="Date" titleLower="Picker"/>
+      <SectionHeader
+        title-upper="Date"
+        title-lower="Picker"
+      />
       <ButtonGroup>
-        <Button href="https://github.com/andy3471/andyh-datepicker" title="Documentation" icon="fas fa-file" class="button is-info is-outlined" />
-        <Button href="https://github.com/andy3471/andyh-datepicker" title="Github" icon="fab fa-github" class="button is-primary is-outlined" />
+        <Button
+          href="https://github.com/andy3471/andyh-datepicker"
+          title="Documentation"
+          icon="fas fa-file"
+          class="button is-info is-outlined"
+        />
+        <Button
+          href="https://github.com/andy3471/andyh-datepicker"
+          title="Github"
+          icon="fab fa-github"
+          class="button is-primary is-outlined"
+        />
       </ButtonGroup>
       <p>
         A simple date picker component for VueJS. This allows you to use
@@ -12,16 +25,29 @@
       </p>
       <div class="level">
         <div class="level-item">
-          <date-picker></date-picker>
+          <date-picker />
         </div>
       </div>
-		</div>
+    </div>
 
-		<div class="slide">
-			<SectionHeader titleUpper="Time" titleLower="Picker"/>
+    <div class="slide">
+      <SectionHeader
+        title-upper="Time"
+        title-lower="Picker"
+      />
       <ButtonGroup>
-        <Button href="https://github.com/andy3471/andyh-timepicker" title="Documentation" icon="fas fa-file" class="button is-info is-outlined" />
-        <Button href="https://github.com/andy3471/andyh-timepicker" title="Github" icon="fab fa-github" class="button is-primary is-outlined" />
+        <Button
+          href="https://github.com/andy3471/andyh-timepicker"
+          title="Documentation"
+          icon="fas fa-file"
+          class="button is-info is-outlined"
+        />
+        <Button
+          href="https://github.com/andy3471/andyh-timepicker"
+          title="Github"
+          icon="fab fa-github"
+          class="button is-primary is-outlined"
+        />
       </ButtonGroup>
       <p>
         A time picker component for VueJS. This allows you to use v-model on
@@ -30,16 +56,29 @@
       </p>
       <div class="level">
         <div class="level-item">
-          <time-picker></time-picker>
+          <time-picker />
         </div>
       </div>
-		</div>
+    </div>
 	
     <div class="slide">
-      <SectionHeader titleUpper="Auto" titleLower="Complete"/>
+      <SectionHeader
+        title-upper="Auto"
+        title-lower="Complete"
+      />
       <ButtonGroup>
-        <Button href="https://github.com/andy3471/andyh-autocomplete" title="Documentation" icon="fas fa-file" class="button is-info is-outlined" />
-        <Button href="https://github.com/andy3471/andyh-autocomplete" title="Github" icon="fab fa-github" class="button is-primary is-outlined" />
+        <Button
+          href="https://github.com/andy3471/andyh-autocomplete"
+          title="Documentation"
+          icon="fas fa-file"
+          class="button is-info is-outlined"
+        />
+        <Button
+          href="https://github.com/andy3471/andyh-autocomplete"
+          title="Github"
+          icon="fab fa-github"
+          class="button is-primary is-outlined"
+        />
       </ButtonGroup>
       <p>
         An autocomplete component made with Vue JS and Axios. This will make
@@ -55,7 +94,7 @@
           <auto-complete
             placeholder="Type a fruit"
             url="/autocomplete/fruit/"
-          ></auto-complete>
+          />
         </div>
       </div>
     </div>

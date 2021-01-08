@@ -1,8 +1,21 @@
 <template>
-  <Section titleUpper="Lunch" titleLower="Rota">
+  <Section
+    title-upper="Lunch"
+    title-lower="Rota"
+  >
     <ButtonGroup>
-      <Button href="https://github.com/andy3471/lunchrota" title="GitHub" icon="fab fa-github" class="button is-info is-outlined" />
-      <Button href="https://lunchrota.andyh.app" title="Live Demo" icon="fa fa-link" class="button is-primary is-outlined" />
+      <Button
+        href="https://github.com/andy3471/lunchrota"
+        title="GitHub"
+        icon="fab fa-github"
+        class="button is-info is-outlined"
+      />
+      <Button
+        href="https://lunchrota.andyh.app"
+        title="Live Demo"
+        icon="fa fa-link"
+        class="button is-primary is-outlined"
+      />
     </ButtonGroup>
     <div class="level">
       <div class="level-item">
@@ -17,9 +30,10 @@
     <p>
       LunchRota is a ground up rewrite of an application that was created
       for our service desk by
-      <a href="https://curtisreet.co.uk" title="CurtPortfolio"
-        >Curtis Reet</a
-      >. The application is to be used by teams, in order to keep track of
+      <a
+        href="https://curtisreet.co.uk"
+        title="CurtPortfolio"
+      >Curtis Reet</a>. The application is to be used by teams, in order to keep track of
       daily work roles, as well as claim available lunch slots. The original
       application was built on PHP5, and required further development, so I
       decided to rewrite this in Laravel to allow me to continue working on
@@ -64,7 +78,3 @@ p {
   background-repeat: no-repeat;
   background-size: cover;
 }
-
-</style>
-
-</style>

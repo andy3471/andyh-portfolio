@@ -1,15 +1,19 @@
 <template>
   <div id="app">
-    <navbar></navbar>
+    <navbar />
     <!-- <browser-check></browser-check> -->
-    <full-page ref="fullpage" :options="options" id="fullpage">
+    <full-page
+      id="fullpage"
+      ref="fullpage"
+      :options="options"
+    >
       <Header />
       <About />
       <Keyshare />
       <Lunchrota />
       <VueComponents />
       <OtherProjects />
-      <Hosting :containername="this.containername" />
+      <Hosting :containername="containername" />
       <WorkExperience />
       <NonDevProjects />
       <Contact />

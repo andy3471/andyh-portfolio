@@ -3389,6 +3389,9 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -3473,7 +3476,7 @@ __webpack_require__.r(__webpack_exports__);
     };
   },
   methods: {
-    openLink: function openLink(link) {
+    openLink: function openLink() {
       this.isOpen = false;
     }
   }
@@ -21131,7 +21134,7 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c("div", { staticClass: "columns is-mobile is-centered" }, [
     _c("div", { staticClass: "column is-half" }, [
-      this.isIE
+      _vm.isIE
         ? _c(
             "div",
             { staticClass: "notification is-danger browser-notifcation" },

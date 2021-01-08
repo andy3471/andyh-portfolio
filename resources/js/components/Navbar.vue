@@ -2,22 +2,22 @@
   <div>
     <div
       class="hamburger"
+      :class="{ active: isOpen }"
       @click="isOpen = !isOpen"
-      v-bind:class="{ active: isOpen }"
     >
-      <div class="bar1"></div>
-      <div class="bar2"></div>
-      <div class="bar3"></div>
+      <div class="bar1" />
+      <div class="bar2" />
+      <div class="bar3" />
     </div>
     <section
       class="nav-page hero is-fullheight"
-      v-bind:class="{ active: isOpen }"
+      :class="{ active: isOpen }"
     >
       <div class="nav-list columns is-desktop">
         <div
           v-for="(link, index) in links"
+          :key="index"
           class="column nav-item"
-          v-bind:key="index"
           @click="openLink()"
         >
           <a :href="link.href">{{ link.title }}</a>
