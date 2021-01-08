@@ -3702,7 +3702,7 @@ __webpack_require__.r(__webpack_exports__);
     };
   },
   methods: {
-    submit: function submit(e) {
+    submit: function submit() {
       var _this = this;
 
       if (this.sending == false) {
@@ -26467,29 +26467,6 @@ var render = function() {
           }
         },
         [
-          _vm._l(_vm.errors, function(error, idx) {
-            return _c(
-              "span",
-              { key: idx, attrs: { role: "alert" } },
-              _vm._l(error, function(error) {
-                return _c(
-                  "strong",
-                  { key: error, staticClass: "has-text-danger" },
-                  [_vm._v("\n          " + _vm._s(error) + "\n        ")]
-                )
-              }),
-              0
-            )
-          }),
-          _vm._v(" "),
-          _vm.message
-            ? _c("span", { attrs: { role: "success" } }, [
-                _c("strong", { staticClass: "has-text-success" }, [
-                  _vm._v("\n          " + _vm._s(_vm.message) + "\n        ")
-                ])
-              ])
-            : _vm._e(),
-          _vm._v(" "),
           _c("div", { staticClass: "field" }, [
             _c(
               "label",
@@ -26588,7 +26565,30 @@ var render = function() {
               attrs: { type: "submit" }
             },
             [_vm._v("\n        Submit\n      ")]
-          )
+          ),
+          _vm._v(" "),
+          _vm._l(_vm.errors, function(error, idx) {
+            return _c(
+              "span",
+              { key: idx, attrs: { role: "alert" } },
+              _vm._l(error, function(error) {
+                return _c(
+                  "strong",
+                  { key: error, staticClass: "has-text-danger" },
+                  [_vm._v("\n          " + _vm._s(error) + "\n        ")]
+                )
+              }),
+              0
+            )
+          }),
+          _vm._v(" "),
+          _vm.message
+            ? _c("span", { attrs: { role: "success" } }, [
+                _c("strong", { staticClass: "has-text-success" }, [
+                  _vm._v("\n          " + _vm._s(_vm.message) + "\n        ")
+                ])
+              ])
+            : _vm._e()
         ],
         2
       )

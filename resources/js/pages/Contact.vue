@@ -11,16 +11,6 @@
         >, or with the form below.
       </p>
       <form @submit.prevent="submit">
-        <span role="alert" v-for="(error, idx) in errors" :key="idx">
-          <strong class="has-text-danger" v-for="error in error" :key="error" >
-            {{ error }}
-          </strong>
-        </span>
-        <span role="success" v-if="message">
-          <strong class="has-text-success">
-            {{ message }}
-          </strong>
-        </span>
         <div class="field">
           <label class="label has-text-white" for="name">Name:</label>
           <input class="input" type="text" name="name" id="name" v-model="fields.name" required />
@@ -42,6 +32,16 @@
         <button class="button is-primary is-outlined" style="float: right;" type="submit">
           Submit
         </button>
+        <span role="alert" v-for="(error, idx) in errors" :key="idx">
+          <strong class="has-text-danger" v-for="error in error" :key="error" >
+            {{ error }}
+          </strong>
+        </span>
+        <span role="success" v-if="message">
+          <strong class="has-text-success">
+            {{ message }}
+          </strong>
+        </span>
       </form>
     </div>
   </Section>
@@ -63,7 +63,7 @@ export default {
     }
   },
   methods: {
-    submit (e) {
+    submit () {
       if (this.sending == false) {
         this.message = ''
         this.errors = {}
