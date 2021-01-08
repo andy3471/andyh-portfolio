@@ -13,7 +13,7 @@
     </head>
  <body>
     <div id="app">
-        <home />
+        <home containerName="@php echo gethostname() @endphp" />
     </div>
 </body>
 </html>

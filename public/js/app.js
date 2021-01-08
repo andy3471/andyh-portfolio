@@ -3676,6 +3676,17 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "Contact",
@@ -3683,7 +3694,28 @@ __webpack_require__.r(__webpack_exports__);
     Section: _components_Section_vue__WEBPACK_IMPORTED_MODULE_0__["default"]
   },
   data: function data() {
-    return {};
+    return {
+      fields: {},
+      errors: {},
+      message: '',
+      sending: false
+    };
+  },
+  methods: {
+    submit: function submit(e) {
+      var _this = this;
+
+      if (this.sending == false) {
+        this.message = '';
+        this.errors = {};
+        this.sending = true;
+        axios.post('/sendemail', this.fields).then(function (response) {
+          _this.message = 'Message Sent', _this.fields = {}, _this.sending = false;
+        })["catch"](function (error) {
+          _this.errors = error.response.data.errors, _this.sending = false;
+        });
+      }
+    }
   }
 });
 
@@ -3795,6 +3827,9 @@ __webpack_require__.r(__webpack_exports__);
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "Hosting",
+  props: {
+    containername: String
+  },
   components: {
     Section: _components_Section_vue__WEBPACK_IMPORTED_MODULE_0__["default"]
   }
@@ -4491,6 +4526,9 @@ __webpack_require__.r(__webpack_exports__);
     WorkExperience: _pages_WorkExperience_vue__WEBPACK_IMPORTED_MODULE_8__["default"],
     Contact: _pages_Contact_vue__WEBPACK_IMPORTED_MODULE_9__["default"],
     NonDevProjects: _pages_NonDevProjects_vue__WEBPACK_IMPORTED_MODULE_10__["default"]
+  },
+  props: {
+    containername: String
   },
   data: function data() {
     return {
@@ -26380,10 +26418,10 @@ render._withStripped = true
 
 /***/ }),
 
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/pages/Contact.vue?vue&type=template&id=01b3a6b2&":
-/*!*****************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/pages/Contact.vue?vue&type=template&id=01b3a6b2& ***!
-  \*****************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/pages/Contact.vue?vue&type=template&id=01b3a6b2&scoped=true&":
+/*!*****************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/pages/Contact.vue?vue&type=template&id=01b3a6b2&scoped=true& ***!
+  \*****************************************************************************************************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -26418,55 +26456,142 @@ var render = function() {
         _vm._v(", or with the form below.\n    ")
       ]),
       _vm._v(" "),
-      _c("form", { attrs: { method: "POST" } }, [
-        _c("div", { staticClass: "field" }, [
-          _c(
-            "label",
-            { staticClass: "label has-text-white", attrs: { for: "name" } },
-            [_vm._v("Name:")]
-          ),
+      _c(
+        "form",
+        {
+          on: {
+            submit: function($event) {
+              $event.preventDefault()
+              return _vm.submit($event)
+            }
+          }
+        },
+        [
+          _vm._l(_vm.errors, function(error, idx) {
+            return _c(
+              "span",
+              { key: idx, attrs: { role: "alert" } },
+              _vm._l(error, function(error) {
+                return _c(
+                  "strong",
+                  { key: error, staticClass: "has-text-danger" },
+                  [_vm._v("\n          " + _vm._s(error) + "\n        ")]
+                )
+              }),
+              0
+            )
+          }),
           _vm._v(" "),
-          _c("input", {
-            staticClass: "input",
-            attrs: { type: "text", name: "name", id: "name", required: "" }
-          })
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "field" }, [
-          _c(
-            "label",
-            { staticClass: "label has-text-white", attrs: { for: "Email" } },
-            [_vm._v("Email:")]
-          ),
+          _vm.message
+            ? _c("span", { attrs: { role: "success" } }, [
+                _c("strong", { staticClass: "has-text-success" }, [
+                  _vm._v("\n          " + _vm._s(_vm.message) + "\n        ")
+                ])
+              ])
+            : _vm._e(),
           _vm._v(" "),
-          _c("input", {
-            staticClass: "input",
-            attrs: { type: "text", name: "email", id: "email", required: "" }
-          })
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "field" }, [
-          _c(
-            "label",
-            { staticClass: "label has-text-white", attrs: { for: "Email" } },
-            [_vm._v("Message:")]
-          ),
+          _c("div", { staticClass: "field" }, [
+            _c(
+              "label",
+              { staticClass: "label has-text-white", attrs: { for: "name" } },
+              [_vm._v("Name:")]
+            ),
+            _vm._v(" "),
+            _c("input", {
+              directives: [
+                {
+                  name: "model",
+                  rawName: "v-model",
+                  value: _vm.fields.name,
+                  expression: "fields.name"
+                }
+              ],
+              staticClass: "input",
+              attrs: { type: "text", name: "name", id: "name", required: "" },
+              domProps: { value: _vm.fields.name },
+              on: {
+                input: function($event) {
+                  if ($event.target.composing) {
+                    return
+                  }
+                  _vm.$set(_vm.fields, "name", $event.target.value)
+                }
+              }
+            })
+          ]),
           _vm._v(" "),
-          _c("textarea", {
-            staticClass: "textarea",
-            attrs: { name: "message", id: "message", required: "" }
-          })
-        ]),
-        _vm._v(" "),
-        _c(
-          "button",
-          {
-            staticClass: "button is-primary is-outlined",
-            staticStyle: { float: "right" }
-          },
-          [_vm._v("\n        Submit\n      ")]
-        )
-      ])
+          _c("div", { staticClass: "field" }, [
+            _c(
+              "label",
+              { staticClass: "label has-text-white", attrs: { for: "Email" } },
+              [_vm._v("Email:")]
+            ),
+            _vm._v(" "),
+            _c("input", {
+              directives: [
+                {
+                  name: "model",
+                  rawName: "v-model",
+                  value: _vm.fields.email,
+                  expression: "fields.email"
+                }
+              ],
+              staticClass: "input",
+              attrs: { type: "text", name: "email", id: "email", required: "" },
+              domProps: { value: _vm.fields.email },
+              on: {
+                input: function($event) {
+                  if ($event.target.composing) {
+                    return
+                  }
+                  _vm.$set(_vm.fields, "email", $event.target.value)
+                }
+              }
+            })
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "field" }, [
+            _c(
+              "label",
+              { staticClass: "label has-text-white", attrs: { for: "Email" } },
+              [_vm._v("Message:")]
+            ),
+            _vm._v(" "),
+            _c("textarea", {
+              directives: [
+                {
+                  name: "model",
+                  rawName: "v-model",
+                  value: _vm.fields.message,
+                  expression: "fields.message"
+                }
+              ],
+              staticClass: "textarea",
+              attrs: { name: "message", id: "message", required: "" },
+              domProps: { value: _vm.fields.message },
+              on: {
+                input: function($event) {
+                  if ($event.target.composing) {
+                    return
+                  }
+                  _vm.$set(_vm.fields, "message", $event.target.value)
+                }
+              }
+            })
+          ]),
+          _vm._v(" "),
+          _c(
+            "button",
+            {
+              staticClass: "button is-primary is-outlined",
+              staticStyle: { float: "right" },
+              attrs: { type: "submit" }
+            },
+            [_vm._v("\n        Submit\n      ")]
+          )
+        ],
+        2
+      )
     ])
   ])
 }
@@ -26666,7 +26791,9 @@ var render = function() {
                   _vm._v(" "),
                   _c("p", [
                     _vm._v(
-                      "\n                Current Docker Container Name: @php echo gethostname() @endphp\n              "
+                      "\n                Current Docker Container Name: " +
+                        _vm._s(this.containername) +
+                        "\n              "
                     )
                   ])
                 ])
@@ -27914,7 +28041,7 @@ var render = function() {
           _vm._v(" "),
           _c("OtherProjects"),
           _vm._v(" "),
-          _c("Hosting"),
+          _c("Hosting", { attrs: { containername: this.containername } }),
           _vm._v(" "),
           _c("WorkExperience"),
           _vm._v(" "),
@@ -40651,7 +40778,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _Contact_vue_vue_type_template_id_01b3a6b2___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Contact.vue?vue&type=template&id=01b3a6b2& */ "./resources/js/pages/Contact.vue?vue&type=template&id=01b3a6b2&");
+/* harmony import */ var _Contact_vue_vue_type_template_id_01b3a6b2_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Contact.vue?vue&type=template&id=01b3a6b2&scoped=true& */ "./resources/js/pages/Contact.vue?vue&type=template&id=01b3a6b2&scoped=true&");
 /* harmony import */ var _Contact_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Contact.vue?vue&type=script&lang=js& */ "./resources/js/pages/Contact.vue?vue&type=script&lang=js&");
 /* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
@@ -40663,11 +40790,11 @@ __webpack_require__.r(__webpack_exports__);
 
 var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
   _Contact_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
-  _Contact_vue_vue_type_template_id_01b3a6b2___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _Contact_vue_vue_type_template_id_01b3a6b2___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  _Contact_vue_vue_type_template_id_01b3a6b2_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _Contact_vue_vue_type_template_id_01b3a6b2_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
   false,
   null,
-  null,
+  "01b3a6b2",
   null
   
 )
@@ -40693,19 +40820,19 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./resources/js/pages/Contact.vue?vue&type=template&id=01b3a6b2&":
-/*!***********************************************************************!*\
-  !*** ./resources/js/pages/Contact.vue?vue&type=template&id=01b3a6b2& ***!
-  \***********************************************************************/
+/***/ "./resources/js/pages/Contact.vue?vue&type=template&id=01b3a6b2&scoped=true&":
+/*!***********************************************************************************!*\
+  !*** ./resources/js/pages/Contact.vue?vue&type=template&id=01b3a6b2&scoped=true& ***!
+  \***********************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Contact_vue_vue_type_template_id_01b3a6b2___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./Contact.vue?vue&type=template&id=01b3a6b2& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/pages/Contact.vue?vue&type=template&id=01b3a6b2&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Contact_vue_vue_type_template_id_01b3a6b2___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Contact_vue_vue_type_template_id_01b3a6b2_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./Contact.vue?vue&type=template&id=01b3a6b2&scoped=true& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/pages/Contact.vue?vue&type=template&id=01b3a6b2&scoped=true&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Contact_vue_vue_type_template_id_01b3a6b2_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Contact_vue_vue_type_template_id_01b3a6b2___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Contact_vue_vue_type_template_id_01b3a6b2_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 

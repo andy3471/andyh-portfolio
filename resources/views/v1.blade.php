@@ -6,15 +6,26 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="author" content="Andrew Hargrave">
         <meta name="description" content="I'm a self taught Web Developer that works with PHP, JS, HTML, SQL, Redis, CSS and SCSS. I have a very good knowledge of the Laravel MVC framework. I also have knowledge of Bootstrap and Bulma as UI frameworks">
-        <title>AndyH Web Development Portfolio</title>
+        <title>(V1 - Outdated) AndyH Web Development Portfolio</title>
         <script src="{{ asset('js/v1.js') }}" defer></script>
         <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
 
     </head>
  <body>
     <div id="app">
+
         <navbar></navbar>
         <browser-check></browser-check>
+
+        <div class="columns is-mobile is-centered">
+            <div class="column is-half">
+            <div class="notification is-warning browser-notifcation">
+                You are viewing v1 of my portfolio, for a later version, please
+                <a href="./">click here</a>
+            </div>
+            </div>
+        </div>
+
         <section class="header hero is-fullheight" id="header">
             <div class="container">
                 <div class="header-text" >
@@ -594,6 +605,7 @@
                 </div>
                 <div class="section-content">
                     <p data-aos="fade-left">If you would like to work with me, then be sure to contact me on <a href="mailto:me@andyh.app">me@andyh.app</a>, <a href="https://www.linkedin.com/in/andrew-hargrave-b36128144/" title="LinkedIn">LinkedIn</a>, or with the form below.</p>
+                    <p> PLEASE USE THE <a href="./">V2</a> FORM TO CONTACT ME</p>
                 <form method="POST" action="{{ route('sendemail') }}">
                         @if(session()->has('message'))
                             <span role="alert">
@@ -604,7 +616,7 @@
                         @csrf
                         <div class="field" data-aos="fade-right">
                             <label class="label has-text-white" for="name">Name:</label class="label">
-                            <input class="input @error('name') is-invalid @enderror" type="text" name="name" id="name" required>
+                            <input class="input @error('name') is-invalid @enderror" type="text" name="name" id="name" disabled>
                             @error('name')
                                 <span role="alert">
                                     <strong class="has-text-danger">{{ $message }}</strong>
@@ -613,7 +625,7 @@
                         </div>
                         <div class="field" data-aos="fade-left">
                             <label class="label has-text-white" for="Email">Email:</label>
-                            <input class="input @error('email') is-invalid @enderror" type="text" name="email" id="email" required>
+                            <input class="input @error('email') is-invalid @enderror" type="text" name="email" id="email" disabled>
                             @error('email')
                                 <span role="alert">
                                     <strong class="has-text-danger">{{ $message }}</strong>
@@ -622,7 +634,7 @@
                         </div>
                         <div class="field" data-aos="fade-right">
                             <label class="label has-text-white" for="Email">Message:</label>
-                            <textarea class="textarea @error('message') is-invalid @enderror" name="message" id="message" required></textarea>
+                            <textarea class="textarea @error('message') is-invalid @enderror" name="message" id="message" disabled></textarea>
                             @error('message')
                                 <span role="alert">
                                     <strong class="has-text-danger">{{ $message }}</strong>

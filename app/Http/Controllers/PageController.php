@@ -29,22 +29,16 @@ class PageController extends Controller
 
     public function sendEmail(Request $request)
     {
-        $validator = Validator::make($request->all(), [
+        $validated = $request->validate([
             'name' => 'required',
             'email' => 'email|required',
             'message' => 'required',
         ]);
 
-        if ($validator->fails()) {
-            return redirect('/#contact')
-                ->withErrors($validator)
-                ->withInput();
-        }
-
         $contact = $request;
 
         Mail::send(new ContactMe($contact));
 
-        return redirect('/#contact')->with('message', 'Email Sent');
+        return 'Email Sent';
     }
 }

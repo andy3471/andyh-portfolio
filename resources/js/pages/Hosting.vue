@@ -60,7 +60,7 @@
                   should change.
                 </p>
                 <p>
-                  Current Docker Container Name: @php echo gethostname() @endphp
+                  Current Docker Container Name: {{ this.containername }}
                 </p>
               </div>
             </div>
@@ -96,6 +96,9 @@ import Section from "../components/Section.vue";
 
 export default {
   name: "Hosting",
+  props: {
+    containername: String,
+  },
   components: {
     Section
   }

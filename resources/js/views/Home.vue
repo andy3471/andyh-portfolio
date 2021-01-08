@@ -9,7 +9,7 @@
       <Lunchrota />
       <VueComponents />
       <OtherProjects />
-      <Hosting />
+      <Hosting :containername="this.containername" />
       <WorkExperience />
       <NonDevProjects />
       <Contact />
@@ -47,6 +47,9 @@ export default {
     WorkExperience,
     Contact,
     NonDevProjects
+  },
+  props: {
+    containername: String,
   },
   data() {
     return {
