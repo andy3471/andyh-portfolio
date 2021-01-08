@@ -1,0 +1,283 @@
+@import "node_modules/bulma/sass/utilities/initial-variables";
+// Bulma Variable Overrides
+$red: #f20544;
+$purple: #2a438c;
+$blue: #012840;
+$yellow: #f29f05;
+$orange: #f27405;
+$primary: $orange;
+$navbar-breakpoint: $desktop;
+@import "node_modules/bulma/bulma";
+@import url("https://fonts.googleapis.com/css?family=Permanent+Marker|Roboto&display=swap");
+@import "node_modules/bulma-extensions/bulma-timeline/src/sass";
+@import "node_modules/aos/src/sass/aos.scss";
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: $purple;
+    font-family: "Roboto", sans-serif;
+    color: white;
+    background: url("../images/bg.jpg") no-repeat center fixed;
+    background-color: $blue;
+    background-size: cover;
+}
+
+html,body
+{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
+a {
+    color: #f29f05;
+}
+
+a:hover {
+    color: #f27405;
+}
+
+a:visited {
+    color: #f27405;
+}
+
+.hero {
+    flex-direction: row;
+}
+
+.timeline {
+    height: 100%;
+}
+
+.container {
+    padding: 0.5rem;
+}
+
+.level {
+    margin-bottom: 0.5rem !important;
+}
+
+// .buttons {
+//     margin-bottom: 0.5rem;
+// }
+
+.image {
+    margin-bottom: 0.5rem;
+}
+
+p {
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.timeline-content {
+    .heading {
+        font-family: "Permanent Marker", cursive;
+        color: $red;
+    }
+    ul {
+        list-style: square;
+        font-size: 0.8rem;
+        list-style-position: inside;
+    }
+    p {
+        text-align: left;
+    }
+}
+
+.autocomplete-results {
+    color: #495057;
+}
+
+// Reusable
+// button {
+//     background-color: $yellow;
+//     color: white;
+// }
+
+.section-header {
+    font-family: "Permanent Marker", cursive;
+    text-transform: uppercase;
+    background-image: linear-gradient($yellow, $orange);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 1rem;
+    h1 {
+        font-size: calc(2.5rem + 2.5vw);
+        text-align: center;
+        line-height: 0.7;
+    }
+    h2 {
+        font-size: calc(1.5rem + 1.5vw);
+        text-align: center;
+    }
+}
+
+// Nav
+.browser-notifcation {
+    position: fixed;
+    z-index: 1000;
+    margin-top: 10px;
+}
+
+.hamburger {
+    position: fixed;
+    z-index: 999;
+    display: inline-block;
+    cursor: pointer;
+    right: 15px;
+    top: 15px;
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: $purple;
+    padding: 5px;
+    .bar1,
+    .bar2,
+    .bar3 {
+        margin-left: auto;
+        margin-right: auto;
+        height: 5px;
+        background-color: $red;
+        margin: 6px 0;
+        transition: 0.4s;
+        border-radius: 5px;
+        border: none;
+    }
+}
+
+.hamburger:hover {
+    color: $yellow;
+}
+
+.active {
+    .bar1 {
+        -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+        transform: rotate(-45deg) translate(-9px, 6px);
+    }
+    .bar2 {
+        opacity: 0;
+    }
+    .bar3 {
+        -webkit-transform: rotate(45deg) translate(-8px, -8px);
+        transform: rotate(45deg) translate(-8px, -8px);
+    }
+}
+
+.nav-page {
+    background-color: $purple;
+    text-align: center;
+    width: 100%;
+    z-index: 100;
+    position: fixed;
+    align-items: center;
+    -webkit-transform: translate(-100vh);
+    transform: translateY(-100vh);
+    transition: 0.5s;
+}
+
+.nav-page.active {
+    -webkit-transform: translate(0vh);
+    transform: translateY(0vh);
+}
+
+.nav-list {
+    z-index: 150;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+
+.nav-item a {
+    font-family: "Permanent Marker", cursive;
+    color: $red;
+    text-decoration: none;
+    font-size: calc(1rem + 0.25vw);
+}
+
+.nav-item a:hover {
+    font-family: "Permanent Marker", cursive;
+    color: $yellow;
+}
+
+// Header
+.header {
+    text-align: center;
+    z-index: 1;
+}
+
+.header.container {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.header-text {
+    position: absolute;
+    top: 50vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.logo {
+    background-image: linear-gradient($red, $orange);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 0.7;
+    user-select: none;
+    font-family: "Permanent Marker", cursive;
+    text-align: center;
+    z-index: 1;
+    padding: 1rem;
+    h1 {
+        font-size: calc(8rem + 8vw);
+    }
+    h2 {
+        font-size: calc(4rem + 4vw);
+    }
+}
+
+.header h3 {
+    font-size: calc(1rem + 1vw);
+    text-align: center;
+    font-weight: 300;
+    padding-top: 2rem;
+}
+
+// Components
+.component-header {
+    font-size: 2rem;
+    font-family: "Permanent Marker", cursive;
+    color: $red;
+    text-align: center;
+}
+
+.component-body {
+    text-align: center;
+    padding-bottom: 2.5rem;
+}
+
+.timedropdown {
+    z-index: 999;
+}
+
+// Other Projects
+.project {
+    // position: relative;
+    //  top: 50%;
+    //  transform: translate(0, -50%);
+    text-align: center;
+    h1 {
+        font-size: 2rem;
+        font-family: "Permanent Marker", cursive;
+        color: $red;
+        text-align: center;
+    }
+}
+
+//Work Experience

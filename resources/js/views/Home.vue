@@ -8,9 +8,10 @@
       <Keyshare />
       <Lunchrota />
       <VueComponents />
-      <Hosting />
       <OtherProjects />
+      <Hosting />
       <WorkExperience />
+      <NonDevProjects />
       <Contact />
     </full-page>
   </div>
@@ -29,6 +30,7 @@ import Hosting from "../pages/Hosting.vue";
 import OtherProjects from "../pages/OtherProjects.vue";
 import WorkExperience from "../pages/WorkExperience.vue";
 import Contact from "../pages/Contact.vue";
+import NonDevProjects from "../pages/NonDevProjects.vue"
 
 export default {
   name: "MainPage",
@@ -43,7 +45,8 @@ export default {
     Hosting,
     OtherProjects,
     WorkExperience,
-    Contact
+    Contact,
+    NonDevProjects
   },
   data() {
     return {
@@ -55,19 +58,15 @@ export default {
           "keys",
           "rota",
           "components",
-          "hosting",
           "projects",
+          "hosting",
           "work",
+          "other",
           "contact"
         ],
         navigation: true,
         navigationPosition: "left",
         slidesNavigation: true,
-        slidesNavPosition: "bottom",
-
-        //Scrolling
-        css3: true,
-        scrollingSpeed: 700,
         autoScrolling: true,
         scrollOverflow: true,
         scrollOverflowReset: false,
@@ -78,20 +77,18 @@ export default {
         //verticalCentered: true,
         sectionsColor: [
           "none",
-          "#2B438D",
-          "#272727",
-          "#F2F2F2",
-          "#2A438C",
-          "#EF9325",
-          "#763C54",
-          "#7AADCC",
+          "none",
+          "none",
+          "none",
+          "#049DBF",
+          "#D82B2B",
+          "#33A65B",
+          "#049DBF",
+          "#D82B2B",
           "none"
         ],
         paddingTop: ".5em",
         paddingBottom: ".5em",
-        responsiveWidth: 0,
-        responsiveHeight: 0,
-        responsiveSlides: false
       }
     };
   }

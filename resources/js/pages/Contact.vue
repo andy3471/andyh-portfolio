@@ -42,6 +42,11 @@ export default {
   name: "Contact",
   components: {
     Section
+  },
+  data() {
+    return {
+      
+    }
   }
 };
 </script>

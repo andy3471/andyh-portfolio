@@ -13503,12 +13503,12 @@ a.has-text-danger-dark:focus {
 }
 
 body {
-  background-color: #2a438c;
   font-family: "Roboto", sans-serif;
   color: white;
   background: url(/images/bg.jpg?fd6e73ecb5800dfb12bb45d5e8e92133) no-repeat center fixed;
   background-color: #012840;
   background-size: cover;
+  text-align: center;
 }
 
 a {
@@ -13525,14 +13525,6 @@ a:visited {
 
 .hero {
   flex-direction: row;
-}
-
-.level {
-  margin-bottom: 0.5rem !important;
-}
-
-.image {
-  margin-bottom: 0.5rem;
 }
 
 p {
@@ -13582,12 +13574,6 @@ h2 .upper {
 h2 .lower {
   font-size: calc(1.5rem + 1.5vw);
   display: block;
-}
-
-.browser-notifcation {
-  position: fixed;
-  z-index: 1000;
-  margin-top: 10px;
 }
 
 .hamburger {
@@ -13692,5 +13678,18 @@ h2 .lower {
   font-family: "Permanent Marker", cursive;
   color: #f20544;
   text-align: center;
+}
+
+.fp-controlArrow.fp-prev {
+  left: 50px;
+}
+
+.fp-controlArrow.fp-next {
+  right: 50px;
+}
+
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {
+  background: #2a438c;
 }
 

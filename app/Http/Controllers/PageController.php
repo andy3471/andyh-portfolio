@@ -15,6 +15,11 @@ class PageController extends Controller
         return view('home');
     }
 
+    public function v1()
+    {
+        return view('v1');
+    }
+
     public function fruitSearch($search)
     {
         $fruit = Fruit::where('name', 'like', '%' . $search . '%')->limit(5)->get();

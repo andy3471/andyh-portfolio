@@ -31,7 +31,6 @@ $navbar-breakpoint: $desktop;
         font-size: calc(4rem + 4vw);
         display: block;
     }
-
 }
 
 .tagline {
@@ -41,12 +40,12 @@ $navbar-breakpoint: $desktop;
 }
 
 body {
-    background-color: $purple;
     font-family: "Roboto", sans-serif;
     color: white;
     background: url("../images/bg.jpg") no-repeat center fixed;
     background-color: $blue;
     background-size: cover;
+    text-align: center;
 }
 
 a {
@@ -65,15 +64,6 @@ a:visited {
     flex-direction: row;
 }
  
-
-.level {
-    margin-bottom: 0.5rem !important;
-}
-
-.image {
-    margin-bottom: 0.5rem;
-}
-
 p {
     margin-bottom: 1rem;
     text-align: center;
@@ -122,11 +112,11 @@ h2 {
     }
 }
 
-.browser-notifcation {
-    position: fixed;
-    z-index: 1000;
-    margin-top: 10px;
-}
+// .browser-notifcation {
+//     position: fixed;
+//     z-index: 1000;
+//     margin-top: 10px;
+// }
 
 .hamburger {
     position: fixed;
@@ -239,4 +229,21 @@ h2 {
     }
 }
 
-//Work Experience
+.fp-controlArrow.fp-prev {
+    left: 50px;
+}
+.fp-controlArrow.fp-next{
+    right: 50px;
+}
+
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {
+    background: $purple;
+}
+
+// .fp-slidesNav {
+//     top: 50%;
+//     left: 50%;
+//     margin-right: -50%;
+//     transform: translate(-50%, -50%)
+// }

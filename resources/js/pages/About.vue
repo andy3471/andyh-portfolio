@@ -22,7 +22,7 @@
           Bootstrap and Bulma as UI frameworks.
         </p>
         <p>
-          I am currently employed as an Applications Support Anaylst at Neilson
+          I am currently employed as an Application Support Anaylst at Neilson
           Finance Services.
         </p>
         <p>
@@ -30,8 +30,8 @@
           Advanced, the UK's third largest software company. I worked in the
           Health & Care business unit with Carenotes, an ASP.NET Web
           Application, with a large number of SOA services. Carenotes is used
-          widely by the NHS for mental health and community Trusts. I provide
-          third line support for Carenotes, as well as deploy and upgrade it.
+          widely by the NHS for mental health and community Trusts. I provided
+          third line support for Carenotes, as well as deployed and upgraded it.
           Carenotes is hosted on Windows Servers with IIS.
         </p>
         <p>
@@ -45,36 +45,10 @@
           my free time, using Analog Synthesizers. I'm also a huge fan of board
           games and virtual reality.
         </p>
-        <p>
-          Please check out my live demos on the site, and use the Contact Me
-          form if you would like to work together!
-        </p>
-        <div class="level">
-          <div class="level-item">
-            <div class="buttons has-addons">
-              <a
-                href="https://www.linkedin.com/in/andrew-hargrave-b36128144/"
-                title="LinkedIn"
-                class="button is-info is-outlined"
-              >
-                <span class="icon">
-                  <i class="fab fa-linkedin"></i>
-                </span>
-                <span>Linked In</span>
-              </a>
-              <a
-                href="https://github.com/andy3471/"
-                title="GitHub"
-                class="button is-primary is-outlined"
-              >
-                <span class="icon">
-                  <i class="fab fa-github"></i>
-                </span>
-                <span>Github</span>
-              </a>
-            </div>
-          </div>
-        </div>
+        <ButtonGroup>
+          <Button href="https://www.linkedin.com/in/andrew-hargrave-b36128144/" title="Linked In" icon="fab fa-linkedin" class="button is-info is-outlined" />
+          <Button href="https://github.com/andy3471/" title="GitHub" icon="fab fa-github" class="button is-primary is-outlined" />
+        </ButtonGroup>
       </div>
     </div>
   </Section>
@@ -89,3 +63,62 @@ export default {
   }
 };
 </script>
+<style scoped lang="scss">
+
+#section07 a {
+  padding-top: 80px;
+}
+#section07 a span {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 24px;
+  height: 24px;
+  margin-left: -12px;
+  border-left: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-animation: sdb07 2s infinite;
+  animation: sdb07 2s infinite;
+  opacity: 0;
+  box-sizing: border-box;
+}
+#section07 a span:nth-of-type(1) {
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+}
+#section07 a span:nth-of-type(2) {
+  top: 16px;
+  -webkit-animation-delay: .15s;
+  animation-delay: .15s;
+}
+#section07 a span:nth-of-type(3) {
+  top: 32px;
+  -webkit-animation-delay: .3s;
+  animation-delay: .3s;
+}
+@-webkit-keyframes sdb07 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes sdb07 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+</style>

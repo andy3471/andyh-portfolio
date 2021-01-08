@@ -36,8 +36,8 @@ export default {
         { href: "#keys", title: "KeyShare" },
         { href: "#rota", title: "LunchRota" },
         { href: "#components", title: "Components" },
-        { href: "#hosting", title: "Hosting" },
         { href: "#projects", title: "Other Projects" },
+        { href: "#hosting", title: "Hosting" },
         { href: "#work", title: "Work Experience" },
         { href: "#contact", title: "Contact Me" }
       ]

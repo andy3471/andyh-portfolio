@@ -1,21 +1,21 @@
 <template>
   <div class="section">
     <div class="container">
-      <h2 class="section-header">
-        <span class="upper">{{ this.titleUpper }}</span>
-        <span class="lower">{{ this.titleLower }}</span>
-      </h2>
-      <div class="section-body">
+      <SectionHeader :titleUpper="titleUpper" :titleLower="titleLower"/>
         <slot></slot>
-      </div>
     </div>
   </div>
 </template>
 <script>
+import SectionHeader from './SectionHeader.vue'
+
 export default {
   props: {
     titleUpper: String,
     titleLower: String
+  },
+  components: {
+    SectionHeader
   }
 };
 </script>
