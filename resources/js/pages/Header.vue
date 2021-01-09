@@ -17,13 +17,20 @@
     </video>
     <div class="layer">
       <div class="container">
-        <h1 class="has-text-centered">
-          <div class="logo">
-            <span class="upper">Andy</span>
-            <span class="lower">Hargrave</span>
-          </div>
-          <span class="tagline has-text-centered">Full Stack Web Development & Deployment</span>
-        </h1>
+        <kinesis-container>
+          <kinesis-element
+            type="depth"
+            :strength="5"
+          >
+            <h1 class="has-text-centered">
+              <div class="logo">
+                <span class="upper">Andy</span>
+                <span class="lower">Hargrave</span>
+              </div>
+              <span class="tagline has-text-centered">Full Stack Web Development & Deployment</span>
+            </h1>
+          </kinesis-element>
+        </kinesis-container>
         <br>
         <div class="header-buttons level">
           <div class="level-item">

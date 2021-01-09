@@ -3390,6 +3390,45 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/ButtonGroup.vue?vue&type=script&lang=js&":
+/*!**********************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/ButtonGroup.vue?vue&type=script&lang=js& ***!
+  \**********************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _Button_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Button.vue */ "./resources/js/components/Button.vue");
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  components: {
+    Button: _Button_vue__WEBPACK_IMPORTED_MODULE_0__["default"]
+  },
+  props: {
+    buttons: Array
+  }
+});
+
+/***/ }),
+
 /***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Navbar.vue?vue&type=script&lang=js&":
 /*!*****************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Navbar.vue?vue&type=script&lang=js& ***!
@@ -3467,6 +3506,71 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/ProjectSlide.vue?vue&type=script&lang=js&":
+/*!***********************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/ProjectSlide.vue?vue&type=script&lang=js& ***!
+  \***********************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _SectionHeader_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./SectionHeader.vue */ "./resources/js/components/SectionHeader.vue");
+/* harmony import */ var _ButtonGroup_vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ButtonGroup.vue */ "./resources/js/components/ButtonGroup.vue");
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  components: {
+    SectionHeader: _SectionHeader_vue__WEBPACK_IMPORTED_MODULE_0__["default"],
+    ButtonGroup: _ButtonGroup_vue__WEBPACK_IMPORTED_MODULE_1__["default"]
+  },
+  props: {
+    project: Object
+  }
+});
+
+/***/ }),
+
 /***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Section.vue?vue&type=script&lang=js&":
 /*!******************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Section.vue?vue&type=script&lang=js& ***!
@@ -3534,6 +3638,12 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -4085,72 +4195,7 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_SectionHeader_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../components/SectionHeader.vue */ "./resources/js/components/SectionHeader.vue");
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
+/* harmony import */ var _components_ProjectSlide_vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/ProjectSlide.vue */ "./resources/js/components/ProjectSlide.vue");
 //
 //
 //
@@ -4161,10 +4206,42 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 
+
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "OtherProjects",
   components: {
-    SectionHeader: _components_SectionHeader_vue__WEBPACK_IMPORTED_MODULE_0__["default"]
+    SectionHeader: _components_SectionHeader_vue__WEBPACK_IMPORTED_MODULE_0__["default"],
+    ProjectSlide: _components_ProjectSlide_vue__WEBPACK_IMPORTED_MODULE_1__["default"]
+  },
+  data: function data() {
+    return {
+      projects: [{
+        titleUpper: "Arcade",
+        titleLower: "Cabinet",
+        img: "/images/wards.jpg",
+        alt: "arcade",
+        description: "Description"
+      }, {
+        titleUpper: "Music",
+        titleLower: "Production",
+        img: "/images/albumart.jpg",
+        alt: "albumart",
+        description: "I produce music using Analog Synthesizers, mixed with more modern techniques. I have created and released an album that uses analog synths controlled via midi, along with Ableton Live and a Launchpad",
+        tags: ['Ableton'],
+        buttons: [{
+          href: "https://open.spotify.com/artist/3BsM8NcTrGD2bZeh94E3Z4?si=QaYxYG9-QbO7Ohq1EjIZTw",
+          title: "Spotify",
+          icon: "fab fa-spotify",
+          "class": "button is-primary is-outlined"
+        }]
+      }, {
+        titleUpper: "Charity",
+        titleLower: "Events",
+        img: "/images/justgiving.jpg",
+        alt: "justgiving",
+        description: "I have hosted multiple charity events for various charities. This includes 4 separate charity gaming Marathons, that have raised a total of over £3600 for various Charities."
+      }]
+    };
   }
 });
 
@@ -4180,249 +4257,7 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_SectionHeader_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../components/SectionHeader.vue */ "./resources/js/components/SectionHeader.vue");
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
+/* harmony import */ var _components_ProjectSlide_vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/ProjectSlide.vue */ "./resources/js/components/ProjectSlide.vue");
 //
 //
 //
@@ -4433,10 +4268,99 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 
+
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "OtherProjects",
   components: {
-    SectionHeader: _components_SectionHeader_vue__WEBPACK_IMPORTED_MODULE_0__["default"]
+    SectionHeader: _components_SectionHeader_vue__WEBPACK_IMPORTED_MODULE_0__["default"],
+    ProjectSlide: _components_ProjectSlide_vue__WEBPACK_IMPORTED_MODULE_1__["default"]
+  },
+  data: function data() {
+    return {
+      projects: [{
+        titleUpper: "Advanced",
+        titleLower: "Hackaton",
+        img: "/images/wards.jpg",
+        alt: "wards",
+        description: "I took part in the 2020 Advanced Hackathon, in which the task was to create an external applet which integrates with an existing healthcare application. I worked as developer on our team, alongside some of the developers for CareNotes. We created an applet that integrates with CareNotes, a patient management system, to show patients on a ward, and record incidents, clinical notes, BMI and Bodymap forms against the patient. This would then use the existing CareNotes API to send this to CareNotes. The project was designed and built in 24 hours, in Advanced's MosaicJS framework. I created the modals, forms and bodymapping functionality. The project is being looked into further as something, that can be developed into a full product.",
+        tags: ['SQL', 'NodeJS', 'MosaicJS (Bespoke Framework)']
+      }, {
+        titleUpper: "Portfolio",
+        titleLower: "Website",
+        img: "/images/portfolio.jpg",
+        alt: "portfolio",
+        description: "My portfolio is build on Laravel, VueJS, Bulma and Fullpage.js. I am currently running V2 of my portfolio, I have decided to make the website more readable, and remove some of the animations from <a href='./v1'>V1</a>, to make it far more readable, and easy to follow. I have used Fullpage.JS to draw attention to each of my individual projects and remove clutter from the page.",
+        tags: ['VueJS', 'Bulma', 'Laravel', 'Fullpage.js'],
+        buttons: [{
+          href: "https://github.com/andy3471/andyh-portfolio",
+          title: "GitHub",
+          icon: "fab fa-github",
+          "class": "button is-info is-outlined"
+        }, {
+          href: "./v1",
+          title: "Version 1",
+          icon: "fa fa-link",
+          "class": "button is-primary is-outlined"
+        }]
+      }, {
+        titleUpper: "VC",
+        titleLower: "Tees",
+        img: "/images/vctees.jpg",
+        alt: "vctees",
+        description: "I run a website where I design and sell clothing based on retro music Synthesizers. The site is built using WooCommerce on Wordpress.",
+        tags: ['Wordpress', 'WooCommerce', 'Photoshop', 'Illustrator'],
+        buttons: [{
+          href: "https://vctees.co.uk",
+          title: "VCTees",
+          icon: "fa fa-link",
+          "class": "button is-primary is-outlined"
+        }]
+      }, {
+        titleUpper: "Tabletop Sim",
+        titleLower: "Gloomhaven",
+        img: "/images/gloomhaven.jpg",
+        alt: "gloomhaven",
+        description: "I have been working to make board games playable in Tabletop Simulator, so that people can continue playing during the Covid-19 outbreak. I created a fork of the Gloomhaven Fantasy set-up mod, and scripted all of the Forgotten Circles expansion and solo scenarios in lua with <a href='https://curtisreet.co.uk'>Curtis Reet</a>. My mod has now been merged into the original mod, where I have been credited, which is the most popular tabletop simulator mod with over 100,000 active users",
+        tags: ['Lua'],
+        buttons: [{
+          href: "https://github.com/andy3471/Gloomhaven-ForgottenCricles-TTS",
+          title: "Github",
+          icon: "fab fa-github",
+          "class": "button is-info is-outlined"
+        }, {
+          href: "https://steamcommunity.com/sharedfiles/filedetails/?id=1301493206&searchtext=gloomhaven",
+          title: "Steam",
+          icon: "fab fa-steam",
+          "class": "button is-primary is-outlined"
+        }]
+      }, {
+        titleUpper: "Portal Stories",
+        titleLower: "Mel",
+        img: "/images/portalstories.jpg",
+        alt: "portal",
+        description: "I was the original leader on the Portal 2 mod Portal Stores: Mel. The mod went on to win a Video Game Award for 'Best Fan Creation' in 2015, and has been given a full steam release, with overwhelmingly positive reviews. I am in the credits of the mod for my past contributions. The mod featured in news articles on various news websites, such as the washington post.",
+        tags: ['Source Engine'],
+        buttons: [{
+          href: "https://store.steampowered.com/app/317400/Portal_Stories_Mel",
+          title: "Steam",
+          icon: "fab fa-steam",
+          "class": "button is-info is-outlined"
+        }]
+      }, {
+        titleUpper: "Minecraft",
+        titleLower: "Beat Detection",
+        img: "/images/club.jpg",
+        alt: "club",
+        description: "I host a Minecraft server for VR users. The server is a nightclub for VR users, and features a custom scripted beat detection system. The beat detection uses a C application, which acts as the API, using the GBD Framework. In the game, I have used the Computercraft Mod, to make a lua application which gets the beat information from the API, which keeps the lights in sync with the music. The club was created as a meeting place for people during Covid-19.",
+        tags: ['C', 'Lua', 'Linux'],
+        buttons: [{
+          href: "https://youtu.be/hUbeUy6U4nY",
+          title: "YouTube",
+          icon: "fab fa-youtube",
+          "class": "button is-primary is-outlined"
+        }]
+      }]
+    };
   }
 });
 
@@ -4626,40 +4550,67 @@ __webpack_require__.r(__webpack_exports__);
         title: "Neilson - Application Support Analyst",
         img: "/images/neilson.png",
         alt: "Neilson",
-        tags: ['SQL', 'Windows AD'],
-        responsibilities: ['Create bespoke reports using SQL for stakeholders and managing SSRS reports.', 'Troubleshoot both the applications client UI and backend database related issues.']
+        tags: ['SQL', 'Windows AD', 'Vue'] // responsibilities: [
+        //   'Create bespoke reports using SQL for stakeholders and managing SSRS reports.',
+        //   'Troubleshoot both the applications client UI and backend database related issues.',
+        // ]
+
       }, {
         date: "November 2017",
         title: "Advanced - Application Delivery Specialist",
         img: "/images/advanced.jpg",
         alt: "advanced",
-        tags: ['SQL', 'IIS', 'NodeJS'],
-        responsibilities: ['Provide third line support for Carenotes (ASP NET Application)', 'Deploy and upgrade the Carenotes Application (Windows and Linux Servers)', 'Install and use monitoring tools such as New Relic and App Dynamics', 'Install external modules such as the Patient Dashboard (Node JS Application on Red Hat Servers)', 'Write complex SQL scripts to resolve data issues']
+        tags: ['SQL', 'IIS', 'Windows Server', 'Linux', 'Octopus', 'NodeJS'] // responsibilities: [
+        //   'Provide third line support for Carenotes (ASP NET Application)',
+        //   'Deploy and upgrade the Carenotes Application (Windows and Linux Servers)',
+        //   'Install and use monitoring tools such as New Relic and App Dynamics',
+        //   'Install external modules such as the Patient Dashboard (Node JS Application on Red Hat Servers)',
+        //   'Write complex SQL scripts to resolve data issues'
+        // ]
+
       }, {
         date: "June 2017",
         title: "Advanced - Service Desk Analyst",
         img: "/images/advanced.jpg",
         alt: "advanced",
-        responsibilities: ['Deal with customer escalations', 'Attend internal and external conference calls, such as Go To Market calls', 'Provide training to the first and second line teams']
+        tags: ['SQL', 'Support', 'Training'] // responsibilities: [
+        //   'Deal with customer escalations',
+        //   'Attend internal and external conference calls, such as Go To Market calls',
+        //   'Provide training to the first and second line teams'
+        // ]
+
       }, {
         date: "September 2016",
         title: "Advanced - Second Line Community Technician",
         img: "/images/advanced.jpg",
         alt: "advanced",
-        responsibilities: ['Answer customer queries via phone and email', 'Work with the development team to triage issues', 'Write and test SQL scripts to resolve issues']
+        tags: ['Support', 'SQL'] // responsibilities: [
+        //   'Answer customer queries via phone and email',
+        //   'Work with the development team to triage issues',
+        //   'Write and test SQL scripts to resolve issues'
+        // ]
+
       }, {
         date: "April 2016",
         title: "Advanced - First Line Support Technician",
         img: "/images/advanced.jpg",
         alt: "advanced",
-        responsibilities: ['Answer customer queries via phone and email', 'Create and manage Active Directory accounts']
-      }, {
-        date: "September 2013",
-        title: "Xpress Games - Business Administration Apprentice",
-        img: "/images/xpg.jpg",
-        alt: "xpg",
-        responsibilities: ['Maintain database of stock held within the store', 'Study towards all apprenticeship modules including communication in business environment']
-      }]
+        tags: ['Windows AD'] // responsibilities: [
+        //   'Answer customer queries via phone and email',
+        //   'Create and manage Active Directory accounts'
+        // ]
+
+      } //   { 
+      //     date: "September 2013",
+      //     title: "Xpress Games - Business Administration Apprentice",
+      //     img: "/images/xpg.jpg",
+      //     alt: "xpg",
+      //     responsibilities: [
+      //       'Maintain database of stock held within the store',
+      //       'Study towards all apprenticeship modules including communication in business environment'
+      //     ]
+      //   }
+      ]
     };
   }
 });
@@ -4755,7 +4706,7 @@ __webpack_require__.r(__webpack_exports__);
         //Design
         controlArrows: true,
         //verticalCentered: true,
-        sectionsColor: ["none", "none", "none", "none", "#2A438C", "#7AADCC", "#33A65B", "#049DBF", "#D82B2B", "none"],
+        sectionsColor: ["none", "none", "none", "none", "#2A438C", "#7AADCC", "#33A65B", "#049DBF", "#D85C5C", "none"],
         paddingTop: ".5em",
         paddingBottom: ".5em"
       }
@@ -4797,6 +4748,25 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 // module
 exports.push([module.i, ".section-header[data-v-f398667e] {\n  background-image: linear-gradient(red, black);\n}", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/ProjectSlide.vue?vue&type=style&index=0&id=6684b203&scoped=true&lang=css&":
+/*!******************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader??ref--7-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--7-2!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/ProjectSlide.vue?vue&type=style&index=0&id=6684b203&scoped=true&lang=css& ***!
+  \******************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "\n.card[data-v-6684b203] {\n  background-color: #DEDEDE;\n}\n", ""]);
 
 // exports
 
@@ -25183,6 +25153,36 @@ if(false) {}
 
 /***/ }),
 
+/***/ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/ProjectSlide.vue?vue&type=style&index=0&id=6684b203&scoped=true&lang=css&":
+/*!**********************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/style-loader!./node_modules/css-loader??ref--7-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--7-2!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/ProjectSlide.vue?vue&type=style&index=0&id=6684b203&scoped=true&lang=css& ***!
+  \**********************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../../node_modules/css-loader??ref--7-1!../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../node_modules/postcss-loader/src??ref--7-2!../../../node_modules/vue-loader/lib??vue-loader-options!./ProjectSlide.vue?vue&type=style&index=0&id=6684b203&scoped=true&lang=css& */ "./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/ProjectSlide.vue?vue&type=style&index=0&id=6684b203&scoped=true&lang=css&");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {}
+
+/***/ }),
+
 /***/ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/pages/Header.vue?vue&type=style&index=0&id=129a26d6&scoped=true&lang=css&":
 /*!***********************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/style-loader!./node_modules/css-loader??ref--7-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--7-2!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/pages/Header.vue?vue&type=style&index=0&id=129a26d6&scoped=true&lang=css& ***!
@@ -26283,6 +26283,1390 @@ if (false) {}
 
 /***/ }),
 
+/***/ "./node_modules/vue-kinesis/dist/vue-kinesis.esm.js":
+/*!**********************************************************!*\
+  !*** ./node_modules/vue-kinesis/dist/vue-kinesis.esm.js ***!
+  \**********************************************************/
+/*! exports provided: default, KinesisAudio, KinesisContainer, KinesisDistance, KinesisElement, KinesisScroll */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* WEBPACK VAR INJECTION */(function(global) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "KinesisAudio", function() { return __vue_component__$2; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "KinesisContainer", function() { return __vue_component__; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "KinesisDistance", function() { return __vue_component__$4; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "KinesisElement", function() { return __vue_component__$1; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "KinesisScroll", function() { return __vue_component__$3; });
+function inViewport(element) {
+  const isInViewport = element.bottom >= 0 && element.right >= 0 && element.top <= (window.innerHeight || document.documentElement.clientHeight) && element.left <= (window.innerWidth || document.documentElement.clientWidth);
+  return isInViewport;
+}
+
+function throttle(callback, delay, type) {
+  let last;
+  let timer; // eslint-disable-next-line func-names
+
+  return function () {
+    const context = this;
+    let newDelay;
+
+    if (type === 'scroll') {
+      newDelay = delay;
+    } else {
+      newDelay = context.duration > 1000 ? delay : context.duration / 10;
+    }
+
+    const now = +new Date(); // eslint-disable-next-line prefer-rest-params
+
+    const args = arguments;
+
+    if (last && now < last + newDelay) {
+      clearTimeout(timer);
+      timer = setTimeout(() => {
+        requestAnimationFrame(() => {
+          last = now;
+          callback.apply(context, args);
+        });
+      }, newDelay);
+    } else {
+      requestAnimationFrame(() => {
+        last = now;
+        callback.apply(context, args);
+      });
+    }
+  };
+}
+
+var baseMixin = {
+  props: {
+    active: {
+      type: Boolean,
+      default: true
+    },
+    duration: {
+      type: Number,
+      default: 1000
+    },
+    easing: {
+      type: String,
+      default: 'cubic-bezier(0.23, 1, 0.32, 1)'
+    },
+    tag: {
+      type: String,
+      default: 'div'
+    }
+  }
+};
+
+var perspectiveMixin = {
+  props: {
+    perspective: {
+      type: Number,
+      default: 1000
+    }
+  },
+  computed: {
+    style() {
+      return {
+        perspective: `${this.perspective}px`
+      };
+    }
+
+  }
+};
+
+var audioMixin = {
+  props: {
+    audio: {
+      type: String,
+      required: false
+    },
+    playAudio: {
+      type: Boolean,
+      default: false
+    }
+  },
+
+  data() {
+    return {
+      analyser: null,
+      audioArray: null,
+      audioData: null,
+      audioRef: null,
+      wasPlayed: false,
+      isPlaying: false
+    };
+  },
+
+  watch: {
+    audio() {
+      this.wasPlayed = false;
+      this.isPlaying = false;
+    },
+
+    playAudio(play) {
+      if (play) {
+        this.play();
+      } else {
+        this.stop();
+      }
+    }
+
+  },
+  methods: {
+    play() {
+      if (!this.active) return;
+
+      if (!this.wasPlayed) {
+        this.handleAudio();
+        this.wasPlayed = true;
+      }
+
+      this.isPlaying = true;
+      this.audioRef.play();
+      this.getSongData();
+    },
+
+    stop() {
+      this.isPlaying = false;
+      this.audioRef.pause();
+    },
+
+    handleAudio() {
+      const {
+        audio
+      } = this.$refs;
+      this.audioRef = audio;
+      const context = new AudioContext();
+      const src = context.createMediaElementSource(audio);
+      const analyser = context.createAnalyser();
+      src.connect(analyser);
+      analyser.connect(context.destination);
+      analyser.fftSize = 256;
+      const bufferLength = analyser.frequencyBinCount;
+      const audioArray = new Uint8Array(bufferLength);
+      this.audioArray = audioArray;
+      this.analyser = analyser;
+    },
+
+    getSongData() {
+      if (this.isPlaying) {
+        this.analyser.getByteFrequencyData(this.audioArray);
+        this.audioData = new Array(this.audioArray); // @Todo reactivity issue
+
+        requestAnimationFrame(this.getSongData);
+      }
+    }
+
+  }
+};
+
+function isTouch() {
+  try {
+    return /Mobi|Android/i.test(navigator.userAgent);
+  } catch (e) {
+    return true;
+  }
+}
+
+var containerEvents = {
+  props: {
+    event: {
+      type: String,
+      default: 'move' // move, scroll
+
+    }
+  },
+
+  data() {
+    return {
+      eventMap: {
+        orientation: 'deviceorientation',
+        scroll: 'scroll',
+        move: isTouch() ? 'deviceorientation' : null
+      }
+    };
+  },
+
+  methods: {
+    addEvents() {
+      if (this.eventMap[this.event]) {
+        window.addEventListener(this.eventMap[this.event], this.handleMovement, true);
+      }
+    },
+
+    removeEvents() {
+      if (this.eventMap[this.event]) {
+        window.removeEventListener(this.eventMap[this.event], this.handleMovement, true);
+      }
+    }
+
+  },
+  watch: {
+    event(newVal, oldVal) {
+      if (this.eventMap[newVal]) {
+        window.addEventListener(this.eventMap[newVal], this.handleMovement, true);
+      }
+
+      if (this.eventMap[oldVal]) {
+        window.addEventListener(this.eventMap[oldVal], this.handleMovement, true);
+      }
+    }
+
+  }
+};
+
+function getCoordinates (x, y) {
+  return {
+    x,
+    y
+  };
+}
+
+function getCenter (element) {
+  return getCoordinates(element ? element.width / 2 : 0, element ? element.height / 2 : 0);
+}
+
+function mouseMovement (action) {
+  const {
+    target,
+    event
+  } = action;
+  const x = event.clientX;
+  const y = event.clientY;
+  const relativeX = x - target.left;
+  const relativeY = y - target.top;
+  const center = getCenter(target);
+  const mouseMovementX = relativeX / center.x;
+  const mouseMovementY = relativeY / center.y;
+  return { ...getCoordinates(mouseMovementX, mouseMovementY),
+    target
+  };
+}
+
+function orientationElement (action) {
+  const {
+    event,
+    target
+  } = action;
+  const x = event.gamma / 45;
+  const y = event.beta / 90;
+  return { ...getCoordinates(x, y),
+    target
+  };
+}
+
+function scrollMovement (target) {
+  const x = (target.left - window.innerWidth) / (target.width + window.innerWidth);
+  const y = (target.top - window.innerHeight) / (target.height + window.innerHeight);
+  return { ...getCoordinates(x, y),
+    target
+  };
+}
+
+//
+var script = {
+  name: 'KinesisContainer',
+  mixins: [baseMixin, perspectiveMixin, audioMixin, containerEvents],
+
+  provide() {
+    const context = {};
+    const providedProps = ['audioData', 'duration', 'easing', 'event', 'eventData', 'isMoving', 'movement', 'shape'];
+    providedProps.forEach(prop => Object.defineProperty(context, prop, {
+      enumerable: true,
+      get: () => this[prop]
+    }));
+    return {
+      context
+    };
+  },
+
+  data() {
+    return {
+      movement: {
+        x: 0,
+        y: 0
+      },
+      leftOnce: false,
+      isMoving: false,
+      shape: null,
+      eventData: {
+        x: 0,
+        y: 0
+      }
+    };
+  },
+
+  mounted() {
+    this.addEvents();
+  },
+
+  beforeDestroy() {
+    this.removeEvents();
+  },
+
+  methods: {
+    // eslint-disable-next-line func-names
+    handleMovement: throttle(function (event) {
+      // if (!this.active) return;
+      if (!this.isMoving && !this.leftOnce) {
+        // fixes the specific case when mouseenter didn't trigger on page refresh
+        this.isMoving = true;
+      }
+
+      this.shape = this.$el.getBoundingClientRect();
+      const isInViewport = inViewport(this.shape);
+
+      if (this.event === 'move' && this.isMoving && !isTouch()) {
+        this.movement = mouseMovement({
+          target: this.shape,
+          event
+        });
+        this.eventData = getCoordinates(event.clientX, event.clientY);
+      } else if ((this.event === 'orientation' || this.event === 'move' && isTouch()) && isInViewport) {
+        this.movement = orientationElement({
+          target: this.shape,
+          event
+        });
+      } else if (this.event === 'scroll' && isInViewport && !!this.shape.height) {
+        this.movement = scrollMovement(this.shape);
+      }
+    }, 100),
+
+    handleMovementStart() {
+      this.isMoving = true;
+    },
+
+    handleMovementStop() {
+      // fixes the specific case when mouseenter didn't trigger on page refresh
+      this.leftOnce = true;
+      this.isMoving = false;
+    }
+
+  }
+};
+
+function normalizeComponent(template, style, script, scopeId, isFunctionalTemplate, moduleIdentifier /* server only */, shadowMode, createInjector, createInjectorSSR, createInjectorShadow) {
+    if (typeof shadowMode !== 'boolean') {
+        createInjectorSSR = createInjector;
+        createInjector = shadowMode;
+        shadowMode = false;
+    }
+    // Vue.extend constructor export interop.
+    const options = typeof script === 'function' ? script.options : script;
+    // render functions
+    if (template && template.render) {
+        options.render = template.render;
+        options.staticRenderFns = template.staticRenderFns;
+        options._compiled = true;
+        // functional template
+        if (isFunctionalTemplate) {
+            options.functional = true;
+        }
+    }
+    // scopedId
+    if (scopeId) {
+        options._scopeId = scopeId;
+    }
+    let hook;
+    if (moduleIdentifier) {
+        // server build
+        hook = function (context) {
+            // 2.3 injection
+            context =
+                context || // cached call
+                    (this.$vnode && this.$vnode.ssrContext) || // stateful
+                    (this.parent && this.parent.$vnode && this.parent.$vnode.ssrContext); // functional
+            // 2.2 with runInNewContext: true
+            if (!context && typeof __VUE_SSR_CONTEXT__ !== 'undefined') {
+                context = __VUE_SSR_CONTEXT__;
+            }
+            // inject component styles
+            if (style) {
+                style.call(this, createInjectorSSR(context));
+            }
+            // register component module identifier for async chunk inference
+            if (context && context._registeredComponents) {
+                context._registeredComponents.add(moduleIdentifier);
+            }
+        };
+        // used by ssr in case component is cached and beforeCreate
+        // never gets called
+        options._ssrRegister = hook;
+    }
+    else if (style) {
+        hook = shadowMode
+            ? function (context) {
+                style.call(this, createInjectorShadow(context, this.$root.$options.shadowRoot));
+            }
+            : function (context) {
+                style.call(this, createInjector(context));
+            };
+    }
+    if (hook) {
+        if (options.functional) {
+            // register for functional component in vue file
+            const originalRender = options.render;
+            options.render = function renderWithStyleInjection(h, context) {
+                hook.call(context);
+                return originalRender(h, context);
+            };
+        }
+        else {
+            // inject component registration as beforeCreate hook
+            const existing = options.beforeCreate;
+            options.beforeCreate = existing ? [].concat(existing, hook) : [hook];
+        }
+    }
+    return script;
+}
+
+/* script */
+const __vue_script__ = script;
+/* template */
+
+var __vue_render__ = function () {
+  var _vm = this;
+
+  var _h = _vm.$createElement;
+
+  var _c = _vm._self._c || _h;
+
+  return _c(_vm.tag, {
+    tag: "component",
+    style: _vm.style,
+    on: {
+      "mousemove": _vm.handleMovement,
+      "mouseenter": _vm.handleMovementStart,
+      "mouseleave": _vm.handleMovementStop
+    }
+  }, [_vm._t("default"), _vm._v(" "), _vm.audio ? _c('audio', {
+    ref: "audio",
+    attrs: {
+      "type": "audio/mpeg"
+    },
+    on: {
+      "ended": _vm.stop
+    }
+  }, [_c('source', {
+    attrs: {
+      "src": _vm.audio
+    }
+  })]) : _vm._e()], 2);
+};
+
+var __vue_staticRenderFns__ = [];
+/* style */
+
+const __vue_inject_styles__ = undefined;
+/* scoped */
+
+const __vue_scope_id__ = undefined;
+/* module identifier */
+
+const __vue_module_identifier__ = undefined;
+/* functional template */
+
+const __vue_is_functional_template__ = false;
+/* style inject */
+
+/* style inject SSR */
+
+/* style inject shadow dom */
+
+const __vue_component__ = /*#__PURE__*/normalizeComponent({
+  render: __vue_render__,
+  staticRenderFns: __vue_staticRenderFns__
+}, __vue_inject_styles__, __vue_script__, __vue_scope_id__, __vue_is_functional_template__, __vue_module_identifier__, false, undefined, undefined, undefined);
+
+var motionMixin = {
+  props: {
+    type: {
+      type: String,
+      default: 'translate' // translate, rotate, scale, scaleX, scaleY, depth, depth_inv, custom
+
+    },
+    transformOrigin: {
+      type: String,
+      default: 'center'
+    },
+    originX: {
+      type: Number,
+      default: 50
+    },
+    originY: {
+      type: Number,
+      default: 50
+    },
+    strength: {
+      type: Number,
+      default: 10
+    },
+    audioIndex: {
+      type: Number,
+      default: 50
+    },
+    axis: {
+      type: String,
+      default: null
+    },
+    maxX: {
+      type: Number,
+      default: null
+    },
+    maxY: {
+      type: Number,
+      default: null
+    },
+    minX: {
+      type: Number,
+      default: null
+    },
+    minY: {
+      type: Number,
+      default: null
+    },
+    cycle: {
+      type: Number,
+      default: 0
+    }
+  },
+  methods: {
+    strengthManager() {
+      return this.type === 'depth' || this.type === 'depth_inv' ? Math.abs(this.strength) : this.strength;
+    }
+
+  }
+};
+
+/* eslint-disable default-case */
+var transformMixin = {
+  methods: {
+    transformSwitch(type, x, y, s) {
+      let transform;
+
+      switch (type) {
+        case 'translate':
+          transform = this.translateMovement(x, y);
+          break;
+
+        case 'rotate':
+          transform = this.rotateMovement(x, y);
+          break;
+
+        case 'depth':
+          transform = this.depthMovement(x, y, s);
+          break;
+
+        case 'depth_inv':
+          transform = this.depthMovement(-x, -y, s);
+          break;
+
+        case 'scale':
+          transform = this.scaleMovement(x, y);
+          break;
+      }
+
+      return transform;
+    },
+
+    translateMovement(x, y) {
+      return `translate3d(${-x}px, ${-y}px, 0)`;
+    },
+
+    rotateMovement(x, y) {
+      let movement;
+
+      if (!this.axis) {
+        movement = x + y;
+      } else if (this.axis === 'x') {
+        movement = 2 * x;
+      } else if (this.axis === 'y') {
+        movement = 2 * y;
+      }
+
+      return `rotate3d(0,0,1,${movement}deg)`;
+    },
+
+    depthMovement(x, y, s) {
+      return `rotateX(${-y}deg) rotateY(${x}deg) translate3d(0,0,${s * 2}px)`;
+    },
+
+    scaleMovement(x, y) {
+      const {
+        type
+      } = this;
+      const movement = Math.sign(this.strength) * (Math.abs(x) + Math.abs(y)) / 10 + 1;
+      return `scale3d(${type === 'scaleX' || type === 'scale' ? movement : 1},
+            ${type === 'scaleY' || type === 'scale' ? movement : 1},
+            1)`;
+    }
+
+  }
+};
+
+function elementMovement (action) {
+  const {
+    y,
+    x,
+    target,
+    originX = 50,
+    strength = 10,
+    event = null
+  } = action;
+  let {
+    originY = 50
+  } = action;
+
+  if (event === 'scroll') {
+    originY = -originY / 2;
+  }
+
+  const movementX = (x - originX / 50) * strength;
+  const movementY = (y - originY / 50) * strength;
+  return { ...getCoordinates(movementX, movementY),
+    target
+  };
+}
+
+/* eslint-disable no-nested-ternary */
+function clamp (value, min, max) {
+  return max && value > max ? max : min && value < min ? min : value;
+}
+
+function cyclicMovement (cycleData) {
+  const {
+    referencePosition,
+    elementPosition,
+    spanningRange,
+    cycles
+  } = cycleData;
+  const radialPosition = (referencePosition - elementPosition) * (Math.PI * 2) / spanningRange;
+  const cycle = spanningRange * Math.sin(radialPosition * cycles);
+  return cycle / (spanningRange / 2);
+}
+
+//
+var script$1 = {
+  name: 'KinesisElement',
+  mixins: [motionMixin, transformMixin],
+  inject: ['context'],
+  props: {
+    tag: {
+      type: String,
+      default: 'div'
+    }
+  },
+  computed: {
+    transform() {
+      return this.transformMovement();
+    },
+
+    getContext() {
+      return this.context;
+    },
+
+    transformParameters() {
+      return {
+        transitionProperty: 'transform',
+        transitionDuration: this.transitionDuration,
+        transformOrigin: this.transformOrigin,
+        transitionTimingFunction: this.transitionTimingFunction
+      };
+    },
+
+    transitionDuration() {
+      const {
+        duration
+      } = this.context;
+      return `${duration}ms`;
+    },
+
+    transitionTimingFunction() {
+      return this.context.easing;
+    },
+
+    isTouch() {
+      return isTouch();
+    }
+
+  },
+  methods: {
+    transformMovement() {
+      const {
+        context
+      } = this;
+      if (!context.isMoving && context.event === 'move') return {};
+      let movementX;
+      let movementY;
+      const eventTrigger = context.event;
+      const strength = this.strengthManager();
+
+      if (this.cycle <= 0) {
+        const {
+          x,
+          y
+        } = elementMovement({ ...context.movement,
+          originX: this.originX,
+          originY: this.originY,
+          strength
+        });
+        const isScroll = eventTrigger === 'scroll';
+
+        if (!isScroll) {
+          movementX = this.axis === 'y' ? 0 : clamp(x, this.minX, this.maxX);
+          movementY = this.axis === 'x' ? 0 : clamp(y, this.minY, this.maxY);
+        }
+
+        if (isScroll) {
+          const scrollMovement = elementMovement({
+            x: context.movement.x,
+            y: context.movement.y,
+            originX: this.originX,
+            originY: this.originY,
+            strength,
+            event: context.event
+          }).y;
+          movementX = this.axis === 'x' ? scrollMovement : 0;
+          movementY = this.axis === 'y' || !this.axis ? scrollMovement : 0;
+        }
+      } else if (this.cycle > 0) {
+        const {
+          shape,
+          eventData
+        } = context;
+
+        if (shape) {
+          const cycleX = this.axis === 'x' ? cyclicMovement({
+            referencePosition: eventTrigger === 'scroll' ? 0 : eventData.x,
+            elementPosition: shape.left,
+            spanningRange: eventTrigger === 'scroll' ? window.innerWidth : shape.width,
+            cycles: this.cycle
+          }) : 0;
+          const cycleY = this.axis === 'y' || !this.axis ? cyclicMovement({
+            referencePosition: eventTrigger === 'scroll' ? 0 : eventData.y,
+            elementPosition: shape.top,
+            spanningRange: eventTrigger === 'scroll' ? window.innerHeight : shape.height,
+            cycles: this.cycle
+          }) : 0;
+          movementX = cycleX * strength;
+          movementY = cycleY * strength;
+        }
+      }
+
+      let transformType = this.type;
+      transformType = transformType === 'scaleX' || transformType === 'scaleY' ? 'scale' : transformType;
+      const transform = this.transformSwitch(transformType, movementX, movementY, this.strength);
+      return {
+        transform
+      };
+    }
+
+  }
+};
+
+/* script */
+const __vue_script__$1 = script$1;
+/* template */
+
+var __vue_render__$1 = function () {
+  var _vm = this;
+
+  var _h = _vm.$createElement;
+
+  var _c = _vm._self._c || _h;
+
+  return _c(_vm.tag, {
+    tag: "component",
+    style: Object.assign({}, _vm.transform, _vm.transformParameters)
+  }, [_vm._t("default")], 2);
+};
+
+var __vue_staticRenderFns__$1 = [];
+/* style */
+
+const __vue_inject_styles__$1 = undefined;
+/* scoped */
+
+const __vue_scope_id__$1 = undefined;
+/* module identifier */
+
+const __vue_module_identifier__$1 = undefined;
+/* functional template */
+
+const __vue_is_functional_template__$1 = false;
+/* style inject */
+
+/* style inject SSR */
+
+/* style inject shadow dom */
+
+const __vue_component__$1 = /*#__PURE__*/normalizeComponent({
+  render: __vue_render__$1,
+  staticRenderFns: __vue_staticRenderFns__$1
+}, __vue_inject_styles__$1, __vue_script__$1, __vue_scope_id__$1, __vue_is_functional_template__$1, __vue_module_identifier__$1, false, undefined, undefined, undefined);
+
+//
+var script$2 = {
+  name: 'KinesisAudio',
+  inject: ['context'],
+  mixins: [motionMixin],
+  props: {
+    tag: {
+      type: String,
+      default: 'div'
+    },
+    audioIndex: {
+      type: Number,
+      default: 50
+    }
+  },
+  computed: {
+    transform() {
+      return this.transformAudio();
+    },
+
+    transformParameters() {
+      return {
+        transitionProperty: 'transform',
+        transitionDuration: this.transitionDuration,
+        transformOrigin: this.transformOrigin,
+        transitionTimingFunction: this.transitionTimingFunction
+      };
+    },
+
+    transitionDuration() {
+      const {
+        duration
+      } = this.context;
+      return `${duration}ms`;
+    },
+
+    transitionTimingFunction() {
+      return this.context.easing;
+    }
+
+  },
+  methods: {
+    transformAudio() {
+      const {
+        audioData
+      } = this.context;
+      if (!this.context.audioData) return;
+      const transformType = this.type;
+      const {
+        strength
+      } = this;
+      let amplitude;
+      let transform; // eslint-disable-next-line default-case
+
+      switch (transformType) {
+        case 'translate':
+          amplitude = audioData ? audioData[0][this.audioIndex] : 0;
+          transform = `translate3d(${amplitude * strength}px, 0, 0)`;
+          break;
+
+        case 'rotate':
+          amplitude = audioData ? audioData[0][this.audioIndex] : 0;
+          transform = `rotate3d(0,0,1,${amplitude * strength / 10}deg)`;
+          break;
+
+        case 'scale':
+          // eslint-disable-next-line no-nested-ternary
+          amplitude = audioData ? audioData[0][this.audioIndex] / strength < 1 ? 1 : audioData[0][this.audioIndex] / (strength * 2) : 1;
+          transform = `scale(${amplitude})`;
+          break;
+      } // eslint-disable-next-line consistent-return
+
+
+      return {
+        transform
+      };
+    }
+
+  }
+};
+
+/* script */
+const __vue_script__$2 = script$2;
+/* template */
+
+var __vue_render__$2 = function () {
+  var _vm = this;
+
+  var _h = _vm.$createElement;
+
+  var _c = _vm._self._c || _h;
+
+  return _c(_vm.tag, {
+    tag: "component",
+    style: Object.assign({}, _vm.transform, _vm.transformParameters)
+  }, [_vm._t("default")], 2);
+};
+
+var __vue_staticRenderFns__$2 = [];
+/* style */
+
+const __vue_inject_styles__$2 = undefined;
+/* scoped */
+
+const __vue_scope_id__$2 = undefined;
+/* module identifier */
+
+const __vue_module_identifier__$2 = undefined;
+/* functional template */
+
+const __vue_is_functional_template__$2 = false;
+/* style inject */
+
+/* style inject SSR */
+
+/* style inject shadow dom */
+
+const __vue_component__$2 = /*#__PURE__*/normalizeComponent({
+  render: __vue_render__$2,
+  staticRenderFns: __vue_staticRenderFns__$2
+}, __vue_inject_styles__$2, __vue_script__$2, __vue_scope_id__$2, __vue_is_functional_template__$2, __vue_module_identifier__$2, false, undefined, undefined, undefined);
+
+//
+var script$3 = {
+  name: 'KinesisScroll',
+  mixins: [baseMixin, perspectiveMixin, motionMixin, transformMixin],
+
+  data() {
+    return {
+      transform: {}
+    };
+  },
+
+  mounted() {
+    window.addEventListener('scroll', this.handleScroll, {
+      passive: true
+    });
+  },
+
+  beforeDestroy() {
+    window.removeEventListener('scroll', this.handleScroll, {
+      passive: true
+    });
+  },
+
+  computed: {
+    transformParameters() {
+      return {
+        transitionProperty: 'transform',
+        transitionDuration: this.transitionDuration,
+        transformOrigin: this.transformOrigin,
+        transitionTimingFunction: this.easing
+      };
+    },
+
+    transitionDuration() {
+      return `${this.duration}ms`;
+    }
+
+  },
+  methods: {
+    getCycleMovement(xPos, yPos, width, height, shape) {
+      const x = (xPos - shape.left) * (Math.PI * 2) / width;
+      const y = (yPos - shape.top) * (Math.PI * 2) / height;
+      this.cycleMovement = {
+        x,
+        y,
+        width,
+        height
+      };
+    },
+
+    handleScroll: throttle( // eslint-disable-next-line func-names
+    function () {
+      if (!this.active) return;
+      const shape = this.$el.getBoundingClientRect();
+      const isInViewport = inViewport(shape);
+
+      if (isInViewport && !!shape.height) {
+        this.transformBehavior(shape);
+      }
+    }, 19, 'scroll'),
+
+    transformBehavior(shape) {
+      let movementX;
+      let movementY;
+      const scrollPosition = (shape.top - window.innerHeight) / (shape.height + window.innerHeight);
+
+      if (this.cycle <= 0) {
+        const scrollMovement = scrollPosition * this.strength;
+        movementX = this.axis === 'x' ? scrollMovement : 0;
+        movementY = this.axis === 'y' || !this.axis ? scrollMovement : 0;
+
+        if (this.maxX) {
+          movementX = Math.min(movementX, this.maxX);
+        }
+
+        if (this.minX) {
+          movementX = Math.max(movementX, this.minX);
+        }
+
+        if (this.maxY) {
+          movementY = Math.min(movementY, this.maxY);
+        }
+
+        if (this.minY) {
+          movementY = Math.max(movementY, this.minY);
+        }
+      } else if (this.cycle > 0) {
+        const {
+          x,
+          y,
+          width,
+          height
+        } = this.getCycleMovement(0, 0, window.innerWidth, window.innerHeight, shape);
+        const cycleX = width * Math.sin(x * this.cycle);
+        const cycleY = height * Math.sin(y * this.cycle);
+        movementX = this.axis === 'x' ? cycleX / (width / 2) * this.strength : 0;
+        movementY = this.axis === 'y' || !this.axis ? cycleY / (height / 2) * this.strength : 0;
+      }
+
+      let transformType = this.type;
+      transformType = transformType === 'scaleX' || transformType === 'scaleY' ? 'scale' : transformType;
+      const transform = this.transformSwitch(transformType, movementX, movementY, this.strength);
+      this.transform = {
+        transform
+      };
+    }
+
+  }
+};
+
+/* script */
+const __vue_script__$3 = script$3;
+/* template */
+
+var __vue_render__$3 = function () {
+  var _vm = this;
+
+  var _h = _vm.$createElement;
+
+  var _c = _vm._self._c || _h;
+
+  return _c(_vm.tag, {
+    tag: "component",
+    style: Object.assign({}, _vm.transform, _vm.transformParameters)
+  }, [_vm._t("default")], 2);
+};
+
+var __vue_staticRenderFns__$3 = [];
+/* style */
+
+const __vue_inject_styles__$3 = undefined;
+/* scoped */
+
+const __vue_scope_id__$3 = undefined;
+/* module identifier */
+
+const __vue_module_identifier__$3 = undefined;
+/* functional template */
+
+const __vue_is_functional_template__$3 = false;
+/* style inject */
+
+/* style inject SSR */
+
+/* style inject shadow dom */
+
+const __vue_component__$3 = /*#__PURE__*/normalizeComponent({
+  render: __vue_render__$3,
+  staticRenderFns: __vue_staticRenderFns__$3
+}, __vue_inject_styles__$3, __vue_script__$3, __vue_scope_id__$3, __vue_is_functional_template__$3, __vue_module_identifier__$3, false, undefined, undefined, undefined);
+
+//
+var script$4 = {
+  name: 'KinesisDistance',
+  props: {
+    tag: {
+      type: String,
+      default: 'div'
+    },
+    type: {
+      type: String,
+      default: 'translate' // translate, rotate, scale, scaleX, scaleY, depth, custom
+
+    },
+    transformOrigin: {
+      type: String,
+      default: 'center'
+    },
+    originX: {
+      type: Number,
+      default: 50
+    },
+    originY: {
+      type: Number,
+      default: 50
+    },
+    strength: {
+      type: Number,
+      default: 10
+    },
+    axis: {
+      type: String,
+      default: null
+    },
+    maxX: {
+      type: Number,
+      default: null
+    },
+    maxY: {
+      type: Number,
+      default: null
+    },
+    minX: {
+      type: Number,
+      default: null
+    },
+    minY: {
+      type: Number,
+      default: null
+    },
+    distance: {
+      type: Number,
+      default: 100
+    },
+    cycle: {
+      type: Number,
+      default: 0
+    },
+    active: {
+      type: Boolean,
+      default: true
+    },
+    duration: {
+      type: Number,
+      default: 1001
+    },
+    easing: {
+      type: String,
+      default: 'cubic-bezier(0.23, 1, 0.32, 1)'
+    },
+    perspective: {
+      type: Number,
+      default: 1000
+    }
+  },
+
+  data() {
+    return {
+      pointer: {
+        x: 0,
+        y: 0
+      },
+      transform: {},
+      component: 'kidistance',
+      throttle: 500
+    };
+  },
+
+  mounted() {
+    window.addEventListener('scroll', this.handleMovement);
+  },
+
+  beforeDestroy() {
+    window.removeEventListener('scroll', this.handleMovement);
+  },
+
+  computed: {
+    style() {
+      return {
+        perspective: `${this.perspective}px`
+      };
+    },
+
+    transformParameters() {
+      return {
+        position: 'relative',
+        transitionProperty: 'transform',
+        transitionDuration: this.transitionDuration,
+        transformOrigin: this.transformOrigin,
+        transitionTimingFunction: this.easing
+      };
+    },
+
+    transitionDuration() {
+      return `${this.duration}ms`;
+    }
+
+  },
+  methods: {
+    getCoordinates(x, y) {
+      const shape = this.$el.getBoundingClientRect();
+      return {
+        x: x + shape.left,
+        y: y + shape.top
+      };
+    },
+
+    getDistance(x1, x2, y1, y2) {
+      return Math.floor(Math.hypot(x2 - x1, y2 - y1));
+    },
+
+    // eslint-disable-next-line func-names
+    handleMovement: throttle(function (event) {
+      window.addEventListener('mousemove', this.handleMovement);
+      const {
+        pointer
+      } = this;
+      pointer.x = event.clientX;
+      pointer.y = event.clientY;
+      this.transformBehavior();
+    }, 50),
+
+    transformBehavior() {
+      const shape = this.$el.getBoundingClientRect();
+      const center = this.getCoordinates(shape.width / 2, shape.height / 2);
+      const distance = this.getDistance(this.pointer.x, center.x, this.pointer.y, center.y);
+
+      if (distance > this.distance) {
+        this.transform = {};
+        this.throttle = 500;
+        return;
+      }
+
+      this.throttle = 50;
+      const transform = `scale(${distance / this.distance})`; // Add radius from which the transfrom will start
+
+      this.transform = {
+        transform
+      };
+    },
+
+    scaleMovement(x, y) {
+      const {
+        type
+      } = this;
+      const movement = Math.sign(this.strength) * (Math.abs(x) + Math.abs(y)) / 10 + 1;
+      return `scale3d(${type === 'scaleX' || type === 'scale' ? movement : 1},
+      ${type === 'scaleY' || type === 'scale' ? movement : 1},
+      1)`;
+    }
+
+  }
+};
+
+/* script */
+const __vue_script__$4 = script$4;
+/* template */
+
+var __vue_render__$4 = function () {
+  var _vm = this;
+
+  var _h = _vm.$createElement;
+
+  var _c = _vm._self._c || _h;
+
+  return _c(_vm.tag, {
+    tag: "component",
+    style: Object.assign({}, _vm.transform, _vm.transformParameters)
+  }, [_vm._t("default")], 2);
+};
+
+var __vue_staticRenderFns__$4 = [];
+/* style */
+
+const __vue_inject_styles__$4 = undefined;
+/* scoped */
+
+const __vue_scope_id__$4 = undefined;
+/* module identifier */
+
+const __vue_module_identifier__$4 = undefined;
+/* functional template */
+
+const __vue_is_functional_template__$4 = false;
+/* style inject */
+
+/* style inject SSR */
+
+/* style inject shadow dom */
+
+const __vue_component__$4 = /*#__PURE__*/normalizeComponent({
+  render: __vue_render__$4,
+  staticRenderFns: __vue_staticRenderFns__$4
+}, __vue_inject_styles__$4, __vue_script__$4, __vue_scope_id__$4, __vue_is_functional_template__$4, __vue_module_identifier__$4, false, undefined, undefined, undefined);
+
+const Plugin = {
+  install(vue) {
+    vue.component(__vue_component__$2.name, __vue_component__$2);
+    vue.component(__vue_component__.name, __vue_component__);
+    vue.component(__vue_component__$4.name, __vue_component__$4);
+    vue.component(__vue_component__$1.name, __vue_component__$1);
+    vue.component(__vue_component__$3.name, __vue_component__$3);
+  }
+
+};
+let GlobalVue = null;
+
+if (typeof window !== 'undefined') {
+  GlobalVue = window.vue;
+} else if (typeof global !== 'undefined') {
+  GlobalVue = global.vue;
+}
+
+if (GlobalVue) {
+  GlobalVue.use(Plugin);
+}
+
+var components = /*#__PURE__*/Object.freeze({
+  __proto__: null,
+  'default': Plugin,
+  KinesisAudio: __vue_component__$2,
+  KinesisContainer: __vue_component__,
+  KinesisDistance: __vue_component__$4,
+  KinesisElement: __vue_component__$1,
+  KinesisScroll: __vue_component__$3
+});
+
+/* eslint-disable */
+
+const install = function (vue) {
+  if (install.installed) {
+    return;
+  }
+
+  install.installed = true;
+
+  for (const name in components) {
+    vue.use(components[name]);
+  }
+
+  vue.component('kinesis-container', __vue_component__);
+  vue.component('kinesis-element', __vue_component__$1);
+  vue.component('kinesis-audio', __vue_component__$2);
+  vue.component('kinesis-scroll', __vue_component__$3);
+  vue.component('kinesis-distance', __vue_component__$4);
+};
+
+const Plugin$1 = {
+  install
+};
+let GlobalVue$1 = null;
+
+if (typeof window !== 'undefined') {
+  GlobalVue$1 = window.vue;
+} else if (typeof global !== 'undefined') {
+  GlobalVue$1 = global.vue;
+}
+
+if (GlobalVue$1) {
+  GlobalVue$1.use(Plugin$1);
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (Plugin$1);
+
+
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../webpack/buildin/global.js */ "./node_modules/webpack/buildin/global.js")))
+
+/***/ }),
+
 /***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Button.vue?vue&type=template&id=e0422746&":
 /*!*********************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Button.vue?vue&type=template&id=e0422746& ***!
@@ -26332,7 +27716,26 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c("div", { staticClass: "level" }, [
     _c("div", { staticClass: "level-item" }, [
-      _c("div", { staticClass: "buttons has-addons" }, [_vm._t("default")], 2)
+      _c(
+        "div",
+        { staticClass: "buttons has-addons" },
+        [
+          _vm._l(_vm.buttons, function(button, idx) {
+            return _c("Button", {
+              key: idx,
+              class: button.class,
+              attrs: {
+                title: button.title,
+                href: button.href,
+                icon: button.icon
+              }
+            })
+          }),
+          _vm._v(" "),
+          _vm._t("default")
+        ],
+        2
+      )
     ])
   ])
 }
@@ -26411,6 +27814,94 @@ var render = function() {
           0
         )
       ]
+    )
+  ])
+}
+var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/ProjectSlide.vue?vue&type=template&id=6684b203&scoped=true&":
+/*!***************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/ProjectSlide.vue?vue&type=template&id=6684b203&scoped=true& ***!
+  \***************************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", { staticClass: "slide" }, [
+    _c(
+      "div",
+      { staticClass: "container" },
+      [
+        _c(
+          "kinesis-container",
+          [
+            _c("kinesis-element", { attrs: { type: "depth", strength: 1 } }, [
+              _c(
+                "div",
+                { staticClass: "card" },
+                [
+                  _c("SectionHeader", {
+                    attrs: {
+                      "title-upper": _vm.project.titleUpper,
+                      "title-lower": _vm.project.titleLower
+                    }
+                  }),
+                  _vm._v(" "),
+                  _c("ButtonGroup", {
+                    attrs: { buttons: _vm.project.buttons }
+                  }),
+                  _vm._v(" "),
+                  _c("img", {
+                    staticStyle: { height: "35vh", "padding-top": "none" },
+                    attrs: { src: _vm.project.img, alt: _vm.project.alt }
+                  }),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "card-content" }, [
+                    _c("div", {
+                      staticClass: "content",
+                      domProps: { innerHTML: _vm._s(_vm.project.description) }
+                    })
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "level" }, [
+                    _c("div", { staticClass: "level-item" }, [
+                      _c(
+                        "div",
+                        { staticClass: "tags" },
+                        _vm._l(_vm.project.tags, function(tag, idx) {
+                          return _c(
+                            "span",
+                            { key: idx, staticClass: "tag is-dark" },
+                            [_vm._v(_vm._s(tag))]
+                          )
+                        }),
+                        0
+                      )
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("br")
+                ],
+                1
+              )
+            ])
+          ],
+          1
+        )
+      ],
+      1
     )
   ])
 }
@@ -26509,41 +28000,34 @@ var render = function() {
       _c("img", { attrs: { src: _vm.img, alt: _vm.imgAlt } })
     ]),
     _vm._v(" "),
-    _c(
-      "div",
-      { staticClass: "timeline-content" },
-      [
-        _c("p", { staticClass: "heading" }, [
-          _vm._v("\n      " + _vm._s(_vm.date) + "\n    ")
-        ]),
-        _vm._v(" "),
-        _c("p", [_vm._v(_vm._s(_vm.jobTitle))]),
-        _vm._v(" "),
-        _c(
-          "ul",
-          _vm._l(_vm.responsibilities, function(responsibility, idx) {
-            return _c("li", { key: idx }, [
-              _vm._v("\n        " + _vm._s(responsibility) + "\n      ")
-            ])
-          }),
-          0
-        ),
-        _vm._v(" "),
-        _vm._t("default"),
-        _vm._v(" "),
-        _c(
-          "div",
-          { staticClass: "tags" },
-          _vm._l(_vm.tags, function(tag, idx) {
-            return _c("span", { key: idx, staticClass: "tag" }, [
-              _vm._v(_vm._s(tag))
-            ])
-          }),
-          0
-        )
-      ],
-      2
-    )
+    _c("div", { staticClass: "timeline-content" }, [
+      _c("p", { staticClass: "heading" }, [
+        _vm._v("\n      " + _vm._s(_vm.date) + "\n    ")
+      ]),
+      _vm._v(" "),
+      _c("p", [_vm._v(_vm._s(_vm.jobTitle))]),
+      _vm._v(" "),
+      _c(
+        "ul",
+        _vm._l(_vm.responsibilities, function(responsibility, idx) {
+          return _c("li", { key: idx }, [
+            _vm._v("\n        " + _vm._s(responsibility) + "\n      ")
+          ])
+        }),
+        0
+      ),
+      _vm._v(" "),
+      _c(
+        "div",
+        { staticClass: "tags" },
+        _vm._l(_vm.tags, function(tag, idx) {
+          return _c("span", { key: idx, staticClass: "tag" }, [
+            _vm._v(_vm._s(tag))
+          ])
+        }),
+        0
+      )
+    ])
   ])
 }
 var staticRenderFns = []
@@ -26886,7 +28370,38 @@ var render = function() {
       ]
     ),
     _vm._v(" "),
-    _vm._m(0)
+    _c("div", { staticClass: "layer" }, [
+      _c(
+        "div",
+        { staticClass: "container" },
+        [
+          _c(
+            "kinesis-container",
+            [
+              _c("kinesis-element", { attrs: { type: "depth", strength: 5 } }, [
+                _c("h1", { staticClass: "has-text-centered" }, [
+                  _c("div", { staticClass: "logo" }, [
+                    _c("span", { staticClass: "upper" }, [_vm._v("Andy")]),
+                    _vm._v(" "),
+                    _c("span", { staticClass: "lower" }, [_vm._v("Hargrave")])
+                  ]),
+                  _vm._v(" "),
+                  _c("span", { staticClass: "tagline has-text-centered" }, [
+                    _vm._v("Full Stack Web Development & Deployment")
+                  ])
+                ])
+              ])
+            ],
+            1
+          ),
+          _vm._v(" "),
+          _c("br"),
+          _vm._v(" "),
+          _vm._m(0)
+        ],
+        1
+      )
+    ])
   ])
 }
 var staticRenderFns = [
@@ -26894,60 +28409,42 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "layer" }, [
-      _c("div", { staticClass: "container" }, [
-        _c("h1", { staticClass: "has-text-centered" }, [
-          _c("div", { staticClass: "logo" }, [
-            _c("span", { staticClass: "upper" }, [_vm._v("Andy")]),
+    return _c("div", { staticClass: "header-buttons level" }, [
+      _c("div", { staticClass: "level-item" }, [
+        _c(
+          "a",
+          {
+            staticClass: "button is-info",
+            attrs: { href: "#about", title: "About" }
+          },
+          [
+            _c("span", { staticClass: "icon" }, [
+              _c("i", { staticClass: "fas fa-user" })
+            ]),
             _vm._v(" "),
-            _c("span", { staticClass: "lower" }, [_vm._v("Hargrave")])
-          ]),
-          _vm._v(" "),
-          _c("span", { staticClass: "tagline has-text-centered" }, [
-            _vm._v("Full Stack Web Development & Deployment")
-          ])
-        ]),
-        _vm._v(" "),
-        _c("br"),
-        _vm._v(" "),
-        _c("div", { staticClass: "header-buttons level" }, [
-          _c("div", { staticClass: "level-item" }, [
-            _c(
-              "a",
-              {
-                staticClass: "button is-info",
-                attrs: { href: "#about", title: "About" }
-              },
-              [
-                _c("span", { staticClass: "icon" }, [
-                  _c("i", { staticClass: "fas fa-user" })
-                ]),
-                _vm._v(" "),
-                _c("span", [_vm._v("About Me")])
-              ]
-            )
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "level-item" }, [
-            _c(
-              "a",
-              {
-                staticClass: "button is-primary",
-                attrs: { href: "#keys", title: "Projects" }
-              },
-              [
-                _c("span", { staticClass: "icon" }, [
-                  _c("i", { staticClass: "fas fa-code" })
-                ]),
-                _vm._v(" "),
-                _c("span", [_vm._v("View My Projects")])
-              ]
-            )
-          ]),
-          _vm._v(" "),
-          _c("h1", [_vm._v(" NEEDS DOWN ARROW ")])
-        ])
-      ])
+            _c("span", [_vm._v("About Me")])
+          ]
+        )
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "level-item" }, [
+        _c(
+          "a",
+          {
+            staticClass: "button is-primary",
+            attrs: { href: "#keys", title: "Projects" }
+          },
+          [
+            _c("span", { staticClass: "icon" }, [
+              _c("i", { staticClass: "fas fa-code" })
+            ]),
+            _vm._v(" "),
+            _c("span", [_vm._v("View My Projects")])
+          ]
+        )
+      ]),
+      _vm._v(" "),
+      _c("h1", [_vm._v(" NEEDS DOWN ARROW ")])
     ])
   }
 ]
@@ -27298,127 +28795,16 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "section" }, [
-    _c(
-      "div",
-      { staticClass: "slide" },
-      [
-        _c("SectionHeader", {
-          attrs: { "title-upper": "Arcade", "title-lower": "Cabinet" }
-        }),
-        _vm._v(" "),
-        _vm._m(0)
-      ],
-      1
-    ),
-    _vm._v(" "),
-    _c(
-      "div",
-      { staticClass: "slide" },
-      [
-        _c("SectionHeader", {
-          attrs: { "title-upper": "Music", "title-lower": "Production" }
-        }),
-        _vm._v(" "),
-        _c(
-          "ButtonGroup",
-          [
-            _c("Button", {
-              staticClass: "button is-primary is-outlined",
-              attrs: {
-                href:
-                  "https://open.spotify.com/artist/3BsM8NcTrGD2bZeh94E3Z4?si=QaYxYG9-QbO7Ohq1EjIZTw",
-                title: "Spotify",
-                icon: "fab fa-spotify"
-              }
-            })
-          ],
-          1
-        ),
-        _vm._v(" "),
-        _vm._m(1),
-        _vm._v(" "),
-        _vm._m(2)
-      ],
-      1
-    ),
-    _vm._v(" "),
-    _c(
-      "div",
-      { staticClass: "slide" },
-      [
-        _c("SectionHeader", {
-          attrs: { "title-upper": "Charity", "title-lower": "Events" }
-        }),
-        _vm._v(" "),
-        _vm._m(3)
-      ],
-      1
-    )
-  ])
+  return _c(
+    "div",
+    { staticClass: "section" },
+    _vm._l(_vm.projects, function(project, idx) {
+      return _c("ProjectSlide", { key: idx, attrs: { project: project } })
+    }),
+    1
+  )
 }
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "container" }, [
-      _c("img", {
-        staticClass: "is-16by9",
-        staticStyle: { width: "50%", "padding-top": "none" },
-        attrs: { src: "/images/wards.jpg", alt: "wards" }
-      }),
-      _vm._v(" "),
-      _c("p", [_vm._v("\n        Description\n      ")])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "container" }, [
-      _c("img", {
-        staticStyle: { width: "25%" },
-        attrs: { src: "/images/albumart.jpg", alt: "wards" }
-      }),
-      _vm._v(" "),
-      _c("p", [
-        _vm._v(
-          "\n        I produce music using Analog Synthesizers, mixed with more\n        modern techniques. I have created and released an album that\n        uses analog synths controlled via midi, along with Ableton\n        Live and a Launchpad\n      "
-        )
-      ])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "level" }, [
-      _c("div", { staticClass: "level-item" }, [
-        _c("div", { staticClass: "tags" }, [
-          _c("span", { staticClass: "tag" }, [_vm._v("Ableton")])
-        ])
-      ])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "container" }, [
-      _c("img", {
-        staticStyle: { width: "25%" },
-        attrs: { src: "/images/justgiving.jpg", alt: "justgiving" }
-      }),
-      _vm._v(" "),
-      _c("p", [
-        _vm._v(
-          "\n        I have hosted multiple charity events for various charities.\n        This includes 4 separate charity gaming Marathons, that have\n        raised a total of over £3600 for various Charities.\n      "
-        )
-      ])
-    ])
-  }
-]
+var staticRenderFns = []
 render._withStripped = true
 
 
@@ -27440,405 +28826,16 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "section" }, [
-    _c(
-      "div",
-      { staticClass: "slide" },
-      [
-        _c("SectionHeader", {
-          attrs: { "title-upper": "Advanced", "title-lower": "Hackathon" }
-        }),
-        _vm._v(" "),
-        _vm._m(0)
-      ],
-      1
-    ),
-    _vm._v(" "),
-    _c(
-      "div",
-      { staticClass: "slide" },
-      [
-        _c("SectionHeader", {
-          attrs: { "title-upper": "Portfolio", "title-lower": "Website" }
-        }),
-        _vm._v(" "),
-        _c(
-          "ButtonGroup",
-          [
-            _c("Button", {
-              staticClass: "button is-info is-outlined",
-              attrs: {
-                href: "https://github.com/andy3471/andyh-portfolio",
-                title: "GitHub",
-                icon: "fab fa-github"
-              }
-            }),
-            _vm._v(" "),
-            _c("Button", {
-              staticClass: "button is-primary is-outlined",
-              attrs: { href: "./v1", title: "Version 1", icon: "fa fa-link" }
-            })
-          ],
-          1
-        ),
-        _vm._v(" "),
-        _vm._m(1),
-        _vm._v(" "),
-        _vm._m(2)
-      ],
-      1
-    ),
-    _vm._v(" "),
-    _c(
-      "div",
-      { staticClass: "slide" },
-      [
-        _c("SectionHeader", {
-          attrs: { "title-upper": "VC", "title-lower": "Tees" }
-        }),
-        _vm._v(" "),
-        _c(
-          "ButtonGroup",
-          [
-            _c("Button", {
-              staticClass: "button is-primary is-outlined",
-              attrs: {
-                href: "https://vctees.co.uk",
-                title: "VCTees",
-                icon: "fa fa-link"
-              }
-            })
-          ],
-          1
-        ),
-        _vm._v(" "),
-        _vm._m(3),
-        _vm._v(" "),
-        _vm._m(4)
-      ],
-      1
-    ),
-    _vm._v(" "),
-    _c(
-      "div",
-      { staticClass: "slide" },
-      [
-        _c("SectionHeader", {
-          attrs: { "title-upper": "Tabletop Sim", "title-lower": "Gloomhaven" }
-        }),
-        _vm._v(" "),
-        _c(
-          "ButtonGroup",
-          [
-            _c("Button", {
-              staticClass: "button is-info is-outlined",
-              attrs: {
-                href:
-                  "https://github.com/andy3471/Gloomhaven-ForgottenCricles-TTS",
-                title: "Github",
-                icon: "fab fa-github"
-              }
-            }),
-            _vm._v(" "),
-            _c("Button", {
-              staticClass: "button is-primary is-outlined",
-              attrs: {
-                href:
-                  "https://steamcommunity.com/sharedfiles/filedetails/?id=1301493206&searchtext=gloomhaven",
-                title: "Steam",
-                icon: "fab fa-steam"
-              }
-            })
-          ],
-          1
-        ),
-        _vm._v(" "),
-        _vm._m(5),
-        _vm._v(" "),
-        _vm._m(6)
-      ],
-      1
-    ),
-    _vm._v(" "),
-    _c(
-      "div",
-      { staticClass: "slide" },
-      [
-        _c("SectionHeader", {
-          attrs: { "title-upper": "Portal Stories", "title-lower": "Mel" }
-        }),
-        _vm._v(" "),
-        _c(
-          "ButtonGroup",
-          [
-            _c("Button", {
-              staticClass: "button is-primary is-outlined",
-              attrs: {
-                href:
-                  "https://store.steampowered.com/app/317400/Portal_Stories_Mel",
-                title: "Steam",
-                icon: "fab fa-steam"
-              }
-            })
-          ],
-          1
-        ),
-        _vm._v(" "),
-        _vm._m(7),
-        _vm._v(" "),
-        _vm._m(8)
-      ],
-      1
-    ),
-    _vm._v(" "),
-    _c(
-      "div",
-      { staticClass: "slide" },
-      [
-        _c("SectionHeader", {
-          attrs: { "title-upper": "Minecraft", "title-lower": "Beat Detection" }
-        }),
-        _vm._v(" "),
-        _c(
-          "ButtonGroup",
-          [
-            _c("Button", {
-              staticClass: "button is-primary is-outlined",
-              attrs: {
-                href: "https://youtu.be/hUbeUy6U4nY",
-                title: "YouTube",
-                icon: "fab fa-youtube"
-              }
-            })
-          ],
-          1
-        ),
-        _vm._v(" "),
-        _vm._m(9),
-        _vm._v(" "),
-        _vm._m(10)
-      ],
-      1
-    )
-  ])
+  return _c(
+    "div",
+    { staticClass: "section" },
+    _vm._l(_vm.projects, function(project, idx) {
+      return _c("ProjectSlide", { key: idx, attrs: { project: project } })
+    }),
+    1
+  )
 }
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "container" }, [
-      _c("img", {
-        staticClass: "is-16by9",
-        staticStyle: { width: "50%", "padding-top": "none" },
-        attrs: { src: "/images/wards.jpg", alt: "wards" }
-      }),
-      _vm._v(" "),
-      _c("p", [
-        _vm._v(
-          "\n        I took part in the 2020 Advanced Hackathon, in which the task\n        was to create an external applet which integrates with an existing \n        healthcare application. I worked as developer on our team,\n        alongside some of the developers for CareNotes. We created an\n        applet that integrates with CareNotes, a patient management\n        system, to show patients on a ward, and record incidents,\n        clinical notes, BMI and Bodymap forms against the patient.\n        This would then use the existing CareNotes API to send this to\n        CareNotes. The project was designed and built in 24 hours, in\n        Advanced's MosaicJS framework. I created the modals, forms and\n        bodymapping functionality. The project is being looked into\n        further as something, that can be developed into a full product.\n      "
-        )
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "level" }, [
-        _c("div", { staticClass: "level-item" }, [
-          _c("div", { staticClass: "tags" }, [
-            _c("span", { staticClass: "tag" }, [_vm._v("React")]),
-            _vm._v(" "),
-            _c("span", { staticClass: "tag" }, [_vm._v("NodeJS")]),
-            _vm._v(" "),
-            _c("span", { staticClass: "tag" }, [
-              _vm._v("MosaicJS (Bespoke Framework)")
-            ])
-          ])
-        ])
-      ])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "container" }, [
-      _c("img", {
-        staticClass: "is-16by9",
-        staticStyle: { width: "50%" },
-        attrs: { src: "/images/portfolio.jpg", alt: "wards" }
-      }),
-      _vm._v(" "),
-      _c("p", [
-        _vm._v(
-          "\n        My portfolio is build on Laravel, VueJS, Bulma and Fullpage.js\n      "
-        )
-      ]),
-      _vm._v(" "),
-      _c("p", [
-        _vm._v(
-          "\n        I am currently running V2 of my portfolio, I have decided to make the website more readable, and remove some of the animations\n        from "
-        ),
-        _c("a", { attrs: { href: "./v1" } }, [_vm._v("V1")]),
-        _vm._v(
-          ", to make it far more readable, and easy to follow. I have used Fullpage.JS to draw attention to each\n        of my individual projects and remove clutter from the page.\n      "
-        )
-      ])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "level" }, [
-      _c("div", { staticClass: "level-item" }, [
-        _c("div", { staticClass: "tags" }, [
-          _c("span", { staticClass: "tag" }, [_vm._v("VueJS")]),
-          _vm._v(" "),
-          _c("span", { staticClass: "tag" }, [_vm._v("Bulma")]),
-          _vm._v(" "),
-          _c("span", { staticClass: "tag" }, [_vm._v("Laravel")]),
-          _vm._v(" "),
-          _c("span", { staticClass: "tag" }, [_vm._v("Fullpage.js")])
-        ])
-      ])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "container" }, [
-      _c("img", {
-        staticClass: "is-16by9",
-        staticStyle: { width: "50%" },
-        attrs: { src: "/images/vctees.jpg", alt: "vctees" }
-      }),
-      _vm._v(" "),
-      _c("p", [
-        _vm._v(
-          "\n        I run a website where I design and sell clothing based\n        on retro music Synthesizers. The site is built using\n        WooCommerce on Wordpress.\n      "
-        )
-      ])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "level" }, [
-      _c("div", { staticClass: "level-item" }, [
-        _c("div", { staticClass: "tags" }, [
-          _c("span", { staticClass: "tag" }, [_vm._v("Wordpress")]),
-          _vm._v(" "),
-          _c("span", { staticClass: "tag" }, [_vm._v("WooCommerce")]),
-          _vm._v(" "),
-          _c("span", { staticClass: "tag" }, [_vm._v("Photoshop")]),
-          _vm._v(" "),
-          _c("span", { staticClass: "tag" }, [_vm._v("Illustrator")])
-        ])
-      ])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "container" }, [
-      _c("img", {
-        staticStyle: { width: "25%", "padding-top": "none" },
-        attrs: { src: "/images/gloomhaven.jpg", alt: "gloomhaven" }
-      }),
-      _vm._v(" "),
-      _c("p", [
-        _vm._v(
-          "\n        I have been working to make board games playable in Tabletop\n        Simulator, so that people can continue playing during the\n        Covid-19 outbreak. I created a fork of the Gloomhaven Fantasy\n        set-up mod, and scripted all of the Forgotten Circles\n        expansion and solo scenarios in lua with\n        "
-        ),
-        _c(
-          "a",
-          {
-            attrs: { href: "https://curtisreet.co.uk", title: "CurtPortfolio" }
-          },
-          [_vm._v("Curtis Reet")]
-        ),
-        _vm._v(
-          ". My mod has now been merged into the original mod, where I\n        have been credited, which is the most popular tabletop\n        simulator mod with over 100,000 active users\n      "
-        )
-      ])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "level" }, [
-      _c("div", { staticClass: "level-item" }, [
-        _c("div", { staticClass: "tags" }, [
-          _c("span", { staticClass: "tag" }, [_vm._v("Lua")])
-        ])
-      ])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "container" }, [
-      _c("img", {
-        staticStyle: { width: "25%", "padding-top": "none" },
-        attrs: { src: "/images/portalstories.jpg", alt: "portal" }
-      }),
-      _vm._v(" "),
-      _c("p", [
-        _vm._v(
-          '\n        I was the original leader on the Portal 2 mod Portal Stores:\n        Mel. The mod went on to win a Video Game Award for "Best Fan\n        Creation" in 2015, and has been given a full steam release,\n        with overwhelmingly positive reviews. I am in the credits of\n        the mod for my past contributions. The mod featured in news\n        articles on various news websites, such as the washington post.\n      '
-        )
-      ])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "level" }, [
-      _c("div", { staticClass: "level-item" }, [
-        _c("div", { staticClass: "tags" }, [
-          _c("span", { staticClass: "tag" }, [_vm._v("Source Engine")])
-        ])
-      ])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "container" }, [
-      _c("img", {
-        staticStyle: { width: "25%", "padding-top": "none" },
-        attrs: { src: "/images/club.jpg", alt: "portal" }
-      }),
-      _vm._v(" "),
-      _c("p", [
-        _vm._v(
-          "\n        I host a Minecraft server for VR users. The server is a\n        nightclub for VR users, and features a custom scripted beat\n        detection system. The beat detection uses a C application,\n        which acts as the API, using the GBD Framework. In the game, I\n        have used the Computercraft Mod, to make a lua application\n        which gets the beat information from the API, which keeps the\n        lights in sync with the music. The club was created as a\n        meeting place for people during Covid-19.\n      "
-        )
-      ])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "level" }, [
-      _c("div", { staticClass: "level-item" }, [
-        _c("div", { staticClass: "tags" }, [
-          _c("span", { staticClass: "tag" }, [_vm._v("C")]),
-          _vm._v(" "),
-          _c("span", { staticClass: "tag" }, [_vm._v("Lua")]),
-          _vm._v(" "),
-          _c("span", { staticClass: "tag" }, [_vm._v("Linux")])
-        ])
-      ])
-    ])
-  }
-]
+var staticRenderFns = []
 render._withStripped = true
 
 
@@ -40318,12 +41315,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var fullpage_js_vendors_scrolloverflow__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(fullpage_js_vendors_scrolloverflow__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var vue_fullpage_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! vue-fullpage.js */ "./node_modules/vue-fullpage.js/dist/vue-fullpage.js");
 /* harmony import */ var vue_fullpage_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(vue_fullpage_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var vue_kinesis__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! vue-kinesis */ "./node_modules/vue-kinesis/dist/vue-kinesis.esm.js");
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
+
 
 
 
 window.Vue = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.js");
 Vue.use(vue_fullpage_js__WEBPACK_IMPORTED_MODULE_1___default.a);
+Vue.use(vue_kinesis__WEBPACK_IMPORTED_MODULE_2__["default"]);
 Vue.component("home", __webpack_require__(/*! ./views/Home.vue */ "./resources/js/views/Home.vue")["default"]);
 Vue.component("Button", __webpack_require__(/*! ./components/Button.vue */ "./resources/js/components/Button.vue")["default"]);
 Vue.component("ButtonGroup", __webpack_require__(/*! ./components/ButtonGroup.vue */ "./resources/js/components/ButtonGroup.vue")["default"]);
@@ -40444,15 +41444,17 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _ButtonGroup_vue_vue_type_template_id_7ecaea5c___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ButtonGroup.vue?vue&type=template&id=7ecaea5c& */ "./resources/js/components/ButtonGroup.vue?vue&type=template&id=7ecaea5c&");
-/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+/* harmony import */ var _ButtonGroup_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ButtonGroup.vue?vue&type=script&lang=js& */ "./resources/js/components/ButtonGroup.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
-var script = {}
+
+
 
 
 /* normalize component */
 
-var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__["default"])(
-  script,
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _ButtonGroup_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
   _ButtonGroup_vue_vue_type_template_id_7ecaea5c___WEBPACK_IMPORTED_MODULE_0__["render"],
   _ButtonGroup_vue_vue_type_template_id_7ecaea5c___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
   false,
@@ -40466,6 +41468,20 @@ var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_
 if (false) { var api; }
 component.options.__file = "resources/js/components/ButtonGroup.vue"
 /* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/ButtonGroup.vue?vue&type=script&lang=js&":
+/*!**************************************************************************!*\
+  !*** ./resources/js/components/ButtonGroup.vue?vue&type=script&lang=js& ***!
+  \**************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_ButtonGroup_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib??vue-loader-options!./ButtonGroup.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/ButtonGroup.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_ButtonGroup_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
 
 /***/ }),
 
@@ -40551,6 +41567,93 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Navbar_vue_vue_type_template_id_6dde423b___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Navbar_vue_vue_type_template_id_6dde423b___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./resources/js/components/ProjectSlide.vue":
+/*!**************************************************!*\
+  !*** ./resources/js/components/ProjectSlide.vue ***!
+  \**************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _ProjectSlide_vue_vue_type_template_id_6684b203_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ProjectSlide.vue?vue&type=template&id=6684b203&scoped=true& */ "./resources/js/components/ProjectSlide.vue?vue&type=template&id=6684b203&scoped=true&");
+/* harmony import */ var _ProjectSlide_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ProjectSlide.vue?vue&type=script&lang=js& */ "./resources/js/components/ProjectSlide.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _ProjectSlide_vue_vue_type_style_index_0_id_6684b203_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./ProjectSlide.vue?vue&type=style&index=0&id=6684b203&scoped=true&lang=css& */ "./resources/js/components/ProjectSlide.vue?vue&type=style&index=0&id=6684b203&scoped=true&lang=css&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__["default"])(
+  _ProjectSlide_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _ProjectSlide_vue_vue_type_template_id_6684b203_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _ProjectSlide_vue_vue_type_template_id_6684b203_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  "6684b203",
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/ProjectSlide.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/ProjectSlide.vue?vue&type=script&lang=js&":
+/*!***************************************************************************!*\
+  !*** ./resources/js/components/ProjectSlide.vue?vue&type=script&lang=js& ***!
+  \***************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_ProjectSlide_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib??vue-loader-options!./ProjectSlide.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/ProjectSlide.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_ProjectSlide_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/components/ProjectSlide.vue?vue&type=style&index=0&id=6684b203&scoped=true&lang=css&":
+/*!***********************************************************************************************************!*\
+  !*** ./resources/js/components/ProjectSlide.vue?vue&type=style&index=0&id=6684b203&scoped=true&lang=css& ***!
+  \***********************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_7_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_2_node_modules_vue_loader_lib_index_js_vue_loader_options_ProjectSlide_vue_vue_type_style_index_0_id_6684b203_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/style-loader!../../../node_modules/css-loader??ref--7-1!../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../node_modules/postcss-loader/src??ref--7-2!../../../node_modules/vue-loader/lib??vue-loader-options!./ProjectSlide.vue?vue&type=style&index=0&id=6684b203&scoped=true&lang=css& */ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/ProjectSlide.vue?vue&type=style&index=0&id=6684b203&scoped=true&lang=css&");
+/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_7_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_2_node_modules_vue_loader_lib_index_js_vue_loader_options_ProjectSlide_vue_vue_type_style_index_0_id_6684b203_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_7_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_2_node_modules_vue_loader_lib_index_js_vue_loader_options_ProjectSlide_vue_vue_type_style_index_0_id_6684b203_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_7_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_2_node_modules_vue_loader_lib_index_js_vue_loader_options_ProjectSlide_vue_vue_type_style_index_0_id_6684b203_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_7_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_2_node_modules_vue_loader_lib_index_js_vue_loader_options_ProjectSlide_vue_vue_type_style_index_0_id_6684b203_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+
+
+/***/ }),
+
+/***/ "./resources/js/components/ProjectSlide.vue?vue&type=template&id=6684b203&scoped=true&":
+/*!*********************************************************************************************!*\
+  !*** ./resources/js/components/ProjectSlide.vue?vue&type=template&id=6684b203&scoped=true& ***!
+  \*********************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ProjectSlide_vue_vue_type_template_id_6684b203_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./ProjectSlide.vue?vue&type=template&id=6684b203&scoped=true& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/ProjectSlide.vue?vue&type=template&id=6684b203&scoped=true&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ProjectSlide_vue_vue_type_template_id_6684b203_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ProjectSlide_vue_vue_type_template_id_6684b203_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 

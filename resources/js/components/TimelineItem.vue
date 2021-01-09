@@ -12,13 +12,19 @@
       </p>
       <p>{{ jobTitle }}</p>
       <ul>
-        <li v-for="(responsibility, idx) in responsibilities" :key="idx">
-          {{responsibility}}
+        <li
+          v-for="(responsibility, idx) in responsibilities"
+          :key="idx"
+        >
+          {{ responsibility }}
         </li>
       </ul>
-      <slot />
       <div class="tags">
-        <span v-for="(tag, idx) in tags" class="tag" :key="idx">{{tag}}</span>
+        <span
+          v-for="(tag, idx) in tags"
+          :key="idx"
+          class="tag"
+        >{{ tag }}</span>
       </div>
     </div>
   </div>

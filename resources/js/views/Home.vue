@@ -91,7 +91,7 @@ export default {
           "#7AADCC",
           "#33A65B",
           "#049DBF",
-          "#D82B2B",
+          "#D85C5C",
           "none"
         ],
         paddingTop: ".5em",

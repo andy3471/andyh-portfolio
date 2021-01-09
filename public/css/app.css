@@ -13688,6 +13688,10 @@ h2 .lower {
   right: 50px;
 }
 
+.fp-controlArrow {
+  border-color: transparent #DEDEDE transparent transparent;
+}
+
 #fp-nav ul li a span,
 .fp-slidesNav ul li a span {
   background: #f27405;
