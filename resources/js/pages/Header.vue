@@ -24,7 +24,7 @@
           >
             <h1 class="has-text-centered">
               <div class="logo">
-                <span class="upper">Andy</span>
+                <span class="upper">Andrew</span>
                 <span class="lower">Hargrave</span>
               </div>
               <span class="tagline has-text-centered">Full Stack Web Development & Deployment</span>
@@ -57,13 +57,17 @@
               <span>View My Projects</span>
             </a>
           </div>
-          <h1> NEEDS DOWN ARROW </h1>
+        </div>
+        <div class="arrow" @click="console.log('click')">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
       </div>
     </div>
   </div>
 </template>
-<style scoped>
+<style scoped lang="scss">
 
 	#myVideo{
 		position: absolute;
@@ -110,4 +114,39 @@
     padding-right: 250px;
   }
 
+  .arrow{
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%,0%);
+  }
+  .arrow span{
+      display: block;
+      width: 30px;
+      height: 30px;
+      border-bottom: 5px solid #F27405;
+      border-right: 5px solid #F27405;
+      transform: rotate(45deg);
+      margin: -10px;
+      animation: animate 2s infinite;
+  }
+  .arrow span:nth-child(2){
+      animation-delay: -0.2s;
+  }
+  .arrow span:nth-child(3){
+      animation-delay: -0.4s;
+  }
+  @keyframes animate {
+      0%{
+          opacity: 0;
+          transform: rotate(45deg) translate(-20px,-20px);
+      }
+      50%{
+          opacity: 1;
+      }
+      100%{
+          opacity: 0;
+          transform: rotate(45deg) translate(20px,20px);
+      }
+  }
+  
 </style>

@@ -24,7 +24,7 @@ $navbar-breakpoint: $desktop;
     z-index: 1;
     padding: 1rem;
     .upper {
-        font-size: calc(8rem + 8vw);
+        font-size: calc(5rem + 5vw);
         display: block;
     }
     .lower {
@@ -72,7 +72,7 @@ p {
 .timeline-content {
     .heading {
         font-family: "Permanent Marker", cursive;
-        color: $red;
+        color: $orange;
     }
     ul {
         list-style: square;
@@ -136,7 +136,7 @@ h2 {
         margin-left: auto;
         margin-right: auto;
         height: 5px;
-        background-color: $red;
+        background-color: $orange;
         margin: 6px 0;
         transition: 0.4s;
         border-radius: 5px;
@@ -188,7 +188,7 @@ h2 {
 
 .nav-item a {
     font-family: "Permanent Marker", cursive;
-    color: $red;
+    color: $orange;
     text-decoration: none;
     font-size: calc(1rem + 0.25vw);
 }
@@ -196,23 +196,6 @@ h2 {
 .nav-item a:hover {
     font-family: "Permanent Marker", cursive;
     color: $yellow;
-}
-
-// Components
-.component-header {
-    font-size: 2rem;
-    font-family: "Permanent Marker", cursive;
-    color: $red;
-    text-align: center;
-}
-
-.component-body {
-    text-align: center;
-    padding-bottom: 2.5rem;
-}
-
-.timedropdown {
-    z-index: 999;
 }
 
 // Other Projects
@@ -224,7 +207,7 @@ h2 {
     h3 {
         font-size: 2rem;
         font-family: "Permanent Marker", cursive;
-        color: $red;
+        color: #F27405;
         text-align: center;
     }
 }

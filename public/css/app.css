@@ -13487,7 +13487,7 @@ a.has-text-danger-dark:focus {
 }
 
 .logo .upper {
-  font-size: calc(8rem + 8vw);
+  font-size: calc(5rem + 5vw);
   display: block;
 }
 
@@ -13534,7 +13534,7 @@ p {
 
 .timeline-content .heading {
   font-family: "Permanent Marker", cursive;
-  color: #f20544;
+  color: #f27405;
 }
 
 .timeline-content ul {
@@ -13596,7 +13596,7 @@ h2 .lower {
   margin-left: auto;
   margin-right: auto;
   height: 5px;
-  background-color: #f20544;
+  background-color: #f27405;
   margin: 6px 0;
   transition: 0.4s;
   border-radius: 5px;
@@ -13643,7 +13643,7 @@ h2 .lower {
 
 .nav-item a {
   font-family: "Permanent Marker", cursive;
-  color: #f20544;
+  color: #f27405;
   text-decoration: none;
   font-size: calc(1rem + 0.25vw);
 }
@@ -13653,22 +13653,6 @@ h2 .lower {
   color: #f29f05;
 }
 
-.component-header {
-  font-size: 2rem;
-  font-family: "Permanent Marker", cursive;
-  color: #f20544;
-  text-align: center;
-}
-
-.component-body {
-  text-align: center;
-  padding-bottom: 2.5rem;
-}
-
-.timedropdown {
-  z-index: 999;
-}
-
 .project {
   text-align: center;
 }
@@ -13676,7 +13660,7 @@ h2 .lower {
 .project h3 {
   font-size: 2rem;
   font-family: "Permanent Marker", cursive;
-  color: #f20544;
+  color: #F27405;
   text-align: center;
 }
 

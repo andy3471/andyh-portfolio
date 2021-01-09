@@ -22,7 +22,7 @@ export default {
       projects: [
         {
           titleUpper: "Advanced",
-          titleLower: "Hackaton",
+          titleLower: "Hackathon",
           img: "/images/wards.jpg",
           alt: "wards",
           description: "I took part in the 2020 Advanced Hackathon, in which the task was to create an external applet which integrates with an existing healthcare application. I worked as developer on our team, alongside some of the developers for CareNotes. We created an applet that integrates with CareNotes, a patient management system, to show patients on a ward, and record incidents, clinical notes, BMI and Bodymap forms against the patient. This would then use the existing CareNotes API to send this to CareNotes. The project was designed and built in 24 hours, in Advanced's MosaicJS framework. I created the modals, forms and bodymapping functionality. The project is being looked into further as something, that can be developed into a full product.",
@@ -89,8 +89,8 @@ export default {
           ]
         },
         {
-          titleUpper: "Portal Stories",
-          titleLower: "Mel",
+          titleUpper: "Portal",
+          titleLower: "Stories",
           img: "/images/portalstories.jpg",
           alt: "portal",
           description: "I was the original leader on the Portal 2 mod Portal Stores: Mel. The mod went on to win a Video Game Award for 'Best Fan Creation' in 2015, and has been given a full steam release, with overwhelmingly positive reviews. I am in the credits of the mod for my past contributions. The mod featured in news articles on various news websites, such as the washington post.",
