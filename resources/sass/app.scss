@@ -42,6 +42,10 @@ $radius: 2px;
 }
 
 .tagline {
+    text-shadow: 2px 2px $red;
+}
+
+.tagline {
     font-size: calc(1rem + 1vw);
     font-weight: 300;
     padding-top: 2rem;

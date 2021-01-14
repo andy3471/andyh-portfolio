@@ -84,10 +84,6 @@
     z-index:3;
 	}
 
-
-
-	/* Layer with position absolute in order to have it over the video
-	* --------------------------------------- */
 	#section0 .layer{
 		position: absolute;
 		z-index: 4;
@@ -100,7 +96,6 @@
 		transform: translate3d(0,0,0);
 	}
 
-	/*solves problem with overflowing video in Mac with Chrome */
 	#section0{
 		overflow: hidden;
 	}

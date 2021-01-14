@@ -13497,6 +13497,10 @@ a.has-text-danger-dark:focus {
 }
 
 .tagline {
+  text-shadow: 2px 2px #F2059F;
+}
+
+.tagline {
   font-size: calc(1rem + 1vw);
   font-weight: 300;
   padding-top: 2rem;
