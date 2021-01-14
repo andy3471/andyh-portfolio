@@ -27,17 +27,17 @@ export default {
         {
           name: "proxmox",
           img: "images/proxmox.png",
-          description: "I am currently using Proxmox Hypervisor (KVM and LXC based) for VMs and Containers. This has the feature to be able to easily migrate VMs to other hosts, to avoid downtime of vital servers such as the File Server."
+          description: "I am currently using Proxmox Hypervisor (KVM and LXC based) to host VMs and Containers. I run both linux and windows VM, across multiple hosts."
         },
         {
           name: "docker",
           img: "images/docker.png",
-          description: "I have containerised most of my hosted applications, including containers for all the applications I have created. I am currently running them in Docker Swarm mode, accross various hosts. This site is hosted on Docker Swarm, refresh (F5) the page, and the container name should change. <br>Container Name:<br>" + this.containername
+          description: "I have containerised most of my hosted applications, including containers for all the applications I have created. I am currently running them in Docker Swarm, accross various hosts. This site is hosted on Docker Swarm. If you refresh (F5) the page, the below container name should change to demonstrate this. <br>Container Name:<br>" + this.containername
         },
         {
           name: "treafik",
           img: "images/traefik.png",
-          description: "I am using Traefik as an edge router for directing traffic from the domains to the correct web application. Traefik integrates with docker and docker swarm nicely, and uses LetsEncrypt to automatically generate SSL certificates on the fly."
+          description: "I am using Traefik as an edge router for directing traffic from the domains to the correct containers. Traefik integrates with docker and docker swarm, and uses LetsEncrypt to automatically generate SSL certificates on the fly."
         }
       ]
     }
