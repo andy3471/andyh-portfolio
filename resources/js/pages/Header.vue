@@ -20,7 +20,7 @@
         <kinesis-container>
           <kinesis-element
             type="depth"
-            :strength="5"
+            :strength="7"
           >
             <h1 class="has-text-centered">
               <div class="logo">

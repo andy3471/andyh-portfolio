@@ -15,7 +15,7 @@
       <OtherProjects />
       <Hosting :containername="containername" />
       <WorkExperience />
-      <NonDevProjects />
+      <!-- <NonDevProjects /> -->
       <Contact />
     </full-page>
   </div>
@@ -34,7 +34,7 @@ import Hosting from "../pages/Hosting.vue";
 import OtherProjects from "../pages/OtherProjects.vue";
 import WorkExperience from "../pages/WorkExperience.vue";
 import Contact from "../pages/Contact.vue";
-import NonDevProjects from "../pages/NonDevProjects.vue"
+// import NonDevProjects from "../pages/NonDevProjects.vue"
 
 export default {
   name: "MainPage",
@@ -50,7 +50,7 @@ export default {
     OtherProjects,
     WorkExperience,
     Contact,
-    NonDevProjects
+    // NonDevProjects
   },
   props: {
     containername: String,
@@ -68,7 +68,7 @@ export default {
           "projects",
           "hosting",
           "work",
-          "other",
+          // "other",
           "contact"
         ],
         navigation: true,
@@ -91,7 +91,7 @@ export default {
           "#7AADCC",
           "#33A65B",
           "#049DBF",
-          "#F27405",
+          // "#F27405",
           "none"
         ],
         paddingTop: ".5em",
