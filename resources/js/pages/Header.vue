@@ -10,10 +10,10 @@
       data-autoplay
     >
       <source
-        src="videos/flowers2.mp4"
+        src="videos/banner.mp4"
         type="video/mp4"
       >
-      <!-- <source src="videos/flowers.webm" type="video/webm"> -->
+      <source src="videos/banner.webm" type="video/webm">
     </video>
     <div class="layer">
       <div class="container">
