@@ -5,15 +5,14 @@
         type="depth"
         :strength="4"
       >
-        <div class="card">
+        <div class="card" style="min-height: 40rem">
           <div class="card-image">
             <figure>
               <img :src="technology.img" alt="Placeholder image">
             </figure>
           </div>
           <div class="card-content">
-            <div class="content">
-              {{ technology.description }}
+            <div class="content" v-html="technology.description">
               <br>
             </div>
           </div>

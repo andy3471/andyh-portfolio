@@ -1,12 +1,20 @@
 @import "node_modules/bulma/sass/utilities/initial-variables";
 // Bulma Variable Overrides
-$red: #f20544;
-$purple: #2a438c;
-$blue: #012840;
-$yellow: #f29f05;
-$orange: #f27405;
+$red: #F2059F;
+$purple: #010326;
+$blue: #04B2D9;
+$yellow: #F2E205;
+$orange: #F25D27;
+
 $primary: $orange;
+$info: $blue;
+
+$hamburger-bg: $purple;
+
 $navbar-breakpoint: $desktop;
+$nav-color: $red;
+$radius: 2px;
+
 @import "node_modules/bulma/bulma";
 @import url("https://fonts.googleapis.com/css?family=Permanent+Marker|Roboto&display=swap");
 @import "node_modules/bulma-extensions/bulma-timeline/src/sass";
@@ -42,22 +50,22 @@ $navbar-breakpoint: $desktop;
 body {
     font-family: "Roboto", sans-serif;
     color: white;
-    background: url("../images/bg.jpg") no-repeat center fixed;
-    background-color: $blue;
+    // background: url("../images/bg.jpg") no-repeat center fixed;
+    background-color: $purple;
     background-size: cover;
     text-align: center;
 }
 
 a {
-    color: #f29f05;
+    color: $primary;
 }
 
 a:hover {
-    color: #f27405;
+    color: darken($primary, 10%);
 }
 
 a:visited {
-    color: #f27405;
+    color: darken($primary, 5%);
 }
 
 .hero {
@@ -72,7 +80,7 @@ p {
 .timeline-content {
     .heading {
         font-family: "Permanent Marker", cursive;
-        color: $orange;
+        color: $primary;
     }
     ul {
         list-style: square;
@@ -84,14 +92,10 @@ p {
     }
 }
 
-.autocomplete-results {
-    color: #495057;
-}
-
 .section-header {
     font-family: "Permanent Marker", cursive;
     text-transform: uppercase;
-    background-image: linear-gradient($yellow, $orange);
+    background-image: linear-gradient(darken($yellow, 5%), $orange);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -128,7 +132,7 @@ h2 {
     width: 50px;
     height: 50px;
     border-radius: 5px;
-    background-color: $purple;
+    background-color: $hamburger-bg;
     padding: 5px;
     .bar1,
     .bar2,
@@ -136,16 +140,12 @@ h2 {
         margin-left: auto;
         margin-right: auto;
         height: 5px;
-        background-color: $orange;
+        background-color: $nav-color;
         margin: 6px 0;
         transition: 0.4s;
         border-radius: 5px;
         border: none;
     }
-}
-
-.hamburger:hover {
-    color: $yellow;
 }
 
 .active {
@@ -163,7 +163,7 @@ h2 {
 }
 
 .nav-page {
-    background-color: $purple;
+    background-color: $hamburger-bg;
     text-align: center;
     width: 100%;
     z-index: 100;
@@ -188,28 +188,14 @@ h2 {
 
 .nav-item a {
     font-family: "Permanent Marker", cursive;
-    color: $orange;
+    color: $nav-color;
     text-decoration: none;
     font-size: calc(1rem + 0.25vw);
 }
 
 .nav-item a:hover {
     font-family: "Permanent Marker", cursive;
-    color: $yellow;
-}
-
-// Other Projects
-.project {
-    // position: relative;
-    //  top: 50%;
-    //  transform: translate(0, -50%);
-    text-align: center;
-    h3 {
-        font-size: 2rem;
-        font-family: "Permanent Marker", cursive;
-        color: #F27405;
-        text-align: center;
-    }
+    color: $primary;
 }
 
 .fp-controlArrow.fp-prev {
@@ -225,12 +211,5 @@ h2 {
 
 #fp-nav ul li a span,
 .fp-slidesNav ul li a span {
-    background: $orange;
+    background: $nav-color;
 }
-
-// .fp-slidesNav {
-//     top: 50%;
-//     left: 50%;
-//     margin-right: -50%;
-//     transform: translate(-50%, -50%)
-// }

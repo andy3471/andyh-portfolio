@@ -48,7 +48,6 @@
       that can be added for games. This has been solely written by me, however
       is open for contributions on GitHub.
     </p>
-    <h1> Add Problem, solution and notable features </h1>
   </Section>
 </template>
 <script>

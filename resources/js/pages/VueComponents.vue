@@ -25,7 +25,7 @@
       </p>
       <div class="level">
         <div class="level-item">
-          <date-picker />
+          <date-picker color="#04B2D9"/>
         </div>
       </div>
     </div>
@@ -56,7 +56,7 @@
       </p>
       <div class="level">
         <div class="level-item">
-          <time-picker />
+          <time-picker color="#04B2D9"/>
         </div>
       </div>
     </div>
@@ -94,6 +94,7 @@
           <auto-complete
             placeholder="Type a fruit"
             url="/autocomplete/fruit/"
+            color="#04B2D9"
           />
         </div>
       </div>

@@ -32,7 +32,7 @@ export default {
         {
           name: "docker",
           img: "images/docker.png",
-          description: "I have containerised most of the applications and game servers, including containers for all the applications I have created. I am currently running them in Docker Swarm mode, accross various hosts (Windows + Linux). This site is hosted on Docker Swarm, refresh (F5) the page, and the container name should change. PASS DOCKER CONTAINER NAME"
+          description: "I have containerised most of my hosted applications, including containers for all the applications I have created. I am currently running them in Docker Swarm mode, accross various hosts. This site is hosted on Docker Swarm, refresh (F5) the page, and the container name should change. <br>Container Name:<br>" + this.containername
         },
         {
           name: "treafik",

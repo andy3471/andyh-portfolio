@@ -84,15 +84,15 @@ export default {
         //verticalCentered: true,
         sectionsColor: [
           "none",
+          "#011526",
           "none",
           "none",
-          "none",
-          "#2A438C",
-          "#7AADCC",
-          "#33A65B",
-          "#049DBF",
+          "#010b26",
+          "#02738C",
+          "#03B1D8",
+          "#00333E",
           // "#F27405",
-          "none"
+          "#011526"
         ],
         paddingTop: ".5em",
         paddingBottom: ".5em",

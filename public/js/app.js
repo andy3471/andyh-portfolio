@@ -3661,7 +3661,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: {
     technology: {}
@@ -3984,7 +3983,7 @@ __webpack_require__.r(__webpack_exports__);
       }, {
         name: "docker",
         img: "images/docker.png",
-        description: "I have containerised most of the applications and game servers, including containers for all the applications I have created. I am currently running them in Docker Swarm mode, accross various hosts (Windows + Linux). This site is hosted on Docker Swarm, refresh (F5) the page, and the container name should change. PASS DOCKER CONTAINER NAME"
+        description: "I have containerised most of my hosted applications, including containers for all the applications I have created. I am currently running them in Docker Swarm mode, accross various hosts. This site is hosted on Docker Swarm, refresh (F5) the page, and the container name should change. <br>Container Name:<br>" + this.containername
       }, {
         name: "treafik",
         img: "images/traefik.png",
@@ -4006,7 +4005,6 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_Section_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../components/Section.vue */ "./resources/js/components/Section.vue");
-//
 //
 //
 //
@@ -4382,6 +4380,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 
 
 
@@ -4607,8 +4606,8 @@ __webpack_require__.r(__webpack_exports__);
         //Design
         controlArrows: true,
         //verticalCentered: true,
-        sectionsColor: ["none", "none", "none", "none", "#2A438C", "#7AADCC", "#33A65B", "#049DBF", // "#F27405",
-        "none"],
+        sectionsColor: ["none", "#011526", "none", "none", "#010b26", "#02738C", "#03B1D8", "#00333E", // "#F27405",
+        "#011526"],
         paddingTop: ".5em",
         paddingBottom: ".5em"
       }
@@ -4649,7 +4648,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "#myVideo[data-v-129a26d6] {\n  position: absolute;\n  right: 0;\n  bottom: 0;\n  top: 0;\n  width: 100%;\n  height: 100%;\n  background-size: 100% 100%;\n  background-color: black;\n  /* in case the video doesn't fit the whole page*/\n  background-position: center center;\n  background-size: contain;\n  -o-object-fit: cover;\n     object-fit: cover;\n  /*cover video background */\n  z-index: 3;\n}\n\n/* Layer with position absolute in order to have it over the video\n* --------------------------------------- */\n#section0 .layer[data-v-129a26d6] {\n  position: absolute;\n  z-index: 4;\n  width: 100%;\n  height: 100%;\n  left: 0;\n  top: 25%;\n  transform: translate3d(0, 0, 0);\n}\n\n/*solves problem with overflowing video in Mac with Chrome */\n#section0[data-v-129a26d6] {\n  overflow: hidden;\n}\nvideo[data-v-129a26d6]::-webkit-media-controls {\n  display: none !important;\n}\n.header-buttons[data-v-129a26d6] {\n  padding-left: 250px;\n  padding-right: 250px;\n}\n.arrow[data-v-129a26d6] {\n  position: absolute;\n  left: 50%;\n  transform: translate(-50%, 0%);\n}\n.arrow span[data-v-129a26d6] {\n  display: block;\n  width: 30px;\n  height: 30px;\n  border-bottom: 5px solid #F27405;\n  border-right: 5px solid #F27405;\n  transform: rotate(45deg);\n  margin: -10px;\n  -webkit-animation: animate-data-v-129a26d6 2s infinite;\n          animation: animate-data-v-129a26d6 2s infinite;\n}\n.arrow span[data-v-129a26d6]:nth-child(2) {\n  -webkit-animation-delay: -0.2s;\n          animation-delay: -0.2s;\n}\n.arrow span[data-v-129a26d6]:nth-child(3) {\n  -webkit-animation-delay: -0.4s;\n          animation-delay: -0.4s;\n}\n@-webkit-keyframes animate-data-v-129a26d6 {\n0% {\n    opacity: 0;\n    transform: rotate(45deg) translate(-20px, -20px);\n}\n50% {\n    opacity: 1;\n}\n100% {\n    opacity: 0;\n    transform: rotate(45deg) translate(20px, 20px);\n}\n}\n@keyframes animate-data-v-129a26d6 {\n0% {\n    opacity: 0;\n    transform: rotate(45deg) translate(-20px, -20px);\n}\n50% {\n    opacity: 1;\n}\n100% {\n    opacity: 0;\n    transform: rotate(45deg) translate(20px, 20px);\n}\n}", ""]);
+exports.push([module.i, "#myVideo[data-v-129a26d6] {\n  position: absolute;\n  right: 0;\n  bottom: 0;\n  top: 0;\n  width: 100%;\n  height: 100%;\n  background-size: 100% 100%;\n  background-color: black;\n  /* in case the video doesn't fit the whole page*/\n  background-position: center center;\n  background-size: contain;\n  -o-object-fit: cover;\n     object-fit: cover;\n  /*cover video background */\n  z-index: 3;\n}\n\n/* Layer with position absolute in order to have it over the video\n* --------------------------------------- */\n#section0 .layer[data-v-129a26d6] {\n  position: absolute;\n  z-index: 4;\n  width: 100%;\n  height: 100%;\n  left: 0;\n  top: 25%;\n  transform: translate3d(0, 0, 0);\n}\n\n/*solves problem with overflowing video in Mac with Chrome */\n#section0[data-v-129a26d6] {\n  overflow: hidden;\n}\nvideo[data-v-129a26d6]::-webkit-media-controls {\n  display: none !important;\n}\n.header-buttons[data-v-129a26d6] {\n  padding-left: 250px;\n  padding-right: 250px;\n}\n.arrow[data-v-129a26d6] {\n  position: absolute;\n  left: 50%;\n  transform: translate(-50%, 0%);\n}\n.arrow span[data-v-129a26d6] {\n  display: block;\n  width: 30px;\n  height: 30px;\n  border-bottom: 5px solid #F25D27;\n  border-right: 5px solid #F25D27;\n  transform: rotate(45deg);\n  margin: -10px;\n  -webkit-animation: animate-data-v-129a26d6 2s infinite;\n          animation: animate-data-v-129a26d6 2s infinite;\n}\n.arrow span[data-v-129a26d6]:nth-child(2) {\n  -webkit-animation-delay: -0.2s;\n          animation-delay: -0.2s;\n}\n.arrow span[data-v-129a26d6]:nth-child(3) {\n  -webkit-animation-delay: -0.4s;\n          animation-delay: -0.4s;\n}\n@-webkit-keyframes animate-data-v-129a26d6 {\n0% {\n    opacity: 0;\n    transform: rotate(45deg) translate(-20px, -20px);\n}\n50% {\n    opacity: 1;\n}\n100% {\n    opacity: 0;\n    transform: rotate(45deg) translate(20px, 20px);\n}\n}\n@keyframes animate-data-v-129a26d6 {\n0% {\n    opacity: 0;\n    transform: rotate(45deg) translate(-20px, -20px);\n}\n50% {\n    opacity: 1;\n}\n100% {\n    opacity: 0;\n    transform: rotate(45deg) translate(20px, 20px);\n}\n}", ""]);
 
 // exports
 
@@ -27856,26 +27855,35 @@ var render = function() {
         "kinesis-container",
         [
           _c("kinesis-element", { attrs: { type: "depth", strength: 4 } }, [
-            _c("div", { staticClass: "card" }, [
-              _c("div", { staticClass: "card-image" }, [
-                _c("figure", [
-                  _c("img", {
-                    attrs: { src: _vm.technology.img, alt: "Placeholder image" }
-                  })
+            _c(
+              "div",
+              { staticClass: "card", staticStyle: { "min-height": "40rem" } },
+              [
+                _c("div", { staticClass: "card-image" }, [
+                  _c("figure", [
+                    _c("img", {
+                      attrs: {
+                        src: _vm.technology.img,
+                        alt: "Placeholder image"
+                      }
+                    })
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "card-content" }, [
+                  _c(
+                    "div",
+                    {
+                      staticClass: "content",
+                      domProps: {
+                        innerHTML: _vm._s(_vm.technology.description)
+                      }
+                    },
+                    [_c("br")]
+                  )
                 ])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "card-content" }, [
-                _c("div", { staticClass: "content" }, [
-                  _vm._v(
-                    "\n            " +
-                      _vm._s(_vm.technology.description) +
-                      "\n            "
-                  ),
-                  _c("br")
-                ])
-              ])
-            ])
+              ]
+            )
           ])
         ],
         1
@@ -28497,9 +28505,7 @@ var render = function() {
         _vm._v(
           "\n    The application was originally written in raw PHP and JavaScript,\n    however was refactored to use the Laravel framework and VueJS as of\n    1.0.5. This has allowed faster development for new features, such as DLC\n    that can be added for games. This has been solely written by me, however\n    is open for contributions on GitHub.\n  "
         )
-      ]),
-      _vm._v(" "),
-      _c("h1", [_vm._v(" Add Problem, solution and notable features ")])
+      ])
     ],
     1
   )
@@ -28698,7 +28704,12 @@ var render = function() {
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "level" }, [
-          _c("div", { staticClass: "level-item" }, [_c("date-picker")], 1)
+          _c(
+            "div",
+            { staticClass: "level-item" },
+            [_c("date-picker", { attrs: { color: "#04B2D9" } })],
+            1
+          )
         ])
       ],
       1
@@ -28743,7 +28754,12 @@ var render = function() {
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "level" }, [
-          _c("div", { staticClass: "level-item" }, [_c("time-picker")], 1)
+          _c(
+            "div",
+            { staticClass: "level-item" },
+            [_c("time-picker", { attrs: { color: "#04B2D9" } })],
+            1
+          )
         ])
       ],
       1
@@ -28801,7 +28817,8 @@ var render = function() {
               _c("auto-complete", {
                 attrs: {
                   placeholder: "Type a fruit",
-                  url: "/autocomplete/fruit/"
+                  url: "/autocomplete/fruit/",
+                  color: "#04B2D9"
                 }
               })
             ],

@@ -123,8 +123,8 @@
       display: block;
       width: 30px;
       height: 30px;
-      border-bottom: 5px solid #F27405;
-      border-right: 5px solid #F27405;
+      border-bottom: 5px solid #F25D27;
+      border-right: 5px solid #F25D27;
       transform: rotate(45deg);
       margin: -10px;
       animation: animate 2s infinite;
