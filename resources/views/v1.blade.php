@@ -17,14 +17,7 @@
         <navbar></navbar>
         <browser-check></browser-check>
 
-        <div class="columns is-mobile is-centered">
-            <div class="column is-half">
-            <div class="notification is-warning browser-notifcation version-notification">
-                You are viewing v1 of my portfolio, for a later version, please
-                <a href="./">click here</a>
-            </div>
-            </div>
-        </div>
+        <version-notification />
 
         <section class="header hero is-fullheight" id="header">
             <div class="container">
