@@ -15,10 +15,10 @@
             <img
               :src="project.img"
               :alt="project.alt"
-              style="height: 35vh; padding-top: none"
+              style="height: 35vh; width: auto; padding-top: none"
             >
             <div class="card-content">
-              <div
+              <p
                 class="content"
                 v-html="project.description"
               />
@@ -55,8 +55,11 @@ export default {
   }
 };
 </script>
-<style scoped>
+<style lang="scss" scoped>
   .card {
     background-color: #DEDEDE;
+  }
+  .card-content {
+    padding:  calc(0.25rem + .5vw);
   }
 </style>

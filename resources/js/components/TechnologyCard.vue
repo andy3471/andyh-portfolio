@@ -7,23 +7,24 @@
       >
         <div
           class="card"
-          style="min-height: 40rem"
+          style="min-height: 30vw"
         >
           <div class="card-image">
             <figure>
               <img
                 :src="technology.img"
                 alt="Placeholder image"
+                style="max-height: 20vh; width: auto; padding-top: none"
               >
             </figure>
           </div>
           <div class="card-content">
-            <div
+            <p
               class="content"
               v-html="technology.description"
             >
               <br>
-            </div>
+            </p>
           </div>
         </div>
       </kinesis-element>
