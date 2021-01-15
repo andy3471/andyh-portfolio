@@ -28059,7 +28059,7 @@ var render = function() {
         _c("div", { staticClass: "column" }, [
           _c("figure", { staticClass: "image" }, [
             _c("img", {
-              staticClass: "image",
+              staticClass: "image is-rounded",
               attrs: {
                 src: "/images/profile.jpg",
                 alt: "profile-picture",

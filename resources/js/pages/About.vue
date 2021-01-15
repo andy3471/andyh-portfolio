@@ -7,7 +7,7 @@
       <div class="column">
         <figure class="image">
           <img
-            class="image"
+            class="image is-rounded"
             src="/images/profile.jpg"
             alt="profile-picture"
             width="300px"
