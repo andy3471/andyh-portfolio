@@ -14740,6 +14740,16 @@ p {
   margin-top: 10px;
 }
 
+.version-notification {
+  position: fixed;
+  z-index: 1000;
+  margin-top: 10px;
+  margin: auto;
+  left: 2vh;
+  right: 2vh;
+  bottom: 2vh;
+}
+
 .hamburger {
   position: fixed;
   z-index: 999;

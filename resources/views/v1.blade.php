@@ -19,7 +19,7 @@
 
         <div class="columns is-mobile is-centered">
             <div class="column is-half">
-            <div class="notification is-warning browser-notifcation">
+            <div class="notification is-warning browser-notifcation version-notification">
                 You are viewing v1 of my portfolio, for a later version, please
                 <a href="./">click here</a>
             </div>
