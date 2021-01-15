@@ -28194,7 +28194,7 @@ var render = function() {
             "a",
             {
               attrs: {
-                href: "https://www.linkedin.com/in/andrew-hargrave-b36128144/",
+                href: " www.linkedin.com/in/andyh-dev",
                 title: "LinkedIn"
               }
             },

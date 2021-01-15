@@ -8,7 +8,7 @@
         If you would like to work with me, then be sure to contact me on
         <a href="mailto:me@andyh.app">me@andyh.app</a>,
         <a
-          href="https://www.linkedin.com/in/andrew-hargrave-b36128144/"
+          href=" www.linkedin.com/in/andyh-dev"
           title="LinkedIn"
         >LinkedIn</a>, or with the form below.
       </p>
