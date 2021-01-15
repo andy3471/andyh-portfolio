@@ -67,4 +67,8 @@ export default {
     background-repeat: no-repeat;
     background-size: cover;
   }
+
+  p {
+    text-shadow: 0 0 15px black;
+  }
 </style>

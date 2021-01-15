@@ -4686,7 +4686,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n.section[data-v-ac0d212e] {\n  background-image: url('/images/keyshare-bg.png');\n  background-color: #272727;\n  background-repeat: no-repeat;\n  background-size: cover;\n}\n", ""]);
+exports.push([module.i, "\n.section[data-v-ac0d212e] {\n  background-image: url('/images/keyshare-bg.png');\n  background-color: #272727;\n  background-repeat: no-repeat;\n  background-size: cover;\n}\np[data-v-ac0d212e] {\n  text-shadow: 0 0 15px black;\n}\n", ""]);
 
 // exports
 
@@ -4705,7 +4705,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\np[data-v-9021e34a] {\r\n  color:#212529;\n}\n.section[data-v-9021e34a] {\r\n  background-image: url('/images/lunchrota-bg.png');\r\n  background-color: #F2F2F2;\r\n  background-repeat: no-repeat;\r\n  background-size: cover;\n}\r\n", ""]);
+exports.push([module.i, "\np[data-v-9021e34a] {\r\n  color:#212529;\r\n  text-shadow: 0 0 15px white;\n}\n.section[data-v-9021e34a] {\r\n  background-image: url('/images/lunchrota-bg.png');\r\n  background-color: #F2F2F2;\r\n  background-repeat: no-repeat;\r\n  background-size: cover;\n}\r\n", ""]);
 
 // exports
 

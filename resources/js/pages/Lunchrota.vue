@@ -70,6 +70,7 @@ export default {
 <style scoped>
 p {
   color:#212529;
+  text-shadow: 0 0 15px white;
 }
 
 .section {
