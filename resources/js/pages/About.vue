@@ -5,7 +5,7 @@
   >
     <div class="columns section-body">
       <div class="column">
-        <figure class="image">
+        <figure class="image is-hidden-mobile">
           <img
             class="image is-rounded"
             src="/images/profile.jpg"

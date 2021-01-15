@@ -4707,7 +4707,7 @@ __webpack_require__.r(__webpack_exports__);
         //Design
         controlArrows: true,
         //verticalCentered: true,
-        sectionsColor: ["none", "#011526", "none", "none", "#010b26", "#02738C", "#03B1D8", "#00333E", // "#F27405",
+        sectionsColor: ["none", "#011526", "none", "none", "#010b26", "#02738C", "#0287A4", "#00333E", // "#F27405",
         "#011526"],
         paddingTop: ".5em",
         paddingBottom: ".5em"
@@ -28078,7 +28078,7 @@ var render = function() {
     [
       _c("div", { staticClass: "columns section-body" }, [
         _c("div", { staticClass: "column" }, [
-          _c("figure", { staticClass: "image" }, [
+          _c("figure", { staticClass: "image is-hidden-mobile" }, [
             _c("img", {
               staticClass: "image is-rounded",
               attrs: {

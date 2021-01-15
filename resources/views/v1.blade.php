@@ -6,19 +6,16 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="author" content="Andrew Hargrave">
         <meta name="description" content="I'm a self taught Web Developer that works with PHP, JS, HTML, SQL, Redis, CSS and SCSS. I have a very good knowledge of the Laravel MVC framework. I also have knowledge of Bootstrap and Bulma as UI frameworks">
-        <title>(V1 - Outdated) AndyH Web Development Portfolio</title>
+        <title>(V1 - Outdated)  AndyH Web Development Portfolio</title>
         <script src="{{ asset('js/v1.js') }}" defer></script>
         <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
 
     </head>
  <body>
     <div id="app">
-
         <navbar></navbar>
         <browser-check></browser-check>
-
-        <version-notification />
-
+        <version-notification></version-notification>
         <section class="header hero is-fullheight" id="header">
             <div class="container">
                 <div class="header-text" >
@@ -599,7 +596,7 @@
                 <div class="section-content">
                     <p data-aos="fade-left">If you would like to work with me, then be sure to contact me on <a href="mailto:me@andyh.app">me@andyh.app</a>, <a href="https://www.linkedin.com/in/andrew-hargrave-b36128144/" title="LinkedIn">LinkedIn</a>, or with the form below.</p>
                     <p> PLEASE USE THE <a href="./">V2</a> FORM TO CONTACT ME</p>
-                <form method="POST" action="{{ route('sendemail') }}">
+                    <form>
                         @if(session()->has('message'))
                             <span role="alert">
                                 <strong class="has-text-success">{{ session()->get('message') }}</strong>
