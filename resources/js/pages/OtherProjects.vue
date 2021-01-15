@@ -93,7 +93,7 @@ export default {
           titleLower: "Stories",
           img: "/images/portalstories.jpg",
           alt: "portal",
-          description: "I was the original project leader on the Portal 2 mod Portal Stores: Mel. The mod went on to win a Video Game Award for 'Best Fan Creation' in 2015, and has been given a full steam release, with overwhelmingly positive reviews. I am in the credits of the mod for my past contributions. The mod featured in news articles on various news websites, such as the washington post.",
+          description: "I was the original project leader on the Portal 2 mod Portal Stories: Mel. The mod went on to win a Video Game Award for 'Best Fan Creation' in 2015, and has been given a full steam release, with overwhelmingly positive reviews. I am in the credits of the mod for my past contributions. The mod featured in news articles on various news websites, such as the washington post.",
           tags: ['Source Engine'],
           buttons: [
             {

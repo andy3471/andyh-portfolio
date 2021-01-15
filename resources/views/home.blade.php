@@ -26,6 +26,7 @@
  <body>
     <div id="app">
         <home containerName="@php echo gethostname() @endphp" />
+        <meta name="csrf-token" content="{{ csrf_token() }}">
     </div>
 </body>
 </html>

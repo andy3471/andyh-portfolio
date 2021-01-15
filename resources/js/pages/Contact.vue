@@ -13,6 +13,7 @@
         >LinkedIn</a>, or with the form below.
       </p>
       <form @submit.prevent="submit">
+        <input type="hidden" name="_token" :value="csrf">
         <div class="field">
           <label
             class="label has-text-white"
@@ -99,7 +100,8 @@ export default {
       fields: {},
       errors: {},
       message: '',
-      sending: false
+      sending: false,
+      csrf: document.querySelector('meta[name="csrf-token"]').getAttribute('content')
     }
   },
   methods: {
