@@ -118,4 +118,7 @@ export default {
 };
 </script>
 <style scoped>
+.autocomplete-results {
+  color: black;
+}
 </style>
