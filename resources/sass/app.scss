@@ -41,6 +41,13 @@ $radius: 2px;
     }
 }
 
+.header-text {
+    position: absolute;
+    top: 50vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 .tagline {
     text-shadow: 2px 2px $red;
 }

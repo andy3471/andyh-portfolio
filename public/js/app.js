@@ -3942,6 +3942,86 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/pages/Header.vue?vue&type=script&lang=js&":
+/*!************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/pages/Header.vue?vue&type=script&lang=js& ***!
+  \************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _components_ButtonGroup_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../components/ButtonGroup.vue */ "./resources/js/components/ButtonGroup.vue");
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  components: {
+    ButtonGroup: _components_ButtonGroup_vue__WEBPACK_IMPORTED_MODULE_0__["default"]
+  },
+  data: function data() {
+    return {
+      buttons: [{
+        href: "#about",
+        title: "About Me",
+        icon: "fa fa-user",
+        "class": "button is-info is-outlined"
+      }, {
+        href: "#keys",
+        title: "Projects",
+        icon: "fas fa-code",
+        "class": "button is-primary is-outlined"
+      }]
+    };
+  }
+});
+
+/***/ }),
+
 /***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/pages/Hosting.vue?vue&type=script&lang=js&":
 /*!*************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/pages/Hosting.vue?vue&type=script&lang=js& ***!
@@ -4648,7 +4728,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "#myVideo[data-v-129a26d6] {\n  position: absolute;\n  right: 0;\n  bottom: 0;\n  top: 0;\n  width: 100%;\n  height: 100%;\n  background-size: 100% 100%;\n  background-color: black;\n  /* in case the video doesn't fit the whole page*/\n  background-position: center center;\n  background-size: contain;\n  -o-object-fit: cover;\n     object-fit: cover;\n  /*cover video background */\n  z-index: 3;\n}\n#section0 .layer[data-v-129a26d6] {\n  position: absolute;\n  z-index: 4;\n  width: 100%;\n  height: 100%;\n  left: 0;\n  top: 25%;\n  transform: translate3d(0, 0, 0);\n}\n#section0[data-v-129a26d6] {\n  overflow: hidden;\n}\nvideo[data-v-129a26d6]::-webkit-media-controls {\n  display: none !important;\n}\n.header-buttons[data-v-129a26d6] {\n  padding-left: 250px;\n  padding-right: 250px;\n}\n.arrow[data-v-129a26d6] {\n  position: absolute;\n  left: 50%;\n  transform: translate(-50%, 0%);\n}\n.arrow span[data-v-129a26d6] {\n  display: block;\n  width: 30px;\n  height: 30px;\n  border-bottom: 5px solid #F25D27;\n  border-right: 5px solid #F25D27;\n  transform: rotate(45deg);\n  margin: -10px;\n  -webkit-animation: animate-data-v-129a26d6 2s infinite;\n          animation: animate-data-v-129a26d6 2s infinite;\n}\n.arrow span[data-v-129a26d6]:nth-child(2) {\n  -webkit-animation-delay: -0.2s;\n          animation-delay: -0.2s;\n}\n.arrow span[data-v-129a26d6]:nth-child(3) {\n  -webkit-animation-delay: -0.4s;\n          animation-delay: -0.4s;\n}\n@-webkit-keyframes animate-data-v-129a26d6 {\n0% {\n    opacity: 0;\n    transform: rotate(45deg) translate(-20px, -20px);\n}\n50% {\n    opacity: 1;\n}\n100% {\n    opacity: 0;\n    transform: rotate(45deg) translate(20px, 20px);\n}\n}\n@keyframes animate-data-v-129a26d6 {\n0% {\n    opacity: 0;\n    transform: rotate(45deg) translate(-20px, -20px);\n}\n50% {\n    opacity: 1;\n}\n100% {\n    opacity: 0;\n    transform: rotate(45deg) translate(20px, 20px);\n}\n}", ""]);
+exports.push([module.i, "#myVideo[data-v-129a26d6] {\n  position: absolute;\n  right: 0;\n  bottom: 0;\n  top: 0;\n  width: 100%;\n  height: 100%;\n  background-size: 100% 100%;\n  background-color: black;\n  /* in case the video doesn't fit the whole page*/\n  background-position: center center;\n  background-size: contain;\n  -o-object-fit: cover;\n     object-fit: cover;\n  /*cover video background */\n  z-index: 3;\n}\n#section0 .layer[data-v-129a26d6] {\n  position: absolute;\n  z-index: 4;\n  width: 100%;\n  height: 100%;\n  left: 0;\n  top: 0;\n}\n#section0[data-v-129a26d6] {\n  overflow: hidden;\n}\nvideo[data-v-129a26d6]::-webkit-media-controls {\n  display: none !important;\n}\n.header-buttons[data-v-129a26d6] {\n  padding-left: 250px;\n  padding-right: 250px;\n}\n.arrow[data-v-129a26d6] {\n  position: absolute;\n  left: 50%;\n  bottom: 150px;\n  z-index: 999;\n}\n.arrow span[data-v-129a26d6] {\n  display: block;\n  width: 30px;\n  height: 30px;\n  border-bottom: 5px solid #F25D27;\n  border-right: 5px solid #F25D27;\n  transform: rotate(45deg);\n  margin: -10px;\n  -webkit-animation: animate-data-v-129a26d6 2s infinite;\n          animation: animate-data-v-129a26d6 2s infinite;\n}\n.arrow span[data-v-129a26d6]:nth-child(2) {\n  -webkit-animation-delay: -0.2s;\n          animation-delay: -0.2s;\n}\n.arrow span[data-v-129a26d6]:nth-child(3) {\n  -webkit-animation-delay: -0.4s;\n          animation-delay: -0.4s;\n}\n@-webkit-keyframes animate-data-v-129a26d6 {\n0% {\n    opacity: 0;\n    transform: rotate(45deg) translate(-20px, -20px);\n}\n50% {\n    opacity: 1;\n}\n100% {\n    opacity: 0;\n    transform: rotate(45deg) translate(20px, 20px);\n}\n}\n@keyframes animate-data-v-129a26d6 {\n0% {\n    opacity: 0;\n    transform: rotate(45deg) translate(-20px, -20px);\n}\n50% {\n    opacity: 1;\n}\n100% {\n    opacity: 0;\n    transform: rotate(45deg) translate(20px, 20px);\n}\n}", ""]);
 
 // exports
 
@@ -28294,94 +28374,63 @@ var render = function() {
     ),
     _vm._v(" "),
     _c("div", { staticClass: "layer" }, [
-      _c(
-        "div",
-        { staticClass: "container" },
-        [
-          _c(
-            "kinesis-container",
-            [
-              _c("kinesis-element", { attrs: { type: "depth", strength: 7 } }, [
-                _c("h1", { staticClass: "has-text-centered" }, [
-                  _c("div", { staticClass: "logo" }, [
-                    _c("span", { staticClass: "upper" }, [_vm._v("Andrew")]),
-                    _vm._v(" "),
-                    _c("span", { staticClass: "lower" }, [_vm._v("Hargrave")])
-                  ]),
-                  _vm._v(" "),
-                  _c("span", { staticClass: "tagline has-text-centered" }, [
-                    _vm._v("Full Stack Web Development & Deployment")
-                  ])
-                ])
-              ])
-            ],
-            1
-          ),
-          _vm._v(" "),
-          _c("br"),
-          _vm._v(" "),
-          _vm._m(0),
-          _vm._v(" "),
-          _c(
-            "div",
-            {
-              staticClass: "arrow",
-              on: {
-                click: function($event) {
-                  return _vm.console.log("click")
-                }
-              }
-            },
-            [_c("span"), _vm._v(" "), _c("span"), _vm._v(" "), _c("span")]
-          )
-        ],
-        1
-      )
-    ])
-  ])
-}
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "header-buttons level" }, [
-      _c("div", { staticClass: "level-item" }, [
+      _c("div", { staticClass: "container" }, [
         _c(
-          "a",
-          {
-            staticClass: "button is-info",
-            attrs: { href: "#about", title: "About" }
-          },
+          "div",
+          { staticClass: "header-text" },
           [
-            _c("span", { staticClass: "icon" }, [
-              _c("i", { staticClass: "fas fa-user" })
-            ]),
+            _c(
+              "kinesis-container",
+              [
+                _c(
+                  "kinesis-element",
+                  { attrs: { type: "depth", strength: 7 } },
+                  [
+                    _c("h1", { staticClass: "has-text-centered" }, [
+                      _c("div", { staticClass: "logo" }, [
+                        _c("span", { staticClass: "upper" }, [
+                          _vm._v("Andrew")
+                        ]),
+                        _vm._v(" "),
+                        _c("span", { staticClass: "lower" }, [
+                          _vm._v("Hargrave")
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("span", { staticClass: "tagline has-text-centered" }, [
+                        _vm._v("Full Stack Web Development & Deployment")
+                      ])
+                    ])
+                  ]
+                )
+              ],
+              1
+            ),
             _vm._v(" "),
-            _c("span", [_vm._v("About Me")])
-          ]
-        )
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "level-item" }, [
-        _c(
-          "a",
-          {
-            staticClass: "button is-primary",
-            attrs: { href: "#keys", title: "Projects" }
-          },
-          [
-            _c("span", { staticClass: "icon" }, [
-              _c("i", { staticClass: "fas fa-code" })
-            ]),
+            _c("br"),
             _vm._v(" "),
-            _c("span", [_vm._v("View My Projects")])
-          ]
+            _c("ButtonGroup", { attrs: { buttons: _vm.buttons } })
+          ],
+          1
         )
       ])
-    ])
-  }
-]
+    ]),
+    _vm._v(" "),
+    _c(
+      "div",
+      {
+        staticClass: "arrow",
+        on: {
+          click: function($event) {
+            return _vm.console.log("click")
+          }
+        }
+      },
+      [_c("span"), _vm._v(" "), _c("span"), _vm._v(" "), _c("span")]
+    )
+  ])
+}
+var staticRenderFns = []
 render._withStripped = true
 
 
@@ -41917,17 +41966,19 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Header_vue_vue_type_template_id_129a26d6_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Header.vue?vue&type=template&id=129a26d6&scoped=true& */ "./resources/js/pages/Header.vue?vue&type=template&id=129a26d6&scoped=true&");
-/* harmony import */ var _Header_vue_vue_type_style_index_0_id_129a26d6_scoped_true_lang_scss___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Header.vue?vue&type=style&index=0&id=129a26d6&scoped=true&lang=scss& */ "./resources/js/pages/Header.vue?vue&type=style&index=0&id=129a26d6&scoped=true&lang=scss&");
-/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+/* harmony import */ var _Header_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Header.vue?vue&type=script&lang=js& */ "./resources/js/pages/Header.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _Header_vue_vue_type_style_index_0_id_129a26d6_scoped_true_lang_scss___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Header.vue?vue&type=style&index=0&id=129a26d6&scoped=true&lang=scss& */ "./resources/js/pages/Header.vue?vue&type=style&index=0&id=129a26d6&scoped=true&lang=scss&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
-var script = {}
+
+
 
 
 
 /* normalize component */
 
-var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
-  script,
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__["default"])(
+  _Header_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
   _Header_vue_vue_type_template_id_129a26d6_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"],
   _Header_vue_vue_type_template_id_129a26d6_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
   false,
@@ -41941,6 +41992,20 @@ var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_
 if (false) { var api; }
 component.options.__file = "resources/js/pages/Header.vue"
 /* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/pages/Header.vue?vue&type=script&lang=js&":
+/*!****************************************************************!*\
+  !*** ./resources/js/pages/Header.vue?vue&type=script&lang=js& ***!
+  \****************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Header_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib??vue-loader-options!./Header.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/pages/Header.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Header_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
 
 /***/ }),
 

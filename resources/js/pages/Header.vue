@@ -17,56 +17,60 @@
     </video>
     <div class="layer">
       <div class="container">
-        <kinesis-container>
-          <kinesis-element
-            type="depth"
-            :strength="7"
-          >
-            <h1 class="has-text-centered">
-              <div class="logo">
-                <span class="upper">Andrew</span>
-                <span class="lower">Hargrave</span>
-              </div>
-              <span class="tagline has-text-centered">Full Stack Web Development & Deployment</span>
-            </h1>
-          </kinesis-element>
-        </kinesis-container>
-        <br>
-        <div class="header-buttons level">
-          <div class="level-item">
-            <a
-              href="#about"
-              title="About"
-              class="button is-info"
+        <div class="header-text">
+          <kinesis-container>
+            <kinesis-element
+              type="depth"
+              :strength="7"
             >
-              <span class="icon">
-                <i class="fas fa-user" />
-              </span>
-              <span>About Me</span>
-            </a>
-          </div>
-          <div class="level-item">
-            <a
-              href="#keys"
-              title="Projects"
-              class="button is-primary"
-            >
-              <span class="icon">
-                <i class="fas fa-code" />
-              </span>
-              <span>View My Projects</span>
-            </a>
-          </div>
-        </div>
-        <div class="arrow" @click="console.log('click')">
-          <span></span>
-          <span></span>
-          <span></span>
+              <h1 class="has-text-centered">
+                <div class="logo">
+                  <span class="upper">Andrew</span>
+                  <span class="lower">Hargrave</span>
+                </div>
+                <span class="tagline has-text-centered">Full Stack Web Development & Deployment</span>
+              </h1>
+            </kinesis-element>
+          </kinesis-container>
+          <br>
+          <ButtonGroup :buttons="buttons"/>
         </div>
       </div>
     </div>
+    <div class="arrow" @click="console.log('click')">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
   </div>
 </template>
+<script>
+import ButtonGroup from '../components/ButtonGroup.vue'
+
+export default {
+  components: {
+    ButtonGroup
+  },
+  data() {
+    return {
+      buttons: [
+        {
+          href: "#about",
+          title: "About Me",
+          icon: "fa fa-user",
+          class: "button is-info is-outlined"
+        },
+        {
+          href: "#keys",
+          title: "Projects",
+          icon: "fas fa-code",
+          class: "button is-primary is-outlined"
+        },
+      ]
+    }
+  }
+};
+</script>
 <style scoped lang="scss">
 
 	#myVideo{
@@ -90,10 +94,10 @@
     width: 100%;
     height: 100%;
 		left: 0;
-		top: 25%;
-		-webkit-transform: translate3d(0,0,0);
-		-ms-transform: translate3d(0,0,0);
-		transform: translate3d(0,0,0);
+		top: 0;
+		// -webkit-transform: translate3d(0,0,0);
+		// -ms-transform: translate3d(0,0,0);
+		// transform: translate3d(0,0,0);
 	}
 
 	#section0{
@@ -112,7 +116,9 @@
   .arrow{
       position: absolute;
       left: 50%;
-      transform: translate(-50%,0%);
+      bottom: 150px;
+    //  transform: translate(-75%,0%);
+      z-index: 999;
   }
   .arrow span{
       display: block;
