@@ -4,7 +4,11 @@
     title-lower="+ Virtualisation"
   >
     <div class="columns">
-      <technology-card v-for="(technology, idx) in technologies" :key="idx" :technology="technology"/>
+      <technology-card
+        v-for="(technology, idx) in technologies"
+        :key="idx"
+        :technology="technology"
+      />
     </div>
   </Section>
 </template>

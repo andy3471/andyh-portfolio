@@ -3557,6 +3557,9 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -3638,6 +3641,15 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -3998,6 +4010,12 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   components: {
@@ -4033,6 +4051,10 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_Section_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../components/Section.vue */ "./resources/js/components/Section.vue");
 /* harmony import */ var _components_TechnologyCard_vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/TechnologyCard.vue */ "./resources/js/components/TechnologyCard.vue");
+//
+//
+//
+//
 //
 //
 //
@@ -41188,7 +41210,7 @@ __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 window.Vue = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.js");
 Vue.use(vue_fullpage_js__WEBPACK_IMPORTED_MODULE_1___default.a);
 Vue.use(vue_kinesis__WEBPACK_IMPORTED_MODULE_2__["default"]);
-Vue.component("home", __webpack_require__(/*! ./views/Home.vue */ "./resources/js/views/Home.vue")["default"]);
+Vue.component("Home", __webpack_require__(/*! ./views/Home.vue */ "./resources/js/views/Home.vue")["default"]);
 Vue.component("Button", __webpack_require__(/*! ./components/Button.vue */ "./resources/js/components/Button.vue")["default"]);
 Vue.component("ButtonGroup", __webpack_require__(/*! ./components/ButtonGroup.vue */ "./resources/js/components/ButtonGroup.vue")["default"]);
 var app = new Vue({

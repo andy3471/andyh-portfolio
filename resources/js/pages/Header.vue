@@ -13,7 +13,10 @@
         src="videos/banner.mp4"
         type="video/mp4"
       >
-      <source src="videos/banner.webm" type="video/webm">
+      <source
+        src="videos/banner.webm"
+        type="video/webm"
+      >
     </video>
     <div class="layer">
       <div class="container">
@@ -33,14 +36,17 @@
             </kinesis-element>
           </kinesis-container>
           <br>
-          <ButtonGroup :buttons="buttons"/>
+          <ButtonGroup :buttons="buttons" />
         </div>
       </div>
     </div>
-    <div class="arrow" @click="console.log('click')">
-      <span></span>
-      <span></span>
-      <span></span>
+    <div
+      class="arrow"
+      @click="console.log('click')"
+    >
+      <span />
+      <span />
+      <span />
     </div>
   </div>
 </template>

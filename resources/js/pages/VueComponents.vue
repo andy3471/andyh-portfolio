@@ -25,7 +25,7 @@
       </p>
       <div class="level">
         <div class="level-item">
-          <date-picker color="#04B2D9"/>
+          <date-picker color="#04B2D9" />
         </div>
       </div>
     </div>
@@ -56,7 +56,7 @@
       </p>
       <div class="level">
         <div class="level-item">
-          <time-picker color="#04B2D9"/>
+          <time-picker color="#04B2D9" />
         </div>
       </div>
     </div>

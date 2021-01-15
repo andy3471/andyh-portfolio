@@ -3504,6 +3504,12 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -21308,7 +21314,7 @@ var render = function() {
                 }
               }),
               _vm._v(
-                "\n        You are viewing v1 of my portfolio, for the latest version, please\n        "
+                "\n      You are viewing v1 of my portfolio, for the latest version, please\n      "
               ),
               _c("a", { attrs: { href: "./" } }, [_vm._v("click here")])
             ]
@@ -33745,9 +33751,9 @@ aos__WEBPACK_IMPORTED_MODULE_0___default.a.init();
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
 window.Vue = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.js");
-Vue.component("navbar", __webpack_require__(/*! ./components/Navbar-v1.vue */ "./resources/js/components/Navbar-v1.vue")["default"]);
-Vue.component("browser-check", __webpack_require__(/*! ./components/BrowserCheck.vue */ "./resources/js/components/BrowserCheck.vue")["default"]);
-Vue.component("version-notification", __webpack_require__(/*! ./components/VersionNotification.vue */ "./resources/js/components/VersionNotification.vue")["default"]);
+Vue.component("Navbar", __webpack_require__(/*! ./components/Navbar-v1.vue */ "./resources/js/components/Navbar-v1.vue")["default"]);
+Vue.component("BrowserCheck", __webpack_require__(/*! ./components/BrowserCheck.vue */ "./resources/js/components/BrowserCheck.vue")["default"]);
+Vue.component("VersionNotification", __webpack_require__(/*! ./components/VersionNotification.vue */ "./resources/js/components/VersionNotification.vue")["default"]);
 
 
 

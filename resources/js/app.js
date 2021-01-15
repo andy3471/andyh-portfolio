@@ -8,7 +8,7 @@ window.Vue = require("vue");
 Vue.use(VueFullPage);
 Vue.use(VueKinesis);
 
-Vue.component("home", require("./views/Home.vue").default);
+Vue.component("Home", require("./views/Home.vue").default);
 Vue.component("Button", require("./components/Button.vue").default);
 Vue.component("ButtonGroup", require("./components/ButtonGroup.vue").default);
 

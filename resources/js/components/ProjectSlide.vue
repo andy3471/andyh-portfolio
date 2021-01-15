@@ -18,7 +18,10 @@
               style="height: 35vh; padding-top: none"
             >
             <div class="card-content">
-              <div class="content" v-html="project.description" />
+              <div
+                class="content"
+                v-html="project.description"
+              />
             </div>
             <div class="level">
               <div class="level-item">
