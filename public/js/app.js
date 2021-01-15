@@ -4009,12 +4009,12 @@ __webpack_require__.r(__webpack_exports__);
         href: "#about",
         title: "About Me",
         icon: "fa fa-user",
-        "class": "button is-info is-outlined"
+        "class": "button is-info"
       }, {
         href: "#keys",
         title: "Projects",
         icon: "fas fa-code",
-        "class": "button is-primary is-outlined"
+        "class": "button is-primary"
       }]
     };
   }
@@ -4638,8 +4638,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
- // import BrowserCheck from "../components/BrowserCheck";
 
 
 
@@ -4672,6 +4670,7 @@ __webpack_require__.r(__webpack_exports__);
   },
   data: function data() {
     return {
+      is_ie: false,
       options: {
         //Navigation
         anchors: ["home", "about", "keys", "rota", "components", "projects", "hosting", "work", // "other",

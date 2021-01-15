@@ -1,7 +1,6 @@
 <template>
   <div id="app">
     <navbar />
-    <!-- <browser-check></browser-check> -->
     <full-page
       id="fullpage"
       ref="fullpage"
@@ -23,8 +22,6 @@
 
 <script>
 import Navbar from "../components/Navbar.vue";
-// import BrowserCheck from "../components/BrowserCheck";
-
 import Header from "../pages/Header.vue";
 import About from "../pages/About.vue";
 import Keyshare from "../pages/Keyshare.vue";
@@ -57,6 +54,7 @@ export default {
   },
   data() {
     return {
+      is_ie: false,
       options: {
         //Navigation
         anchors: [

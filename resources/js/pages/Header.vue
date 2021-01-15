@@ -58,13 +58,13 @@ export default {
           href: "#about",
           title: "About Me",
           icon: "fa fa-user",
-          class: "button is-info is-outlined"
+          class: "button is-info"
         },
         {
           href: "#keys",
           title: "Projects",
           icon: "fas fa-code",
-          class: "button is-primary is-outlined"
+          class: "button is-primary"
         },
       ]
     }
