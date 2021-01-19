@@ -34,12 +34,14 @@
       group. The site has paginated autoloading when browsing games, to make
       it easy to scroll through, as well as an autocomplete search component
       for finding games. The site uses a Redis cache for storing a 'karma' for
-      users and caching routes for faster loading
+      users and caching routes for faster loading. The site integrates with the
+      Twitch IGDB API to get game information, as well as Discord to post now
+      keys to a discord channel.
     </p>
     <p>
       KeyShare allows for options to enable sign-in through Steam using
       OpenID. The site contains an admin panel for user management, and the
-      option to require admin approval to register.
+      option to require admin approval to register. 
     </p>
     <p>
       The application was originally written in raw PHP and JavaScript,
