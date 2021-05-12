@@ -25,17 +25,14 @@
           Bootstrap and Bulma as UI frameworks.
         </p>
         <p>
-          I am currently employed as an Application Support Anaylst at Neilson
-          Finance Services.
+          I am currently employed as a Laravel Full Stack Developer at Bullet Digital Solutions.
         </p>
         <p>
           Previously, I was employed as an Application Delivery Specialist at
           Advanced, the UK's third largest software company. I worked in the
           Health & Care business unit with Carenotes, an ASP.NET Web
-          Application, with a large number of SOA services. Carenotes is used
-          widely by the NHS for mental health and community Trusts. I provided
-          third line support for Carenotes, as well as deployed and upgraded it.
-          Carenotes is hosted on Windows Servers with IIS.
+          Application. Carenotes is used
+          widely by the NHS for mental health and community Trusts.
         </p>
         <p>
           I also have a strong knowledge of Linux and Apache, and host multiple
